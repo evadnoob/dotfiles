@@ -10,3 +10,6 @@
 [submodule "vim/bundle/numbers.vim"]
 	path = vim/bundle/numbers.vim
 	url = https://github.com/b3niup/numbers.vim.git
+[submodule "vim/vim-airline"]
+	path = vim/vim-airline
+	url = https://github.com/bling/vim-airline
