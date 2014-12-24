@@ -16,7 +16,7 @@ nmap <silent> <leader>sv :so $MYVIMRC<CR>
 nmap <silent> <leader>sn :e ~/Dropbox/notes<CR>
 
 
-execute pathogen#infect()
+execute pathogen#infect('~/dotfiles/vim/bundle/{}')
 syntax on
 filetype plugin indent on
 
