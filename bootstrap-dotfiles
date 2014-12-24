@@ -4,3 +4,6 @@ ln -s ~/dotfiles/vim ~/.vim
 ln -s ~/dotfiles/vimrc ~/.vimrc 
 ln -s ~/dotfiles/zprezto ~/.zprezto  
 ln -s ~/dotfiles/zpreztorc ~/.zpreztorc
+ln -s ~/dotfiles/psqlrc ~/.psqlrc
+ln -s ~/dotfiles/tmux-conf ~/.tmux-conf
+

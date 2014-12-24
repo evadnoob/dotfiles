@@ -1,0 +1,60 @@
+#
+# tmux configuration
+#
+
+#
+# copy and paste from clipboard: https://github.com/ChrisJohnsen/tmux-MacOSX-pasteboard
+# READ! run THIS: brew install reattach-to-user-namespace
+#
+set-option -g default-command "reattach-to-user-namespace -l zsh"
+set -g status off
+set -g default-terminal "screen-256color"
+
+set -g default-shell /bin/zsh
+
+#set-option renumber-windows on
+
+set -g prefix C-z
+unbind C-b
+bind C-z send-prefix
+
+unbind C-SPACE
+bind " " next-window
+
+unbind BSpace
+bind BSpace previous-window
+
+# set -g status-fg cyan
+set -g status-bg black
+set -g status-fg white
+
+
+bind-key r source-file ~/.tmux.conf \; \
+ display-message "source-file done"
+
+set -g history-limit 50000
+
+#bind-key S command-prompt -p "host" "new-window -n %1 'ssh %1'"
+
+#set-option -g set-titles-string '#H:#S.#I.#P #W #T' # window number,program name, active(or not)
+
+#source '~/Library/Python/2.7/bin/powerline/bindings/tmux/powerline'
+
+
+
+
+# Status bar has a dim gray background
+set-option -g status-bg colour234
+set-option -g status-fg colour0
+# Left shows the session name, in blue
+set-option -g status-left-bg default
+set-option -g status-left-fg colour74
+
+set-option -g set-titles on
+#set-option -g set-titles-string '[#S:#I #H] #W'
+#set-option -g set-titles-string '#W ' # window number,program name, active(or not)
+
+#bind-key P command-prompt -p psql: "new-window -n %2 'psql %1'"
+
+# set the amount of time that display messages show:
+set -g display-time 5000

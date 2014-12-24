@@ -1,0 +1,17 @@
+\set PROMPT1 '(%n@%M:%>) %`date +%H:%M:%S` [%/] \n%x%# '
+
+\timing
+
+\x auto
+
+\pset border 0
+
+\conninfo
+
+\set AUTOCOMMIT on
+ 
+\set ON_ERROR_ROLLBACK on
+
+\set ON_ERROR_STOP on
+
+\set VERBOSITY verbose
