@@ -13,3 +13,6 @@
 [submodule "vim/vim-airline"]
 	path = vim/vim-airline
 	url = https://github.com/bling/vim-airline
+[submodule "vim/vim-sensible"]
+	path = vim/vim-sensible
+	url = git://github.com/tpope/vim-sensible.git
