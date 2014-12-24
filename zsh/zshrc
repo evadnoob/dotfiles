@@ -1,23 +1,23 @@
 #
 # My dotfiles, uses zprezto! 
 #
-export DROPBOX_HOME=~/Dropbox
+export ZSH_DOTFILES=~/dotfiles/zsh
 
-source ${DROPBOX_HOME}/setup-term.zsh
+source ${ZSH_DOTFILES}/setup-term.zsh
 
 if [[ ! "dumb" = "$TERM" ]]; then 
-  #source ${DROPBOX_HOME}/setup-oh-my-zsh.zsh
-  source ${DROPBOX_HOME}/setup-zprezto.zsh
+  #source ${ZSH_DOTFILES}/setup-oh-my-zsh.zsh
+  source ${ZSH_DOTFILES}/setup-zprezto.zsh
 fi
 
-source ${DROPBOX_HOME}/setup-java.zsh
-source ${DROPBOX_HOME}/setup-aws.zsh
-source ${DROPBOX_HOME}/setup-emacs.zsh
-source ${DROPBOX_HOME}/setup-aliases.zsh
-source ${DROPBOX_HOME}/setup-less.zsh
-source ${DROPBOX_HOME}/setup-functions.zsh
-source ${DROPBOX_HOME}/setup-vim.zsh
-source ${DROPBOX_HOME}/setup-zsh.zsh
+source ${ZSH_DOTFILES}/setup-java.zsh
+source ${ZSH_DOTFILES}/setup-aws.zsh
+source ${ZSH_DOTFILES}/setup-emacs.zsh
+source ${ZSH_DOTFILES}/setup-aliases.zsh
+source ${ZSH_DOTFILES}/setup-less.zsh
+source ${ZSH_DOTFILES}/setup-functions.zsh
+source ${ZSH_DOTFILES}/setup-vim.zsh
+source ${ZSH_DOTFILES}/setup-zsh.zsh
 
 export PATH="/usr/local/bin:${PATH}"
 
