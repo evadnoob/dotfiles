@@ -7,3 +7,6 @@
 [submodule "vim/bundle/ag.vim"]
 	path = vim/bundle/ag.vim
 	url = https://github.com/rking/ag.vim
+[submodule "vim/bundle/numbers.vim"]
+	path = vim/bundle/numbers.vim
+	url = https://github.com/b3niup/numbers.vim.git
