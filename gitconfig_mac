@@ -1,0 +1,45 @@
+[user]
+	name = David Boon
+	email = daveb@porch.com
+[alias]
+	ci = commit
+        st = status
+        co = checkout
+        log = log --graph --stat 
+        lg = log --graph --decorate --stat
+        log1 = log --decorate --stat
+        log2 = log -p --decorate --graph
+	incoming = "!git remote update -p; git log ..@{u}"
+	outgoing = log @{u}..
+	stash-unapply = !git stash show -p | git apply -R
+        
+[core]
+	excludesfile = /Users/evadnoob/.gitignore_global
+	editor = vim
+
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+
+[mergetool "ediff"]
+	cmd = /usr/local/bin/emacsclient --eval \"(emgerge-files-with-ancestor \\\"$LOCAL\\\" \\\"$REMOTE\\\" -ancestor \\\"$BASE\\\" -merge \\\"$MERGED\\\")\" 
+	trustExitCode = false
+[color]
+	ui = auto
+        pager = true
+[push]
+	default = current
+[oh-my-zsh]
+	hide-status = 1
+
+[difftool "ediff"]
+        cmd =  /usr/local/bin/emacsclient --eval \"(ediff-files \\\"$LOCAL\\\" \\\"$REMOTE\\\")\"
+
+[diff]
+        tool = ediff
+[merge]
+	tool = emacsclient
