@@ -93,4 +93,27 @@ let g:numbers_enable = 0
 
 :set fillchars+=vert:\  "set vertical divider to nothing
 
+if &shell =~# 'fish$'
+  set shell=/bin/bash
+endif
+
+set autoread        " automatically re-load changed files
+
+"set laststatus=2
+set ruler
+set showcmd
+set wildmenu
+
+if !&scrolloff
+  set scrolloff=1
+endif
+if !&sidescrolloff
+  set sidescrolloff=5
+endif
+set display+=lastline
+
+if &encoding ==# 'latin1' && has('gui_running')
+  set encoding=utf-8
+endif
+
 
