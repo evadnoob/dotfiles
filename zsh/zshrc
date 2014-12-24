@@ -1,0 +1,67 @@
+#
+# My dotfiles, uses zprezto! 
+#
+export DROPBOX_HOME=~/Dropbox
+
+source ${DROPBOX_HOME}/setup-term.zsh
+
+if [[ ! "dumb" = "$TERM" ]]; then 
+  #source ${DROPBOX_HOME}/setup-oh-my-zsh.zsh
+  source ${DROPBOX_HOME}/setup-zprezto.zsh
+fi
+
+source ${DROPBOX_HOME}/setup-java.zsh
+source ${DROPBOX_HOME}/setup-aws.zsh
+source ${DROPBOX_HOME}/setup-emacs.zsh
+source ${DROPBOX_HOME}/setup-aliases.zsh
+source ${DROPBOX_HOME}/setup-less.zsh
+source ${DROPBOX_HOME}/setup-functions.zsh
+source ${DROPBOX_HOME}/setup-vim.zsh
+source ${DROPBOX_HOME}/setup-zsh.zsh
+
+export PATH="/usr/local/bin:${PATH}"
+
+
+
+#make sure the path to emacsclient is before /usr/bin/emacsclient
+#export PATH="/Applications/Emacs.app/Contents/MacOS/bin:$PATH" 
+export PATH="~/Applications/Emacs-24.2.91/Emacs.app/Contents/MacOS/bin:$PATH"
+
+#bindkey -M emacs '^x backspace' backward-kill-line
+
+
+
+export WORDCHARS=''
+export GIT_MERGE_AUTOEDIT=no
+
+autoload -U select-word-style
+select-word-style bash
+#bindkey '^?' backward-delete-word
+
+#export SBT_OPTS="-Xms512MB -XX:+CMSClassUnloadingEnabled -XX:MaxPermSize=256M"
+
+
+bindkey -M isearch '^R' history-incremental-search-backward
+bindkey -M isearch '^S' history-incremental-search-forward
+bindkey -M emacs '^x^?' backward-kill-line
+
+
+setopt nocorrectall
+# 10 second wait if you do something that will delete everything.  I wish I'd had this before...
+setopt RM_STAR_WAIT
+setopt share_history
+
+
+# prevent jobs spawned in the background from being terminated when quitting shell.
+setopt NO_HUP
+
+
+
+# cat <<"EOF"
+#                   ,--.                   
+#     ,-----. ,---. |  ,---. ,--.--. ,---. 
+#     `-.  / (  .-' |  .-.  ||  .--'| .--' 
+# .--. /  `-..-'  `)|  | |  ||  |   \ `--. 
+# '--'`-----'`----' `--' `--'`--'    `---'
+# EOF
+
