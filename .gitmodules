@@ -16,3 +16,6 @@
 [submodule "vim/vim-sensible"]
 	path = vim/vim-sensible
 	url = git://github.com/tpope/vim-sensible.git
+[submodule "zprezto"]
+	path = zprezto
+	url = git@github.com:evadnoob/prezto.git
