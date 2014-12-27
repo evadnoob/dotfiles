@@ -15,7 +15,6 @@
         
 [core]
 	excludesfile = /Users/evadnoob/.gitignore_global
-	editor = vim
 
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"

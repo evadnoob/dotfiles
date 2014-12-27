@@ -31,3 +31,4 @@ alias glg='git --no-pager log --stat --max-count=5'
 #alias node='env NODE_NO_READLINE=1 rlwrap -p Green -S "> " node'
 
 
+alias dh='dirs -v'

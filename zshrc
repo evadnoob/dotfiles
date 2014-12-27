@@ -1,4 +1,4 @@
-#
+# -*- mode: shell-script; -*-
 # My dotfiles, uses zprezto! 
 #
 export ZSH_DOTFILES=~/dotfiles/zsh
