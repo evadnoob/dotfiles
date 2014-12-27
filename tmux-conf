@@ -1,4 +1,4 @@
-#
+# -*- mode: conf; -*-
 # tmux configuration
 #
 
@@ -7,7 +7,7 @@
 # READ! run THIS: brew install reattach-to-user-namespace
 #
 set-option -g default-command "reattach-to-user-namespace -l zsh"
-set -g status off
+set -g status on
 set -g default-terminal "screen-256color"
 
 set -g default-shell /bin/zsh
@@ -35,12 +35,13 @@ bind-key r source-file ~/.tmux.conf \; \
 set -g history-limit 50000
 
 #bind-key S command-prompt -p "host" "new-window -n %1 'ssh %1'"
+bind-key S command-prompt -p ssh: "new-window -n %1 'ssh %1'"
+bind-key | split-window -h
+bind-key - split-window -v
 
 #set-option -g set-titles-string '#H:#S.#I.#P #W #T' # window number,program name, active(or not)
 
 #source '~/Library/Python/2.7/bin/powerline/bindings/tmux/powerline'
-
-
 
 
 # Status bar has a dim gray background
@@ -58,3 +59,18 @@ set-option -g set-titles on
 
 # set the amount of time that display messages show:
 set -g display-time 5000
+
+set -g status-left-length 30
+set-option -g status-interval 2
+#set-option -g status-left "#S #(tmux-mem-cpu-load 2)#[default]"
+set-option -g status-left "#S #[fg=green]#(tmux-mem-cpu-load 2)"
+
+setw -g aggressive-resize on
+
+
+# setw -g mode-mouse on
+# set-option -g mouse-select-pane on
+
+set-option -g status-keys vi
+set-option -gw mode-keys vi
+ 

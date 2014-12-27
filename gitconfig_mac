@@ -15,6 +15,7 @@
         
 [core]
 	excludesfile = /Users/evadnoob/.gitignore_global
+	editor = emacsclient -nw
 
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
