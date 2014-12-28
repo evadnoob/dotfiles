@@ -66,7 +66,8 @@
  '(cua-rectangle                       ((t (:foreground "#E0E4CC"  :background "#342858" ))))
 
  ;; Magit hightlight
- '(magit-item-highlight                ((t (:foreground "white" :background "#1278A8" :inherit nil ))))
+ '(magit-item-highlight                ((t (:foreground "white" :inherit nil ))))
+ 
 
  ;; flyspell-mode
  '(flyspell-incorrect                  ((t (:underline "#AA0000" :background nil :inherit nil ))))
