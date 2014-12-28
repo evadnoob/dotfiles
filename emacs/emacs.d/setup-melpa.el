@@ -1,20 +1,13 @@
 (when (> emacs-major-version 23)
   (require 'package)
   
-  ;; (add-to-list 'package-archives 
-  ;;              '("melpa" . "http://melpa.milkbox.net/packages/")
-  ;;              'APPEND)
-
   (setq package-archives '(("melpa" . "http://melpa.milkbox.net/packages/")
 			   ("elpa" . "http://tromey.com/elpa/")
 			   ("gnu" . "http://elpa.gnu.org/packages/")
 			   ("marmalade" . "http://marmalade-repo.org/packages/")))
   
-  ;; (custom-set-variables
-  ;;  '(package-load-list
-  ;;   (list '(modeline-posn "20140721.2113"))))
-  
   (package-initialize))
+
 (require 'cl)
 
 (defvar evadnoob/required-packages
