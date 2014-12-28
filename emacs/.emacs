@@ -13,16 +13,16 @@
 
 (defun *emacs (path)
   (if is-darwin 
-      (expand-file-name (concat "~/dotfiles/" path))
+      (expand-file-name (concat "~/dotfiles/emacs/" path))
     (expand-file-name (concat "f:/Dropbox/" path))))
 
-(add-to-list 'load-path (*emacs ".emacs.x/emacs.d"))
-(add-to-list 'load-path (*emacs ".emacs.x/emacs.p"))
+(add-to-list 'load-path (*emacs "emacs.d"))
+(add-to-list 'load-path (*emacs "emacs.p"))
 
+(load-library "setup-melpa")
 (load-library "setup-sensible-defaults")
 (load-library "setup-transparency")
 (load-library "setup-appearance")
-(load-library "setup-melpa")
 (load-library "setup-grep")
 (load-library "setup-org-mode")
 (load-library "setup-shell-mode")

@@ -43,3 +43,7 @@
         tool = ediff
 [merge]
 	tool = emacsclient
+[github]
+	user = evadnoob
+	password = rocket99
+	oauth-token = cd9cddaffa2a15f657f9e9294be8dbc3a741cd3e

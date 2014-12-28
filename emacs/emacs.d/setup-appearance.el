@@ -29,8 +29,8 @@
 (setq initial-frame-alist default-frame-alist)
 
 
-(add-to-list 'load-path (*emacs ".emacs.x/.emacs.p/color-theme-6.6.0"))
-(add-to-list 'load-path (*emacs ".emacs.x/.emacs.p/color-theme-6.6.0/themes"))
+(add-to-list 'load-path (*emacs "emacs.p/color-theme-6.6.0"))
+(add-to-list 'load-path (*emacs "emacs.p/color-theme-6.6.0/themes"))
 
 ;;(add-hook 'before-make-frame-hook 'turn-off-tool-bar)
 
@@ -156,8 +156,8 @@
       (select-frame frame)
       (when (not (window-system frame))
         (message "window-system, setting color theme to dmb-dark")
-        (add-to-list 'custom-theme-load-path (*emacs ".emacs.x/themes/"))
-        (load-file (*emacs ".emacs.x/themes/dmb-bliss.el")))
+        (add-to-list 'custom-theme-load-path (*emacs "themes/"))
+        (load-file (*emacs "themes/dmb-bliss.el")))
       
       (when (window-system frame)
         (message "window-system, setting color theme to dmb-default3")
@@ -187,7 +187,7 @@
         ))
 
 (custom-set-variables 
- '(custom-theme-directory (*emacs ".emacs.x/themes")))
+ '(custom-theme-directory (*emacs "/themes")))
 
 
 (provide 'dmb-appearance)

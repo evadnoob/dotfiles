@@ -6,14 +6,14 @@
 (setq auto-mode-alist (cons '("\\.json" . javascript-mode) auto-mode-alist))
 
 (require 'flymake)
-;; (add-to-list 'load-path (*emacs ".emacs.x/.emacs.p/less-css-mode"))
+;; (add-to-list 'load-path (*emacs "emacs.p/less-css-mode"))
 ;; (require 'less-css-mode)
 
-(add-to-list 'load-path (*emacs ".emacs.x/.emacs.p/flymake-less"))
-(add-to-list 'load-path (*emacs ".emacs.x/.emacs.p/flymake-easy"))
-(add-to-list 'load-path (*emacs ".emacs.x/.emacs.p/less-css-mode"))
-(require 'flymake-less)
-(add-hook 'less-css-mode-hook 'flymake-less-load)
+;; (add-to-list 'load-path (*emacs "emacs.p/flymake-less"))
+;; (add-to-list 'load-path (*emacs "emacs.p/flymake-easy"))
+;; (add-to-list 'load-path (*emacs "emacs.p/less-css-mode"))
+;; (require 'flymake-less)
+;; (add-hook 'less-css-mode-hook 'flymake-less-load)
 
 
 ;; force aspell/ispell to use this exact program
@@ -39,13 +39,13 @@
 ;;                            (custom-set-variables '(css-indent-offset 2))))
 
 
-(add-to-list 'load-path (*emacs ".emacs.x/.emacs.p/yasnipet"))
+(add-to-list 'load-path (*emacs "emacs.p/yasnipet"))
 (require 'yasnippet)
 (custom-set-variables 
- '(yas/snippet-dirs (*emacs ".emacs.x/snippets"))
+ '(yas/snippet-dirs (*emacs "snippets"))
  '(yas/wrap-around-region t)
  '(yas/prompt-functions '(yas/ido-prompt yas/completing-prompt))
- '(yas/root-directory (*emacs ".emacs.x/snippets")))
+ '(yas/root-directory (*emacs "snippets")))
  
 (yas/reload-all)
 (add-hook 'js2-mode-hook
@@ -63,9 +63,9 @@
 ;;http://blog.deadpansincerity.com/2011/05/setting-up-emacs-as-a-javascript-editing-environment-for-fun-and-profit/
 ;;http://cx4a.org/software/auto-complete/manual.html#Installation
 
-(add-to-list 'load-path (*emacs ".emacs.x/.emacs.p/auto-complete-1.3.1"))    ; This may not be appeared if you have already added.
+(add-to-list 'load-path (*emacs "emacs.p/auto-complete-1.3.1"))    ; This may not be appeared if you have already added.
 (require 'auto-complete)
-(add-to-list 'ac-dictionary-directories (*emacs ".emacs.x/.emacs.p/auto-complete-1.3.1/dict"))
+(add-to-list 'ac-dictionary-directories (*emacs "emacs.p/auto-complete-1.3.1/dict"))
 (require 'auto-complete-config)
 (ac-config-default)
 (add-to-list 'ac-modes 'javascript-mode)
@@ -97,7 +97,7 @@
 (auto-fill-mode 1)
 (setq comment-auto-fill-only-comments t) 
 
-(add-to-list 'load-path (*emacs ".emacs.x/.emacs.p/js2-mode"))
+(add-to-list 'load-path (*emacs "emacs.p/js2-mode"))
 (autoload 'js2-mode "js2-mode" nil t)
 (add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
 (setq js2-bounce-indent-p nil)

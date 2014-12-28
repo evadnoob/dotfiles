@@ -62,7 +62,7 @@ set -g display-time 5000
 
 set -g status-left-length 30
 set-option -g status-interval 2
-#set-option -g status-left "#S #(tmux-mem-cpu-load 2)#[default]"
+#set-option -g status-right "#S #(tmux-mem-cpu-load 2)#[default]"
 set-option -g status-left "#S #[fg=green]#(tmux-mem-cpu-load 2)"
 
 setw -g aggressive-resize on
@@ -73,4 +73,7 @@ setw -g aggressive-resize on
 
 set-option -g status-keys vi
 set-option -gw mode-keys vi
- 
+
+
+set-option -g message-bg colour235
+set-option -g message-fg colour224

@@ -15,8 +15,9 @@
 (column-number-mode 1)
 (size-indication-mode 1)
 
-(require 'show-point-mode)
-(show-point-mode 1)
+;; (require 'show-point-mode)
+;; (show-point-mode 1)
+
 (show-paren-mode 1)
 
 

@@ -1,7 +1,7 @@
 ;;
 ;; helm replaces anything mode: https://github.com/emacs-helm/helm
 ;;
-(add-to-list 'load-path (*emacs ".emacs.x/.emacs.p/helm"))
+(add-to-list 'load-path (*emacs "emacs.p/helm"))
 (require 'helm-config)
 
 
