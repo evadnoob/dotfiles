@@ -1,10 +1,10 @@
 (when (> emacs-major-version 23)
   (require 'package)
   
-  (setq package-archives '(("melpa" . "http://melpa.milkbox.net/packages/")
+  (setq package-archives '(("marmalade" . "http://marmalade-repo.org/packages/")
+                           ("melpa" . "http://melpa.milkbox.net/packages/")
 			   ("elpa" . "http://tromey.com/elpa/")
-			   ("gnu" . "http://elpa.gnu.org/packages/")
-			   ("marmalade" . "http://marmalade-repo.org/packages/")))
+			   ("gnu" . "http://elpa.gnu.org/packages/")))
   
   (package-initialize))
 
@@ -19,6 +19,7 @@
     coffee-mode
     deft expand-region
     ensime
+    evil
     flymake-less
     flymake-easy
     gist

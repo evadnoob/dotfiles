@@ -230,7 +230,7 @@
 ;; (setq ring-bell-function 'my-bell-function)
 (setq ring-bell-function 'ignore)
 
-
+;; iswitchb, smarter buffer switching
 (iswitchb-mode 1)
 
 ;; setup sensible window splitting defaults for more info see

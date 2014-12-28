@@ -51,7 +51,7 @@
 (load-library "setup-scala-mode")
 ;;(load-library "setup-flx")
 ;;(load-library "setup-god-mode")
-;;(load-library "setup-evil-mode")
+(load-library "setup-evil-mode")
 (load-library "setup-ag-mode")
 
 ;;brew install emacs --cocoa --use-git-head --HEAD
