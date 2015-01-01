@@ -18,6 +18,7 @@
     clojure-mode
     coffee-mode
     deft expand-region
+    dockerfile-mode
     ensime
     evil
     flymake-less

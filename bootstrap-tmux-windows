@@ -1,0 +1,1 @@
+tmux new-session -s 'default' -d 'emacsclient -nw' \; split-window -h \; split-window -d \; select-pane -t 0 \;  attach

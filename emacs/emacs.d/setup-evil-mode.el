@@ -1,6 +1,12 @@
 (require 'evil)
 (evil-mode 1)
-(setq evil-want-fine-undo t)
+
+(custom-set-variables
+ '(evil-want-fine-undo t)
+ '(evil-regexp-search t)
+ '(evil-move-cursor-back nil)
+ '(evil-insert-state-cursor '("red" (bar . 3))))
+
 
 (setcdr evil-insert-state-map nil)
 (define-key evil-insert-state-map [escape] 'evil-normal-state)

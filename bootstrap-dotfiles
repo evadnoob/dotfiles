@@ -1,10 +1,10 @@
 #!/bin/bash
-ln -s ~/dotfiles/zshrc ~/.zshrc 
-ln -s ~/dotfiles/vim ~/.vim 
-ln -s ~/dotfiles/vimrc ~/.vimrc 
-ln -s ~/dotfiles/zprezto ~/.zprezto  
-ln -s ~/dotfiles/zpreztorc ~/.zpreztorc
-ln -s ~/dotfiles/psqlrc ~/.psqlrc
-ln -s ~/dotfiles/tmux-conf ~/.tmux-conf
-ln -s ~/dotfiles/emacs.d ~/.emacs.d
-
+ln -sf ~/dotfiles/zshrc ~/.zshrc 
+ln -sf ~/dotfiles/vim ~/.vim 
+ln -sf ~/dotfiles/vimrc ~/.vimrc 
+ln -sf ~/dotfiles/zprezto ~/.zprezto  
+ln -sf ~/dotfiles/zpreztorc ~/.zpreztorc
+ln -sf ~/dotfiles/psqlrc ~/.psqlrc
+ln -sf ~/dotfiles/tmux.conf ~/.tmux.conf
+ln -sf ~/dotfiles/emacs.d ~/.emacs.d
+ln -sf ~/dotfiles/dotemacs ~/.emacs

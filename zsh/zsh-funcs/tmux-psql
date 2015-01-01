@@ -1,0 +1,15 @@
+
+printf 'hello, you are in tmux-psql X\n'
+ 
+#psql -U daveb -d postgresql://dbcore.prod.porch.com:5435/application_data
+# psql -U daveb -d postgresql://dbtest00.prod.porch.com:5432/application_data
+#
+# psql -U daveb -d postgresql://dbtest00.prod.porch.com:5432/clickstream
+# psql -U app_asl postgresql://db02.prod.porch.com:5431/clickstream
+# psql -U daveb -d postgresql://dbcore.dev.porch.com:5434/application_data
+# psql -U app_ipmdata postgresql://db.dev.porch.com:5434/porch
+
+user=$1
+database=$2
+printf '%s, %s\n' $user $database
+tmux new-window -n "$database" "psql -U $user $database"

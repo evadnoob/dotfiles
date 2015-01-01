@@ -1,6 +1,6 @@
 fpath=(
-   ~/Dropbox/zsh-funcs
-   ~/Dropbox/zsh-funcs/**/*~*/(CVS)#(/N)
+   ~/dotfiles/zsh/zsh-funcs
+   ~/dotfiles/zsh-funcs/**/*~*/(CVS)#(/N)
    "${fpath[@]}"
 )
 

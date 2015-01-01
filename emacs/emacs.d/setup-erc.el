@@ -1,4 +1,3 @@
-
 (require 'erc)
 (require 'erc-dcc)
 (require 'socks)
@@ -56,7 +55,7 @@
 ;;(setq erc-autojoin-channels-alist '(("freenode.net" "#emacs" "#erc")))
 ;;(setq erc-autojoin-channels-alist '(("freenode.net" "#emacs" "#zsh" "#clojure")))
 ;;(setq erc-autojoin-channels-alist '(("freenode.net" "#emacs" "#zsh" "#scala")))
-(setq erc-autojoin-channels-alist '(("freenode.net" "#emacs" "#documentcloud" "#erc" "##aws")))
+(setq erc-autojoin-channels-alist '(("freenode.net" "#emacs" "#scala" "#sbt" "#erc" "##aws")))
 (setq erc-autojoin-channels-alist '(("irc.matrixinsights.com" "#devops")))
 
 ;;#defocus #freenode

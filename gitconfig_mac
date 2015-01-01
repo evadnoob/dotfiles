@@ -26,7 +26,7 @@
 	trustExitCode = true
 
 [mergetool "ediff"]
-	cmd = /usr/local/bin/emacsclient --eval \"(emgerge-files-with-ancestor \\\"$LOCAL\\\" \\\"$REMOTE\\\" -ancestor \\\"$BASE\\\" -merge \\\"$MERGED\\\")\" 
+	cmd = /usr/local/bin/emacsclient --eval \"(ediff-merge-files-with-ancestor \\\"$LOCAL\\\" \\\"$REMOTE\\\" \\\"$BASE\\\" -merge \\\"$MERGED\\\")\" 
 	trustExitCode = false
 [color]
 	ui = auto
