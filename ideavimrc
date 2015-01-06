@@ -1,1 +1,1 @@
-inoremap <silent> <Esc> <C-O>:stopinsert<CR>
+"inoremap <silent> <Esc> <C-O>:stopinsert<CR>
