@@ -88,7 +88,7 @@ augroup END
 "https://github.com/b3niup/numbers.vim
 nnoremap <silent> <F2> :NumbersToggle<CR>
 inoremap <C-c> <Esc><Esc>
-inoremap <silent> <Esc> <C-O>:stopinsert<CR> " stop cursor from jumping around when leaving insert mode
+#inoremap <silent> <Esc> <C-O>:stopinsert<CR> " stop cursor from jumping around when leaving insert mode
 
 
 let g:numbers_enable = 0
