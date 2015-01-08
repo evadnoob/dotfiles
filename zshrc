@@ -56,5 +56,4 @@ setopt share_history
 setopt NO_HUP
 
 
-
-
+set -o vi

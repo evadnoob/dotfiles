@@ -25,18 +25,18 @@
 (define-key evil-normal-state-map (kbd "C-r") 'isearch-backward) 
 
 
-   ;; change mode-line color by evil state
-   (lexical-let ((default-color (cons (face-background 'mode-line)
-                                      (face-foreground 'mode-line))))
-     (add-hook 'post-command-hook
-       (lambda ()
-         (let ((color (cond ((minibufferp) default-color)
-                            ((evil-insert-state-p) '("#e80000" . "#ffffff"))
-                            ((evil-emacs-state-p)  '("#444488" . "#ffffff"))
-                            ((buffer-modified-p)   '("#006fa0" . "#ffffff"))
-                            (t default-color))))
-           (set-face-background 'mode-line-buffer-id (car color))
-           (set-face-foreground 'mode-line-buffer-id (cdr color))))))
+;; change mode-line color by evil state
+(lexical-let ((default-color (cons (face-background 'mode-line)
+                                   (face-foreground 'mode-line))))
+  (add-hook 'post-command-hook
+            (lambda ()
+              (let ((color (cond ((minibufferp) default-color)
+                                 ((evil-insert-state-p) '("color-16" . "white"))
+                                 ((evil-emacs-state-p)  '("color-16" . "#444488"))
+                                 ((buffer-modified-p)   '("color-16" . "#006fa0"))
+                                 (t default-color))))
+                (set-face-background 'mode-line-buffer-id (car color))
+                (set-face-foreground 'mode-line-buffer-id (cdr color))))))
 
 
 (provide 'setup-evil-mode)
