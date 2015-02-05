@@ -12,4 +12,6 @@ printf 'hello, you are in tmux-psql X\n'
 user=$1
 database=$2
 printf '%s, %s\n' $user $database
-tmux new-window -n "$database" "psql -U $user $database"
+database_name=`echo $database | sed 's/^postgresql:\/\///g;s/\.porch.com//'`
+echo $database_name
+tmux new-window -n "$database_name" "psql -U $user $database"

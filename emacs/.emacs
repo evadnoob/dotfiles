@@ -50,6 +50,8 @@
 (load-library "setup-ack")
 (load-library "setup-scala-mode")
 (load-library "setup-dockerfile-mode")
+(load-library "setup-delight")
+
 ;;(load-library "setup-flx")
 ;;(load-library "setup-god-mode")
 (load-library "setup-evil-mode")

@@ -89,7 +89,7 @@ augroup END
 nnoremap <silent> <F2> :NumbersToggle<CR>
 inoremap <C-c> <Esc><Esc>
 "inoremap <silent> <Esc> <C-O>:stopinsert<CR> " stop cursor from jumping around when leaving insert mode
-
+inoremap jj <ESC>
 
 let g:numbers_enable = 0
 

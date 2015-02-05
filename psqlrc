@@ -15,3 +15,21 @@
 \set ON_ERROR_STOP on
 
 \set VERBOSITY verbose
+
+\setenv PSQL_EDITOR 'emacsclient -nw'
+
+\set HISTCONTROL ignoredups
+
+--\set PROMPT1 '%[%033[33;1m%]%x%[%033[0m%]%[%033[1m%]%/%[%033[0m%]%R%# '
+
+--\set PROMPT1 '(%n@%M:%>) %`date +%H:%M:%S` [%/] \n%x%# '
+--\set PROMPT1 '%[%033[31;5m%]%x%[%033[0m%]%[%033[31;1m%]%n%[%033[33;1m%]@%[%033[32;1m%M:%>%[%033[0m%] %[%033[37;1m%]%/%[%033[0m%] %`date +"%H:%M:%S"` %# \n%x%# '
+\set PROMPT1 '%x%n@%M:%>%[%033[0m%]/%[%033[37;1m%]%/%[%033[0m%] %`date +"%H:%M:%S"` \n%x%# '
+
+\set show_slow_queries 'SELECT  (total_time / 1000 / 60) as total_minutes, (total_time/calls) as average_time, query FROM pg_stat_statements ORDER BY 1 DESC LIMIT 100;;'
+
+\set show_activity 'select * from pg_stat_activity where state = \'active\';'
+  
+\set waits 'SELECT pg_stat_activity.pid, pg_stat_activity.query, pg_stat_activity.waiting, now() - pg_stat_activity.query_start  as "totaltime", pg_stat_activity.backend_start FROM pg_stat_activity WHERE pg_stat_activity.query !~ \'%IDLE%\'::text AND pg_stat_activity.waiting = true;'
+
+\set locks 'select pg_stat_activity.pid, mode, client_hostname||\':\'||client_port, query from pg_locks, pg_stat_activity where granted=false and locktype=\'transactionid\' and pg_stat_activity.pid=pg_locks.pid order by pid,granted;'

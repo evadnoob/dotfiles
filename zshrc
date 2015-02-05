@@ -57,3 +57,34 @@ setopt NO_HUP
 
 
 set -o vi
+bindkey -M viins 'jj' vi-cmd-mode
+
+function zle-line-init zle-keymap-select {
+    RPS1="${${KEYMAP/vicmd/N}/(main|viins)/INS}"
+    RPS2=$RPS1
+    zle reset-prompt
+}
+zle -N zle-line-init
+zle -N zle-keymap-select
+#. ~/dotfiles/zsh/vim_mode_indicator.zsh
+
+# Report the status of background jobs immediately, rather than waiting until just before printing a prompt.
+setopt notify
+
+export HISTIGNORE="ls:ll:cd:cd -:pwd:exit:date:* --help"
+
+# multiple zsh sessions will append to the same history file (incrementally, after each command is executed)
+setopt inc_append_history
+
+# purge duplicates first
+setopt hist_expire_dups_first
+
+# if a new command line being added to the history list duplicates an older one, the older command is removed from the list
+setopt hist_ignore_all_dups
+
+# reduce unnecessary blanks from commands being written to history
+setopt hist_reduce_blanks
+
+
+# only show rprompt on current line.
+setopt transient_rprompt
