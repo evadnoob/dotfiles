@@ -18,6 +18,7 @@ source ${ZSH_DOTFILES}/setup-less.zsh
 source ${ZSH_DOTFILES}/setup-functions.zsh
 source ${ZSH_DOTFILES}/setup-vim.zsh
 source ${ZSH_DOTFILES}/setup-zsh.zsh
+source ${ZSH_DOTFILES}/setup-ssh.zsh
 
 export PATH="/usr/local/bin:${PATH}"
 
@@ -25,7 +26,7 @@ export PATH="/usr/local/bin:${PATH}"
 
 #make sure the path to emacsclient is before /usr/bin/emacsclient
 #export PATH="/Applications/Emacs.app/Contents/MacOS/bin:$PATH" 
-export PATH="~/Applications/Emacs-24.2.91/Emacs.app/Contents/MacOS/bin:$PATH"
+# export PATH="~/Applications/Emacs-24.2.91/Emacs.app/Contents/MacOS/bin:$PATH"
 
 #bindkey -M emacs '^x backspace' backward-kill-line
 
@@ -47,9 +48,10 @@ bindkey -M emacs '^x^?' backward-kill-line
 
 
 setopt nocorrectall
+
 # 10 second wait if you do something that will delete everything.  I wish I'd had this before...
 setopt RM_STAR_WAIT
-setopt share_history
+
 
 
 # prevent jobs spawned in the background from being terminated when quitting shell.
@@ -75,6 +77,7 @@ export HISTIGNORE="ls:ll:cd:cd -:pwd:exit:date:* --help"
 
 # multiple zsh sessions will append to the same history file (incrementally, after each command is executed)
 setopt inc_append_history
+setopt share_history
 
 # purge duplicates first
 setopt hist_expire_dups_first
@@ -85,6 +88,33 @@ setopt hist_ignore_all_dups
 # reduce unnecessary blanks from commands being written to history
 setopt hist_reduce_blanks
 
-
 # only show rprompt on current line.
 setopt transient_rprompt
+
+
+export TERM=xterm-256color
+
+# Setup zsh-autosuggestions
+source /Users/daveboon/dotfiles/zsh-autosuggestions/autosuggestions.zsh
+
+# Enable autosuggestions automatically
+zle-line-init() {
+    # zle autosuggest-start
+
+    #start off in normal/command mode instead of insert mode
+    #zle -K vicmd; 
+}
+
+zle -N zle-line-init
+
+# use ctrl+t to toggle autosuggestions(hopefully this wont be needed as
+# zsh-autosuggestions is designed to be unobtrusive)
+#bindkey '^T' autosuggest-toggle
+
+
+autoload -Uz compinit
+compinit
+
+setopt autolist
+setopt listtypes
+setopt menucomplete

@@ -67,7 +67,6 @@
 
  ;; Magit hightlight
  '(magit-item-highlight                ((t (:foreground "white" :inherit nil ))))
- 
 
  ;; flyspell-mode
  '(flyspell-incorrect                  ((t (:underline "#AA0000" :background nil :inherit nil ))))
@@ -82,12 +81,12 @@
  '(git-gutter:modified                 ((t (:foreground "#3388cc" :bold t))))
  '(git-gutter:deleted                  ((t (:foreground "#cc3333" :bold t))))
 
- '(diff-added                          ((t (:background "#305030"))))
- '(diff-removed                        ((t (:background "#903010"))))
- '(diff-file-header                    ((t (:background "#362145"))))
- '(diff-context                        ((t (:foreground "#E0E4CC"))))
- '(diff-changed                        ((t (:foreground "#3388cc"))))
- '(diff-hunk-header                    ((t (:background "#242130"))))
+ '(diff-added                          ((t (:foregoround "#305030"))))
+ '(diff-removed                        ((t (:foreground "#903010"))))
+ '(diff-file-header                    ((t (:foreground "#362145" :background nil :inherit nil))))
+ '(diff-context                        ((t (:foreground "grey60"))))
+ '(diff-changed                        ((t (:foreground "#3388cc" :background nil))))
+ '(diff-hunk-header                    ((t (:foreground "#ffffff"))))
 
  '(which-func                          ((t (:foreground "green" :bold nil))))
 

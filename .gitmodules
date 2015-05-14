@@ -22,3 +22,12 @@
 [submodule "tmux/tmux-battery"]
 	path = tmux/tmux-battery
 	url = https://github.com/tmux-plugins/tmux-battery
+[submodule "zsh-autosuggestions"]
+	path = zsh-autosuggestions
+	url = git://github.com/tarruda/zsh-autosuggestions
+[submodule "zsh-syntax-highlighting"]
+	path = zsh-syntax-highlighting
+	url = git://github.com/zsh-users/zsh-syntax-highlighting.git
+[submodule "zsh-history-substring-search"]
+	path = zsh-history-substring-search
+	url = git@github.com:zsh-users/zsh-history-substring-search.git

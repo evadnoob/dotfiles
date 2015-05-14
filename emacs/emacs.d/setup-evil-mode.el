@@ -4,14 +4,19 @@
 
 (custom-set-variables
  '(evil-want-fine-undo t)
- '(evil-regexp-search t)
+'(evil-regexp-search t)
  '(evil-move-cursor-back nil)
- '(evil-insert-state-cursor '("red" (bar . 3))))
+ ;;'(evil-insert-state-cursor '("red" (bar . 3)))
+ )
 
 
-(setcdr evil-insert-state-map nil)
-(define-key evil-insert-state-map [escape] 'evil-normal-state)
-(define-key evil-visual-state-map [escape] 'evil-normal-state)
+(setq evil-visual-state-cursor 'box) ; █
+(setq evil-insert-state-cursor 'bar) ; ⎸
+(setq evil-emacs-state-cursor 'hbar) ; _
+
+;;(setcdr evil-insert-state-map nil)
+;;(define-key evil-insert-state-map [escape] 'evil-normal-state)
+;;(define-key evil-visual-state-map [escape] 'evil-normal-state)
 
 ;;; esc quits
 ;;(define-key evil-normal-state-map [escape] 'keyboard-quit)
@@ -26,22 +31,22 @@
 (define-key evil-normal-state-map (kbd "C-r") 'isearch-backward) 
 
 
-;; change mode-line color by evil state
-(lexical-let ((default-color (cons (face-background 'mode-line)
-                                   (face-foreground 'mode-line))))
-  (add-hook 'post-command-hook
-            (lambda ()
-              (let ((color (cond ((minibufferp) default-color)
-                                 ((evil-insert-state-p) '("color-16" . "white"))
-                                 ((evil-emacs-state-p)  '("color-16" . "#444488"))
-                                 ((buffer-modified-p)   '("color-16" . "#006fa0"))
-                                 (t default-color))))
-                (set-face-background 'mode-line-buffer-id (car color))
-                (set-face-foreground 'mode-line-buffer-id (cdr color))))))
+;; ;; change mode-line color by evil state
+;; (lexical-let ((default-color (cons (face-background 'mode-line)
+;;                                    (face-foreground 'mode-line))))
+;;   (add-hook 'post-command-hook
+;;             (lambda ()
+;;               (let ((color (cond ((minibufferp) default-color)
+;;                                  ((evil-insert-state-p) '("color-16" . "white"))
+;;                                  ((evil-emacs-state-p)  '("color-16" . "#444488"))
+;;                                  ((buffer-modified-p)   '("color-16" . "#006fa0"))
+;;                                  (t default-color))))
+;;                 (set-face-background 'mode-line-buffer-id (car color))
+;;                 (set-face-foreground 'mode-line-buffer-id (cdr color))))))
 
 
-
-
+(unless (display-graphic-p)
+   (require 'evil-terminal-cursor-changer))
 
 (require 'evil-args)
 
@@ -68,7 +73,12 @@ then it takes a second \\[keyboard-quit] to abort the minibuffer."
   (if (and delete-selection-mode transient-mark-mode mark-active)
       (setq deactivate-mark  t)
     (when (get-buffer "*Completions*") (delete-windows-on "*Completions*"))
-    (abort-recursive-edit)))
+    (abort-recursive-edit)
+    (etcc--set-box-cursor)))
+
+
+
+
 (define-key evil-normal-state-map [escape] 'keyboard-quit)
 (define-key evil-visual-state-map [escape] 'keyboard-quit)
 (define-key minibuffer-local-map [escape] 'minibuffer-keyboard-quit)
@@ -83,16 +93,16 @@ then it takes a second \\[keyboard-quit] to abort the minibuffer."
 (define-key evil-normal-state-map "K" 'evil-jump-out-args)
 
 
-(setq evil-emacs-state-cursor '("red" box))
-(setq evil-normal-state-tag   (propertize "N" 'face '((:background "green" :foreground "black")))
-      evil-emacs-state-tag    (propertize "E" 'face '((:background "orange" :foreground "black")))
-      evil-insert-state-tag   (propertize "I" 'face '((:background "red")))
-      evil-motion-state-tag   (propertize "M" 'face '((:background "blue")))
-      evil-visual-state-tag   (propertize "V" 'face '((:background "grey80" :foreground "black")))
-      evil-operator-state-tag (propertize "O" 'face '((:background "purple"))))
+;; (setq evil-emacs-state-cursor '("red" box))
+;; (setq evil-normal-state-tag   (propertize "N" 'face '((:background "green" :foreground "black")))
+;;       evil-emacs-state-tag    (propertize "E" 'face '((:background "orange" :foreground "black")))
+;;       evil-insert-state-tag   (propertize "I" 'face '((:background "red")))
+;;       evil-motion-state-tag   (propertize "M" 'face '((:background "blue")))
+;;       evil-visual-state-tag   (propertize "V" 'face '((:background "grey80" :foreground "black")))
+;;       evil-operator-state-tag (propertize "O" 'face '((:background "purple"))))
 
 
-(smart-cursor-color-mode +1)
+;;(smart-cursor-color-mode +1)
 
 
 
@@ -181,5 +191,8 @@ then it takes a second \\[keyboard-quit] to abort the minibuffer."
   "a" 'git-blame-mode
   "f" 'grep
   "d" 'dired-jump)
+
+
+(require 'evil-matchit)
 
 (provide 'setup-evil-mode)

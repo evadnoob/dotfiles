@@ -1,7 +1,4 @@
 
-
-
-
 (require 'ediff)
 ;; ;; turn off the gray highlighting
 ;; (add-hook

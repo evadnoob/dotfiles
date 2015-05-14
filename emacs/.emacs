@@ -40,6 +40,7 @@
 (load-library "setup-ido")
 (load-library "setup-change-inner")
 (load-library "setup-mark-multiple")
+(load-library "setup-markdown-mode")
 (load-library "setup-nw")
 (load-library "setup-ansi-term")
 (load-library "setup-undo-tree")
@@ -52,10 +53,10 @@
 (load-library "setup-dockerfile-mode")
 (load-library "setup-delight")
 
-;;(load-library "setup-flx")
-;;(load-library "setup-god-mode")
+;; (load-library "setup-flx")
+;; (load-library "setup-god-mode")
 (load-library "setup-evil-mode")
-(load-library "setup-ag-mode")
+;;(load-library "setup-ag-mode")
 
 ;;brew install emacs --cocoa --use-git-head --HEAD
 ;; To open it with Alfred or Quicksilver, you have to copy Emacs.app into /Applications instead of the symlink that brew places there.

@@ -27,7 +27,10 @@
      evil-terminal-cursor-changer
      evil-args
      evil-leader
-     evil-suround
+     ;;evil-suround
+     evil-matchit
+     evil-tutor
+     expand-region
      flymake-less
      flymake-easy
      gist
@@ -49,6 +52,9 @@
      projectile
      python
      sass-mode
+     rcirc
+     rcirc-color
+     subword
      rainbow-mode
      scss-mode
      smart-cursor-color
@@ -67,15 +73,15 @@
 	when (not (package-installed-p p)) do (return nil)
 	finally (return t)))
 
-;; (unless (evadnoob/packages-installed-p)
-;;   ;; check for new packages (package versions)
-;;   (message "%s" "refreshing its package database...")
-;;   (package-refresh-contents)
-;;   (message "%s" " done.")
-;;   ;; install the missing packages
-;;   (dolist (p evadnoob/required-packages)
-;;     (when (not (package-installed-p p))
-;;       (package-install p))))
+(unless (evadnoob/packages-installed-p)
+  ;; check for new packages (package versions)
+  (message "%s" "refreshing its package database...")
+  (package-refresh-contents)
+  (message "%s" " done.")
+  ;; install the missing packages
+  (dolist (p evadnoob/required-packages)
+    (when (not (package-installed-p p))
+      (package-install p))))
 
 (provide 'setup-melpa)
 
