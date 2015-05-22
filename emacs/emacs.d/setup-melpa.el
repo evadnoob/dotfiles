@@ -54,6 +54,7 @@
      sass-mode
      rcirc
      rcirc-color
+     rust-mode
      subword
      rainbow-mode
      scss-mode

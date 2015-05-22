@@ -117,7 +117,7 @@
 (global-set-key "\M-k" 'kill-whole-line)
 
 (global-set-key [f7] 'swap-frames)
-(global-set-key "\C-c\cs" 'swap-frames);
+;;(global-set-key "\C-c\cs" 'swap-frames);
 
 
 (global-set-key "\C-x\C-m" 'execute-extended-command)
