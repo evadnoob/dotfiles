@@ -20,6 +20,10 @@
 
 \set HISTCONTROL ignoredups
 
+--\set ENCODING UTF8
+
+--\SET client_encoding = 'UTF8'
+
 --\set PROMPT1 '%[%033[33;1m%]%x%[%033[0m%]%[%033[1m%]%/%[%033[0m%]%R%# '
 
 --\set PROMPT1 '(%n@%M:%>) %`date +%H:%M:%S` [%/] \n%x%# '

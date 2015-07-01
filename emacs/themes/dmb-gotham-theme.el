@@ -64,11 +64,13 @@ customized 16-color palette."
     (red     "#c23127" ,(if dmb-gotham-tty-extended-palette "color-124" "red"))
     (orange  "#d26937" ,(if dmb-gotham-tty-extended-palette "color-166" "brightred"))
     (yellow  "#edb443" ,(if dmb-gotham-tty-extended-palette "color-214" "yellow"))
-    (magenta "#888ca6" ,(if dmb-gotham-tty-extended-palette "color-67"  "brightmagenta"))
-    (violet  "#4e5166" ,(if dmb-gotham-tty-extended-palette "color-60"  "magenta"))
-    (blue    "#195466" ,(if dmb-gotham-tty-extended-palette "color-24"  "blue"))
-    (cyan    "#33859e" ,(if dmb-gotham-tty-extended-palette "color-44"  "cyan"))
-    (green   "#2aa889" ,(if dmb-gotham-tty-extended-palette "color-78"  "green")))
+    (magenta "#888ca6" ,(if dmb-gotham-tty-extended-palette "color-67" "brightmagenta"))
+    (violet  "#4e5166" ,(if dmb-gotham-tty-extended-palette "color-60" "magenta"))
+    (blue    "#195466" ,(if dmb-gotham-tty-extended-palette "color-24" "blue"))
+    (cyan    "#33859e" ,(if dmb-gotham-tty-extended-palette "color-44" "cyan"))
+    (blue31  "#0087af" ,(if dmb-gotham-tty-extended-palette "color-31" "blue31"))
+    (green   "#2aa889" ,(if dmb-gotham-tty-extended-palette "color-78" "green")))
+  
   "List of colors the theme consists of.")
 
 (defun dmb-gotham-set-faces (faces)
@@ -116,7 +118,7 @@ depending on DISPLAY for keys which are either :foreground or
     output))
 
 (dmb-gotham-set-faces
- '((default :foreground base6 :background base0)
+ '((default :foreground gray56 :background nil)
    (button :foreground base4 :box t)
    (shadow :foreground base4)
    (highlight :background base2)
@@ -135,18 +137,19 @@ depending on DISPLAY for keys which are either :foreground or
    ;; font-lock
    (escape-glyph :foreground orange :weight bold)
    (font-lock-builtin-face :foreground orange)
-   (font-lock-comment-face :foreground base4)
-   (font-lock-comment-delimiter-face :foreground base4)
+   ;;(font-lock-comment-face :foreground base4)
+   (font-lock-comment-face :foreground color-240)
+   (font-lock-comment-delimiter-face :foreground color-250)
    (font-lock-constant-face :foreground cyan :weight bold)
-   (font-lock-doc-face :foreground green)
+   (font-lock-doc-face :foreground color-249)
    (font-lock-function-name-face :foreground base5)
    (font-lock-keyword-face :foreground blue :weight bold)
    (font-lock-negation-char-face :foreground red)
-   (font-lock-preprocessor-face :foreground red)
+   (font-lock-preprocessor-face :foreground blue31)
    (font-lock-regexp-grouping-construct)
    (font-lock-regexp-grouping-backslash)
-   (font-lock-string-face :foreground green)
-   (font-lock-type-face :foreground orange)
+   (font-lock-string-face :foreground color-249)
+   (font-lock-type-face :foreground color-59)
    (font-lock-variable-name-face :foreground base5)
    (font-lock-warning-face :foreground red)
    (error :foreground red)
@@ -163,10 +166,19 @@ depending on DISPLAY for keys which are either :foreground or
    (minibuffer-prompt :foreground cyan)
    (header-line :foreground base5 :background base2)
    (menu :background base3 :foreground base6)
-   (mode-line :foreground base5 :background base2 :box nil)
-   (mode-line-inactive :foreground base4 :background base1 :box nil)
+   (mode-line :foreground grey56 :background nil :box nil)
+   (mode-line-inactive :foreground base4 :background nil :box nil)
    (mode-line-highlight :foreground base6)
    (mode-line-buffer-id :weight bold)
+
+   
+ (mode-line-highlight :box nil )
+ (mode-line-emphasis :weight bold)
+ (mode-line-buffer-id :box nil :weight bold)
+
+ (mode-line-inactive    :foreground "#9ca19e"  :background "color-16" :box nil :weight light :inherit (mode-line))
+ (mode-line :foreground "grey60"  :background "color-16" :box nil ) ;; #c5c8c6
+ 
 
    ;; customize
    (custom-button :foreground base4 :box t)
@@ -232,7 +244,7 @@ depending on DISPLAY for keys which are either :foreground or
    (makefile-space :background magenta)
 
    ;; outline
-   (outline-1 :foreground red)
+   (outline-1 :foreground colour231)
    (outline-2 :foreground cyan)
    (outline-3 :foreground orange)
    (outline-4 :foreground green)

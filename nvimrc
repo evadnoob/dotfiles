@@ -1,7 +1,7 @@
 set nocompatible
 
-set t_Co=256
-colorscheme grb256
+"set t_Co=256
+"colorscheme grb256
 
 set shortmess+=I  "hide the normal startup message
 
@@ -16,7 +16,7 @@ nmap <silent> <leader>sv :so $MYVIMRC<CR>
 nmap <silent> <leader>sn :e ~/Dropbox/notes<CR>
 
 
-execute pathogen#infect('bundle/{}', '~/dotfiles/vim/bundle/{}')
+"execute pathogen#infect('bundle/{}', '~/dotfiles/vim/bundle/{}')
 syntax on
 filetype plugin indent on
 
@@ -121,4 +121,6 @@ set noswapfile
 
 set list
 set listchars=tab:>.,trail:.,extends:#,nbsp:.
+
+
 

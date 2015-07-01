@@ -9,3 +9,4 @@ ln -sf ~/dotfiles/tmux.conf ~/.tmux.conf
 ln -sf ~/dotfiles/emacs.d ~/.emacs.d
 ln -sf ~/dotfiles/dotemacs ~/.emacs
 ln -sf ~/dotfiles/zsh-autosuggestions ~/.zsh-autosuggestions
+ln -sf ~/dotfiles/irssi ~/.irssi

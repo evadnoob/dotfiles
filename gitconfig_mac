@@ -1,18 +1,17 @@
 [user]
 	name = David Boon
-	email = daveb@porch.com
+	email = david.boon@gmail.com
 [alias]
 	ci = commit
         st = status
         co = checkout
-        log = log --graph --stat 
-        lg = log --graph --decorate --stat
+        log = log --graph --stat --abbrev-commit
+        lg = log --graph --decorate --stat --abbrev-commit
         log1 = log --decorate --stat
         log2 = log -p --decorate --graph
 	incoming = "!git remote update -p; git log ..@{u}"
 	outgoing = log @{u}..
 	stash-unapply = !git stash show -p | git apply -R
-        
 [core]
 	excludesfile = /Users/evadnoob/.gitignore_global
 	editor = emacsclient -nw
@@ -45,5 +44,3 @@
 	tool = emacsclient
 [github]
 	user = evadnoob
-	password = rocket99
-	oauth-token = cd9cddaffa2a15f657f9e9294be8dbc3a741cd3e

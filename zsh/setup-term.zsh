@@ -27,4 +27,7 @@ elif [[ "eterm-color" = "$TERM" ]]; then
 elif [[ "$TERM" == "" ]]; then
     echo "TERM was not set, setting to default"
     export TERM=xterm-256color
+elif [[ -n "$TMUX" ]]; then
+    export TERM=screen-256color
 fi 
+

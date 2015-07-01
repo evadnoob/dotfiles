@@ -17,6 +17,8 @@
      change-inner
      clojure-mode
      coffee-mode
+     company
+     company-racer
      deft expand-region
      dockerfile-mode
      delight
@@ -34,6 +36,7 @@
      flymake-less
      flymake-easy
      gist
+     ggtags
      groovy-mode
      haml-mode
      haskell-mode
@@ -59,7 +62,6 @@
      rainbow-mode
      scss-mode
      smart-cursor-color
-     undo-tree
      visible-mark
      volatile-highlights
      yaml-mode

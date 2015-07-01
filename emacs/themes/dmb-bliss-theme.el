@@ -67,6 +67,8 @@
 
  ;; Magit hightlight
  '(magit-item-highlight                ((t (:foreground "white" :inherit nil ))))
+ '(markdown-header-face-2              ((t (:background nil :foreground "yellow"))))
+ '(markdown-header-face-1              ((t (:background nil :foreground "white" :weight bold))))
 
  ;; flyspell-mode
  '(flyspell-incorrect                  ((t (:underline "#AA0000" :background nil :inherit nil ))))
@@ -93,7 +95,7 @@
  '(font-lock-comment-face ((t (:foreground "grey55"  ))))
  '(font-lock-variable-name-face ((t (:foreground "#abfdd8"  ))))
  '(font-lock-builtin-face ((t (:foreground "#98a6dd"  ))))
- '(font-lock-type-face ((t (:foreground "#efabec"  ))))
+ '(font-lock-type-face ((t (:foreground "#a8a8a8"  ))))
  '(font-lock-string-face ((t (:foreground "#99e1df"  ))))
  ;;'(font-lock-function-name-face ((t (:foreground "#3bb1df"  ))))
  ;;'(font-lock-function-name-face ((t (:foreground "#5fafff"  ))))

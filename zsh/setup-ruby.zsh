@@ -7,6 +7,4 @@ eval "$(rbenv init -)"
 # alias rb="rbenv exec bundle exec "
 
 
-export CAPISTRANO_NOTIFY_USER="david.boon@matrixinsights.com"
-export CAPISTRANO_NOTIFY_PASSWORD="rocket99"
 

@@ -148,34 +148,34 @@
 
 
   
-  ;;
-  ;; test for frame and set color theme correctly depending on tty or graphics display.
-  ;;
-  (defun color-theme-for-frame (frame)
-    (let ((color-theme-is-global nil))
-      (select-frame frame)
-      (when (not (window-system frame))
-        (message "window-system, setting color theme to dmb-dark")
-        (add-to-list 'custom-theme-load-path (*emacs "themes/"))
-        (load-file (*emacs "themes/dmb-bliss.el")))
+  ;; ;;
+  ;; ;; test for frame and set color theme correctly depending on tty or graphics display.
+  ;; ;;
+  ;; (defun color-theme-for-frame (frame)
+  ;;   (let ((color-theme-is-global nil))
+  ;;     (select-frame frame)
+  ;;     (when (not (window-system frame))
+  ;;       (message "window-system, setting color theme to dmb-dark")
+  ;;       (add-to-list 'custom-theme-load-path (*emacs "themes/"))
+  ;;       (load-file (*emacs "themes/dmb-bliss.el")))
       
-      (when (window-system frame)
-        (message "window-system, setting color theme to dmb-default3")
-        (load-library "color-theme--dmb-default3")
-        (color-theme--dmb-default3))
-      ))
+  ;;     (when (window-system frame)
+  ;;       (message "window-system, setting color theme to dmb-default3")
+  ;;       (load-library "color-theme--dmb-default3")
+  ;;       (color-theme--dmb-default3))
+  ;;     ))
 
-  ;; hook on after-make-frame-functions
-  (add-hook 'after-make-frame-functions 'color-theme-for-frame)
+  ;; ;; hook on after-make-frame-functions
+  ;; (add-hook 'after-make-frame-functions 'color-theme-for-frame)
 
-  ;; Start up the color theme in this initial frame.
-  (color-theme-for-frame (selected-frame))
-  ;; (let ((color-theme-is-global nil))
-  ;;   (when (window-system)
-  ;;     (color-theme-railscasts)))
+  ;; ;; Start up the color theme in this initial frame.
+  ;; (color-theme-for-frame (selected-frame))
+  ;; ;; (let ((color-theme-is-global nil))
+  ;; ;;   (when (window-system)
+  ;; ;;     (color-theme-railscasts)))
 
 
-
+ (add-to-list 'custom-theme-load-path (*emacs "themes/"))
 (global-hl-line-mode -1)
 
 ;; org-mode colors
@@ -189,5 +189,6 @@
 (custom-set-variables 
  '(custom-theme-directory (*emacs "/themes")))
 
+(load-theme 'dmb-bliss t)
 
 (provide 'dmb-appearance)
