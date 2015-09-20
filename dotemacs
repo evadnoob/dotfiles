@@ -258,10 +258,7 @@
  '(backup-inhibited t t)
  '(completion-ignore-case t t)
  '(css-indent-offset 2)
- '(custom-safe-themes
-   (quote
-    ("d572ac200ac5b22e4133dc96b57d733e96245a931895a0dd1b75b0ddc8157d6c" "d8ca94aee2d80c7e780276414ef706eb114669523450fd3f013bcf30cfef59e9" "a3d85397a299ff5d7cbbfc0ca7031f60249cc99a320c8e5bf88489d36ceb08ed" "2afadc2458c61f39e61d3bedcee5554d2ccd1e10ce0b3b4f4ec4679e12fcf1c3" "42a818411ea315b73004233bb6759098ee825dc0a5d1da19129b0f11fd48b3eb" "bf15f32bb5fe92fa027aaacefa45560ba4f98d1462ba79242ec7d221009ac342" "1c47a2812b21ecf44f4519ab8da9c42a9ca6edc5ce5f2fe77902df3455b8a53f" "73fc3da2d5b79bbc396d4268fc2b6b98a09888dae493d7e7de9a1c6490a566ae" "3164a65923ef23e0f3dff9f9607b4da1e07ef1c3888d0f6878feef6c28357732" "30a8a5a9099e000f5d4dbfb2d6706e0a94d56620320ce1071eede5481f77d312" "09c04a00bb9e2f10706bb209be52fa37eb2ee35a158cecaad81093cbf4e308aa" default)))
- '(custom-theme-directory (*emacs ".emacs.x/themes"))
+ '(custom-theme-directory (*emacs "/themes"))
  '(dired-listing-switches "-ghG")
  '(erc-enable-logging (quote erc-log-all-but-server-buffers))
  '(erc-hide-list (quote ("JOIN" "PART" "QUIT" "NICK" "MODE" "TOPIC")))
@@ -275,9 +272,6 @@
  '(evil-move-cursor-back nil)
  '(evil-regexp-search t)
  '(evil-want-fine-undo t)
- '(helm-c-locate-command "locate-with-mdfind %.0s %s")
- '(helm-full-frame t)
- '(helm-mode nil)
  '(indent-tabs-mode nil)
  '(isearch-allow-scroll t)
  '(javascript-indent-level 2 t)
@@ -298,7 +292,8 @@
  '(org-directory "~/Dropbox/org-mode-files")
  '(package-selected-packages
    (quote
-    (ggtags zenburn-theme yari yaml-mode volatile-highlights visible-mark solarized-theme smart-cursor-color scss-mode sass-mode restclient rcirc-color rainbow-mode projectile pbcopy paredit org-present org-ac neotree modeline-posn markdown-mode mark-multiple magit lush-theme lua-mode lorem-ipsum inf-ruby helm-ag haskell-mode guide-key groovy-mode gotham-theme gist flymake-less flymake-easy evil-tutor evil-terminal-cursor-changer evil-search-highlight-persist evil-org evil-matchit evil-leader evil-args ensime dockerfile-mode diminish delight deft company-racer color-theme coffee-mode cm-mode clojure-mode change-inner bliss-theme auctex annoying-arrows-mode ack-and-a-half)))
+    (racer flycheck-rust evil-annoying-arrows toml-mode zenburn-theme yari yaml-mode volatile-highlights visible-mark solarized-theme smart-cursor-color scss-mode sass-mode restclient rcirc-color rainbow-mode projectile pbcopy paredit org-present org-ac neotree modeline-posn markdown-mode mark-multiple magit lush-theme lua-mode lorem-ipsum inf-ruby helm-ag haskell-mode guide-key groovy-mode gotham-theme gist ggtags flymake-less flymake-easy evil-tutor evil-terminal-cursor-changer evil-search-highlight-persist evil-org evil-matchit evil-leader evil-args ensime dockerfile-mode diminish delight deft company-racer color-theme coffee-mode cm-mode clojure-mode change-inner bliss-theme auctex annoying-arrows-mode ack-and-a-half)))
+ '(racer-cmd "/Users/daveboon/Projects/racer/target/release/racer")
  '(save-interprogram-paste-before-kill nil)
  '(setq python-indent-offset)
  '(socks-noproxy (quote ("localhost")) t)
@@ -308,11 +303,11 @@
  '(split-width-threshold 450)
  '(truncate-lines 1)
  '(yas-prompt-functions (quote (yas/ido-prompt yas/completing-prompt)))
- '(yas-snippet-dirs (*emacs ".emacs.x/snippets") nil (yasnippet))
+ '(yas-snippet-dirs (*emacs "snippets") nil (yasnippet))
  '(yas-wrap-around-region t))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(which-func ((t (:foreground "blue2" :bold nil)))))
+ )

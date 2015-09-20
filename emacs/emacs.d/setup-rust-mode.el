@@ -15,5 +15,27 @@
 (define-key rust-mode-map (kbd "TAB") #'racer-complete-or-indent)
 (define-key rust-mode-map (kbd "M-.") #'racer-find-definition)
 
+(defun my-rust-mode-hook()
+
+  (company-mode 1)
+
+  (racer-activate)
+
+  ;; Hook in racer with eldoc to provide documentation
+  (racer-turn-on-eldoc)
+
+  ;; Use flycheck-rust in rust-mode
+  (add-hook 'flycheck-mode-hook #'flycheck-rust-setup)
+
+  ;; Use company-racer in rust mode
+  (set (make-local-variable 'company-backends) '(company-racer))
+
+  ;; Key binding to jump to method definition
+  (local-set-key (kbd "M-.") #'racer-find-definition))
+
+(add-hook 'rust-mode-hook 'my-rust-mode-hook)
+
+(custom-set-variables
+ '(racer-cmd "/Users/daveboon/Projects/racer/target/release/racer"))
 
 (provide 'setup-rust-mode)

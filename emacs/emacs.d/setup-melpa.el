@@ -31,10 +31,12 @@
      evil-leader
      ;;evil-suround
      evil-matchit
+     evil-annoying-arrows
      evil-tutor
      expand-region
      flymake-less
      flymake-easy
+     flycheck-rust
      gist
      ggtags
      groovy-mode
@@ -62,6 +64,7 @@
      rainbow-mode
      scss-mode
      smart-cursor-color
+     toml-mode
      visible-mark
      volatile-highlights
      yaml-mode

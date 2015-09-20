@@ -12,6 +12,7 @@
 	incoming = "!git remote update -p; git log ..@{u}"
 	outgoing = log @{u}..
 	stash-unapply = !git stash show -p | git apply -R
+        br = for-each-ref --sort='-authordate:iso8601' --format=' %(color:green)%(authordate:iso8601)%09%(color:white)%(refname:short)' refs/heads
 [core]
 	excludesfile = /Users/evadnoob/.gitignore_global
 	editor = emacsclient -nw

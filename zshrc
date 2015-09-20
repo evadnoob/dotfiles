@@ -19,6 +19,7 @@ source ${ZSH_DOTFILES}/setup-functions.zsh
 source ${ZSH_DOTFILES}/setup-vim.zsh
 source ${ZSH_DOTFILES}/setup-zsh.zsh
 source ${ZSH_DOTFILES}/setup-ssh.zsh
+source ${ZSH_DOTFILES}/setup-postgres.zsh
 
 export PATH="/usr/local/bin:${PATH}"
 

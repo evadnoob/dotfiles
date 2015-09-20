@@ -6,6 +6,7 @@ servers = (
     use_ssl = "no";
     ssl_verify = "no";
     autoconnect = "yes";
+    #    ssl_capath = "~/.irssi/ca-bundle.crt";
   },
   {
     address = "irc.freenode.net";
@@ -14,6 +15,7 @@ servers = (
     use_ssl = "no";
     ssl_verify = "no";
     autoconnect = "yes";
+    #   ssl_capath = "~/.irssi/ca-bundle.crt";
   }
 );
 
@@ -218,4 +220,6 @@ settings = {
     scrollback_lines = "500";
   };
   "fe-common/core" = { theme = "fear2"; };
+  proxy = { irssiproxy_password = "rocket99"; };
+  "irc/core" = { usermode = "+R"; };
 };

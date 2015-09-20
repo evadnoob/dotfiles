@@ -175,9 +175,10 @@ then it takes a second \\[keyboard-quit] to abort the minibuffer."
 (define-key evil-insert-state-map (kbd "k") 'escape-if-next-char-is-j)
 
 
-(setq evil-leader/leader "\\"
-      evil-leader/in-all-states t)
 (require 'evil-leader)
+(setq evil-leader/leader ";"
+      evil-leader/in-all-states t)
+(global-evil-leader-mode)
 
 (evil-leader/set-key
   "w" 'save-buffer
@@ -187,6 +188,7 @@ then it takes a second \\[keyboard-quit] to abort the minibuffer."
   "g" 'magit-status
   "m" 'compile
   "be" 'ibuffer
+  "bs" 'bs-show
   "h" 'helm-mini
   "a" 'git-blame-mode
   "f" 'grep

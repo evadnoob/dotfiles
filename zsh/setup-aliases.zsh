@@ -36,3 +36,5 @@ alias dh='dirs -v'
 
 
 alias print-colors='for i in {0..255} ; do printf "\x1b[38;5;${i}mcolour${i}\n"; done'
+
+alias copy-ip-address='ifconfig en0 | awk ''/inet.*[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+/ { print $2; }'' | tr -d ''\n'' | pbcopy'

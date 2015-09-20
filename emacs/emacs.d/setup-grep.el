@@ -12,7 +12,7 @@
   grep-scroll-output t
   grep-highlight-matches t
   grep-use-null-device nil)
-(set-face-underline-p 'dmb-grep-match-face nil)
+;;(set-face-underline-p 'dmb-grep-match-face nil)
 (if is-emacs-23
     (set-face-underline-p 'compilation-line-number nil))
 

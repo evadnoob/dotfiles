@@ -1,0 +1,3 @@
+#-*- mode: org -*-
+#+STARTUP: indent content hidestars showstars showall
+

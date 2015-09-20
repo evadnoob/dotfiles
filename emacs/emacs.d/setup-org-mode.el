@@ -33,5 +33,11 @@
 (global-set-key "\C-cc" 'org-capture)
 (global-set-key "\C-ca l" 'org-agenda-list)
 
+(add-hook 'find-file-hooks 'auto-insert)
+(load-library "autoinsert")
+(setq auto-insert-directory "~/dotfiles/emacs/auto-insert-templates/")
+(setq auto-insert-alist
+      (append '((sgml-mode .  "org-mode-header.org"))
+              auto-insert-alist))
 
 (provide 'setup-org-mode)
