@@ -96,7 +96,10 @@ setopt transient_rprompt
 export TERM=xterm-256color
 
 # Setup zsh-autosuggestions
-source /Users/daveboon/dotfiles/zsh-autosuggestions/autosuggestions.zsh
+if [ -f "/Users/daveboon/dotfiles/zsh-autosuggestions/autosuggestions.zsh"i ]; then 
+  source /Users/daveboon/dotfiles/zsh-autosuggestions/autosuggestions.zsh
+fi
+
 
 # Enable autosuggestions automatically
 zle-line-init() {
