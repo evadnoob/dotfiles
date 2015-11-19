@@ -3,9 +3,9 @@
 ;;; Code:
 (add-to-list 'load-path (or (file-name-directory #$) (car load-path)))
 
-;;;### (autoloads nil "annoying-arrows-mode" "annoying-arrows-mode.el"
-;;;;;;  (21467 51412 0 0))
-;;; Generated autoloads from annoying-arrows-mode.el
+;;;### (autoloads nil "annoying-arrows-mode" "../../../../.emacs.d/elpa/annoying-arrows-mode-20130515.1000/annoying-arrows-mode.el"
+;;;;;;  "b4a28a8cae8e272e35b727ace7e047dc")
+;;; Generated autoloads from ../../../../.emacs.d/elpa/annoying-arrows-mode-20130515.1000/annoying-arrows-mode.el
 
 (autoload 'annoying-arrows-mode "annoying-arrows-mode" "\
 Annoying-Arrows emacs minor mode.
@@ -32,6 +32,12 @@ Annoying-Arrows mode is enabled in all buffers where
 See `annoying-arrows-mode' for more information on Annoying-Arrows mode.
 
 \(fn &optional ARG)" t nil)
+
+;;;***
+
+;;;### (autoloads nil nil ("../../../../.emacs.d/elpa/annoying-arrows-mode-20130515.1000/annoying-arrows-mode-autoloads.el"
+;;;;;;  "../../../../.emacs.d/elpa/annoying-arrows-mode-20130515.1000/annoying-arrows-mode.el")
+;;;;;;  (22055 33909 180453 594000))
 
 ;;;***
 

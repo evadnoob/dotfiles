@@ -11,7 +11,8 @@
 (require 'cl)
 
 (defvar evadnoob/required-packages
-  ' (   
+  ' (
+     annoying-arrows-mode
      auctex
      auto-complete
      change-inner
@@ -40,6 +41,7 @@
      gist
      ggtags
      groovy-mode
+     guide-key
      haml-mode
      haskell-mode
      helm-ag

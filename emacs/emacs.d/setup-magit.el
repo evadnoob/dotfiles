@@ -3,8 +3,6 @@
 
 (require 'magit)
 
-
-
 (defadvice magit-status (around magit-fullscreen activate)
   (window-configuration-to-register :magit-fullscreen)
   ad-do-it
@@ -12,7 +10,7 @@
 
 ;; Subtler highlight
 ;;(set-face-background 'magit-item-highlight "#121212")
-(set-face-background 'magit-item-highlight "deep sky blue")
+;;(set-face-background 'magit-item-highlight "deep sky blue")
 (set-face-foreground 'diff-context "#666666")
 (set-face-foreground 'diff-added "#00cc33")
 (set-face-foreground 'diff-removed "#ff0000")

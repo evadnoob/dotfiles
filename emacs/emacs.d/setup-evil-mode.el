@@ -45,8 +45,8 @@
 ;;                 (set-face-foreground 'mode-line-buffer-id (cdr color))))))
 
 
-(unless (display-graphic-p)
-   (require 'evil-terminal-cursor-changer))
+;; (unless (display-graphic-p)
+;;    (require 'evil-terminal-cursor-changer))
 
 (require 'evil-args)
 
@@ -198,3 +198,6 @@ then it takes a second \\[keyboard-quit] to abort the minibuffer."
 (require 'evil-matchit)
 
 (provide 'setup-evil-mode)
+
+
+

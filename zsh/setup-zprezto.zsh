@@ -35,8 +35,9 @@ fi
 #   'git' \
 #   'archive' \
 #   'prompt'
-
-source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
+if [ -f  ${ZDOTDIR:-$HOME}/.zprezto/init.zsh ]; then 
+  source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
+fi 
 
 zstyle ':prezto:module:git:info' verbose no
 
@@ -44,5 +45,4 @@ zstyle ':prezto:module:git:info' verbose no
 zstyle ':prezto:module:git:info:keys' format \
   'prompt'  ' git%b' \
   'rprompt' ''
-
 

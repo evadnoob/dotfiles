@@ -24,8 +24,8 @@
  'dmb-bliss
  ;; basic theming.
 
- '(default ((t (:foreground "#C5C8C6" :background "color-16" ))))
- '(region  ((t (:background "#373B41"))))
+ ;;'(default ((t (:foreground "#C5C8C6" :background "color-16" ))))
+ '(region  ((t (:background "color-16" foreground "#ffffff"))))
  '(cursor  ((t (:background "yellow"))))
 
  ;; Temporary defaults
@@ -49,8 +49,8 @@
  '(mode-line-emphasis                  ((t (                                             :weight bold                                  ))))
  '(mode-line-buffer-id                 ((t (                                             :box nil :weight bold                         ))))
 
- '(mode-line-inactive                  ((t (:foreground "#9ca19e"  :background "color-16" :box nil :weight light :inherit (mode-line)   ))))
- '(mode-line                           ((t (:foreground "grey60"  :background "color-16" :box nil )))) ;; #c5c8c6
+ '(mode-line-inactive                  ((t (:foreground "#9ca19e"  :background "#000000" :box nil :weight light :inherit (mode-line)   ))))
+ '(mode-line                           ((t (:foreground "grey60"  :backgroundi  "#000000" :box nil )))) ;; #c5c8c6
 
  '(isearch                             ((t (:foreground "#99ccee"  :background "#444444" ))))
  '(isearch-fail                        ((t (                       :background "#ffaaaa" ))))
@@ -69,6 +69,8 @@
  '(magit-item-highlight                ((t (:foreground "white" :inherit nil ))))
  '(markdown-header-face-2              ((t (:background nil :foreground "yellow"))))
  '(markdown-header-face-1              ((t (:background nil :foreground "white" :weight bold))))
+ '(magit-section-highlight             ((t (:background nil :foreground "white" :weight bold))))
+
 
  ;; flyspell-mode
  '(flyspell-incorrect                  ((t (:underline "#AA0000" :background nil :inherit nil ))))
@@ -93,10 +95,10 @@
  '(which-func                          ((t (:foreground "green" :bold nil))))
 
  '(font-lock-comment-face ((t (:foreground "grey55"  ))))
- '(font-lock-variable-name-face ((t (:foreground "#abfdd8"  ))))
- '(font-lock-builtin-face ((t (:foreground "#98a6dd"  ))))
+ '(font-lock-variable-name-face ((t (:foreground "#767676"  ))))
+ '(font-lock-builtin-face ((t (:foreground "#gray55"  ))))
  '(font-lock-type-face ((t (:foreground "#a8a8a8"  ))))
- '(font-lock-string-face ((t (:foreground "#99e1df"  ))))
+ '(font-lock-string-face ((t (:foreground "#gray55"  ))))
  ;;'(font-lock-function-name-face ((t (:foreground "#3bb1df"  ))))
  ;;'(font-lock-function-name-face ((t (:foreground "#5fafff"  ))))
  '(font-lock-function-name-face ((t (:foreground "#d7ffff"  ))))

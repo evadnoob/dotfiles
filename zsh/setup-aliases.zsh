@@ -38,3 +38,6 @@ alias dh='dirs -v'
 alias print-colors='for i in {0..255} ; do printf "\x1b[38;5;${i}mcolour${i}\n"; done'
 
 alias copy-ip-address='ifconfig en0 | awk ''/inet.*[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+/ { print $2; }'' | tr -d ''\n'' | pbcopy'
+
+#make password 32 chars long, only one of them
+alias mkpasswd='pwgen -s -n -c -A -1 8 1'

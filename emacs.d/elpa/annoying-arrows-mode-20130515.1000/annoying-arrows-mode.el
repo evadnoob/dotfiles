@@ -1,10 +1,10 @@
 ;;; annoying-arrows-mode.el --- Ring the bell if using arrows too much
-;; Version: 20130515.1000
 
 ;; Copyright (C) 2011 Magnar Sveen
 
 ;; Author: Magnar Sveen <magnars@gmail.com>
 ;; Keywords: learning
+;; Package-Version: 20130515.1000
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by

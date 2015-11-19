@@ -7,6 +7,7 @@ source ${ZSH_DOTFILES}/setup-term.zsh
 
 if [[ ! "dumb" = "$TERM" ]]; then 
   #source ${ZSH_DOTFILES}/setup-oh-my-zsh.zsh
+  #
   source ${ZSH_DOTFILES}/setup-zprezto.zsh
 fi
 
@@ -96,8 +97,8 @@ setopt transient_rprompt
 export TERM=xterm-256color
 
 # Setup zsh-autosuggestions
-if [ -f "/Users/daveboon/dotfiles/zsh-autosuggestions/autosuggestions.zsh"i ]; then 
-  source /Users/daveboon/dotfiles/zsh-autosuggestions/autosuggestions.zsh
+if [ -f "~/dotfiles/zsh-autosuggestions/autosuggestions.zsh" ]; then 
+  source ~/dotfiles/zsh-autosuggestions/autosuggestions.zsh
 fi
 
 
@@ -122,3 +123,13 @@ compinit
 setopt autolist
 setopt listtypes
 setopt menucomplete
+
+
+source ~/projects/base16-shell/base16-twilight.dark.sh
+
+# The next line updates PATH for the Google Cloud SDK.
+#source '/home/david/google-cloud-sdk/path.bash.inc'
+
+export PATH=${PATH}:~/google-cloud-sdk/bin
+
+

@@ -1,1 +1,4 @@
-(nil)
+((("defadvice" .
+   [0 0 0 0 0 1 0 0 0])
+  ("annoying-arrows-mode" .
+   [0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0])))
