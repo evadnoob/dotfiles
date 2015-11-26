@@ -19,4 +19,6 @@ if [ -f  ${ZDOTDIR:-$HOME}/.zprezto/init.zsh ]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi 
 
-
+# this value is set in "init.sh" in zprezto, turns bold man page values red.
+unset LESS_TERMCAP_md
+#export LESS_TERMCAP_md=$(printf '\e[01;35m')

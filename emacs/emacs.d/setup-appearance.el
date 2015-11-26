@@ -187,6 +187,7 @@
         ))
 
 (custom-set-variables 
+ '(visible-cursor nil)
  '(custom-theme-directory (*emacs "/themes")))
 
 (load-theme 'dmb-bliss t)

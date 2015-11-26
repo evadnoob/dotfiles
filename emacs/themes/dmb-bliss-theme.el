@@ -95,16 +95,18 @@
  '(which-func                          ((t (:foreground "green" :bold nil))))
 
  '(font-lock-comment-face ((t (:foreground "grey55"  ))))
+ '(font-lock-constant-face ((t (:foreground "#dadada"  ))))
  '(font-lock-variable-name-face ((t (:foreground "#767676"  ))))
  '(font-lock-builtin-face ((t (:foreground "#gray55"  ))))
  '(font-lock-type-face ((t (:foreground "#a8a8a8"  ))))
- '(font-lock-string-face ((t (:foreground "#gray55"  ))))
+ '(font-lock-string-face ((t (:foreground "green"  ))))
  ;;'(font-lock-function-name-face ((t (:foreground "#3bb1df"  ))))
  ;;'(font-lock-function-name-face ((t (:foreground "#5fafff"  ))))
  '(font-lock-function-name-face ((t (:foreground "#d7ffff"  ))))
- '(font-lock-keyword-face ((t (:foreground "#64fbc8"  ))))
+ '(font-lock-keyword-face ((t (:foreground "#ff00ff"  ))))
  '(font-lock-warning-face ((t (:foreground "#CED2CF" :background "#B798BF" ))))
- '(font-lock-comment-delimiter-face ((t (:foreground "#4f6d82"  ))))
+ ;;'(font-lock-comment-delimiter-face ((t (:foreground "#4f6d82"  ))))
+ '(font-lock-comment-delimiter-face ((t (:foreground "#585858"  ))))
 
 ;; Rainbow delimiters
  '(rainbow-delimiters-depth-1-face ((t (:foreground "#2a7d9d"))))

@@ -36,8 +36,17 @@ alias dh='dirs -v'
 
 
 alias print-colors='for i in {0..255} ; do printf "\x1b[38;5;${i}mcolour${i}\n"; done'
+alias print-colors='curl https://gist.githubusercontent.com/evadnoob/d8c14b824c342730c046/raw/73d047f0a3ffc35f0655488547e7f24fa3f04ea6/colortrans.py | python'
 
 alias copy-ip-address='ifconfig en0 | awk ''/inet.*[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+/ { print $2; }'' | tr -d ''\n'' | pbcopy'
 
 #make password 32 chars long, only one of them
+
 alias mkpasswd='pwgen -s -n -c -A -1 8 1'
+
+
+alias screenshot='scrot ''%Y-%m-%d-%T_$wx$h_scrot.png'' -e ''mv $f ~/Dropbox/Screenshots/'''
+
+
+export EDITOR="/usr/local/bin/emacsclient -nw"
+alias e=${EDITOR}

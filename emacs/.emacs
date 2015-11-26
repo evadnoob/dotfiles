@@ -50,6 +50,7 @@
 ;;(load-library "setup-scala-mode")
 ;;(load-library "setup-dockerfile-mode")
 ;;(load-library "setup-delight")
+(load-library "setup-copy-and-paste")
 
 
 

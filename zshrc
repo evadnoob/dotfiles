@@ -21,6 +21,7 @@ source ${ZSH_DOTFILES}/setup-vim.zsh
 source ${ZSH_DOTFILES}/setup-zsh.zsh
 source ${ZSH_DOTFILES}/setup-ssh.zsh
 source ${ZSH_DOTFILES}/setup-postgres.zsh
+#source ${ZSH_DOTFILES}/setup-gcloud.zsh
 
 export PATH="/usr/local/bin:${PATH}"
 

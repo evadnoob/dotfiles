@@ -136,14 +136,14 @@ zstyle ':prezto:module:ssh:load' identities 'id_rsa'
    'main' \
    'brackets' \
    'pattern' \
-   'cursor' \
    'root'
 
+   #'cursor' \
 # Set syntax highlighting styles.
 zstyle ':prezto:module:syntax-highlighting' styles \
-   'builtin' 'bg=blue' \
-   'command' 'bg=blue' \
-   'function' 'bg=blue'
+   'builtin' 'fg=blue' \
+   'command' 'fg=blue' \
+   'function' 'fg=blue'
 
 #
 # Terminal
@@ -198,5 +198,4 @@ bindkey -M vicmd "??" history-beginning-search-forward
 bindkey -M vicmd "q" push-line
 # # it's like, space AND completion.  Gnarlbot.
 bindkey -M viins ' ' magic-space
-
 

@@ -18,7 +18,8 @@ set $mod Mod1
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
 #font pango:DejaVu Sans Mono 8
-font pango:Terminus 11px
+#font pango:Terminus 9px
+font pango:Hack 9px
 
 # Before i3 v4.8, we used to recommend this one as the default:
 # font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
@@ -39,7 +40,10 @@ bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
 #bindsym $mod+d exec dmenu_run
-bindsym $mod+d exec dmenu_run -fn 's-12'
+# in order to get font's that look nice with dmenu_run, need to download and build version 4.6 of dmenu
+#bindsym $mod+d exec dmenu_run -b -fn 's-9'
+#bindsym dmenu_run -b -i -fn 'Hack-Regular:pixelsize=12' -sb '#b58900'
+bindsym $mod+d exec dmenu_run -b -i -fn 'Hack-Regular:pixelsize=12' -sb '#b58900'
 
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
@@ -104,10 +108,10 @@ bindsym $mod+1 workspace 1: default
 bindsym $mod+2 workspace 2: psql
 bindsym $mod+3 workspace 3: www
 bindsym $mod+4 workspace 4: management[gcp]
-bindsym $mod+5 workspace 5: management[aws]
+bindsym $mod+5 workspace 5: rust-lang
 bindsym $mod+6 workspace 6: mail
 bindsym $mod+7 workspace 7: github.com
-bindsym $mod+8 workspace 8: spotify
+bindsym $mod+8 workspace 8: misc
 bindsym $mod+9 workspace 9: irc
 bindsym $mod+0 workspace 10: intellij
 
@@ -116,10 +120,10 @@ bindsym $mod+Shift+1 move container to workspace 1: default
 bindsym $mod+Shift+2 move container to workspace 2: psql
 bindsym $mod+Shift+3 move container to workspace 3: www
 bindsym $mod+Shift+4 move container to workspace 4: management[gcp]
-bindsym $mod+Shift+5 move container to workspace 5: management[aws]
+bindsym $mod+Shift+5 move container to workspace 5: rust-lang
 bindsym $mod+Shift+6 move container to workspace 6: mail
 bindsym $mod+Shift+7 move container to workspace 7: github.com
-bindsym $mod+Shift+8 move container to workspace 8: spotify
+bindsym $mod+Shift+8 move container to workspace 8: misc
 bindsym $mod+Shift+9 move container to workspace 9: irc
 bindsym $mod+Shift+0 move container to workspace 10: intellij
 
@@ -218,14 +222,13 @@ exec --no-startup-id exec ~/.dropbox-dist/dropboxd
 exec --no-startup-id exec parcellite
 
 
-exec --no-startup-id i3-msg 'workspace 3: www; exec /usr/bin/chromium-browser'
-exec  i3-msg 'workspace 8: spotify; exec /usr/bin/spotify'
+#exec --no-startup-id i3-msg 'workspace 3: www; exec /usr/bin/chromium-browser'
+#exec  i3-msg 'workspace 8: spotify; exec /usr/bin/spotify'
 
 
 #bindsym $mod+Shift+  exec scrot '%Y-%m-%d-%T_$wx$h_scrot.png' -e 'mv $f ~/Dropbox/Screenshots/'
 
 
-bindsym Super_L+Shift_L+$  exec scrot '%Y-%m-%d-%T_$wx$h_scrot.png' -e 'mv $f ~/Dropbox/Screenshots/'
-
+bindsym $mod+Super_L+4 exec scrot '%Y-%m-%d-%T_$wx$h_scrot.png' -e 'mv $f ~/Dropbox/Screenshots/'
 
 

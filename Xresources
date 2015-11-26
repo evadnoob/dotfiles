@@ -20,7 +20,7 @@ URxvt*loginShell:                       true
 URxvt*scrollColor:                      #777777
 
 ! Set scrollbar style to rxvt, plain, next or xterm. plain is the authors favourite.
-URxvt*scrollstyle:                      plain
+URxvt*scrollstyle:                     rxvt 
 
 ! True: scroll to bottom when a non-special key pressed.  Special keys are those which are intercepted by rxvt for special handling andnt passed onto the shell; False: dont scroll to bottom
 URxvt*scrollTtyKeypress:                true
@@ -91,7 +91,7 @@ URxvt*visualBell:                       false
 URxvt*mapAlert:                         true
 
 ! True: the mouse wheel scrolls a page full. False: the mouse wheel scrolls five lines [default]
-URxvt*mouseWheelScrollPage:             false
+URxvt*mouseWheelScrollPage:            true 
 
 ! Change the meaning of triple-click selection with the left mouse button. Instead of selecting a full line it will extend the selection to the end of the logical line only
 ! URxvt*tripleclickwords:               boolean
@@ -192,10 +192,10 @@ URxvt.italicFont:   xft:Hack-RegularOblique:pixelsize=14:slant=italic,xft:Symbol
 ! URxvt*intensityStyles:                boolean
 
 ! Save number lines in the scrollback buffer [default 64]. This resource is limited on most machines to 65535
-URxvt*saveLines:                        0
+URxvt*saveLines:                       65535 
 
 ! Double-buffering for xft (default enabled).  On some card/driver combination enabling it slightly decreases performance, on most it greatly helps it. The slowdown is small, so it should normally be enabled
-URxvt*buffered:                         true
+URxvt*buffered:                         false
 
 ! Attempt to find a visual with the given bit depth
 ! URxvt*depth:                          number
@@ -337,3 +337,12 @@ URxvt*perl-ext:
 
 Urxvt*color0:                           #000000
 
+!!! Font Setting
+Xft.dpi:96
+Xft.antialias: true
+Xft.hinting: true
+!Xft.hintstyle: hintslight
+Xft.hintstyle: hintfull
+!Xft.lcdfilter: lcddefault
+Xft.rgba: rgb
+Xcursor.theme: Human
