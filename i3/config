@@ -196,7 +196,7 @@ bindsym $mod+Shift+minus move scratchpad
 bindsym $mod+minus scratchpad show
 
 # prompt for new nam for current workspace
-bindsym $mod+Shift+p exec i3-input -F 'rename workspace to "%s"' -P 'New name: '
+#bindsym $mod+Shift+p exec i3-input -F 'rename workspace to "%s"' -P 'New name: '
 
 # use window title, but no border
 bindsym $mod+t border normal 0
@@ -229,6 +229,8 @@ exec --no-startup-id exec parcellite
 #bindsym $mod+Shift+  exec scrot '%Y-%m-%d-%T_$wx$h_scrot.png' -e 'mv $f ~/Dropbox/Screenshots/'
 
 
-bindsym $mod+Super_L+4 exec scrot '%Y-%m-%d-%T_$wx$h_scrot.png' -e 'mv $f ~/Dropbox/Screenshots/'
+bindsym $mod+Shift+p exec scrot '%Y-%m-%d-%T_$wx$h_scrot.png' -e 'mv $f ~/Dropbox/Screenshots/'
+bindsym $mod+Shift+o exec scrot -u '%Y-%m-%d-%T_$wx$h_scrot.png' -e 'mv $f ~/Dropbox/Screenshots/'
+
 
 

@@ -195,7 +195,7 @@ URxvt.italicFont:   xft:Hack-RegularOblique:pixelsize=14:slant=italic,xft:Symbol
 URxvt*saveLines:                       65535 
 
 ! Double-buffering for xft (default enabled).  On some card/driver combination enabling it slightly decreases performance, on most it greatly helps it. The slowdown is small, so it should normally be enabled
-URxvt*buffered:                         false
+URxvt*buffered:                         true 
 
 ! Attempt to find a visual with the given bit depth
 ! URxvt*depth:                          number
@@ -338,11 +338,12 @@ URxvt*perl-ext:
 Urxvt*color0:                           #000000
 
 !!! Font Setting
-Xft.dpi:96
-Xft.antialias: true
-Xft.hinting: true
-!Xft.hintstyle: hintslight
+!Xft.dpi:96
+!Xft.antialias: true
+!Xft.hinting: true
+!!Xft.hintstyle: hintslight
 Xft.hintstyle: hintfull
-!Xft.lcdfilter: lcddefault
-Xft.rgba: rgb
+!!Xft.lcdfilter: lcddefault
+!Xft.rgba: rgb
 Xcursor.theme: Human
+!

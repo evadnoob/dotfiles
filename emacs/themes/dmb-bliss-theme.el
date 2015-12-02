@@ -103,9 +103,9 @@
  ;;'(font-lock-function-name-face ((t (:foreground "#3bb1df"  ))))
  ;;'(font-lock-function-name-face ((t (:foreground "#5fafff"  ))))
  '(font-lock-function-name-face ((t (:foreground "#d7ffff"  ))))
+ '(font-lock-preprocessor-face ((t (:foreground "#5f8787"  ))))
  '(font-lock-keyword-face ((t (:foreground "#ff00ff"  ))))
- '(font-lock-warning-face ((t (:foreground "#CED2CF" :background "#B798BF" ))))
- ;;'(font-lock-comment-delimiter-face ((t (:foreground "#4f6d82"  ))))
+ '(font-lock-warning-face ((t (:14:00ffffground "#4f6d82"  ))))
  '(font-lock-comment-delimiter-face ((t (:foreground "#585858"  ))))
 
 ;; Rainbow delimiters
