@@ -2,7 +2,8 @@
 ;;
 ;;; Author: Jason Milkins
 ;; Version: 20141115.2301
-;;; X-Original-Version: 20141116
+;;; X-Original-Version: 201
+
 ;;; Sublime Text Theme Author: Saad Quadri
 ;;; Url: https://github.com/emacsfodder/tmtheme-to-deftheme
 ;;; Package-Requires: ((emacs "24.0"))
@@ -25,7 +26,8 @@
  ;; basic theming.
 
  ;;'(default ((t (:foreground "#C5C8C6" :background "color-16" ))))
- '(region  ((t (:background "color-16" foreground "#ffffff"))))
+ ;;'(region  ((t (:background "color-16" foreground "#080808"))))
+ '(region  ((t (:background "#000080" foreground "#080808"))))
  '(cursor  ((t (:background "yellow"))))
 
  ;; Temporary defaults
@@ -73,7 +75,7 @@
 
 
  ;; flyspell-mode
- '(flyspell-incorrect                  ((t (:underline "#AA0000" :background nil :inherit nil ))))
+ '(flyspell-incorrect                  ((t (:underline nil :background "#AA0000" :inherit nil ))))
  '(flyspell-duplicate                  ((t (:underline "#009945" :background nil :inherit nil ))))
 
  ;; flymake-mode
@@ -105,9 +107,17 @@
  '(font-lock-function-name-face ((t (:foreground "#d7ffff"  ))))
  '(font-lock-preprocessor-face ((t (:foreground "#5f8787"  ))))
  '(font-lock-keyword-face ((t (:foreground "#ff00ff"  ))))
- '(font-lock-warning-face ((t (:14:00ffffground "#4f6d82"  ))))
+ '(font-lock-warning-face ((t (:foreground "#4f6d82"  ))))
  '(font-lock-comment-delimiter-face ((t (:foreground "#585858"  ))))
+ ;;
+ ;; Company
+ '(company-tooltip ((t (:foreground "#585858" :background nil))))
+ '(company-tooltip-annotation ((t (:foreground "green" :background nil))))
+ '(company-scrollbar-bg ((t (:background nil))))
 
+ ;; Ensime
+ '(ensime-errline-highlight ((t (:background "#AA0000"))))
+ 
 ;; Rainbow delimiters
  '(rainbow-delimiters-depth-1-face ((t (:foreground "#2a7d9d"))))
  '(rainbow-delimiters-depth-2-face ((t (:foreground "#2e89ad"))))

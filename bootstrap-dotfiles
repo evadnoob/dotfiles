@@ -1,8 +1,8 @@
 #!/bin/bash
-ln -sf ~/dotfiles/zshrc ~/.zshrc 
-ln -sf ~/dotfiles/vim ~/.vim 
-ln -sf ~/dotfiles/vimrc ~/.vimrc 
-ln -sf ~/dotfiles/zprezto ~/.zprezto  
+ln -sf ~/dotfiles/zshrc ~/.zshrc
+ln -sf ~/dotfiles/vim ~/.vim
+ln -sf ~/dotfiles/vimrc ~/.vimrc
+ln -sf ~/dotfiles/zprezto/ ~/.zprezto
 ln -sf ~/dotfiles/zpreztorc ~/.zpreztorc
 ln -sf ~/dotfiles/psqlrc ~/.psqlrc
 ln -sf ~/dotfiles/tmux.conf ~/.tmux.conf
@@ -10,3 +10,8 @@ ln -sf ~/dotfiles/emacs.d ~/.emacs.d
 ln -sf ~/dotfiles/dotemacs ~/.emacs
 ln -sf ~/dotfiles/zsh-autosuggestions ~/.zsh-autosuggestions
 ln -sf ~/dotfiles/irssi ~/.irssi
+ln -sf ~/dotfiles/ranger/rc.conf ~/.config/ranger/rc.conf
+ln -sf ~/dotfiles/ranger/scope.sh ~/.config/ranger/scope.sh
+ln -sf ~/dotfiles/conkyrc ~/.conkyrc
+ln -sf ~/Dropbox/.zhistory ~/.zhistory
+

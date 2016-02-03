@@ -55,12 +55,13 @@
      org
      org-ac
      paredit
-     pbcopy
+     ;;pbcopy
      projectile
      python
      sass-mode
      rcirc
      rcirc-color
+     racer
      rust-mode
      subword
      rainbow-mode
@@ -69,9 +70,11 @@
      toml-mode
      visible-mark
      volatile-highlights
+     java-snippets
      yaml-mode
      yari modeline-posn
-     yasnippet ack-and-a-half
+     yasnippet
+     ack-and-a-half
      )
     "A list of packages to ensure are installed at launch.")
 

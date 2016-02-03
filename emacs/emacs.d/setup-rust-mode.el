@@ -1,24 +1,38 @@
 (unless (getenv "RUST_SRC_PATH")
-  (setenv "RUST_SRC_PATH" (expand-file-name "~/Projects/rust/src")))
+  (setenv "RUST_SRC_PATH" (expand-file-name "~/projects/rust/src")))
+
+;;(setenv "PATH" (concat (expand-file-name "~/.cargo/bin") (getenv "PATH")))
 
 (autoload 'rust-mode "rust-mode" nil t)
 (add-to-list 'auto-mode-alist '("\\.rs\\'" . rust-mode))
 
 
-(setq racer-cmd "~/Projects/racer/target/release/racer")
-(add-to-list 'load-path "~/Projects/racer/editors/emacs")
+(setq racer-cmd "/home/david/.cargo/bin/racer")
+(add-to-list 'load-path "~/projects/racer/editors/emacs")
 
 (eval-after-load "rust-mode" '(require 'racer))
 (eval-after-load "rust-mode" '(require 'company))
+(add-hook 'rust-mode-hook #'racer-mode)
+(add-hook 'racer-mode-hook #'eldoc-mode)
 (add-hook 'rust-mode-hook #'racer-activate)
 
 (require 'rust-mode)
-(define-key rust-mode-map (kbd "TAB") #'racer-complete-or-indent)
-(define-key rust-mode-map (kbd "M-.") #'racer-find-definition)
+;;(define-key rust-mode-map (kbd "TAB") #'racer-complete-or-indent)
+;;(define-key rust-mode-map (kbd "M-.") #'racer-find-definition)
+
+(add-hook 'racer-mode-hook #'company-mode)
+
+(define-key rust-mode-map (kbd "TAB") #'company-indent-or-complete-common) ;
+(setq company-tooltip-align-annotations t)
 
 (defun my-rust-mode-hook()
 
   (company-mode 1)
+
+  (add-hook 'racer-mode-hook #'company-mode)
+
+  ;;(global-set-key (kbd "TAB") #'company-indent-or-complete-common) ;
+  (setq company-tooltip-align-annotations t)
 
   (racer-activate)
 
@@ -34,9 +48,7 @@
   ;; Key binding to jump to method definition
   (local-set-key (kbd "M-.") #'racer-find-definition))
 
-(add-hook 'rust-mode-hook 'my-rust-mode-hook)
 
-(custom-set-variables
- '(racer-cmd "/Users/daveboon/Projects/racer/target/release/racer"))
+(add-hook 'rust-mode-hook 'my-rust-mode-hook)
 
 (provide 'setup-rust-mode)

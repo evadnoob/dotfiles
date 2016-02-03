@@ -1,0 +1,34 @@
+#-*- mode: conf -*-
+## General options
+set header_cache = "~/.mutt/cache"
+set imap_check_subscribed
+set imap_keepalive = 300
+unset imap_passive
+set mail_check = 60
+set mbox_type=Maildir
+
+set postponed="+[Gmail]/Drafts"
+
+## ACCOUNT1
+source "~/.mutt/account.david.boon@gmail.com"
+# Here we use the $folder variable that has just been set in the sourced file.
+# We must set it right now otherwise the 'folder' variable will change in the next sourced file.
+folder-hook $folder 'source ~/.mutt/david.boon.at.gmail.com'
+
+
+macro index,pager <f2> '<sync-mailbox><enter-command>source ~/.mutt/account.david.boon@gmail.com<enter><change-folder>!<enter>'
+#macro index,pager <f3> '<sync-mailbox><enter-command>source ~/.mutt/account.daveb@helpscore.com<enter><change-folder>!<enter>'
+#
+source ~/.mutt/colors
+macro index,pager e  "<save-message>=[Gmail]/All Mail<enter>" "Archive conversation"
+
+# Sort by newest conversation first.
+set sort              = reverse-threads
+set sort_aux          = last-date-received
+
+#set editor              = 'vim -c "set spell spelllang=en_us"'
+set editor               = 'emacsclient -nw'
+
+auto_view text/html                                      # view html automatically
+alternative_order text/plain text/enriched text/html     # save html for last
+

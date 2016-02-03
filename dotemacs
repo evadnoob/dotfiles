@@ -12,23 +12,14 @@
 ;;  ;; Your init file should contain only one such instance.
 ;;  ;; If there is more than one, they won't work right.
 ;;  '(Buffer-menu-buffer+size-width 40)
-;;  '(ack-and-a-half-executable "/usr/local/bin/ack")
-;;  '(ack-prompt-for-directory "Prompt")
-;;  '(ansi-color-names-vector
-;;    (vector "black" "sienna" "black" "peru" "DarkOliveGreen4" "DarkRed" "DarkSlateBlue" "white"))
 ;;  '(backup-inhibited t t)
-;;  '(blink-cursor-delay 15.5)
-;;  '(c-echo-syntactic-information-p nil)
-;;  '(cache-long-scans nil t)
+;;  '(company-tooltip-minimum-width 100)
 ;;  '(completion-ignore-case t t)
-;;  '(css-indent-offset 2)
 ;;  '(custom-safe-themes
 ;;    (quote
-;;     ("09c04a00bb9e2f10706bb209be52fa37eb2ee35a158cecaad81093cbf4e308aa" "35eb05df18859f21ce86a1a6dbfc1bb9dbf5db438ac934d7a8c733834f3b3d19" "569dc84822fc0ac6025f50df56eeee0843bffdeceff2c1f1d3b87d4f7d9fa661" default)))
-;;  '(custom-theme-directory (*emacs ".emacs.x/.emacs.d/themes"))
+;;     ("4d0811558c9bcab49cbb062603f71339a54436c89e090e580348988443dca3ec" "bf7bdd545eff20eecbf4f7e90f1193f31356e67bd229e9a70c98a8a7d2397d59" "4533a0311bd1398c8043b2f353894f6eb4c7c7c715a604312e9e7851705f2d3e" default)))
+;;  '(custom-theme-directory (*emacs "/themes"))
 ;;  '(dired-listing-switches "-ghG")
-;;  '(display-time-24hr-format t)
-;;  '(ecb-options-version "2.40")
 ;;  '(erc-enable-logging (quote erc-log-all-but-server-buffers))
 ;;  '(erc-hide-list (quote ("JOIN" "PART" "QUIT" "NICK" "MODE" "TOPIC")))
 ;;  '(erc-kill-queries-on-quit t)
@@ -38,226 +29,53 @@
 ;;    (quote
 ;;     (netsplit fill button match track completion readonly networks ring autojoin noncommands irccontrols move-to-prompt stamp menu list scrolltobottom)))
 ;;  '(erc-ring-mode 1)
-;;  '(find-file-confirm-nonexistent-file t)
-;;  '(flymake-allowed-file-name-masks
-;;    (cons
-;;     (quote
-;;      ("\\.java\\'" jde-ecj-server-flymake-init jde-ecj-flymake-cleanup))
-;;     flymake-allowed-file-name-masks))
-;;  '(flymake-log-level 0)
-;;  '(flymake-no-changes-timeout 2.0)
-;;  '(flymake-start-syntax-check-on-newline nil)
-;;  '(gradle-command "gradle")
-;;  '(gradle-home "f:/devtools/gradle-0.6.1")
-;;  '(gud-jdb-directories
-;;    (list "f:/wca_internal_forward/WCA_Server_Servlet/src/main/java" "f:/wca_internal_forward/WCA_Server_Servlet/src/main/java"))
-;;  '(gud-jdb-use-classpath nil)
-;;  '(helm-c-locate-command "locate-with-mdfind %.0s %s")
-;;  '(helm-full-frame t)
-;;  '(ibuffer-default-shrink-to-minimum-size t)
-;;  '(ibuffer-formats
-;;    (quote
-;;     ((mark modified read-only " "
-;;            (name 45 45 :left :elide)
-;;            " " filename-and-process)
-;;      (mark " "
-;;            (name 16 -1)
-;;            " " filename))))
-;;  '(ibuffer-never-show-predicates
-;;    (list "^\\*scratch\\*" "^\\*Messages\\*" "^\\*WoMan-Log\\*" "^\\*JDEE bsh\\*" "^\\*Completions\\*" "^\\*anything\\*") nil (ibuf-ext))
-;;  '(ibuffer-restore-window-config-on-quit t t)
-;;  '(ibuffer-saved-filter-groups
-;;    (quote
-;;     (("dave"
-;;       ("jde"
-;;        (mode . jde-mode))
-;;       ("sqlplus"
-;;        (mode . sql-interactive-mode))
-;;       ("grep"
-;;        (mode . grep-mode))
-;;       ("elisp"
-;;        (mode . emacs-lisp-mode))
-;;       ("nxml"
-;;        (mode . nxml-mode))
-;;       ("shell"
-;;        (mode . shell-mode))
-;;       ("dired"
-;;        (mode . dired-mode))
-;;       ("sh"
-;;        (mode . sh-mode))))))
-;;  '(ibuffer-show-empty-filter-groups nil)
-;;  '(ibuffer-use-other-window t)
-;;  '(icicle-Completions-frame-at-right-flag nil)
-;;  '(icicle-buffer-no-match-regexp
-;;    "^\\*Completions\\|Ibuffer\\|Pp Eval Output\\|Process List\\*$")
-;;  '(icicle-buffer-require-match-flag (quote no-match-required))
-;;  '(icicle-control-reminder-prompt nil)
-;;  '(icicle-download-dir "~/emacs/packages/icicles")
-;;  '(icicle-generic-S-tab-keys (quote ([S-tab] [S-iso-lefttab])))
-;;  '(icicle-incremental-completion-flag nil)
-;;  '(icicle-prompt-suffix "")
-;;  '(icicle-require-match-flag (quote no-match-required))
-;;  '(icicle-search-cleanup-flag nil)
-;;  '(icicle-show-Completions-initially-flag nil)
-;;  '(icicle-test-for-remote-files-flag nil)
+;;  '(evil-move-cursor-back nil)
+;;  '(evil-regexp-search t)
+;;  '(evil-want-fine-undo t)
 ;;  '(indent-tabs-mode nil)
-;;  '(initial-buffer-choice t)
-;;  '(insert-default-directory t)
 ;;  '(isearch-allow-scroll t)
-;;  '(iswitchb-buffer-ignore
-;;    (list "^ " "^\\*Completions\\*" "^\\*anything\\*" "^\\*Minibuf-.*" "^\\*Ibuffer\\*" "^\\*JDEE bsh\\*" "^\\*WoMan-Log\\*" "^\\*JDEE bsh\\*"))
-;;  '(javascript-indent-level 2 t)
-;;  '(jde-compiler
-;;    (quote
-;;     (("eclipse java compiler server" "c:/Documents and Settings/u0103223/.emacs.d/ecj-3.3M6.jar"))))
-;;  '(jde-ecj-command-line-args
-;;    (quote
-;;     ("-d" "none" "-1.6" "-warn:unused,semicolon" "-maxProblems" "50" "-g")))
-;;  '(jde-global-classpath (split-string classpath jde-classpath-separator))
-;;  '(jde-import-blank-line-between-groups t)
-;;  '(jde-import-excluded-classes
-;;    (quote
-;;     (("^bsh\\..*")
-;;      ("^com\\.sun\\..*")
-;;      ("^java.awt\\..*")
-;;      ("^java\\.lang\\.[^.]*$" . t)
-;;      ("^java\\.security\\.Timestamp")
-;;      ("^org\\.apache\\.activemq\\.util\\.TransactionTemplate")
-;;      ("^org\\.apache\\.tools\\.ant\\..*")
-;;      ("^sun\\..*")
-;;      ("edu\\.emory\\.mathcs\\..*")
-;;      ("java.util.Arrays.ArrayList")
-;;      ("java.util.logging.Logger")
-;;      ("javax.swing.Spring")
-;;      ("javax.swing.text.html.Map")
-;;      ("javax.swing.tree.RowMapper")
-;;      ("javax.xml.transform.Source")
-;;      ("javax\\.naming\\..*")
-;;      ("junit.framework.Test")
-;;      ("org.apache.camel.processor.Logger")
-;;      ("org.apache.camel.util.ResolverUtil.Test")
-;;      ("org.junit.Test")
-;;      ("org.testng.log4testng.Logger")
-;;      ("org\\.apache\\.xerces\\.impl\\..*")
-;;      ("org\\.springframework\\.orm\\.toplink\\..*")
-;;      (jde-import-current-package-p . t))))
-;;  '(jde-import-group-of-rules
-;;    (quote
-;;     (("^java?\\." . "A")
-;;      ("^javax?\\." . "B")
-;;      ("^junit?\\." . "C")
-;;      ("^org\\.apache?\\." . "E")
-;;      ("^org\\.hibernate?\\." . "F")
-;;      ("^org\\.springframework?\\." . "G")
-;;      ("^org?\\." . "D")
-;;      ("^edu?\\." . "H")
-;;      ("^com\\.google\\." . "I")
-;;      ("^com\\.gwtext\\." . "J")
-;;      ("^com\\.thomson\\." . "K"))))
-;;  '(jde-import-sorted-groups (quote gor))
-;;  '(jde-jalopy-option-command-line-args "-l WARN")
-;;  '(jde-jalopy-option-encoding "utf-8")
-;;  '(jde-jalopy-option-path "f:/devtools/jalopy-console-0.1-1.5rc3")
-;;  '(jde-jalopy-option-preferences-file
-;;    "f:/patentTracker/patentTrackerDocumentation/5-Implementation/codes-eclipse-jalopy.xml")
-;;  '(jde-jdk (quote ("1.6.0")))
-;;  '(jde-jdk-registry (quote (("1.6.0" . "f:/devtools/jdk1.6.0_14"))))
-;;  '(jde-project-file-name ".jde.project")
-;;  '(jde-which-method-format
-;;    (\`
-;;     ("["
-;;      (:propertize jde-which-method-current face which-func help-echo "mouse-1: go to beginning, mouse-2: toggle rest visibility, mouse-3: go to end"))))
-;;  '(jde-which-method-max-length 150)
-;;  '(jdibug-connect-host "localhost")
-;;  '(jdibug-connect-port 6001)
-;;  '(js-indent-level 2)
-;;  '(js2-basic-offset 2)
-;;  '(js2-bounce-indent-p nil t)
-;;  '(js2-global-externs
-;;    (list "console" "JSON" "$" "exports" "require" "app" "__dirname" "process" "module" "setTimeout"))
-;;  '(less-css-indent-level 2)
 ;;  '(mode-line-format
 ;;    (quote
 ;;     ("%e" mode-line-front-space mode-line-mule-info mode-line-client mode-line-modified mode-line-remote mode-line-frame-identification mode-line-buffer-identification "   " mode-line-position evil-mode-line-tag
 ;;      (vc-mode vc-mode)
 ;;      "  " mode-line-modes mode-line-misc-info)))
-;;  '(mouse-wheel-scroll-amount (quote (1 ((shift) . 5) ((control)))))
+;;  '(mouse-drag-copy-region t)
 ;;  '(nxhtml-global-minor-mode t)
 ;;  '(nxhtml-skip-welcome t)
 ;;  '(org-cycle-global-at-bob t)
-;;  '(paren-highlight-at-point nil)
-;;  '(paren-priority (quote both))
-;;  '(pmd-home (expand-file-name "~/.emacs.x/.emacs.p/pmd-4.2.5"))
-;;  '(pmd-java-home (concat dmb-java-16-home "/bin/java"))
-;;  '(pmd-ruleset-list
-;;    (list "basic" "braces" "clone" "codesize" "controversial" "coupling" "design" "finalizers" "imports" "javabeans" "junit" "logging-java" "naming" "optimizations" "strictexception" "strings" "sunsecure" "unusedcode" "logging-jakarta-commons"))
-;;  '(ps-header-font-size 6 t)
-;;  '(ps-header-line-pad 0.1 t)
-;;  '(ps-header-offset 10 t)
-;;  '(ps-header-title-font-size (quote (6 . 6)) t)
-;;  '(ps-line-number t t)
-;;  '(rng-validate-chunk-size 4000)
-;;  '(rng-validate-delay 2)
-;;  '(rng-validate-quick-delay 1)
-;;  '(save-interprogram-paste-before-kill nil)
-;;  '(scroll-conservatively 10000)
-;;  '(semantic-tag-folding-allow-folding-of
+;;  '(org-directory "~/Dropbox/org-mode-files")
+;;  '(package-selected-packages
 ;;    (quote
-;;     ((type)
-;;      (function)
-;;      (variable)
-;;      (include . t)
-;;      (comment)
-;;      (package))))
+;;     (emacs-eclim racer yari yaml-mode volatile-highlights visible-mark toml-mode smart-cursor-color scss-mode sass-mode rust-mode rcirc-color rainbow-mode projectile pbcopy paredit org-ac neotree modeline-posn markdown-mode mark-multiple magit lua-mode lorem-ipsum inf-ruby helm-ag haskell-mode guide-key groovy-mode gist ggtags flymake-less flymake-easy flycheck-rust evil-tutor evil-terminal-cursor-changer evil-search-highlight-persist evil-org evil-matchit evil-leader evil-args evil-annoying-arrows ensime dockerfile-mode delight deft company-racer coffee-mode clojure-mode change-inner auctex annoying-arrows-mode ack-and-a-half)))
+;;  '(save-interprogram-paste-before-kill nil)
+;;  '(select-active-regions t)
+;;  '(select-enable-clipboard t)
+;;  '(select-enable-primary t)
 ;;  '(setq python-indent-offset)
-;;  '(smooth-scroll-margin 7)
 ;;  '(socks-noproxy (quote ("localhost")) t)
 ;;  '(socks-override-functions 1 t)
-;;  '(socks-server (list "thomson" "socksproxy" 1080 5))
+;;  '(socks-server (list "tor" "localhost" 9050 5))
 ;;  '(split-height-threshold nil)
 ;;  '(split-width-threshold 450)
-;;  '(sql-indent-debug t)
-;;  '(sql-indent-offset 3)
-;;  '(tool-bar-mode nil)
-;;  '(track-eol t)
 ;;  '(truncate-lines 1)
-;;  '(yank-pop-change-selection t)
-;;  '(yas/prompt-functions (quote (yas/ido-prompt yas/completing-prompt)))
-;;  '(yas/root-directory (*emacs ".emacs.x/snippets") t)
-;;  '(yas/snippet-dirs (*emacs ".emacs.x/snippets"))
-;;  '(yas/wrap-around-region t))
+;;  '(visible-cursor nil))
 ;; (custom-set-faces
 ;;  ;; custom-set-faces was added by Custom.
 ;;  ;; If you edit it by hand, you could mess it up, so be careful.
 ;;  ;; Your init file should contain only one such instance.
 ;;  ;; If there is more than one, they won't work right.
-;;  '(buffer-menu-read-only-mark ((t (:foreground "burlywood"))))
-;;  '(diredp-compressed-file-suffix ((t (:foreground "goldenrod"))) t)
-;;  '(diredp-dir-heading ((t (:foreground "goldenrod"))) t)
-;;  '(diredp-dir-priv ((t (:foreground "blue4"))) t)
-;;  '(diredp-exec-priv ((t (:foreground "DarkGreen"))) t)
-;;  '(diredp-file-name ((t (:foreground "black"))) t)
-;;  '(diredp-no-priv ((t (:foreground "black"))) t)
-;;  '(diredp-other-priv ((t (:foreground "blue4"))) t)
-;;  '(diredp-read-priv ((t (:foreground "blue4"))) t)
-;;  '(diredp-write-priv ((t (:foreground "blue4"))) t)
-;;  '(flymake-errline ((((class color)) (:underline "OrangeRed"))))
-;;  '(flymake-warnline ((((class color)) (:underline "DarkSlateBlue"))))
-;;  '(magit-branch ((t (:foreground "green4"))))
-;;  '(magit-section-title ((t (:foreground "#333" :weight bold))))
-;;  '(mode-line ((t (:background "grey75" :foreground "#333" :box nil :overline "orange"))))
-;;  '(semantic-tag-boundary-face ((((class color)) (:slant italic))))
-;;  '(visible-mark-face ((t (:underline "blue")))))
+;;  )
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(Buffer-menu-buffer+size-width 40)
- '(ack-and-a-half-executable "/usr/local/bin/ack")
  '(backup-inhibited t t)
  '(completion-ignore-case t t)
- '(css-indent-offset 2)
+ '(custom-safe-themes
+   (quote
+    ("7af16b32e17d4c07b0819150f294a0b77da4a5fda0434e92ef128a24e388e95b" "a9290165cef61ef30ad43a38ae6591d0fd4ce59a12c2e5f17e595ea31e0a608c" "999bb141fe05218f6af3d3a5eefd0e4cfe4803aab15476245ed02f0ca00e910d" "99033f8891b7a20a9b10e6dc1dd4285aa7507037091db982195e3ca9daa7d596" "6c0ec840b7c0316d121dc0a2910f4a390940bec3d136bb80584f1233d7e15003" default)))
  '(custom-theme-directory (*emacs "/themes"))
  '(dired-listing-switches "-ghG")
  '(erc-enable-logging (quote erc-log-all-but-server-buffers))
@@ -274,13 +92,6 @@
  '(evil-want-fine-undo t)
  '(indent-tabs-mode nil)
  '(isearch-allow-scroll t)
- '(javascript-indent-level 2 t)
- '(js-indent-level 2)
- '(js2-basic-offset 2)
- '(js2-bounce-indent-p nil t)
- '(js2-global-externs
-   (list "console" "JSON" "$" "exports" "require" "app" "__dirname" "process" "module" "setTimeout"))
- '(less-css-indent-level 2)
  '(mode-line-format
    (quote
     ("%e" mode-line-front-space mode-line-mule-info mode-line-client mode-line-modified mode-line-remote mode-line-frame-identification mode-line-buffer-identification "   " mode-line-position evil-mode-line-tag
@@ -290,11 +101,6 @@
  '(nxhtml-skip-welcome t)
  '(org-cycle-global-at-bob t)
  '(org-directory "~/Dropbox/org-mode-files")
- '(package-selected-packages
-   (quote
-    (racer flycheck-rust evil-annoying-arrows toml-mode zenburn-theme yari yaml-mode volatile-highlights visible-mark solarized-theme smart-cursor-color scss-mode sass-mode restclient rcirc-color rainbow-mode projectile pbcopy paredit org-present org-ac neotree modeline-posn markdown-mode mark-multiple magit lush-theme lua-mode lorem-ipsum inf-ruby helm-ag haskell-mode guide-key groovy-mode gotham-theme gist ggtags flymake-less flymake-easy evil-tutor evil-terminal-cursor-changer evil-search-highlight-persist evil-org evil-matchit evil-leader evil-args ensime dockerfile-mode diminish delight deft company-racer color-theme coffee-mode cm-mode clojure-mode change-inner bliss-theme auctex annoying-arrows-mode ack-and-a-half)))
- '(racer-cmd "/Users/daveboon/Projects/racer/target/release/racer")
- '(save-interprogram-paste-before-kill nil)
  '(setq python-indent-offset)
  '(socks-noproxy (quote ("localhost")) t)
  '(socks-override-functions 1 t)
@@ -302,9 +108,7 @@
  '(split-height-threshold nil)
  '(split-width-threshold 450)
  '(truncate-lines 1)
- '(yas-prompt-functions (quote (yas/ido-prompt yas/completing-prompt)))
- '(yas-snippet-dirs (*emacs "snippets") nil (yasnippet))
- '(yas-wrap-around-region t))
+ '(visible-cursor nil))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

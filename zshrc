@@ -21,7 +21,8 @@ source ${ZSH_DOTFILES}/setup-vim.zsh
 source ${ZSH_DOTFILES}/setup-zsh.zsh
 source ${ZSH_DOTFILES}/setup-ssh.zsh
 source ${ZSH_DOTFILES}/setup-postgres.zsh
-#source ${ZSH_DOTFILES}/setup-gcloud.zsh
+source ${ZSH_DOTFILES}/setup-gcloud.zsh
+source ${ZSH_DOTFILES}/setup-ranger.zsh
 
 export PATH="/usr/local/bin:${PATH}"
 
@@ -62,8 +63,11 @@ export TERM=xterm-256color
 
 source ~/projects/base16-shell/base16-twilight.dark.sh
 
-# The next line updates PATH for the Google Cloud SDK.
-#source '/home/david/google-cloud-sdk/path.bash.inc'
-
 export PATH=${PATH}:~/google-cloud-sdk/bin
 
+
+# The next line updates PATH for the Google Cloud SDK.
+source '/home/david/google-cloud-sdk/path.zsh.inc'
+
+# The next line enables shell command completion for gcloud.
+source '/home/david/google-cloud-sdk/completion.zsh.inc'

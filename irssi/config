@@ -41,8 +41,10 @@ chatnets = {
 channels = (
   { name = "#rustoleum"; chatnet = "freenode"; autojoin = "yes"; },
   { name = "#freenode"; chatnet = "freenode"; autojoin = "yes"; },
+  { name = "#emacs"; chatnet = "freenode"; autojoin = "yes"; },
   { name = "#postgresql"; chatnet = "freenode"; autojoin = "yes"; },
   { name = "#rust"; chatnet = "mozilla"; autojoin = "yes"; }
+  { name = "#rust-beginners"; chatnet = "mozilla"; autojoin = "yes"; }
 );
 
 aliases = {

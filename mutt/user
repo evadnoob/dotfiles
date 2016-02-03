@@ -1,0 +1,5 @@
+#-*- mode: conf -*-
+
+set my_username = "davidb@porch.com"
+set my_password = "Wowu0423"
+set my_domain = "porch.com"

@@ -41,7 +41,7 @@
 ;;(load-library "setup-change-inner")
 (load-library "setup-mark-multiple")
 ;;(load-library "setup-markdown-mode")
-(load-library "setup-nw")
+;;(load-library "setup-nw")
 ;;(load-library "setup-undo-tree")
 (load-library "setup-python-mode")
 ;;(load-library "setup-magit") 
@@ -50,7 +50,7 @@
 ;;(load-library "setup-scala-mode")
 ;;(load-library "setup-dockerfile-mode")
 ;;(load-library "setup-delight")
-(load-library "setup-copy-and-paste")
+;;(load-library "setup-copy-and-paste")
 
 
 

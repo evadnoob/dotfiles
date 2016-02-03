@@ -82,3 +82,4 @@ setopt listtypes
 setopt menucomplete
 
 zstyle ':prezto:module:editor' key-bindings 'vi'
+
