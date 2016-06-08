@@ -7,11 +7,16 @@
 ;; (unless (package-installed-p 'scala-mode2)
 ;;   (package-refresh-contents) (package-install 'scala-mode2))
 
-(setq auto-mode-alist (cons '("\\.scala" . scala-mode) auto-mode-alist))
-;; set the first element of a list: (setcar auto-mode-alist '("\\.scala" . scala-mode))
+;; (setq auto-mode-alist (cons '("\\.scala" . scala-mode) auto-mode-alist))
+;; ;; set the first element of a list: (setcar auto-mode-alist '("\\.scala" . scala-mode))
+
+(add-hook 'scala-mode-hook 'ensime-mode)
+
+(require 'scala-mode)
+(require 'company)
 
 ;; load the ensime lisp code...
-(add-to-list 'load-path (*emacs ".emacs.x/.emacs.p/ensime/dist/elisp/"))
+(add-to-list 'load-path "~/projects/ensime-emacs/")
 (require 'ensime)
 
 ;; This step causes the ensime-mode to be started whenever
@@ -31,7 +36,7 @@
 
 ;; but company-mode / yasnippet conflict. Disable TAB in company-mode with
 (define-key company-active-map [tab] nil)
-(define-key scala-mode [tab] 'ensime-)
+;;(define-key scala-mode [tab] 'ensime-)
 
 (custom-set-variables
  '(company-tooltip-minimum-width 100))

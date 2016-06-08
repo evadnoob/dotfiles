@@ -14,7 +14,6 @@ fi
 source ${ZSH_DOTFILES}/setup-java.zsh
 source ${ZSH_DOTFILES}/setup-aws.zsh
 source ${ZSH_DOTFILES}/setup-emacs.zsh
-source ${ZSH_DOTFILES}/setup-aliases.zsh
 source ${ZSH_DOTFILES}/setup-less.zsh
 source ${ZSH_DOTFILES}/setup-functions.zsh
 source ${ZSH_DOTFILES}/setup-vim.zsh
@@ -62,6 +61,7 @@ export TERM=xterm-256color
 
 
 source ~/projects/base16-shell/base16-twilight.dark.sh
+#source ~/projects/base16-shell/base16-grayscale.dark.sh
 
 export PATH=${PATH}:~/google-cloud-sdk/bin
 
@@ -71,3 +71,10 @@ source '/home/david/google-cloud-sdk/path.zsh.inc'
 
 # The next line enables shell command completion for gcloud.
 source '/home/david/google-cloud-sdk/completion.zsh.inc'
+
+
+
+source ${ZSH_DOTFILES}/setup-aliases.zsh
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+

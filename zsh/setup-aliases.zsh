@@ -51,3 +51,10 @@ alias screenshot='scrot ''%Y-%m-%d-%T_$wx$h_scrot.png'' -e ''mv $f ~/Dropbox/Scr
 #export EDITOR="/usr/local/bin/emacsclient -nw"
 export EDITOR="/usr/local/bin/emacsclient -cnw"
 alias e=${EDITOR}
+
+
+
+alias g='git'
+# Autocomplete for 'g' as well
+complete -o default -o nospace -F _git g
+

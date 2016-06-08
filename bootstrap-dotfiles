@@ -14,4 +14,5 @@ ln -sf ~/dotfiles/ranger/rc.conf ~/.config/ranger/rc.conf
 ln -sf ~/dotfiles/ranger/scope.sh ~/.config/ranger/scope.sh
 ln -sf ~/dotfiles/conkyrc ~/.conkyrc
 ln -sf ~/Dropbox/.zhistory ~/.zhistory
-
+ln -sf ~/dotfiles/inputrc ~/.inputrc
+ln -sf ~/dotfiles/firefox ~/firefox

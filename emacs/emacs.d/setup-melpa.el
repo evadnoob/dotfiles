@@ -4,14 +4,30 @@
   (setq package-archives '(("marmalade" . "http://marmalade-repo.org/packages/")
                            ("melpa" . "http://melpa.milkbox.net/packages/")
 			   ("elpa" . "http://tromey.com/elpa/")
-			   ("gnu" . "http://elpa.gnu.org/packages/")))
-  
+                           ("gnu" . "http://elpa.gnu.org/packages/")))
+
+  ;; Bootstrap `use-package'
+  (unless (package-installed-p 'use-package)
+    (package-refresh-contents)
+    (package-install 'use-package))
+
+  (use-package try
+               :ensure t)
+
+  (use-package which-key
+               :ensure t 
+               :config
+               (which-key-mode))
+
   (package-initialize))
+
 
 (require 'cl)
 
+
 (defvar evadnoob/required-packages
   ' (
+     ace-window
      annoying-arrows-mode
      auctex
      auto-complete
@@ -65,8 +81,10 @@
      rust-mode
      subword
      rainbow-mode
+     scala-mode
      scss-mode
      smart-cursor-color
+     swiper
      toml-mode
      visible-mark
      volatile-highlights

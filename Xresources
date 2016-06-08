@@ -1,5 +1,3 @@
-!
-!
 ! urxvt {{{2
 ! ================================================================================================================================================================
 ! urxvt --help 2>&1| sed -n '/:  /s/^ */! URxvt*/gp' >> ~/.Xresources
@@ -41,7 +39,7 @@ URxvt*secondaryScroll:                  true
 ! URxvt*jumpScroll:                     boolean
 
 ! (true) When receiving lots of lines, urxvt will only scroll once in a while (around 60x/sec), resulting in fewer updates. This can result in urxvt not ever displaying some of the lines it receives
-URxvt*skipScroll:                       true
+.URxvt*skipScroll:                       true
 
 ! True: enable the scrollbar [default]; option -sb. False: disable the scrollbar
 URxvt*scrollBar:                        false
@@ -59,13 +57,13 @@ URxvt*scrollBar_floating:               false
 ! URxvt*thickness:                      number
 
 ! Turn on/off pseudo-transparency by using the root pixmap as background
-URxvt*transparent:                     false 
+URxvt*transparent:                     false
 
 ! Tint the transparent background with the given colour. Note that a black tint yields a completely black image while a white tint yields the image unchanged.
 !URxvt*tintColor:                      #000000
 
 ! Darken (0 .. 99) or lighten (101 .. 200) the transparent background.  A value of 100 means no shading
-URxvt*shading:                          35 
+URxvt*shading:                          85 
 
 ! Apply gaussian blur with the specified radius to the transparent background. If a single number is specified, the vertical and horizontal radii are considered to be the same. 
 ! Setting one of the radii to 1 and the other to a large number creates interesting effects on some backgrounds. The maximum radius value is 128. An horizontal or vertical radius of 0 disables blur
@@ -139,7 +137,8 @@ URxvt*underlineColor:                   #e3e3e3
 !URxvt*cursorBlink:                      true
 
 ! Use the specified colour for the cursor.  The default is to use the foreground colour
-URxvt*cursorColor:                      #000000 
+!URxvt*cursorColor:                      #000000 
+URxvt*cursorColor:                      Yellow
 
 ! Use the specified colour for the colour of the cursor text.  For this to take effect, cursorColor must also be specified.  The default is to use the background colour
 URxvt*cursorColor2:                     Yellow 
@@ -181,12 +180,20 @@ URxvt*cursorColor2:                     Yellow
 !       [codeset=JISX0208]xft:Kochi Gothic:antialias=false, \
 !      xft:Code2000:antialias=false
 
-URxvt.font:         xft:Hack-Regular:pixelsize=11,xft:Symbola
-URxvt.boldFont:     xft:Hack-Bold:pixelsize=11:weight=bold,xft:Symbola
-URxvt.italicFont:   xft:Hack-RegularOblique:pixelsize=11:slant=italic,xft:Symbola
+!!URxvt.font:         xft:Hack-Regular:pixelsize=11,xft:Symbola
+!URxvt.boldFont:     xft:Hack-Bold:pixelsize=11:weight=bold,xft:Symbola
+!URxvt.italicFont:   xft:Hack-RegularOblique:pixelsize=11:slant=italic,xft:Symbola
 
+!URxvt.italicFont:   xft:Hack-RegularOblique:pixelsize=10:slant=italic,xft:Symbola
+!URxvt*font:          -adobe-sauce code powerline semibold-semibold-r-normal--0-0-0-0-m-0-iso8859-1,xft:terminus:pixelsize:12
+!URxvt.font:          -adobe-sauce code powerline-medium-r-normal--*-12-*-*-*-*-iso8859-1
+!URxvt*font:         xft:Sauce Code Power Bold:pixelsize=12
+!!URxvt.font: -adobe-sauce code powerline-medium-r-normal--0-0-0-0-m-0-iso8859-1
+!URxvt.font: xft:Source Code Pro Medium:pixelsize=14:antialias=true:hinting=true,xft:Source Code Pro Medium:pixelsize=13:antialias=true:hinting=true
+!URxvt*font: xft:DejaVu Sans Mono:pixelsize=14:antialias=true:hinting=true
 
-
+!<<<<< this works well
+URxvt*font: xft:DejaVu Sans Mono:pixelsize=13:antialias=true:hinting=true
 
 ! When font styles are not enabled, or this option is enabled (True default), bold/blink font styles imply high intensity foreground/background colours
 ! URxvt*intensityStyles:                boolean
@@ -229,7 +236,8 @@ URxvt*internalBorder:0
 
 ! Letter spacing adjustment
 ! URxvt*letterSpace:                    number
-
+!URxvt*letterSpace:-1
+:
 ! Disable the usage of the built-in block graphics/line drawing characters and just rely on what the specified fonts provide. Use this if you have a good font and want to use its block graphic glyphs
 ! URxvt*skipBuiltinGlyphs:              boolean
 
@@ -345,7 +353,7 @@ Urxvt*color0:                           #000000
 !Xft.hintstyle: hintfull
 !!Xft.lcdfilter: lcddefault
 !Xft.rgba: rgb
-!Xcursor.theme: Human
+Xcursor.theme: Human
 !
 
 
@@ -402,10 +410,10 @@ URxvt.clipboard.pastecmd: xclip -o -selection clipboard
 
 rofi.location:          2
 rofi.color-enabled:     true
-rofi.color-window:      argb:ee121212, #444444, #a5a29e
-rofi.color-normal:      argb:00111111, #E5DBCF, argb:00111111, #CC9752, #0F3B5F
+rofi.color-window:      argb:ee121212, #444444, 00ffff
+rofi.color-normal:      argb:00111111, #E5DBCF, argb:00111111, #e4e4e4, #0F3B5F
 rofi.color-urgent:      argb:00111111, #af652f, argb:00111111, #af652f, #0F3B5F
-rofi.color-active:      argb:00111111, #70a16c, argb:00111111, #70a16c, #0F3B5F
+rofi.color-active:      argb:00111111, #70a16c, argb:00111111, #e4e4e4, #0F3B5F
 rofi.key-combi:         Alt-F3
 rofi.separator-style:   none
 rofi.fullscreen:        false
@@ -413,13 +421,13 @@ rofi.padding:           5
 rofi.hide-scrollbar:    true
 rofi.line-margin:       3
 rofi.fake-transparency: true
-rofi.yoffset:           +20
+rofi.yoffset:           +80
 rofi.xoffset:           0
 !rofi.width:             1924
-rofi.width:             800
+rofi.width:             1024
 rofi.font:              Hack bold 8
-rofi.lines:             15
-rofi.columns:           1
+rofi.lines:             50 
+rofi.columns:           3
 rofi.regex:             true
 rofi.markup-rows:       true
 
@@ -427,3 +435,4 @@ rofi.markup-rows:       true
 Xautolock.corners: ++++
 Xautolock.conersize: 10
 
+	

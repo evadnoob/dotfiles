@@ -20,6 +20,7 @@
 
 \set HISTCONTROL ignoredups
 
+
 --\set ENCODING UTF8
 
 --\SET client_encoding = 'UTF8'

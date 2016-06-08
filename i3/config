@@ -19,7 +19,8 @@ set $mod Mod1
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
 #font pango:DejaVu Sans Mono 8
 #font pango:Terminus 9px
-font pango:Hack 9px
+#font pango:Hack 9px
+font pango: Source Code Pro 12px`
 
 # Before i3 v4.8, we used to recommend this one as the default:
 # font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
@@ -123,13 +124,14 @@ bindsym $mod+Shift+3 move container to workspace 3: www
 bindsym $mod+Shift+4 move container to workspace 4: management[gcp]
 bindsym $mod+Shift+5 move container to workspace 5: rust-lang
 bindsym $mod+Shift+6 move container to workspace 6: mail
-bindsym $mod+Shift+7 move container to workspace 7: hipchat 
+bindsym $mod+Shift+7 move container to workspace 7: hipchat
 bindsym $mod+Shift+8 move container to workspace 8: misc
 bindsym $mod+Shift+9 move container to workspace 9: irc
 bindsym $mod+Shift+0 move container to workspace 10: intellij
 
-exec --no-startup-id i3-msg 'workspace 7: hipchat; exec hipchat'
-exec --no-startup-id i3-msg 'workspace 1: default; exec urxvt'
+exec --no-startup-id i3-msg 'workspace 7: hipchat; exec hipchat4'
+exec --no-startup-id i3-msg 'workspace 1: default; exec urxvt -e ranger'
+exec --no-startup-id i3-msg 'workspace 9: default; exec irssi'
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -137,6 +139,7 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -162,6 +165,18 @@ mode "resize" {
         bindsym Escape mode "default"
 }
 
+
+
+# class                 border  backgr. text    indicator child_border
+client.focused          #4c7899 #1c1c1c #ffffff #ffffff   #285577
+client.focused_inactive #333333 #5f676a #ffffff #484e50   #5f676a
+client.unfocused        #333333 #222222 #888888 #292d2e   #222222
+client.urgent           #2f343a #900000 #ffffff #900000   #900000
+client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
+
+# client.background       #ffffff
+
+
 bindsym $mod+r mode "resize"
 
 # Start i3bar to display a workspace bar (plus the system information i3status
@@ -176,7 +191,7 @@ bar {
 
        ## Type             border  background font
        #focused_workspace  #008fff #007fff #ffffff
-       focused_workspace  #000000 #000000 #ffffff
+       focused_workspace  #000000 #000000 #00ffff
        active_workspace   #000000 #007fff #ffffff
        #inactive_workspace #333333 #222222 #888888
        inactive_workspace #000000 #000000 #888888
@@ -242,4 +257,60 @@ bindsym $mod+Shift+o exec scrot -u '%Y-%m-%d-%T_$wx$h_scrot.png' -e 'mv $f ~/Dro
 #exec --no-startup-id feh --bg-fill ~/Dropbox/wallpaper/fliKEFG.png
 
 exec exec xautolock -locker ~/projects/i3lock-fancy/lock -detectsleep
+exec --no-starup-id xsetroot -solid gray8
 
+
+
+# Multimedia Keys
+# increase volume
+bindsym XF86AudioRaiseVolume exec amixer -q set Master 5%+ unmute
+# decrease volume
+bindsym XF86AudioLowerVolume exec amixer -q set Master 5%- unmute
+# mute volume
+bindsym XF86AudioMute exec amixer -q set Master mute
+
+
+gaps inner 10
+gaps outer 3
+
+
+set $mode_gaps Gaps: (o) outer, (i) inner
+set $mode_gaps_outer Outer Gaps: +|-|0 (local), Shift + +|-|0 (global)
+set $mode_gaps_inner Inner Gaps: +|-|0 (local), Shift + +|-|0 (global)
+bindsym $mod+Shift+g mode "$mode_gaps"
+
+mode "$mode_gaps" {
+        bindsym o      mode "$mode_gaps_outer"
+        bindsym i      mode "$mode_gaps_inner"
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+
+mode "$mode_gaps_inner" {
+        bindsym plus  gaps inner current plus 5
+        bindsym minus gaps inner current minus 5
+        bindsym 0     gaps inner current set 0
+
+        bindsym Shift+plus  gaps inner all plus 5
+        bindsym Shift+minus gaps inner all minus 5
+        bindsym Shift+0     gaps inner all set 0
+
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+mode "$mode_gaps_outer" {
+        bindsym plus  gaps outer current plus 5
+        bindsym minus gaps outer current minus 5
+        bindsym 0     gaps outer current set 0
+
+        bindsym Shift+plus  gaps outer all plus 5
+        bindsym Shift+minus gaps outer all minus 5
+        bindsym Shift+0     gaps outer all set 0
+
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+
+smart_gaps on
+#smart_borders no_gaps
+smart_borders on

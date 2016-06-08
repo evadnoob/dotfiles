@@ -101,6 +101,9 @@
  '(nxhtml-skip-welcome t)
  '(org-cycle-global-at-bob t)
  '(org-directory "~/Dropbox/org-mode-files")
+ '(package-selected-packages
+   (quote
+    (swiper ace-window ace-popup-menu which-key try use-package scala-mode yari yaml-mode volatile-highlights visible-mark toml-mode smart-cursor-color scss-mode sass-mode rcirc-color rainbow-mode racer projectile pbcopy paredit org-ac neotree modeline-posn markdown-mode mark-multiple magit lua-mode lorem-ipsum java-snippets inf-ruby helm-ag haskell-mode guide-key groovy-mode gist ggtags flymake-less flymake-easy flycheck-rust evil-tutor evil-terminal-cursor-changer evil-search-highlight-persist evil-org evil-matchit evil-leader evil-args evil-annoying-arrows ensime emacs-eclim dockerfile-mode delight deft company-racer coffee-mode clojure-mode change-inner auctex annoying-arrows-mode ack-and-a-half)))
  '(setq python-indent-offset)
  '(socks-noproxy (quote ("localhost")) t)
  '(socks-override-functions 1 t)
