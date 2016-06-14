@@ -61,7 +61,7 @@
      haml-mode
      haskell-mode
      helm-ag
-     inf-ruby
+     inf-ruby 
      lorem-ipsum
      lua-mode
      mark-multiple

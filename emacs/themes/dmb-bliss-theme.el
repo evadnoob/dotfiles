@@ -31,8 +31,8 @@
  '(cursor  ((t (:background "yellow"))))
 
  ;; Temporary defaults
- '(linum                               ((t (:foreground "#3b3c3c"  :background "#2a2a2a" ))))
- '(fringe                              ((t (                       :background "#2a2a2a" ))))
+ '(linum                               ((t (:foreground "#3b3c3c"  :background nil ))))
+ '(fringe                              ((t (                       :background nil ))))
 
  '(minibuffer-prompt                   ((t (:foreground "#1278A8"  :background nil       :weight bold                                  ))))
  '(escape-glyph                        ((t (:foreground "orange"   :background nil                                                     ))))

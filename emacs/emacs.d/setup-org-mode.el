@@ -3,6 +3,8 @@
 (add-to-list 'auto-mode-alist '("\\.org\\'" . org-mode))
 
 (custom-set-variables
+ '(auto-insert 'other)
+ '(auto-insert-directory "~/dotfiles/emacs/auto-insert-templates/")
  '(org-directory "~/Dropbox/org-mode-files"))
 
 ;;
@@ -32,7 +34,6 @@
                "* %?\nEntered on %U\n  %i"))))
 (global-set-key "\C-cc" 'org-capture)
 (global-set-key "\C-ca l" 'org-agenda-list)
-
 (add-hook 'find-file-hooks 'auto-insert)
 (load-library "autoinsert")
 (setq auto-insert-directory "~/dotfiles/emacs/auto-insert-templates/")

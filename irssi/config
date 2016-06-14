@@ -19,7 +19,6 @@ servers = (
   }
 );
 
-# I'm a freenode user all the way man
 chatnets = {
   mozilla = {
     type = "IRC";
@@ -37,11 +36,12 @@ chatnets = {
   };
 };
 
-# Channels I hang out in a lot. Change these to your own.
 channels = (
   { name = "#rustoleum"; chatnet = "freenode"; autojoin = "yes"; },
   { name = "#freenode"; chatnet = "freenode"; autojoin = "yes"; },
   { name = "#emacs"; chatnet = "freenode"; autojoin = "yes"; },
+  { name = "#chef"; chatnet = "freenode"; autojoin = "yes"; },
+  { name = "#c"; chatnet = "freenode"; autojoin = "yes"; },
   { name = "#postgresql"; chatnet = "freenode"; autojoin = "yes"; },
   { name = "#rust"; chatnet = "mozilla"; autojoin = "yes"; }
   { name = "#rust-beginners"; chatnet = "mozilla"; autojoin = "yes"; }

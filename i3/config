@@ -59,10 +59,10 @@ bindsym $mod+l focus up
 #bindsym $mod+semicolon focus right
 
 # alternatively, you can use the cursor keys:
-bindsym $mod+Left focus left
-bindsym $mod+Down focus down
-bindsym $mod+Up focus up
-bindsym $mod+Right focus right
+#bindsym $mod+Left focus left
+#bindsym $mod+Down focus down
+#bindsym $mod+Up focus up
+#bindsym $mod+Right focus right
 
 # move focused window
 bindsym $mod+Shift+j move left
@@ -102,14 +102,30 @@ bindsym $mod+a focus parent
 # focus the child container
 #bindsym $mod+d focus child
 
+# alternatively, you can use the cursor keys:
+bindsym $mod+Left workspace prev
+bindsym $mod+Right workspace next
+bindsym $mod+Up workspace prev
+bindsym $mod+Down workspace next
 
 # setup workspace variables
+set $workspace1 1: default
+set $workspace2 2: psql
+set $workspace3 3: www
+set $workspace4 4: management[gcp]
+set $workspace5 5: rust-lang
+set $workspace6 6: mail
+set $workspace7 7: hipchat
+set $workspace8 8: misc
+set $workspace9 9: irc
+set $workspace10 10: intellij
+
 
 # switch to workspace
-bindsym $mod+1 workspace 1: default
-bindsym $mod+2 workspace 2: psql
-bindsym $mod+3 workspace 3: www
-bindsym $mod+4 workspace 4: management[gcp]
+bindsym $mod+1 workspace $workspace1
+bindsym $mod+2 workspace $workspace2
+bindsym $mod+3 workspace $workspace3
+bindsym $mod+4 workspace $workspace4
 bindsym $mod+5 workspace 5: rust-lang
 bindsym $mod+6 workspace 6: mail
 bindsym $mod+7 workspace 7: hipchat
@@ -179,8 +195,6 @@ client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
 
 bindsym $mod+r mode "resize"
 
-# Start i3bar to display a workspace bar (plus the system information i3status
-# finds out, if available)
 bar {
 
   colors {
@@ -203,6 +217,7 @@ bar {
    font pango:Hack Bold 8
    status_command i3status -c ~/.i3/i3status.conf
    binding_mode_indicator yes
+   strip_workspace_numbers no
 
 }
 
@@ -257,7 +272,7 @@ bindsym $mod+Shift+o exec scrot -u '%Y-%m-%d-%T_$wx$h_scrot.png' -e 'mv $f ~/Dro
 #exec --no-startup-id feh --bg-fill ~/Dropbox/wallpaper/fliKEFG.png
 
 exec exec xautolock -locker ~/projects/i3lock-fancy/lock -detectsleep
-exec --no-starup-id xsetroot -solid gray8
+exec exec --no-starup-id xsetroot -solid gray8
 
 
 

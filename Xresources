@@ -1,9 +1,8 @@
-! urxvt {{{2
 ! ================================================================================================================================================================
 ! urxvt --help 2>&1| sed -n '/:  /s/^ */! URxvt*/gp' >> ~/.Xresources
 ! TERM=dump command man -Pcat urxvt | sed -n '/depth: b/,/^BACKGROUND/p'|sed '$d'| sed 's/@/%-.-%/g; s/\^/%-+-%/g' | sed '/^       [a-z]/s/^ */^/g' | tr -s "\n" \|
 ! sed -e :a -e 'N;s/\n/@@/g;ta;P;D' | sed 's,\^\([^@]\+\)@*[\t ]*\([^\^]\+\),! \2\n! URxvt*\1\n\n,g' | sed 's,@@           ,\n           ,g' | sed 's,@*$,,g' |sed '/^[^!]/d'
-
+! ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 ! Specifies the terminal type name to be set in the TERM environment variable
 URxvt*termName:                         screen-256color
 
@@ -194,6 +193,7 @@ URxvt*cursorColor2:                     Yellow
 
 !<<<<< this works well
 URxvt*font: xft:DejaVu Sans Mono:pixelsize=13:antialias=true:hinting=true
+!!URxvt*font: xft:Sauce Code Power Bold:pixelsize=13:antialias=true:hinting=true
 
 ! When font styles are not enabled, or this option is enabled (True default), bold/blink font styles imply high intensity foreground/background colours
 ! URxvt*intensityStyles:                boolean
@@ -223,7 +223,7 @@ URxvt*hold:                             false
 ! URxvt*externalBorder:                 number
 
 ! Internal border of number pixels. This resource is limited to 100
-URxvt*internalBorder:0
+URxvt*internalBorder:1
 
 ! The colour of the border around the text area and between the scrollbar and the text.
 ! URxvt*borderColor:                    color
@@ -237,7 +237,6 @@ URxvt*internalBorder:0
 ! Letter spacing adjustment
 ! URxvt*letterSpace:                    number
 !URxvt*letterSpace:-1
-:
 ! Disable the usage of the built-in block graphics/line drawing characters and just rely on what the specified fonts provide. Use this if you have a good font and want to use its block graphic glyphs
 ! URxvt*skipBuiltinGlyphs:              boolean
 
