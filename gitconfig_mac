@@ -41,6 +41,7 @@
 
 [diff]
         tool = ediff
+        compactionHeuristic = true
 [merge]
 	tool = emacsclient
 [github]
