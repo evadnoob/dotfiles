@@ -84,6 +84,7 @@
      scala-mode
      scss-mode
      smart-cursor-color
+     smooth-scrolling
      swiper
      toml-mode
      visible-mark

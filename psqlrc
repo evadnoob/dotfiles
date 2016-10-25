@@ -38,3 +38,5 @@
 \set waits 'SELECT pg_stat_activity.pid, pg_stat_activity.query, pg_stat_activity.waiting, now() - pg_stat_activity.query_start  as "totaltime", pg_stat_activity.backend_start FROM pg_stat_activity WHERE pg_stat_activity.query !~ \'%IDLE%\'::text AND pg_stat_activity.waiting = true;'
 
 \set locks 'select pg_stat_activity.pid, mode, client_hostname||\':\'||client_port, query from pg_locks, pg_stat_activity where granted=false and locktype=\'transactionid\' and pg_stat_activity.pid=pg_locks.pid order by pid,granted;'
+
+--\pset null Ø

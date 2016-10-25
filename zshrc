@@ -11,17 +11,17 @@ if [[ ! "dumb" = "$TERM" ]]; then
   source ${ZSH_DOTFILES}/setup-zprezto.zsh
 fi
 
-source ${ZSH_DOTFILES}/setup-java.zsh
-source ${ZSH_DOTFILES}/setup-aws.zsh
-source ${ZSH_DOTFILES}/setup-emacs.zsh
-source ${ZSH_DOTFILES}/setup-less.zsh
-source ${ZSH_DOTFILES}/setup-functions.zsh
-source ${ZSH_DOTFILES}/setup-vim.zsh
-source ${ZSH_DOTFILES}/setup-zsh.zsh
-source ${ZSH_DOTFILES}/setup-ssh.zsh
-source ${ZSH_DOTFILES}/setup-postgres.zsh
-source ${ZSH_DOTFILES}/setup-gcloud.zsh
-source ${ZSH_DOTFILES}/setup-ranger.zsh
+# source ${ZSH_DOTFILES}/setup-java.zsh
+# source ${ZSH_DOTFILES}/setup-aws.zsh
+# source ${ZSH_DOTFILES}/setup-emacs.zsh
+# source ${ZSH_DOTFILES}/setup-less.zsh
+# source ${ZSH_DOTFILES}/setup-functions.zsh
+# source ${ZSH_DOTFILES}/setup-vim.zsh
+# source ${ZSH_DOTFILES}/setup-zsh.zsh
+# source ${ZSH_DOTFILES}/setup-ssh.zsh
+# source ${ZSH_DOTFILES}/setup-postgres.zsh
+# source ${ZSH_DOTFILES}/setup-gcloud.zsh
+# source ${ZSH_DOTFILES}/setup-ranger.zsh
 
 export PATH="/usr/local/bin:${PATH}"
 
@@ -78,3 +78,4 @@ source ${ZSH_DOTFILES}/setup-aliases.zsh
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
+prompt pure

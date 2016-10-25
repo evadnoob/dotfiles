@@ -352,7 +352,7 @@ Urxvt*color0:                           #000000
 !Xft.hintstyle: hintfull
 !!Xft.lcdfilter: lcddefault
 !Xft.rgba: rgb
-Xcursor.theme: Human
+!Xcursor.theme: Human
 !
 
 
@@ -377,12 +377,16 @@ URxvt.keysym.M-Escape: perl:keyboard-select:activate
 URxvt.clipboard.autocopy: true
 URxvt.keysym.M-c: perl:clipboard:copy
 URxvt.keysym.M-v: perl:clipboard:paste
-!URxvt.keysym.M-C-v: perl:clipboard:paste_escaped
+!!URxvt.keysym.M-C-v: perl:clipboard:paste_escaped
+URxvt.keysym.M-C-v: perl:clipboard:paste
 
 URxvt.clipboard.copycmd:  xclip -i -selection clipboard
 URxvt.clipboard.pastecmd: xclip -o -selection clipboard
 
 
+! keyboard-select
+URxvt.keysym.M-s: perl:keyboard-select:activate
+URxvt.keysym.M-r: perl:keyboard-select:search
 
 ! ------------------------------------------------------------------------------
 ! ! ROFI Color theme
@@ -407,7 +411,7 @@ URxvt.clipboard.pastecmd: xclip -o -selection clipboard
 
 
 
-rofi.location:          2
+rofi.location:          6
 rofi.color-enabled:     true
 rofi.color-window:      argb:ee121212, #444444, 00ffff
 rofi.color-normal:      argb:00111111, #E5DBCF, argb:00111111, #e4e4e4, #0F3B5F
@@ -420,13 +424,13 @@ rofi.padding:           5
 rofi.hide-scrollbar:    true
 rofi.line-margin:       3
 rofi.fake-transparency: true
-rofi.yoffset:           +80
+rofi.yoffset:           -384
 rofi.xoffset:           0
 !rofi.width:             1924
-rofi.width:             1024
+rofi.width:             800
 rofi.font:              Hack bold 8
-rofi.lines:             50 
-rofi.columns:           3
+rofi.lines:             20 
+rofi.columns:           1
 rofi.regex:             true
 rofi.markup-rows:       true
 

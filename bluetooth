@@ -1,0 +1,16 @@
+#!/bin/bash
+bluetoothctl <<EOF
+power on
+agent on
+scan on
+default-agent
+EOF
+
+sleep 3
+
+bluetoothctl <<EOF
+pair 68:D9:3C:5F:C1:92
+connect 68:D9:3C:5F:C1:92
+EOF
+
+sleep 3

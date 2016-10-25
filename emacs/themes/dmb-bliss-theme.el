@@ -117,6 +117,14 @@
 
  ;; Ensime
  '(ensime-errline-highlight ((t (:background "#AA0000"))))
+
+
+ ;; smerge
+ '(smerge-mine ((t (:background "#3b3c3c"))))
+ '(smerge-markers ((t (:background nil))))
+ '(smerge-other ((t (:background "gray" :foreground "black" ))))
+ '(smerge-refined-added ((t (:foreground "black" :background "green"))))
+ 
  
 ;; Rainbow delimiters
  '(rainbow-delimiters-depth-1-face ((t (:foreground "#2a7d9d"))))

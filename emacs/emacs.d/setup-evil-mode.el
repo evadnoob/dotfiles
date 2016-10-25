@@ -11,7 +11,8 @@
 
 
 (setq evil-visual-state-cursor 'box) ; █
-(setq evil-insert-state-cursor 'bar) ; ⎸
+(setq evil-normal-state-cursor '("gray" (box . 2))) ; █
+(setq evil-insert-state-cursor '("chartreuse3" (bar . 1))) ; ⎸
 (setq evil-emacs-state-cursor 'hbar) ; _
 
 ;;(setcdr evil-insert-state-map nil)
@@ -45,8 +46,8 @@
 ;;                 (set-face-foreground 'mode-line-buffer-id (cdr color))))))
 
 
-;; (unless (display-graphic-p)
-;;    (require 'evil-terminal-cursor-changer))
+(unless (display-graphic-p)
+    (require 'evil-terminal-cursor-changer))
 
 (require 'evil-args)
 
