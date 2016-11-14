@@ -137,6 +137,12 @@
  '(rainbow-delimiters-depth-8-face ((t (:foreground "#77bfdb"))))
  '(rainbow-delimiters-depth-9-face ((t (:foreground "#86c6df"))))
  '(rainbow-delimiters-unmatched-face ((t (:foreground "#FF0000"))))
+
+
+ ;;ediff
+ '(ediff-fine-diff-A ((t (:background nil))))
+ '(ediff-fine-diff-B ((t (:background nil))))
+ 
 ) ;; End face definitions
 
 ;;;###autoload

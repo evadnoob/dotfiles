@@ -156,7 +156,7 @@ assign [class="Spotify"] $workspace8
 assign [class="urxvt" title="^david: ranger$"] $workspace4
 
 
-exec --no-startup-id i3-msg 'workspace 7: hipchat; exec hipchat4'
+#exec --no-startup-id i3-msg 'workspace 7: hipchat; exec hipchat4'
 #exec --no-startup-id i3-msg 'workspace 1: default; exec urxvt -e ranger'
 #exec --no-startup-id i3-msg 'workspace 9: default; exec irssi'
 exec --no-startup-id i3-msg 'workspace 3: www; exec iceweasel'

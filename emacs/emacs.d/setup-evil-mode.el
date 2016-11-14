@@ -106,6 +106,14 @@ then it takes a second \\[keyboard-quit] to abort the minibuffer."
 ;;(smart-cursor-color-mode +1)
 
 
+(require 'highlight)
+(require 'evil-search-highlight-persist)
+(global-evil-search-highlight-persist t)
+
+;; To only display string whose length is greater than or equal to 3
+;; (setq evil-search-highlight-string-min-len 3)
+
+
 
 (eval-after-load 'bs
   '(progn
@@ -197,6 +205,7 @@ then it takes a second \\[keyboard-quit] to abort the minibuffer."
 
 
 (require 'evil-matchit)
+
 
 (provide 'setup-evil-mode)
 

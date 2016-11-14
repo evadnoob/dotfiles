@@ -86,7 +86,7 @@
  '(completion-ignore-case t t)
  '(custom-safe-themes
    (quote
-    ("893f0a4c187524b5fb2cfb5c5dccb40faef3914045ff82d13de5d57e105c7ebf" "a430857b5359b0051a74771a5c3c622bc00a0c930369b5b4a3b575992a767ffc" "67fadbf89c59c0290a6e1fad876350d6b14ee0e7c74492d5ed74cf6254104f45" default)))
+    ("612ec5de510341db60391367dd3c3615deb06066a22b805fe3fdb6433b9c3da4" "893f0a4c187524b5fb2cfb5c5dccb40faef3914045ff82d13de5d57e105c7ebf" "a430857b5359b0051a74771a5c3c622bc00a0c930369b5b4a3b575992a767ffc" "67fadbf89c59c0290a6e1fad876350d6b14ee0e7c74492d5ed74cf6254104f45" default)))
  '(custom-theme-directory (*emacs "/themes"))
  '(dired-listing-switches "-ghG")
  '(erc-enable-logging (quote erc-log-all-but-server-buffers))
