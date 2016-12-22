@@ -27,6 +27,10 @@
 
 (defun my-rust-mode-hook()
 
+  ;; (linum-relative-on)
+  ;; (linum-mode 1))
+  (linum-relative-mode)
+  
   (company-mode 1)
 
   (add-hook 'racer-mode-hook #'company-mode)
