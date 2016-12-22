@@ -154,6 +154,7 @@ assign [class="hipchat4"] $workspace7
 assign [class="Firefox"] $workspace3
 assign [class="Spotify"] $workspace8
 assign [class="urxvt" title="^david: ranger$"] $workspace4
+assign [class="hipchat4" window_type="notification"] $workspace7
 
 
 #exec --no-startup-id i3-msg 'workspace 7: hipchat; exec hipchat4'
@@ -278,6 +279,7 @@ exec --no-startup-id exec parcellite
 
 
 bindsym $mod+Shift+p exec scrot '%Y-%m-%d-%T_$wx$h_scrot.png' -e 'mv $f ~/Dropbox/Screenshots/'
+bindsym $mod+Shift+1+p exec scrot '%Y-%m-%d-%T_$wx$h_scrot.png' -e 'mv $f ~/Dropbox/Screenshots/'
 bindsym $mod+Shift+o exec scrot -u '%Y-%m-%d-%T_$wx$h_scrot.png' -e 'mv $f ~/Dropbox/Screenshots/'
 
 
