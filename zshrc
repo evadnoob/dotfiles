@@ -22,6 +22,7 @@ fi
 # source ${ZSH_DOTFILES}/setup-postgres.zsh
 # source ${ZSH_DOTFILES}/setup-gcloud.zsh
 # source ${ZSH_DOTFILES}/setup-ranger.zsh
+source ${ZSH_DOTFILES}/setup-haste.sh
 
 export PATH="/usr/local/bin:${PATH}"
 
@@ -79,3 +80,6 @@ source ${ZSH_DOTFILES}/setup-aliases.zsh
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 prompt pure
+
+
+eval $(dircolors -p | sed -e 's/DIR 01;34/DIR 01;39/' | dircolors /dev/stdin)6

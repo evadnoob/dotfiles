@@ -1,0 +1,1477 @@
+2016-12-13 15:11:09	⚡	irc: connecting to server irc.mozilla.org/6667...
+2016-12-13 15:11:09	⚡	irc: connected to irc.mozilla.org/6667 (54.85.60.193)
+2016-12-13 15:11:09	⚡	levin.mozilla.org: *** Looking up your hostname...
+2016-12-13 15:11:12	⚡	levin.mozilla.org: *** Could not resolve your hostname: Domain name not found; using your IP address (66.195.46.242) instead.
+2016-12-13 15:11:13	⚡	levin.mozilla.org: Welcome to Mozilla!
+2016-12-13 15:11:13	⚡	Welcome to the Mozilla IRC Network d8v3!d8v3@66.195.46.242
+2016-12-13 15:11:13	⚡	Your host is levin.mozilla.org, running version InspIRCd-2.0
+2016-12-13 15:11:13	⚡	This server was created 11:39:26 Sep  3 2016
+2016-12-13 15:11:13	⚡	levin.mozilla.org InspIRCd-2.0 BHIRSWacdhikorswx ABCDFKLMNOQRSTYZabcefghijklmnopqrstuvz FLYZabefghjkloqv
+2016-12-13 15:11:13	⚡	AWAYLEN=200 CASEMAPPING=rfc1459 CHANMODES=Zbeg,k,FLfjl,ABCDKMNOQRSTcimnprstuz CHANNELLEN=64 CHANTYPES=# CHARSET=ascii ELIST=MU ESILENCE EXCEPTS=e EXTBAN=,ABCNOQRSTUcmprz FNC KICKLEN=255 MAP :are supported by this server
+2016-12-13 15:11:13	⚡	MAXBANS=60 MAXCHANNELS=100 MAXPARA=32 MAXTARGETS=20 MODES=20 NAMESX NETWORK=Mozilla NICKLEN=31 OPERLOG OVERRIDE PREFIX=(Yqaohv)!~&@%+ SECURELIST SILENCE=32 :are supported by this server
+2016-12-13 15:11:13	⚡	SSL=[::]:6697 STATUSMSG=!~&@%+ TOPICLEN=307 UHNAMES USERIP VBANLIST WALLCHOPS WALLVOICES WATCH=32 :are supported by this server
+2016-12-13 15:11:13	⚡	557ACCKF9 :your unique ID
+2016-12-13 15:11:13	⚡	levin.mozilla.org message of the day
+2016-12-13 15:11:13	⚡	-                      __          _
+2016-12-13 15:11:13	⚡	-                     / /__ _   __(_)___
+2016-12-13 15:11:13	⚡	-                    / / _ \ | / / / __ \
+2016-12-13 15:11:13	⚡	-                   / /  __/ |/ / / / / /
+2016-12-13 15:11:13	⚡	-                  /_/\___/|___/_/_/ /_/
+2016-12-13 15:11:13	⚡	-
+2016-12-13 15:11:13	⚡	-               M O Z I L L A   D O T   O R G
+2016-12-13 15:11:13	⚡	-                 https://www.mozilla.org/
+2016-12-13 15:11:13	⚡	-
+2016-12-13 15:11:13	⚡	- =================================================================
+2016-12-13 15:11:13	⚡	-  This server is for use by Mozilla developers, testers, and
+2016-12-13 15:11:13	⚡	-  users. If you are not one, please find another server.
+2016-12-13 15:11:13	⚡	-
+2016-12-13 15:11:13	⚡	-  NOTICE: Your IP address will be portscanned by our open
+2016-12-13 15:11:13	⚡	-  proxy tester.  See https://wiki.mozilla.org/IRC for details.
+2016-12-13 15:11:13	⚡	-
+2016-12-13 15:11:13	⚡	- =================================================================
+2016-12-13 15:11:13	⚡	-  Project information:
+2016-12-13 15:11:13	⚡	-   Firefox                https://support.mozilla.org/
+2016-12-13 15:11:13	⚡	-   Mobile                 https://support.mozilla.org/mobile
+2016-12-13 15:11:13	⚡	-   Thunderbird            https://support.mozilla.org/products/thunderbird
+2016-12-13 15:11:13	⚡	-   Boot2Gecko (FirefoxOS) https://support.mozilla.org/products/firefox-os
+2016-12-13 15:11:13	⚡	-   Webmaker               https://support.mozilla.org/products/webmaker
+2016-12-13 15:11:13	⚡	-
+2016-12-13 15:11:13	⚡	-  Help for new contributors:
+2016-12-13 15:11:13	⚡	-   https://developer.mozilla.org/Introduction
+2016-12-13 15:11:13	⚡	-
+2016-12-13 15:11:13	⚡	- =================================================================
+2016-12-13 15:11:13	⚡	-  Ports:
+2016-12-13 15:11:13	⚡	-   Non-SSL: 6665 - 6669
+2016-12-13 15:11:13	⚡	-       SSL: 6697, 8443
+2016-12-13 15:11:13	⚡	- =================================================================
+2016-12-13 15:11:13	⚡	-
+2016-12-13 15:11:13	⚡	-  For a list of other helpful channels please visit
+2016-12-13 15:11:13	⚡	-  https://wiki.mozilla.org/IRC or use the /list command.
+2016-12-13 15:11:13	⚡	-  Additional help with IRC at http://www.irchelp.org/
+2016-12-13 15:11:13	⚡	-
+2016-12-13 15:11:13	⚡	End of message of the day.
+2016-12-13 15:11:13	⚡	There are 3832 users and 829 invisible on 4 servers
+2016-12-13 15:11:13	⚡	12 :operator(s) online
+2016-12-13 15:11:13	⚡	1837 :channels formed
+2016-12-13 15:11:13	⚡	I have 1518 clients and 1 servers
+2016-12-13 15:11:13	⚡	Current Local Users: 1518  Max: 1643
+2016-12-13 15:11:13	⚡	Current Global Users: 4661  Max: 4904
+2016-12-13 15:11:13	⚡	moz-00m.h73.195.66.IP :is now your displayed host
+2016-12-13 15:11:13	⚡	User mode [+x] by d8v3
+2016-12-13 15:11:18	⚡	MSG(nickserv): identify ********
+2016-12-13 15:11:18	⚡	NickServ (services@ircservices.mozilla.org): Nick d8v3 isn't registered.
+2016-12-13 15:11:25	⚡	You are now known as boon
+2016-12-13 15:11:25	⚡	NickServ (services@ircservices.mozilla.org): This nickname is registered and protected.  If it is your
+2016-12-13 15:11:25	⚡	NickServ (services@ircservices.mozilla.org): nick, type /msg NickServ IDENTIFY password.  Otherwise,
+2016-12-13 15:11:25	⚡	NickServ (services@ircservices.mozilla.org): please choose a different nick.
+2016-12-13 15:11:27	⚡	MSG(nickserv): identify ********
+2016-12-13 15:11:27	⚡	NickServ (services@ircservices.mozilla.org): Password incorrect.
+2016-12-13 15:11:32	⚡	MSG(nickserv): identify ********
+2016-12-13 15:11:32	⚡	NickServ (services@ircservices.mozilla.org): Password accepted - you are now recognized.
+2016-12-13 15:11:32	⚡	You are now logged in as boon (boon!d8v3@moz-00m.h73.195.66.IP)
+2016-12-13 15:11:33	⚡	User mode [+r] by NickServ
+2016-12-13 16:25:29	⚡	Channel Users Name
+2016-12-13 16:25:29	⚡	#moc_interviews(2): [+nt]
+2016-12-13 16:25:32	⚡	End of channel list.
+2016-12-13 19:37:20	⚠ 	irc: reading data on socket: error 110 Connection timed out
+2016-12-13 19:37:20	⚡	irc: disconnecting from server...
+2016-12-13 19:37:20	⚡	irc: disconnected from server
+2016-12-13 19:37:20	⚡	irc: reconnecting to server in 10 seconds
+2016-12-13 19:37:30	⚡	irc: reconnecting to server...
+2016-12-13 19:37:30	⚡	irc: connecting to server irc.mozilla.org/6667...
+2016-12-13 19:37:30	⚡	irc: connected to irc.mozilla.org/6667 (2620:101:8016:74::143)
+2016-12-13 19:37:30	⚡	bruford.mozilla.org: *** Looking up your hostname...
+2016-12-13 19:37:30	⚡	bruford.mozilla.org: *** Could not resolve your hostname: Domain name not found; using your IP address (2601:602:8801:9c70::4426) instead.
+2016-12-13 19:37:31	⚡	bruford.mozilla.org: Welcome to Mozilla!
+2016-12-13 19:37:31	⚡	Welcome to the Mozilla IRC Network boon!d8v3@2601:602:8801:9c70::4426
+2016-12-13 19:37:31	⚡	Your host is bruford.mozilla.org, running version InspIRCd-2.0
+2016-12-13 19:37:31	⚡	This server was created 11:39:26 Sep  3 2016
+2016-12-13 19:37:31	⚡	bruford.mozilla.org InspIRCd-2.0 BHIRSWacdhikorswx ABCDFKLMNOQRSTYZabcefghijklmnopqrstuvz FLYZabefghjkloqv
+2016-12-13 19:37:31	⚡	AWAYLEN=200 CASEMAPPING=rfc1459 CHANMODES=Zbeg,k,FLfjl,ABCDKMNOQRSTcimnprstuz CHANNELLEN=64 CHANTYPES=# CHARSET=ascii ELIST=MU ESILENCE EXCEPTS=e EXTBAN=,ABCNOQRSTUcmprz FNC KICKLEN=255 MAP :are supported by this server
+2016-12-13 19:37:31	⚡	MAXBANS=60 MAXCHANNELS=100 MAXPARA=32 MAXTARGETS=20 MODES=20 NAMESX NETWORK=Mozilla NICKLEN=31 OPERLOG OVERRIDE PREFIX=(Yqaohv)!~&@%+ SECURELIST SILENCE=32 :are supported by this server
+2016-12-13 19:37:31	⚡	SSL=[::]:6697 STATUSMSG=!~&@%+ TOPICLEN=307 UHNAMES USERIP VBANLIST WALLCHOPS WALLVOICES WATCH=32 :are supported by this server
+2016-12-13 19:37:31	⚡	010ACV9KI :your unique ID
+2016-12-13 19:37:31	⚡	bruford.mozilla.org message of the day
+2016-12-13 19:37:31	⚡	-                  __               ____               __
+2016-12-13 19:37:31	⚡	-                 / /_  _______  __/ __/___  _________/ /
+2016-12-13 19:37:31	⚡	-                / __ \/ ___/ / / / /_/ __ \/ ___/ __  /
+2016-12-13 19:37:31	⚡	-               / /_/ / /  / /_/ / __/ /_/ / /  / /_/ /
+2016-12-13 19:37:31	⚡	-              /_.___/_/   \__,_/_/  \____/_/   \__,_/
+2016-12-13 19:37:31	⚡	-
+2016-12-13 19:37:31	⚡	-
+2016-12-13 19:37:31	⚡	-                  M O Z I L L A   D O T   O R G
+2016-12-13 19:37:31	⚡	-                    https://www.mozilla.org/
+2016-12-13 19:37:31	⚡	-
+2016-12-13 19:37:31	⚡	- =================================================================
+2016-12-13 19:37:31	⚡	-  This server is for use by Mozilla developers, testers, and
+2016-12-13 19:37:31	⚡	-  users. If you are not one, please find another server.
+2016-12-13 19:37:31	⚡	-
+2016-12-13 19:37:31	⚡	-  NOTICE: Your IP address will be portscanned by our open
+2016-12-13 19:37:31	⚡	-  proxy tester.  See https://wiki.mozilla.org/IRC for details.
+2016-12-13 19:37:31	⚡	-
+2016-12-13 19:37:31	⚡	- =================================================================
+2016-12-13 19:37:31	⚡	-  Project information:
+2016-12-13 19:37:31	⚡	-   Firefox                https://support.mozilla.org/
+2016-12-13 19:37:31	⚡	-   Mobile                 https://support.mozilla.org/mobile
+2016-12-13 19:37:31	⚡	-   Thunderbird            https://support.mozilla.org/products/thunderbird
+2016-12-13 19:37:31	⚡	-   Boot2Gecko (FirefoxOS) https://support.mozilla.org/products/firefox-os
+2016-12-13 19:37:31	⚡	-   Webmaker               https://support.mozilla.org/products/webmaker
+2016-12-13 19:37:31	⚡	-
+2016-12-13 19:37:31	⚡	-  Help for new contributors:
+2016-12-13 19:37:31	⚡	-   https://developer.mozilla.org/Introduction
+2016-12-13 19:37:31	⚡	-
+2016-12-13 19:37:31	⚡	- =================================================================
+2016-12-13 19:37:31	⚡	-  Ports:
+2016-12-13 19:37:31	⚡	-   Non-SSL: 6665 - 6669
+2016-12-13 19:37:31	⚡	-       SSL: 6697, 8443
+2016-12-13 19:37:31	⚡	- =================================================================
+2016-12-13 19:37:31	⚡	-
+2016-12-13 19:37:31	⚡	-  For a list of other helpful channels please visit
+2016-12-13 19:37:31	⚡	-  https://wiki.mozilla.org/IRC or use the /list command.
+2016-12-13 19:37:31	⚡	-  Additional help with IRC at http://www.irchelp.org/
+2016-12-13 19:37:31	⚡	-
+2016-12-13 19:37:31	⚡	End of message of the day.
+2016-12-13 19:37:31	⚡	There are 3653 users and 814 invisible on 4 servers
+2016-12-13 19:37:31	⚡	12 :operator(s) online
+2016-12-13 19:37:31	⚡	1826 :channels formed
+2016-12-13 19:37:31	⚡	I have 1792 clients and 2 servers
+2016-12-13 19:37:31	⚡	Current Local Users: 1792  Max: 1873
+2016-12-13 19:37:31	⚡	Current Global Users: 4467  Max: 4904
+2016-12-13 19:37:31	⚡	moz-cf64oa.eqdp.1nof.0602.2601.IP :is now your displayed host
+2016-12-13 19:37:31	⚡	User mode [+x] by boon
+2016-12-13 19:37:31	⚡	NickServ (services@ircservices.mozilla.org): This nickname is registered and protected.  If it is your
+2016-12-13 19:37:31	⚡	NickServ (services@ircservices.mozilla.org): nick, type /msg NickServ IDENTIFY password.  Otherwise,
+2016-12-13 19:37:31	⚡	NickServ (services@ircservices.mozilla.org): please choose a different nick.
+2016-12-14 10:11:12	⚠ 	irc: reading data on socket: error 101 Network is unreachable
+2016-12-14 10:11:12	⚡	irc: disconnecting from server...
+2016-12-14 10:11:12	⚡	irc: disconnected from server
+2016-12-14 10:11:12	⚡	irc: reconnecting to server in 10 seconds
+2016-12-14 10:11:22	⚡	irc: reconnecting to server...
+2016-12-14 10:11:22	⚡	irc: connecting to server irc.mozilla.org/6667...
+2016-12-14 10:11:23	⚡	irc: connected to irc.mozilla.org/6667 (54.85.60.193)
+2016-12-14 10:11:23	⚡	levin.mozilla.org: *** Looking up your hostname...
+2016-12-14 10:11:28	⚡	levin.mozilla.org: *** Could not resolve your hostname: Request timed out; using your IP address (66.195.46.242) instead.
+2016-12-14 10:11:28	⚡	levin.mozilla.org: Welcome to Mozilla!
+2016-12-14 10:11:28	⚡	Welcome to the Mozilla IRC Network boon!d8v3@66.195.46.242
+2016-12-14 10:11:28	⚡	Your host is levin.mozilla.org, running version InspIRCd-2.0
+2016-12-14 10:11:28	⚡	This server was created 11:39:26 Sep  3 2016
+2016-12-14 10:11:28	⚡	levin.mozilla.org InspIRCd-2.0 BHIRSWacdhikorswx ABCDFKLMNOQRSTYZabcefghijklmnopqrstuvz FLYZabefghjkloqv
+2016-12-14 10:11:28	⚡	AWAYLEN=200 CASEMAPPING=rfc1459 CHANMODES=Zbeg,k,FLfjl,ABCDKMNOQRSTcimnprstuz CHANNELLEN=64 CHANTYPES=# CHARSET=ascii ELIST=MU ESILENCE EXCEPTS=e EXTBAN=,ABCNOQRSTUcmprz FNC KICKLEN=255 MAP :are supported by this server
+2016-12-14 10:11:28	⚡	MAXBANS=60 MAXCHANNELS=100 MAXPARA=32 MAXTARGETS=20 MODES=20 NAMESX NETWORK=Mozilla NICKLEN=31 OPERLOG OVERRIDE PREFIX=(Yqaohv)!~&@%+ SECURELIST SILENCE=32 :are supported by this server
+2016-12-14 10:11:28	⚡	SSL=[::]:6697 STATUSMSG=!~&@%+ TOPICLEN=307 UHNAMES USERIP VBANLIST WALLCHOPS WALLVOICES WATCH=32 :are supported by this server
+2016-12-14 10:11:28	⚡	557ACCY29 :your unique ID
+2016-12-14 10:11:28	⚡	levin.mozilla.org message of the day
+2016-12-14 10:11:28	⚡	-                      __          _
+2016-12-14 10:11:28	⚡	-                     / /__ _   __(_)___
+2016-12-14 10:11:28	⚡	-                    / / _ \ | / / / __ \
+2016-12-14 10:11:28	⚡	-                   / /  __/ |/ / / / / /
+2016-12-14 10:11:28	⚡	-                  /_/\___/|___/_/_/ /_/
+2016-12-14 10:11:28	⚡	-
+2016-12-14 10:11:28	⚡	-               M O Z I L L A   D O T   O R G
+2016-12-14 10:11:28	⚡	-                 https://www.mozilla.org/
+2016-12-14 10:11:28	⚡	-
+2016-12-14 10:11:28	⚡	- =================================================================
+2016-12-14 10:11:28	⚡	-  This server is for use by Mozilla developers, testers, and
+2016-12-14 10:11:28	⚡	-  users. If you are not one, please find another server.
+2016-12-14 10:11:28	⚡	-
+2016-12-14 10:11:28	⚡	-  NOTICE: Your IP address will be portscanned by our open
+2016-12-14 10:11:28	⚡	-  proxy tester.  See https://wiki.mozilla.org/IRC for details.
+2016-12-14 10:11:28	⚡	-
+2016-12-14 10:11:28	⚡	- =================================================================
+2016-12-14 10:11:28	⚡	-  Project information:
+2016-12-14 10:11:28	⚡	-   Firefox                https://support.mozilla.org/
+2016-12-14 10:11:28	⚡	-   Mobile                 https://support.mozilla.org/mobile
+2016-12-14 10:11:28	⚡	-   Thunderbird            https://support.mozilla.org/products/thunderbird
+2016-12-14 10:11:28	⚡	-   Boot2Gecko (FirefoxOS) https://support.mozilla.org/products/firefox-os
+2016-12-14 10:11:28	⚡	-   Webmaker               https://support.mozilla.org/products/webmaker
+2016-12-14 10:11:28	⚡	-
+2016-12-14 10:11:28	⚡	-  Help for new contributors:
+2016-12-14 10:11:28	⚡	-   https://developer.mozilla.org/Introduction
+2016-12-14 10:11:28	⚡	-
+2016-12-14 10:11:28	⚡	- =================================================================
+2016-12-14 10:11:28	⚡	-  Ports:
+2016-12-14 10:11:28	⚡	-   Non-SSL: 6665 - 6669
+2016-12-14 10:11:28	⚡	-       SSL: 6697, 8443
+2016-12-14 10:11:28	⚡	- =================================================================
+2016-12-14 10:11:28	⚡	-
+2016-12-14 10:11:28	⚡	-  For a list of other helpful channels please visit
+2016-12-14 10:11:28	⚡	-  https://wiki.mozilla.org/IRC or use the /list command.
+2016-12-14 10:11:28	⚡	-  Additional help with IRC at http://www.irchelp.org/
+2016-12-14 10:11:28	⚡	-
+2016-12-14 10:11:28	⚡	End of message of the day.
+2016-12-14 10:11:28	⚡	There are 3977 users and 831 invisible on 4 servers
+2016-12-14 10:11:28	⚡	12 :operator(s) online
+2016-12-14 10:11:28	⚡	1865 :channels formed
+2016-12-14 10:11:28	⚡	I have 1569 clients and 1 servers
+2016-12-14 10:11:28	⚡	Current Local Users: 1569  Max: 1643
+2016-12-14 10:11:28	⚡	Current Global Users: 4808  Max: 4904
+2016-12-14 10:11:28	⚡	moz-00m.h73.195.66.IP :is now your displayed host
+2016-12-14 10:11:28	⚡	User mode [+x] by boon
+2016-12-14 10:11:28	⚡	NickServ (services@ircservices.mozilla.org): This nickname is registered and protected.  If it is your
+2016-12-14 10:11:28	⚡	NickServ (services@ircservices.mozilla.org): nick, type /msg NickServ IDENTIFY password.  Otherwise,
+2016-12-14 10:11:28	⚡	NickServ (services@ircservices.mozilla.org): please choose a different nick.
+2016-12-14 14:12:51	⚠ 	irc: reading data on socket: error 110 Connection timed out
+2016-12-14 14:12:51	⚡	irc: disconnecting from server...
+2016-12-14 14:12:51	⚡	irc: disconnected from server
+2016-12-14 14:12:51	⚡	irc: reconnecting to server in 10 seconds
+2016-12-14 14:13:01	⚡	irc: reconnecting to server...
+2016-12-14 14:13:01	⚡	irc: connecting to server irc.mozilla.org/6667...
+2016-12-14 14:13:01	⚡	irc: connected to irc.mozilla.org/6667 (54.219.165.167)
+2016-12-14 14:13:02	⚡	belew.mozilla.org: *** Looking up your hostname...
+2016-12-14 14:13:07	⚡	belew.mozilla.org: *** Could not resolve your hostname: Request timed out; using your IP address (66.195.46.242) instead.
+2016-12-14 14:13:07	⚡	belew.mozilla.org: Welcome to Mozilla!
+2016-12-14 14:13:07	⚡	Welcome to the Mozilla IRC Network boon!d8v3@66.195.46.242
+2016-12-14 14:13:07	⚡	Your host is belew.mozilla.org, running version InspIRCd-2.0
+2016-12-14 14:13:07	⚡	This server was created 11:39:26 Sep  3 2016
+2016-12-14 14:13:07	⚡	belew.mozilla.org InspIRCd-2.0 BHIRSWacdhikorswx ABCDFKLMNOQRSTYZabcefghijklmnopqrstuvz FLYZabefghjkloqv
+2016-12-14 14:13:07	⚡	AWAYLEN=200 CASEMAPPING=rfc1459 CHANMODES=Zbeg,k,FLfjl,ABCDKMNOQRSTcimnprstuz CHANNELLEN=64 CHANTYPES=# CHARSET=ascii ELIST=MU ESILENCE EXCEPTS=e EXTBAN=,ABCNOQRSTUcmprz FNC KICKLEN=255 MAP :are supported by this server
+2016-12-14 14:13:07	⚡	MAXBANS=60 MAXCHANNELS=100 MAXPARA=32 MAXTARGETS=20 MODES=20 NAMESX NETWORK=Mozilla NICKLEN=31 OPERLOG OVERRIDE PREFIX=(Yqaohv)!~&@%+ SECURELIST SILENCE=32 :are supported by this server
+2016-12-14 14:13:07	⚡	SSL=[::]:6697 STATUSMSG=!~&@%+ TOPICLEN=307 UHNAMES USERIP VBANLIST WALLCHOPS WALLVOICES WATCH=32 :are supported by this server
+2016-12-14 14:13:07	⚡	203ACB9EF :your unique ID
+2016-12-14 14:13:07	⚡	belew.mozilla.org message of the day
+2016-12-14 14:13:07	⚡	-                      __         __
+2016-12-14 14:13:07	⚡	-                     / /_  ___  / /__ _      __
+2016-12-14 14:13:07	⚡	-                    / __ \/ _ \/ / _ \ | /| / /
+2016-12-14 14:13:07	⚡	-                   / /_/ /  __/ /  __/ |/ |/ /
+2016-12-14 14:13:07	⚡	-                  /_.___/\___/_/\___/|__/|__/
+2016-12-14 14:13:07	⚡	-
+2016-12-14 14:13:07	⚡	-
+2016-12-14 14:13:07	⚡	-                  M O Z I L L A   D O T   O R G
+2016-12-14 14:13:07	⚡	-                    https://www.mozilla.org/
+2016-12-14 14:13:07	⚡	-
+2016-12-14 14:13:07	⚡	- =================================================================
+2016-12-14 14:13:07	⚡	-  This server is for use by Mozilla developers, testers, and
+2016-12-14 14:13:07	⚡	-  users. If you are not one, please find another server.
+2016-12-14 14:13:07	⚡	-
+2016-12-14 14:13:07	⚡	-  NOTICE: Your IP address will be portscanned by our open
+2016-12-14 14:13:07	⚡	-  proxy tester.  See https://wiki.mozilla.org/IRC for details.
+2016-12-14 14:13:07	⚡	-
+2016-12-14 14:13:07	⚡	- =================================================================
+2016-12-14 14:13:07	⚡	-  Project information:
+2016-12-14 14:13:07	⚡	-   Firefox                https://support.mozilla.org/
+2016-12-14 14:13:07	⚡	-   Mobile                 https://support.mozilla.org/mobile
+2016-12-14 14:13:07	⚡	-   Thunderbird            https://support.mozilla.org/products/thunderbird
+2016-12-14 14:13:07	⚡	-   Boot2Gecko (FirefoxOS) https://support.mozilla.org/products/firefox-os
+2016-12-14 14:13:07	⚡	-   Webmaker               https://support.mozilla.org/products/webmaker
+2016-12-14 14:13:07	⚡	-
+2016-12-14 14:13:07	⚡	-  Help for new contributors:
+2016-12-14 14:13:07	⚡	-   https://developer.mozilla.org/Introduction
+2016-12-14 14:13:07	⚡	-
+2016-12-14 14:13:07	⚡	- =================================================================
+2016-12-14 14:13:07	⚡	-  Ports:
+2016-12-14 14:13:07	⚡	-   Non-SSL: 6665 - 6669
+2016-12-14 14:13:07	⚡	-       SSL: 6697, 8443
+2016-12-14 14:13:07	⚡	- =================================================================
+2016-12-14 14:13:07	⚡	-
+2016-12-14 14:13:07	⚡	-  For a list of other helpful channels please visit
+2016-12-14 14:13:07	⚡	-  https://wiki.mozilla.org/IRC or use the /list command.
+2016-12-14 14:13:07	⚡	-  Additional help with IRC at http://www.irchelp.org/
+2016-12-14 14:13:07	⚡	-
+2016-12-14 14:13:07	⚡	End of message of the day.
+2016-12-14 14:13:07	⚡	There are 3930 users and 825 invisible on 4 servers
+2016-12-14 14:13:07	⚡	11 :operator(s) online
+2016-12-14 14:13:07	⚡	1 :unknown connections
+2016-12-14 14:13:07	⚡	1847 :channels formed
+2016-12-14 14:13:07	⚡	I have 1334 clients and 2 servers
+2016-12-14 14:13:07	⚡	Current Local Users: 1334  Max: 1820
+2016-12-14 14:13:07	⚡	Current Global Users: 4755  Max: 4904
+2016-12-14 14:13:07	⚡	moz-00m.h73.195.66.IP :is now your displayed host
+2016-12-14 14:13:07	⚡	User mode [+x] by boon
+2016-12-14 14:13:08	⚡	NickServ (services@ircservices.mozilla.org): This nickname is registered and protected.  If it is your
+2016-12-14 14:13:08	⚡	NickServ (services@ircservices.mozilla.org): nick, type /msg NickServ IDENTIFY password.  Otherwise,
+2016-12-14 14:13:08	⚡	NickServ (services@ircservices.mozilla.org): please choose a different nick.
+2016-12-15 10:58:58	⚡	irc: connecting to server irc.mozilla.org/6667...
+2016-12-15 10:58:58	⚡	irc: connected to irc.mozilla.org/6667 (54.219.165.167)
+2016-12-15 10:58:58	⚡	belew.mozilla.org: *** Looking up your hostname...
+2016-12-15 10:59:00	⚡	belew.mozilla.org: *** Could not resolve your hostname: Domain name not found; using your IP address (66.195.46.242) instead.
+2016-12-15 10:59:01	⚡	belew.mozilla.org: Welcome to Mozilla!
+2016-12-15 10:59:01	⚡	Welcome to the Mozilla IRC Network d8v3!d8v3@66.195.46.242
+2016-12-15 10:59:01	⚡	Your host is belew.mozilla.org, running version InspIRCd-2.0
+2016-12-15 10:59:01	⚡	This server was created 11:39:26 Sep  3 2016
+2016-12-15 10:59:01	⚡	belew.mozilla.org InspIRCd-2.0 BHIRSWacdhikorswx ABCDFKLMNOQRSTYZabcefghijklmnopqrstuvz FLYZabefghjkloqv
+2016-12-15 10:59:01	⚡	AWAYLEN=200 CASEMAPPING=rfc1459 CHANMODES=Zbeg,k,FLfjl,ABCDKMNOQRSTcimnprstuz CHANNELLEN=64 CHANTYPES=# CHARSET=ascii ELIST=MU ESILENCE EXCEPTS=e EXTBAN=,ABCNOQRSTUcmprz FNC KICKLEN=255 MAP :are supported by this server
+2016-12-15 10:59:01	⚡	MAXBANS=60 MAXCHANNELS=100 MAXPARA=32 MAXTARGETS=20 MODES=20 NAMESX NETWORK=Mozilla NICKLEN=31 OPERLOG OVERRIDE PREFIX=(Yqaohv)!~&@%+ SECURELIST SILENCE=32 :are supported by this server
+2016-12-15 10:59:01	⚡	SSL=[::]:6697 STATUSMSG=!~&@%+ TOPICLEN=307 UHNAMES USERIP VBANLIST WALLCHOPS WALLVOICES WATCH=32 :are supported by this server
+2016-12-15 10:59:01	⚡	203ACCPBM :your unique ID
+2016-12-15 10:59:01	⚡	belew.mozilla.org message of the day
+2016-12-15 10:59:01	⚡	-                      __         __
+2016-12-15 10:59:01	⚡	-                     / /_  ___  / /__ _      __
+2016-12-15 10:59:01	⚡	-                    / __ \/ _ \/ / _ \ | /| / /
+2016-12-15 10:59:01	⚡	-                   / /_/ /  __/ /  __/ |/ |/ /
+2016-12-15 10:59:01	⚡	-                  /_.___/\___/_/\___/|__/|__/
+2016-12-15 10:59:01	⚡	-
+2016-12-15 10:59:01	⚡	-
+2016-12-15 10:59:01	⚡	-                  M O Z I L L A   D O T   O R G
+2016-12-15 10:59:01	⚡	-                    https://www.mozilla.org/
+2016-12-15 10:59:01	⚡	-
+2016-12-15 10:59:01	⚡	- =================================================================
+2016-12-15 10:59:01	⚡	-  This server is for use by Mozilla developers, testers, and
+2016-12-15 10:59:01	⚡	-  users. If you are not one, please find another server.
+2016-12-15 10:59:01	⚡	-
+2016-12-15 10:59:01	⚡	-  NOTICE: Your IP address will be portscanned by our open
+2016-12-15 10:59:01	⚡	-  proxy tester.  See https://wiki.mozilla.org/IRC for details.
+2016-12-15 10:59:01	⚡	-
+2016-12-15 10:59:01	⚡	- =================================================================
+2016-12-15 10:59:01	⚡	-  Project information:
+2016-12-15 10:59:01	⚡	-   Firefox                https://support.mozilla.org/
+2016-12-15 10:59:01	⚡	-   Mobile                 https://support.mozilla.org/mobile
+2016-12-15 10:59:01	⚡	-   Thunderbird            https://support.mozilla.org/products/thunderbird
+2016-12-15 10:59:01	⚡	-   Boot2Gecko (FirefoxOS) https://support.mozilla.org/products/firefox-os
+2016-12-15 10:59:01	⚡	-   Webmaker               https://support.mozilla.org/products/webmaker
+2016-12-15 10:59:01	⚡	-
+2016-12-15 10:59:01	⚡	-  Help for new contributors:
+2016-12-15 10:59:01	⚡	-   https://developer.mozilla.org/Introduction
+2016-12-15 10:59:01	⚡	-
+2016-12-15 10:59:01	⚡	- =================================================================
+2016-12-15 10:59:01	⚡	-  Ports:
+2016-12-15 10:59:01	⚡	-   Non-SSL: 6665 - 6669
+2016-12-15 10:59:01	⚡	-       SSL: 6697, 8443
+2016-12-15 10:59:01	⚡	- =================================================================
+2016-12-15 10:59:01	⚡	-
+2016-12-15 10:59:01	⚡	-  For a list of other helpful channels please visit
+2016-12-15 10:59:01	⚡	-  https://wiki.mozilla.org/IRC or use the /list command.
+2016-12-15 10:59:01	⚡	-  Additional help with IRC at http://www.irchelp.org/
+2016-12-15 10:59:01	⚡	-
+2016-12-15 10:59:01	⚡	End of message of the day.
+2016-12-15 10:59:01	⚡	There are 3951 users and 843 invisible on 4 servers
+2016-12-15 10:59:01	⚡	11 :operator(s) online
+2016-12-15 10:59:01	⚡	2 :unknown connections
+2016-12-15 10:59:01	⚡	1860 :channels formed
+2016-12-15 10:59:01	⚡	I have 1387 clients and 2 servers
+2016-12-15 10:59:01	⚡	Current Local Users: 1387  Max: 1820
+2016-12-15 10:59:01	⚡	Current Global Users: 4794  Max: 4904
+2016-12-15 10:59:01	⚡	moz-00m.h73.195.66.IP :is now your displayed host
+2016-12-15 10:59:01	⚡	User mode [+x] by d8v3
+2016-12-15 10:59:34	⚡	MSG(nickserv): identify ********
+2016-12-15 10:59:34	⚡	NickServ (services@ircservices.mozilla.org): Nick d8v3 isn't registered.
+2016-12-15 10:59:38	⚡	You are now known as boon
+2016-12-15 10:59:38	⚡	NickServ (services@ircservices.mozilla.org): This nickname is registered and protected.  If it is your
+2016-12-15 10:59:38	⚡	NickServ (services@ircservices.mozilla.org): nick, type /msg NickServ IDENTIFY password.  Otherwise,
+2016-12-15 10:59:38	⚡	NickServ (services@ircservices.mozilla.org): please choose a different nick.
+2016-12-15 10:59:41	⚡	MSG(nickserv): identify ********
+2016-12-15 10:59:42	⚡	NickServ (services@ircservices.mozilla.org): Password incorrect.
+2016-12-15 10:59:56	⚡	You are now known as d8v3
+2016-12-15 11:00:01	⚡	MSG(nickserv): identify ********
+2016-12-15 11:00:01	⚡	NickServ (services@ircservices.mozilla.org): Nick d8v3 isn't registered.
+2016-12-15 11:02:52	⚡	MSG(nickserv): identify ********
+2016-12-15 11:02:53	⚡	NickServ (services@ircservices.mozilla.org): Nick d8v3 isn't registered.
+2016-12-15 11:02:57	⚡	You are now known as boon
+2016-12-15 11:02:57	⚡	NickServ (services@ircservices.mozilla.org): This nickname is registered and protected.  If it is your
+2016-12-15 11:02:57	⚡	NickServ (services@ircservices.mozilla.org): nick, type /msg NickServ IDENTIFY password.  Otherwise,
+2016-12-15 11:02:57	⚡	NickServ (services@ircservices.mozilla.org): please choose a different nick.
+2016-12-15 11:02:58	⚡	MSG(nickserv): identify ********
+2016-12-15 11:02:58	⚡	NickServ (services@ircservices.mozilla.org): Password incorrect.
+2016-12-15 11:03:05	⚡	MSG(nickserv): identify ********
+2016-12-15 11:03:05	⚡	NickServ (services@ircservices.mozilla.org): Password accepted - you are now recognized.
+2016-12-15 11:03:05	⚡	You are now logged in as boon (boon!d8v3@moz-00m.h73.195.66.IP)
+2016-12-15 11:03:05	⚡	User mode [+r] by NickServ
+2016-12-16 08:19:44	⚠ 	irc: reading data on socket: error 110 Connection timed out
+2016-12-16 08:19:44	⚡	irc: disconnecting from server...
+2016-12-16 08:19:44	⚡	irc: disconnected from server
+2016-12-16 08:19:44	⚡	irc: reconnecting to server in 10 seconds
+2016-12-16 08:19:54	⚡	irc: reconnecting to server...
+2016-12-16 08:19:54	⚡	irc: connecting to server irc.mozilla.org/6667...
+2016-12-16 08:19:54	⚡	irc: connected to irc.mozilla.org/6667 (54.85.60.193)
+2016-12-16 08:19:54	⚡	levin.mozilla.org: *** Looking up your hostname...
+2016-12-16 08:19:54	⚡	levin.mozilla.org: *** Found your hostname (173-160-173-150-Washington.hfc.comcastbusiness.net)
+2016-12-16 08:19:55	⚡	levin.mozilla.org: Welcome to Mozilla!
+2016-12-16 08:19:55	⚡	Welcome to the Mozilla IRC Network boon!d8v3@173-160-173-150-Washington.hfc.comcastbusiness.net
+2016-12-16 08:19:55	⚡	Your host is levin.mozilla.org, running version InspIRCd-2.0
+2016-12-16 08:19:55	⚡	This server was created 11:39:26 Sep  3 2016
+2016-12-16 08:19:55	⚡	levin.mozilla.org InspIRCd-2.0 BHIRSWacdhikorswx ABCDFKLMNOQRSTYZabcefghijklmnopqrstuvz FLYZabefghjkloqv
+2016-12-16 08:19:55	⚡	AWAYLEN=200 CASEMAPPING=rfc1459 CHANMODES=Zbeg,k,FLfjl,ABCDKMNOQRSTcimnprstuz CHANNELLEN=64 CHANTYPES=# CHARSET=ascii ELIST=MU ESILENCE EXCEPTS=e EXTBAN=,ABCNOQRSTUcmprz FNC KICKLEN=255 MAP :are supported by this server
+2016-12-16 08:19:55	⚡	MAXBANS=60 MAXCHANNELS=100 MAXPARA=32 MAXTARGETS=20 MODES=20 NAMESX NETWORK=Mozilla NICKLEN=31 OPERLOG OVERRIDE PREFIX=(Yqaohv)!~&@%+ SECURELIST SILENCE=32 :are supported by this server
+2016-12-16 08:19:55	⚡	SSL=[::]:6697 STATUSMSG=!~&@%+ TOPICLEN=307 UHNAMES USERIP VBANLIST WALLCHOPS WALLVOICES WATCH=32 :are supported by this server
+2016-12-16 08:19:55	⚡	557ACDYPT :your unique ID
+2016-12-16 08:19:55	⚡	levin.mozilla.org message of the day
+2016-12-16 08:19:55	⚡	-                      __          _
+2016-12-16 08:19:55	⚡	-                     / /__ _   __(_)___
+2016-12-16 08:19:55	⚡	-                    / / _ \ | / / / __ \
+2016-12-16 08:19:55	⚡	-                   / /  __/ |/ / / / / /
+2016-12-16 08:19:55	⚡	-                  /_/\___/|___/_/_/ /_/
+2016-12-16 08:19:55	⚡	-
+2016-12-16 08:19:55	⚡	-               M O Z I L L A   D O T   O R G
+2016-12-16 08:19:55	⚡	-                 https://www.mozilla.org/
+2016-12-16 08:19:55	⚡	-
+2016-12-16 08:19:55	⚡	- =================================================================
+2016-12-16 08:19:55	⚡	-  This server is for use by Mozilla developers, testers, and
+2016-12-16 08:19:55	⚡	-  users. If you are not one, please find another server.
+2016-12-16 08:19:55	⚡	-
+2016-12-16 08:19:55	⚡	-  NOTICE: Your IP address will be portscanned by our open
+2016-12-16 08:19:55	⚡	-  proxy tester.  See https://wiki.mozilla.org/IRC for details.
+2016-12-16 08:19:55	⚡	-
+2016-12-16 08:19:55	⚡	- =================================================================
+2016-12-16 08:19:55	⚡	-  Project information:
+2016-12-16 08:19:55	⚡	-   Firefox                https://support.mozilla.org/
+2016-12-16 08:19:55	⚡	-   Mobile                 https://support.mozilla.org/mobile
+2016-12-16 08:19:55	⚡	-   Thunderbird            https://support.mozilla.org/products/thunderbird
+2016-12-16 08:19:55	⚡	-   Boot2Gecko (FirefoxOS) https://support.mozilla.org/products/firefox-os
+2016-12-16 08:19:55	⚡	-   Webmaker               https://support.mozilla.org/products/webmaker
+2016-12-16 08:19:55	⚡	-
+2016-12-16 08:19:55	⚡	-  Help for new contributors:
+2016-12-16 08:19:55	⚡	-   https://developer.mozilla.org/Introduction
+2016-12-16 08:19:55	⚡	-
+2016-12-16 08:19:55	⚡	- =================================================================
+2016-12-16 08:19:55	⚡	-  Ports:
+2016-12-16 08:19:55	⚡	-   Non-SSL: 6665 - 6669
+2016-12-16 08:19:55	⚡	-       SSL: 6697, 8443
+2016-12-16 08:19:55	⚡	- =================================================================
+2016-12-16 08:19:55	⚡	-
+2016-12-16 08:19:55	⚡	-  For a list of other helpful channels please visit
+2016-12-16 08:19:55	⚡	-  https://wiki.mozilla.org/IRC or use the /list command.
+2016-12-16 08:19:55	⚡	-  Additional help with IRC at http://www.irchelp.org/
+2016-12-16 08:19:55	⚡	-
+2016-12-16 08:19:55	⚡	End of message of the day.
+2016-12-16 08:19:55	⚡	There are 3970 users and 831 invisible on 4 servers
+2016-12-16 08:19:55	⚡	11 :operator(s) online
+2016-12-16 08:19:55	⚡	1 :unknown connections
+2016-12-16 08:19:55	⚡	1869 :channels formed
+2016-12-16 08:19:55	⚡	I have 1539 clients and 1 servers
+2016-12-16 08:19:55	⚡	Current Local Users: 1539  Max: 1643
+2016-12-16 08:19:55	⚡	Current Global Users: 4801  Max: 4904
+2016-12-16 08:19:55	⚡	moz-jcqrjc.hfc.comcastbusiness.net :is now your displayed host
+2016-12-16 08:19:55	⚡	User mode [+x] by boon
+2016-12-16 08:19:55	⚡	NickServ (services@ircservices.mozilla.org): This nickname is registered and protected.  If it is your
+2016-12-16 08:19:55	⚡	NickServ (services@ircservices.mozilla.org): nick, type /msg NickServ IDENTIFY password.  Otherwise,
+2016-12-16 08:19:55	⚡	NickServ (services@ircservices.mozilla.org): please choose a different nick.
+2016-12-16 10:01:46	⚠ 	irc: reading data on socket: error 110 Connection timed out
+2016-12-16 10:01:46	⚡	irc: disconnecting from server...
+2016-12-16 10:01:46	⚡	irc: disconnected from server
+2016-12-16 10:01:46	⚡	irc: reconnecting to server in 10 seconds
+2016-12-16 10:01:56	⚡	irc: reconnecting to server...
+2016-12-16 10:01:56	⚡	irc: connecting to server irc.mozilla.org/6667...
+2016-12-16 10:01:56	⚡	irc: connected to irc.mozilla.org/6667 (54.219.165.167)
+2016-12-16 10:01:56	⚡	belew.mozilla.org: *** Looking up your hostname...
+2016-12-16 10:02:02	⚡	belew.mozilla.org: *** Could not resolve your hostname: Request timed out; using your IP address (66.195.46.242) instead.
+2016-12-16 10:02:02	⚡	belew.mozilla.org: Welcome to Mozilla!
+2016-12-16 10:02:02	⚡	Welcome to the Mozilla IRC Network boon!d8v3@66.195.46.242
+2016-12-16 10:02:02	⚡	Your host is belew.mozilla.org, running version InspIRCd-2.0
+2016-12-16 10:02:02	⚡	This server was created 11:39:26 Sep  3 2016
+2016-12-16 10:02:02	⚡	belew.mozilla.org InspIRCd-2.0 BHIRSWacdhikorswx ABCDFKLMNOQRSTYZabcefghijklmnopqrstuvz FLYZabefghjkloqv
+2016-12-16 10:02:02	⚡	AWAYLEN=200 CASEMAPPING=rfc1459 CHANMODES=Zbeg,k,FLfjl,ABCDKMNOQRSTcimnprstuz CHANNELLEN=64 CHANTYPES=# CHARSET=ascii ELIST=MU ESILENCE EXCEPTS=e EXTBAN=,ABCNOQRSTUcmprz FNC KICKLEN=255 MAP :are supported by this server
+2016-12-16 10:02:02	⚡	MAXBANS=60 MAXCHANNELS=100 MAXPARA=32 MAXTARGETS=20 MODES=20 NAMESX NETWORK=Mozilla NICKLEN=31 OPERLOG OVERRIDE PREFIX=(Yqaohv)!~&@%+ SECURELIST SILENCE=32 :are supported by this server
+2016-12-16 10:02:02	⚡	SSL=[::]:6697 STATUSMSG=!~&@%+ TOPICLEN=307 UHNAMES USERIP VBANLIST WALLCHOPS WALLVOICES WATCH=32 :are supported by this server
+2016-12-16 10:02:02	⚡	203ACC6NZ :your unique ID
+2016-12-16 10:02:02	⚡	belew.mozilla.org message of the day
+2016-12-16 10:02:02	⚡	-                      __         __
+2016-12-16 10:02:02	⚡	-                     / /_  ___  / /__ _      __
+2016-12-16 10:02:02	⚡	-                    / __ \/ _ \/ / _ \ | /| / /
+2016-12-16 10:02:02	⚡	-                   / /_/ /  __/ /  __/ |/ |/ /
+2016-12-16 10:02:02	⚡	-                  /_.___/\___/_/\___/|__/|__/
+2016-12-16 10:02:02	⚡	-
+2016-12-16 10:02:02	⚡	-
+2016-12-16 10:02:02	⚡	-                  M O Z I L L A   D O T   O R G
+2016-12-16 10:02:02	⚡	-                    https://www.mozilla.org/
+2016-12-16 10:02:02	⚡	-
+2016-12-16 10:02:02	⚡	- =================================================================
+2016-12-16 10:02:02	⚡	-  This server is for use by Mozilla developers, testers, and
+2016-12-16 10:02:02	⚡	-  users. If you are not one, please find another server.
+2016-12-16 10:02:02	⚡	-
+2016-12-16 10:02:02	⚡	-  NOTICE: Your IP address will be portscanned by our open
+2016-12-16 10:02:02	⚡	-  proxy tester.  See https://wiki.mozilla.org/IRC for details.
+2016-12-16 10:02:02	⚡	-
+2016-12-16 10:02:02	⚡	- =================================================================
+2016-12-16 10:02:02	⚡	-  Project information:
+2016-12-16 10:02:02	⚡	-   Firefox                https://support.mozilla.org/
+2016-12-16 10:02:02	⚡	-   Mobile                 https://support.mozilla.org/mobile
+2016-12-16 10:02:02	⚡	-   Thunderbird            https://support.mozilla.org/products/thunderbird
+2016-12-16 10:02:02	⚡	-   Boot2Gecko (FirefoxOS) https://support.mozilla.org/products/firefox-os
+2016-12-16 10:02:02	⚡	-   Webmaker               https://support.mozilla.org/products/webmaker
+2016-12-16 10:02:02	⚡	-
+2016-12-16 10:02:02	⚡	-  Help for new contributors:
+2016-12-16 10:02:02	⚡	-   https://developer.mozilla.org/Introduction
+2016-12-16 10:02:02	⚡	-
+2016-12-16 10:02:02	⚡	- =================================================================
+2016-12-16 10:02:02	⚡	-  Ports:
+2016-12-16 10:02:02	⚡	-   Non-SSL: 6665 - 6669
+2016-12-16 10:02:02	⚡	-       SSL: 6697, 8443
+2016-12-16 10:02:02	⚡	- =================================================================
+2016-12-16 10:02:02	⚡	-
+2016-12-16 10:02:02	⚡	-  For a list of other helpful channels please visit
+2016-12-16 10:02:02	⚡	-  https://wiki.mozilla.org/IRC or use the /list command.
+2016-12-16 10:02:02	⚡	-  Additional help with IRC at http://www.irchelp.org/
+2016-12-16 10:02:02	⚡	-
+2016-12-16 10:02:02	⚡	End of message of the day.
+2016-12-16 10:02:02	⚡	There are 3940 users and 835 invisible on 4 servers
+2016-12-16 10:02:02	⚡	11 :operator(s) online
+2016-12-16 10:02:02	⚡	1 :unknown connections
+2016-12-16 10:02:02	⚡	1859 :channels formed
+2016-12-16 10:02:02	⚡	I have 1402 clients and 2 servers
+2016-12-16 10:02:02	⚡	Current Local Users: 1402  Max: 1820
+2016-12-16 10:02:02	⚡	Current Global Users: 4775  Max: 4904
+2016-12-16 10:02:02	⚡	moz-00m.h73.195.66.IP :is now your displayed host
+2016-12-16 10:02:02	⚡	User mode [+x] by boon
+2016-12-16 10:02:02	⚡	NickServ (services@ircservices.mozilla.org): This nickname is registered and protected.  If it is your
+2016-12-16 10:02:02	⚡	NickServ (services@ircservices.mozilla.org): nick, type /msg NickServ IDENTIFY password.  Otherwise,
+2016-12-16 10:02:02	⚡	NickServ (services@ircservices.mozilla.org): please choose a different nick.
+2016-12-16 13:13:52	⚠ 	irc: reading data on socket: error 110 Connection timed out
+2016-12-16 13:13:52	⚡	irc: disconnecting from server...
+2016-12-16 13:13:52	⚡	irc: disconnected from server
+2016-12-16 13:13:52	⚡	irc: reconnecting to server in 10 seconds
+2016-12-16 13:14:02	⚡	irc: reconnecting to server...
+2016-12-16 13:14:02	⚡	irc: connecting to server irc.mozilla.org/6667...
+2016-12-16 13:14:02	⚡	irc: connected to irc.mozilla.org/6667 (54.85.60.193)
+2016-12-16 13:14:02	⚡	levin.mozilla.org: *** Looking up your hostname...
+2016-12-16 13:14:04	⚡	levin.mozilla.org: *** Could not resolve your hostname: Domain name not found; using your IP address (66.195.46.242) instead.
+2016-12-16 13:14:05	⚡	levin.mozilla.org: Welcome to Mozilla!
+2016-12-16 13:14:05	⚡	Welcome to the Mozilla IRC Network boon!d8v3@66.195.46.242
+2016-12-16 13:14:05	⚡	Your host is levin.mozilla.org, running version InspIRCd-2.0
+2016-12-16 13:14:05	⚡	This server was created 11:39:26 Sep  3 2016
+2016-12-16 13:14:05	⚡	levin.mozilla.org InspIRCd-2.0 BHIRSWacdhikorswx ABCDFKLMNOQRSTYZabcefghijklmnopqrstuvz FLYZabefghjkloqv
+2016-12-16 13:14:05	⚡	AWAYLEN=200 CASEMAPPING=rfc1459 CHANMODES=Zbeg,k,FLfjl,ABCDKMNOQRSTcimnprstuz CHANNELLEN=64 CHANTYPES=# CHARSET=ascii ELIST=MU ESILENCE EXCEPTS=e EXTBAN=,ABCNOQRSTUcmprz FNC KICKLEN=255 MAP :are supported by this server
+2016-12-16 13:14:05	⚡	MAXBANS=60 MAXCHANNELS=100 MAXPARA=32 MAXTARGETS=20 MODES=20 NAMESX NETWORK=Mozilla NICKLEN=31 OPERLOG OVERRIDE PREFIX=(Yqaohv)!~&@%+ SECURELIST SILENCE=32 :are supported by this server
+2016-12-16 13:14:05	⚡	SSL=[::]:6697 STATUSMSG=!~&@%+ TOPICLEN=307 UHNAMES USERIP VBANLIST WALLCHOPS WALLVOICES WATCH=32 :are supported by this server
+2016-12-16 13:14:05	⚡	557ACD2IO :your unique ID
+2016-12-16 13:14:05	⚡	levin.mozilla.org message of the day
+2016-12-16 13:14:05	⚡	-                      __          _
+2016-12-16 13:14:05	⚡	-                     / /__ _   __(_)___
+2016-12-16 13:14:05	⚡	-                    / / _ \ | / / / __ \
+2016-12-16 13:14:05	⚡	-                   / /  __/ |/ / / / / /
+2016-12-16 13:14:05	⚡	-                  /_/\___/|___/_/_/ /_/
+2016-12-16 13:14:05	⚡	-
+2016-12-16 13:14:05	⚡	-               M O Z I L L A   D O T   O R G
+2016-12-16 13:14:05	⚡	-                 https://www.mozilla.org/
+2016-12-16 13:14:05	⚡	-
+2016-12-16 13:14:05	⚡	- =================================================================
+2016-12-16 13:14:05	⚡	-  This server is for use by Mozilla developers, testers, and
+2016-12-16 13:14:05	⚡	-  users. If you are not one, please find another server.
+2016-12-16 13:14:05	⚡	-
+2016-12-16 13:14:05	⚡	-  NOTICE: Your IP address will be portscanned by our open
+2016-12-16 13:14:05	⚡	-  proxy tester.  See https://wiki.mozilla.org/IRC for details.
+2016-12-16 13:14:05	⚡	-
+2016-12-16 13:14:05	⚡	- =================================================================
+2016-12-16 13:14:05	⚡	-  Project information:
+2016-12-16 13:14:05	⚡	-   Firefox                https://support.mozilla.org/
+2016-12-16 13:14:05	⚡	-   Mobile                 https://support.mozilla.org/mobile
+2016-12-16 13:14:05	⚡	-   Thunderbird            https://support.mozilla.org/products/thunderbird
+2016-12-16 13:14:05	⚡	-   Boot2Gecko (FirefoxOS) https://support.mozilla.org/products/firefox-os
+2016-12-16 13:14:05	⚡	-   Webmaker               https://support.mozilla.org/products/webmaker
+2016-12-16 13:14:05	⚡	-
+2016-12-16 13:14:05	⚡	-  Help for new contributors:
+2016-12-16 13:14:05	⚡	-   https://developer.mozilla.org/Introduction
+2016-12-16 13:14:05	⚡	-
+2016-12-16 13:14:05	⚡	- =================================================================
+2016-12-16 13:14:05	⚡	-  Ports:
+2016-12-16 13:14:05	⚡	-   Non-SSL: 6665 - 6669
+2016-12-16 13:14:05	⚡	-       SSL: 6697, 8443
+2016-12-16 13:14:05	⚡	- =================================================================
+2016-12-16 13:14:05	⚡	-
+2016-12-16 13:14:05	⚡	-  For a list of other helpful channels please visit
+2016-12-16 13:14:05	⚡	-  https://wiki.mozilla.org/IRC or use the /list command.
+2016-12-16 13:14:05	⚡	-  Additional help with IRC at http://www.irchelp.org/
+2016-12-16 13:14:05	⚡	-
+2016-12-16 13:14:05	⚡	End of message of the day.
+2016-12-16 13:14:05	⚡	There are 3903 users and 839 invisible on 4 servers
+2016-12-16 13:14:05	⚡	10 :operator(s) online
+2016-12-16 13:14:05	⚡	1 :unknown connections
+2016-12-16 13:14:05	⚡	1860 :channels formed
+2016-12-16 13:14:05	⚡	I have 1510 clients and 1 servers
+2016-12-16 13:14:05	⚡	Current Local Users: 1510  Max: 1643
+2016-12-16 13:14:05	⚡	Current Global Users: 4742  Max: 4904
+2016-12-16 13:14:05	⚡	moz-00m.h73.195.66.IP :is now your displayed host
+2016-12-16 13:14:05	⚡	User mode [+x] by boon
+2016-12-16 13:14:05	⚡	NickServ (services@ircservices.mozilla.org): This nickname is registered and protected.  If it is your
+2016-12-16 13:14:05	⚡	NickServ (services@ircservices.mozilla.org): nick, type /msg NickServ IDENTIFY password.  Otherwise,
+2016-12-16 13:14:05	⚡	NickServ (services@ircservices.mozilla.org): please choose a different nick.
+2016-12-18 17:34:05	⚠ 	irc: reading data on socket: error 110 Connection timed out
+2016-12-18 17:34:05	⚡	irc: disconnecting from server...
+2016-12-18 17:34:05	⚡	irc: disconnected from server
+2016-12-18 17:34:05	⚡	irc: reconnecting to server in 10 seconds
+2016-12-18 17:34:15	⚡	irc: reconnecting to server...
+2016-12-18 17:34:15	⚡	irc: connecting to server irc.mozilla.org/6667...
+2016-12-18 17:34:15	⚡	irc: connected to irc.mozilla.org/6667 (2620:101:8016:74::143)
+2016-12-18 17:34:15	⚡	bruford.mozilla.org: *** Looking up your hostname...
+2016-12-18 17:34:15	⚡	bruford.mozilla.org: *** Could not resolve your hostname: Domain name not found; using your IP address (2601:602:8801:9c70::4426) instead.
+2016-12-18 17:34:16	⚡	bruford.mozilla.org: Welcome to Mozilla!
+2016-12-18 17:34:16	⚡	Welcome to the Mozilla IRC Network boon!d8v3@2601:602:8801:9c70::4426
+2016-12-18 17:34:16	⚡	Your host is bruford.mozilla.org, running version InspIRCd-2.0
+2016-12-18 17:34:16	⚡	This server was created 11:39:26 Sep  3 2016
+2016-12-18 17:34:16	⚡	bruford.mozilla.org InspIRCd-2.0 BHIRSWacdhikorswx ABCDFKLMNOQRSTYZabcefghijklmnopqrstuvz FLYZabefghjkloqv
+2016-12-18 17:34:16	⚡	AWAYLEN=200 CASEMAPPING=rfc1459 CHANMODES=Zbeg,k,FLfjl,ABCDKMNOQRSTcimnprstuz CHANNELLEN=64 CHANTYPES=# CHARSET=ascii ELIST=MU ESILENCE EXCEPTS=e EXTBAN=,ABCNOQRSTUcmprz FNC KICKLEN=255 MAP :are supported by this server
+2016-12-18 17:34:16	⚡	MAXBANS=60 MAXCHANNELS=100 MAXPARA=32 MAXTARGETS=20 MODES=20 NAMESX NETWORK=Mozilla NICKLEN=31 OPERLOG OVERRIDE PREFIX=(Yqaohv)!~&@%+ SECURELIST SILENCE=32 :are supported by this server
+2016-12-18 17:34:16	⚡	SSL=[::]:6697 STATUSMSG=!~&@%+ TOPICLEN=307 UHNAMES USERIP VBANLIST WALLCHOPS WALLVOICES WATCH=32 :are supported by this server
+2016-12-18 17:34:16	⚡	010ACW2S2 :your unique ID
+2016-12-18 17:34:16	⚡	bruford.mozilla.org message of the day
+2016-12-18 17:34:16	⚡	-                  __               ____               __
+2016-12-18 17:34:16	⚡	-                 / /_  _______  __/ __/___  _________/ /
+2016-12-18 17:34:16	⚡	-                / __ \/ ___/ / / / /_/ __ \/ ___/ __  /
+2016-12-18 17:34:16	⚡	-               / /_/ / /  / /_/ / __/ /_/ / /  / /_/ /
+2016-12-18 17:34:16	⚡	-              /_.___/_/   \__,_/_/  \____/_/   \__,_/
+2016-12-18 17:34:16	⚡	-
+2016-12-18 17:34:16	⚡	-
+2016-12-18 17:34:16	⚡	-                  M O Z I L L A   D O T   O R G
+2016-12-18 17:34:16	⚡	-                    https://www.mozilla.org/
+2016-12-18 17:34:16	⚡	-
+2016-12-18 17:34:16	⚡	- =================================================================
+2016-12-18 17:34:16	⚡	-  This server is for use by Mozilla developers, testers, and
+2016-12-18 17:34:16	⚡	-  users. If you are not one, please find another server.
+2016-12-18 17:34:16	⚡	-
+2016-12-18 17:34:16	⚡	-  NOTICE: Your IP address will be portscanned by our open
+2016-12-18 17:34:16	⚡	-  proxy tester.  See https://wiki.mozilla.org/IRC for details.
+2016-12-18 17:34:16	⚡	-
+2016-12-18 17:34:16	⚡	- =================================================================
+2016-12-18 17:34:16	⚡	-  Project information:
+2016-12-18 17:34:16	⚡	-   Firefox                https://support.mozilla.org/
+2016-12-18 17:34:16	⚡	-   Mobile                 https://support.mozilla.org/mobile
+2016-12-18 17:34:16	⚡	-   Thunderbird            https://support.mozilla.org/products/thunderbird
+2016-12-18 17:34:16	⚡	-   Boot2Gecko (FirefoxOS) https://support.mozilla.org/products/firefox-os
+2016-12-18 17:34:16	⚡	-   Webmaker               https://support.mozilla.org/products/webmaker
+2016-12-18 17:34:16	⚡	-
+2016-12-18 17:34:16	⚡	-  Help for new contributors:
+2016-12-18 17:34:16	⚡	-   https://developer.mozilla.org/Introduction
+2016-12-18 17:34:16	⚡	-
+2016-12-18 17:34:16	⚡	- =================================================================
+2016-12-18 17:34:16	⚡	-  Ports:
+2016-12-18 17:34:16	⚡	-   Non-SSL: 6665 - 6669
+2016-12-18 17:34:16	⚡	-       SSL: 6697, 8443
+2016-12-18 17:34:16	⚡	- =================================================================
+2016-12-18 17:34:16	⚡	-
+2016-12-18 17:34:16	⚡	-  For a list of other helpful channels please visit
+2016-12-18 17:34:16	⚡	-  https://wiki.mozilla.org/IRC or use the /list command.
+2016-12-18 17:34:16	⚡	-  Additional help with IRC at http://www.irchelp.org/
+2016-12-18 17:34:16	⚡	-
+2016-12-18 17:34:16	⚡	End of message of the day.
+2016-12-18 17:34:16	⚡	There are 3648 users and 798 invisible on 4 servers
+2016-12-18 17:34:16	⚡	12 :operator(s) online
+2016-12-18 17:34:16	⚡	1833 :channels formed
+2016-12-18 17:34:16	⚡	I have 1795 clients and 2 servers
+2016-12-18 17:34:16	⚡	Current Local Users: 1795  Max: 1873
+2016-12-18 17:34:16	⚡	Current Global Users: 4446  Max: 4904
+2016-12-18 17:34:16	⚡	moz-cf64oa.eqdp.1nof.0602.2601.IP :is now your displayed host
+2016-12-18 17:34:16	⚡	User mode [+x] by boon
+2016-12-18 17:34:16	⚡	NickServ (services@ircservices.mozilla.org): This nickname is registered and protected.  If it is your
+2016-12-18 17:34:16	⚡	NickServ (services@ircservices.mozilla.org): nick, type /msg NickServ IDENTIFY password.  Otherwise,
+2016-12-18 17:34:16	⚡	NickServ (services@ircservices.mozilla.org): please choose a different nick.
+2016-12-28 13:44:10	⚡	irc: connecting to server irc.mozilla.org/6667...
+2016-12-28 13:44:11	⚡	irc: connected to irc.mozilla.org/6667 (2620:101:8016:74::143)
+2016-12-28 13:44:11	⚡	bruford.mozilla.org: *** Looking up your hostname...
+2016-12-28 13:44:11	⚡	bruford.mozilla.org: *** Could not resolve your hostname: Domain name not found; using your IP address (2601:600:c000:8a40:6e40:8ff:feb0:42f2) instead.
+2016-12-28 13:44:12	⚡	bruford.mozilla.org: Welcome to Mozilla!
+2016-12-28 13:44:12	⚡	Welcome to the Mozilla IRC Network d8v3!d8v3@2601:600:c000:8a40:6e40:8ff:feb0:42f2
+2016-12-28 13:44:12	⚡	Your host is bruford.mozilla.org, running version InspIRCd-2.0
+2016-12-28 13:44:12	⚡	This server was created 11:39:26 Sep  3 2016
+2016-12-28 13:44:12	⚡	bruford.mozilla.org InspIRCd-2.0 BHIRSWacdhikorswx ABCDFKLMNOQRSTYZabcefghijklmnopqrstuvz FLYZabefghjkloqv
+2016-12-28 13:44:12	⚡	AWAYLEN=200 CASEMAPPING=rfc1459 CHANMODES=Zbeg,k,FLfjl,ABCDKMNOQRSTcimnprstuz CHANNELLEN=64 CHANTYPES=# CHARSET=ascii ELIST=MU ESILENCE EXCEPTS=e EXTBAN=,ABCNOQRSTUcmprz FNC KICKLEN=255 MAP :are supported by this server
+2016-12-28 13:44:12	⚡	MAXBANS=60 MAXCHANNELS=100 MAXPARA=32 MAXTARGETS=20 MODES=20 NAMESX NETWORK=Mozilla NICKLEN=31 OPERLOG OVERRIDE PREFIX=(Yqaohv)!~&@%+ SECURELIST SILENCE=32 :are supported by this server
+2016-12-28 13:44:12	⚡	SSL=[::]:6697 STATUSMSG=!~&@%+ TOPICLEN=307 UHNAMES USERIP VBANLIST WALLCHOPS WALLVOICES WATCH=32 :are supported by this server
+2016-12-28 13:44:12	⚡	010ACYFYB :your unique ID
+2016-12-28 13:44:12	⚡	bruford.mozilla.org message of the day
+2016-12-28 13:44:12	⚡	-                  __               ____               __
+2016-12-28 13:44:12	⚡	-                 / /_  _______  __/ __/___  _________/ /
+2016-12-28 13:44:12	⚡	-                / __ \/ ___/ / / / /_/ __ \/ ___/ __  /
+2016-12-28 13:44:12	⚡	-               / /_/ / /  / /_/ / __/ /_/ / /  / /_/ /
+2016-12-28 13:44:12	⚡	-              /_.___/_/   \__,_/_/  \____/_/   \__,_/
+2016-12-28 13:44:12	⚡	-
+2016-12-28 13:44:12	⚡	-
+2016-12-28 13:44:12	⚡	-                  M O Z I L L A   D O T   O R G
+2016-12-28 13:44:12	⚡	-                    https://www.mozilla.org/
+2016-12-28 13:44:12	⚡	-
+2016-12-28 13:44:12	⚡	- =================================================================
+2016-12-28 13:44:12	⚡	-  This server is for use by Mozilla developers, testers, and
+2016-12-28 13:44:12	⚡	-  users. If you are not one, please find another server.
+2016-12-28 13:44:12	⚡	-
+2016-12-28 13:44:12	⚡	-  NOTICE: Your IP address will be portscanned by our open
+2016-12-28 13:44:12	⚡	-  proxy tester.  See https://wiki.mozilla.org/IRC for details.
+2016-12-28 13:44:12	⚡	-
+2016-12-28 13:44:12	⚡	- =================================================================
+2016-12-28 13:44:12	⚡	-  Project information:
+2016-12-28 13:44:12	⚡	-   Firefox                https://support.mozilla.org/
+2016-12-28 13:44:12	⚡	-   Mobile                 https://support.mozilla.org/mobile
+2016-12-28 13:44:12	⚡	-   Thunderbird            https://support.mozilla.org/products/thunderbird
+2016-12-28 13:44:12	⚡	-   Boot2Gecko (FirefoxOS) https://support.mozilla.org/products/firefox-os
+2016-12-28 13:44:12	⚡	-   Webmaker               https://support.mozilla.org/products/webmaker
+2016-12-28 13:44:12	⚡	-
+2016-12-28 13:44:12	⚡	-  Help for new contributors:
+2016-12-28 13:44:12	⚡	-   https://developer.mozilla.org/Introduction
+2016-12-28 13:44:12	⚡	-
+2016-12-28 13:44:12	⚡	- =================================================================
+2016-12-28 13:44:12	⚡	-  Ports:
+2016-12-28 13:44:12	⚡	-   Non-SSL: 6665 - 6669
+2016-12-28 13:44:12	⚡	-       SSL: 6697, 8443
+2016-12-28 13:44:12	⚡	- =================================================================
+2016-12-28 13:44:12	⚡	-
+2016-12-28 13:44:12	⚡	-  For a list of other helpful channels please visit
+2016-12-28 13:44:12	⚡	-  https://wiki.mozilla.org/IRC or use the /list command.
+2016-12-28 13:44:12	⚡	-  Additional help with IRC at http://www.irchelp.org/
+2016-12-28 13:44:12	⚡	-
+2016-12-28 13:44:12	⚡	End of message of the day.
+2016-12-28 13:44:12	⚡	There are 3845 users and 813 invisible on 4 servers
+2016-12-28 13:44:12	⚡	10 :operator(s) online
+2016-12-28 13:44:12	⚡	1836 :channels formed
+2016-12-28 13:44:12	⚡	I have 1853 clients and 2 servers
+2016-12-28 13:44:12	⚡	Current Local Users: 1853  Max: 1882
+2016-12-28 13:44:12	⚡	Current Global Users: 4658  Max: 4906
+2016-12-28 13:44:12	⚡	moz-02lrv9.1jia.d83m.0600.2601.IP :is now your displayed host
+2016-12-28 13:44:12	⚡	User mode [+x] by d8v3
+2016-12-28 14:20:27	⚠ 	irc: reading data on socket: error 104 Connection reset by peer
+2016-12-28 14:20:27	⚡	irc: disconnecting from server...
+2016-12-28 14:20:27	⚡	irc: disconnected from server
+2016-12-28 14:20:27	⚡	irc: reconnecting to server in 10 seconds
+2016-12-28 14:20:37	⚡	irc: reconnecting to server...
+2016-12-28 14:20:37	⚡	irc: connecting to server irc.mozilla.org/6667...
+2016-12-28 14:20:37	⚡	irc: connected to irc.mozilla.org/6667 (2620:101:8016:74::143)
+2016-12-28 14:20:37	⚡	bruford.mozilla.org: *** Looking up your hostname...
+2016-12-28 14:20:37	⚡	bruford.mozilla.org: *** Could not resolve your hostname: Domain name not found; using your IP address (2601:600:c000:8a40:6e40:8ff:feb0:42f2) instead.
+2016-12-28 14:20:38	⚡	bruford.mozilla.org: Welcome to Mozilla!
+2016-12-28 14:20:38	⚡	Welcome to the Mozilla IRC Network d8v3!d8v3@2601:600:c000:8a40:6e40:8ff:feb0:42f2
+2016-12-28 14:20:38	⚡	Your host is bruford.mozilla.org, running version InspIRCd-2.0
+2016-12-28 14:20:38	⚡	This server was created 11:39:26 Sep  3 2016
+2016-12-28 14:20:38	⚡	bruford.mozilla.org InspIRCd-2.0 BHIRSWacdhikorswx ABCDFKLMNOQRSTYZabcefghijklmnopqrstuvz FLYZabefghjkloqv
+2016-12-28 14:20:38	⚡	AWAYLEN=200 CASEMAPPING=rfc1459 CHANMODES=Zbeg,k,FLfjl,ABCDKMNOQRSTcimnprstuz CHANNELLEN=64 CHANTYPES=# CHARSET=ascii ELIST=MU ESILENCE EXCEPTS=e EXTBAN=,ABCNOQRSTUcmprz FNC KICKLEN=255 MAP :are supported by this server
+2016-12-28 14:20:38	⚡	MAXBANS=60 MAXCHANNELS=100 MAXPARA=32 MAXTARGETS=20 MODES=20 NAMESX NETWORK=Mozilla NICKLEN=31 OPERLOG OVERRIDE PREFIX=(Yqaohv)!~&@%+ SECURELIST SILENCE=32 :are supported by this server
+2016-12-28 14:20:38	⚡	SSL=[::]:6697 STATUSMSG=!~&@%+ TOPICLEN=307 UHNAMES USERIP VBANLIST WALLCHOPS WALLVOICES WATCH=32 :are supported by this server
+2016-12-28 14:20:38	⚡	010ACYF2S :your unique ID
+2016-12-28 14:20:38	⚡	bruford.mozilla.org message of the day
+2016-12-28 14:20:38	⚡	-                  __               ____               __
+2016-12-28 14:20:38	⚡	-                 / /_  _______  __/ __/___  _________/ /
+2016-12-28 14:20:38	⚡	-                / __ \/ ___/ / / / /_/ __ \/ ___/ __  /
+2016-12-28 14:20:38	⚡	-               / /_/ / /  / /_/ / __/ /_/ / /  / /_/ /
+2016-12-28 14:20:38	⚡	-              /_.___/_/   \__,_/_/  \____/_/   \__,_/
+2016-12-28 14:20:38	⚡	-
+2016-12-28 14:20:38	⚡	-
+2016-12-28 14:20:38	⚡	-                  M O Z I L L A   D O T   O R G
+2016-12-28 14:20:38	⚡	-                    https://www.mozilla.org/
+2016-12-28 14:20:38	⚡	-
+2016-12-28 14:20:38	⚡	- =================================================================
+2016-12-28 14:20:38	⚡	-  This server is for use by Mozilla developers, testers, and
+2016-12-28 14:20:38	⚡	-  users. If you are not one, please find another server.
+2016-12-28 14:20:38	⚡	-
+2016-12-28 14:20:38	⚡	-  NOTICE: Your IP address will be portscanned by our open
+2016-12-28 14:20:38	⚡	-  proxy tester.  See https://wiki.mozilla.org/IRC for details.
+2016-12-28 14:20:38	⚡	-
+2016-12-28 14:20:38	⚡	- =================================================================
+2016-12-28 14:20:38	⚡	-  Project information:
+2016-12-28 14:20:38	⚡	-   Firefox                https://support.mozilla.org/
+2016-12-28 14:20:38	⚡	-   Mobile                 https://support.mozilla.org/mobile
+2016-12-28 14:20:38	⚡	-   Thunderbird            https://support.mozilla.org/products/thunderbird
+2016-12-28 14:20:38	⚡	-   Boot2Gecko (FirefoxOS) https://support.mozilla.org/products/firefox-os
+2016-12-28 14:20:38	⚡	-   Webmaker               https://support.mozilla.org/products/webmaker
+2016-12-28 14:20:38	⚡	-
+2016-12-28 14:20:38	⚡	-  Help for new contributors:
+2016-12-28 14:20:38	⚡	-   https://developer.mozilla.org/Introduction
+2016-12-28 14:20:38	⚡	-
+2016-12-28 14:20:38	⚡	- =================================================================
+2016-12-28 14:20:38	⚡	-  Ports:
+2016-12-28 14:20:38	⚡	-   Non-SSL: 6665 - 6669
+2016-12-28 14:20:38	⚡	-       SSL: 6697, 8443
+2016-12-28 14:20:38	⚡	- =================================================================
+2016-12-28 14:20:38	⚡	-
+2016-12-28 14:20:38	⚡	-  For a list of other helpful channels please visit
+2016-12-28 14:20:38	⚡	-  https://wiki.mozilla.org/IRC or use the /list command.
+2016-12-28 14:20:38	⚡	-  Additional help with IRC at http://www.irchelp.org/
+2016-12-28 14:20:38	⚡	-
+2016-12-28 14:20:38	⚡	End of message of the day.
+2016-12-28 14:20:38	⚡	There are 3821 users and 814 invisible on 4 servers
+2016-12-28 14:20:38	⚡	10 :operator(s) online
+2016-12-28 14:20:38	⚡	1831 :channels formed
+2016-12-28 14:20:38	⚡	I have 1847 clients and 2 servers
+2016-12-28 14:20:38	⚡	Current Local Users: 1847  Max: 1882
+2016-12-28 14:20:38	⚡	Current Global Users: 4635  Max: 4906
+2016-12-28 14:20:38	⚡	moz-02lrv9.1jia.d83m.0600.2601.IP :is now your displayed host
+2016-12-28 14:20:38	⚡	User mode [+x] by d8v3
+2017-01-03 12:56:27	⚡	irc: connecting to server irc.mozilla.org/6667...
+2017-01-03 12:56:27	⚡	irc: connected to irc.mozilla.org/6667 (54.85.60.193)
+2017-01-03 12:56:27	⚡	levin.mozilla.org: *** Looking up your hostname...
+2017-01-03 12:56:29	⚡	levin.mozilla.org: *** Could not resolve your hostname: Domain name not found; using your IP address (66.195.46.242) instead.
+2017-01-03 12:56:30	⚡	levin.mozilla.org: Welcome to Mozilla!
+2017-01-03 12:56:30	⚡	Welcome to the Mozilla IRC Network d8v3!d8v3@66.195.46.242
+2017-01-03 12:56:30	⚡	Your host is levin.mozilla.org, running version InspIRCd-2.0
+2017-01-03 12:56:30	⚡	This server was created 11:39:26 Sep  3 2016
+2017-01-03 12:56:30	⚡	levin.mozilla.org InspIRCd-2.0 BHIRSWacdhikorswx ABCDFKLMNOQRSTYZabcefghijklmnopqrstuvz FLYZabefghjkloqv
+2017-01-03 12:56:30	⚡	AWAYLEN=200 CASEMAPPING=rfc1459 CHANMODES=Zbeg,k,FLfjl,ABCDKMNOQRSTcimnprstuz CHANNELLEN=64 CHANTYPES=# CHARSET=ascii ELIST=MU ESILENCE EXCEPTS=e EXTBAN=,ABCNOQRSTUcmprz FNC KICKLEN=255 MAP :are supported by this server
+2017-01-03 12:56:30	⚡	MAXBANS=60 MAXCHANNELS=100 MAXPARA=32 MAXTARGETS=20 MODES=20 NAMESX NETWORK=Mozilla NICKLEN=31 OPERLOG OVERRIDE PREFIX=(Yqaohv)!~&@%+ SECURELIST SILENCE=32 :are supported by this server
+2017-01-03 12:56:30	⚡	SSL=[::]:6697 STATUSMSG=!~&@%+ TOPICLEN=307 UHNAMES USERIP VBANLIST WALLCHOPS WALLVOICES WATCH=32 :are supported by this server
+2017-01-03 12:56:30	⚡	557AQLVC1 :your unique ID
+2017-01-03 12:56:30	⚡	levin.mozilla.org message of the day
+2017-01-03 12:56:30	⚡	-                      __          _
+2017-01-03 12:56:30	⚡	-                     / /__ _   __(_)___
+2017-01-03 12:56:30	⚡	-                    / / _ \ | / / / __ \
+2017-01-03 12:56:30	⚡	-                   / /  __/ |/ / / / / /
+2017-01-03 12:56:30	⚡	-                  /_/\___/|___/_/_/ /_/
+2017-01-03 12:56:30	⚡	-
+2017-01-03 12:56:30	⚡	-               M O Z I L L A   D O T   O R G
+2017-01-03 12:56:30	⚡	-                 https://www.mozilla.org/
+2017-01-03 12:56:30	⚡	-
+2017-01-03 12:56:30	⚡	- =================================================================
+2017-01-03 12:56:30	⚡	-  This server is for use by Mozilla developers, testers, and
+2017-01-03 12:56:30	⚡	-  users. If you are not one, please find another server.
+2017-01-03 12:56:30	⚡	-
+2017-01-03 12:56:30	⚡	-  NOTICE: Your IP address will be portscanned by our open
+2017-01-03 12:56:30	⚡	-  proxy tester.  See https://wiki.mozilla.org/IRC for details.
+2017-01-03 12:56:30	⚡	-
+2017-01-03 12:56:30	⚡	- =================================================================
+2017-01-03 12:56:30	⚡	-  Project information:
+2017-01-03 12:56:30	⚡	-   Firefox                https://support.mozilla.org/
+2017-01-03 12:56:30	⚡	-   Mobile                 https://support.mozilla.org/mobile
+2017-01-03 12:56:30	⚡	-   Thunderbird            https://support.mozilla.org/products/thunderbird
+2017-01-03 12:56:30	⚡	-   Boot2Gecko (FirefoxOS) https://support.mozilla.org/products/firefox-os
+2017-01-03 12:56:30	⚡	-   Webmaker               https://support.mozilla.org/products/webmaker
+2017-01-03 12:56:30	⚡	-
+2017-01-03 12:56:30	⚡	-  Help for new contributors:
+2017-01-03 12:56:30	⚡	-   https://developer.mozilla.org/Introduction
+2017-01-03 12:56:30	⚡	-
+2017-01-03 12:56:30	⚡	- =================================================================
+2017-01-03 12:56:30	⚡	-  Ports:
+2017-01-03 12:56:30	⚡	-   Non-SSL: 6665 - 6669
+2017-01-03 12:56:30	⚡	-       SSL: 6697, 8443
+2017-01-03 12:56:30	⚡	- =================================================================
+2017-01-03 12:56:30	⚡	-
+2017-01-03 12:56:30	⚡	-  For a list of other helpful channels please visit
+2017-01-03 12:56:30	⚡	-  https://wiki.mozilla.org/IRC or use the /list command.
+2017-01-03 12:56:30	⚡	-  Additional help with IRC at http://www.irchelp.org/
+2017-01-03 12:56:30	⚡	-
+2017-01-03 12:56:30	⚡	End of message of the day.
+2017-01-03 12:56:30	⚡	There are 4061 users and 841 invisible on 4 servers
+2017-01-03 12:56:30	⚡	10 :operator(s) online
+2017-01-03 12:56:30	⚡	1 :unknown connections
+2017-01-03 12:56:30	⚡	1867 :channels formed
+2017-01-03 12:56:30	⚡	I have 1516 clients and 1 servers
+2017-01-03 12:56:30	⚡	Current Local Users: 1516  Max: 1643
+2017-01-03 12:56:30	⚡	Current Global Users: 4902  Max: 4914
+2017-01-03 12:56:30	⚡	moz-00m.h73.195.66.IP :is now your displayed host
+2017-01-03 12:56:30	⚡	User mode [+x] by d8v3
+2017-01-03 12:56:39	⚡	MSG(nickserv): identify ********
+2017-01-03 12:56:39	⚡	NickServ (services@ircservices.mozilla.org): Nick d8v3 isn't registered.
+2017-01-03 12:56:46	⚡	You are now known as boon
+2017-01-03 12:56:46	⚡	NickServ (services@ircservices.mozilla.org): This nickname is registered and protected.  If it is your
+2017-01-03 12:56:46	⚡	NickServ (services@ircservices.mozilla.org): nick, type /msg NickServ IDENTIFY password.  Otherwise,
+2017-01-03 12:56:46	⚡	NickServ (services@ircservices.mozilla.org): please choose a different nick.
+2017-01-03 12:56:47	⚡	MSG(nickserv): identify ********
+2017-01-03 12:56:48	⚡	NickServ (services@ircservices.mozilla.org): Password incorrect.
+2017-01-03 12:56:53	⚡	MSG(nickserv): identify ********
+2017-01-03 12:56:53	⚡	NickServ (services@ircservices.mozilla.org): Password accepted - you are now recognized.
+2017-01-03 12:56:53	⚡	You are now logged in as boon (boon!d8v3@moz-00m.h73.195.66.IP)
+2017-01-03 12:56:53	⚡	User mode [+r] by NickServ
+2017-01-04 09:56:13	⚠ 	irc: reading data on socket: error 110 Connection timed out
+2017-01-04 09:56:13	⚡	irc: disconnecting from server...
+2017-01-04 09:56:13	⚡	irc: disconnected from server
+2017-01-04 09:56:13	⚡	irc: reconnecting to server in 10 seconds
+2017-01-04 09:56:23	⚡	irc: reconnecting to server...
+2017-01-04 09:56:23	⚡	irc: connecting to server irc.mozilla.org/6667...
+2017-01-04 09:56:23	⚡	irc: connected to irc.mozilla.org/6667 (54.85.60.193)
+2017-01-04 09:56:23	⚡	levin.mozilla.org: *** Looking up your hostname...
+2017-01-04 09:56:29	⚡	levin.mozilla.org: *** Could not resolve your hostname: Request timed out; using your IP address (66.195.46.242) instead.
+2017-01-04 09:56:29	⚡	levin.mozilla.org: Welcome to Mozilla!
+2017-01-04 09:56:29	⚡	Welcome to the Mozilla IRC Network boon!d8v3@66.195.46.242
+2017-01-04 09:56:29	⚡	Your host is levin.mozilla.org, running version InspIRCd-2.0
+2017-01-04 09:56:29	⚡	This server was created 11:39:26 Sep  3 2016
+2017-01-04 09:56:29	⚡	levin.mozilla.org InspIRCd-2.0 BHIRSWacdhikorswx ABCDFKLMNOQRSTYZabcefghijklmnopqrstuvz FLYZabefghjkloqv
+2017-01-04 09:56:29	⚡	AWAYLEN=200 CASEMAPPING=rfc1459 CHANMODES=Zbeg,k,FLfjl,ABCDKMNOQRSTcimnprstuz CHANNELLEN=64 CHANTYPES=# CHARSET=ascii ELIST=MU ESILENCE EXCEPTS=e EXTBAN=,ABCNOQRSTUcmprz FNC KICKLEN=255 MAP :are supported by this server
+2017-01-04 09:56:29	⚡	MAXBANS=60 MAXCHANNELS=100 MAXPARA=32 MAXTARGETS=20 MODES=20 NAMESX NETWORK=Mozilla NICKLEN=31 OPERLOG OVERRIDE PREFIX=(Yqaohv)!~&@%+ SECURELIST SILENCE=32 :are supported by this server
+2017-01-04 09:56:29	⚡	SSL=[::]:6697 STATUSMSG=!~&@%+ TOPICLEN=307 UHNAMES USERIP VBANLIST WALLCHOPS WALLVOICES WATCH=32 :are supported by this server
+2017-01-04 09:56:29	⚡	557ASAPJN :your unique ID
+2017-01-04 09:56:29	⚡	levin.mozilla.org message of the day
+2017-01-04 09:56:29	⚡	-                      __          _
+2017-01-04 09:56:29	⚡	-                     / /__ _   __(_)___
+2017-01-04 09:56:29	⚡	-                    / / _ \ | / / / __ \
+2017-01-04 09:56:29	⚡	-                   / /  __/ |/ / / / / /
+2017-01-04 09:56:29	⚡	-                  /_/\___/|___/_/_/ /_/
+2017-01-04 09:56:29	⚡	-
+2017-01-04 09:56:29	⚡	-               M O Z I L L A   D O T   O R G
+2017-01-04 09:56:29	⚡	-                 https://www.mozilla.org/
+2017-01-04 09:56:29	⚡	-
+2017-01-04 09:56:29	⚡	- =================================================================
+2017-01-04 09:56:29	⚡	-  This server is for use by Mozilla developers, testers, and
+2017-01-04 09:56:29	⚡	-  users. If you are not one, please find another server.
+2017-01-04 09:56:29	⚡	-
+2017-01-04 09:56:29	⚡	-  NOTICE: Your IP address will be portscanned by our open
+2017-01-04 09:56:29	⚡	-  proxy tester.  See https://wiki.mozilla.org/IRC for details.
+2017-01-04 09:56:29	⚡	-
+2017-01-04 09:56:29	⚡	- =================================================================
+2017-01-04 09:56:29	⚡	-  Project information:
+2017-01-04 09:56:29	⚡	-   Firefox                https://support.mozilla.org/
+2017-01-04 09:56:29	⚡	-   Mobile                 https://support.mozilla.org/mobile
+2017-01-04 09:56:29	⚡	-   Thunderbird            https://support.mozilla.org/products/thunderbird
+2017-01-04 09:56:29	⚡	-   Boot2Gecko (FirefoxOS) https://support.mozilla.org/products/firefox-os
+2017-01-04 09:56:29	⚡	-   Webmaker               https://support.mozilla.org/products/webmaker
+2017-01-04 09:56:29	⚡	-
+2017-01-04 09:56:29	⚡	-  Help for new contributors:
+2017-01-04 09:56:29	⚡	-   https://developer.mozilla.org/Introduction
+2017-01-04 09:56:29	⚡	-
+2017-01-04 09:56:29	⚡	- =================================================================
+2017-01-04 09:56:29	⚡	-  Ports:
+2017-01-04 09:56:29	⚡	-   Non-SSL: 6665 - 6669
+2017-01-04 09:56:29	⚡	-       SSL: 6697, 8443
+2017-01-04 09:56:29	⚡	- =================================================================
+2017-01-04 09:56:29	⚡	-
+2017-01-04 09:56:29	⚡	-  For a list of other helpful channels please visit
+2017-01-04 09:56:29	⚡	-  https://wiki.mozilla.org/IRC or use the /list command.
+2017-01-04 09:56:29	⚡	-  Additional help with IRC at http://www.irchelp.org/
+2017-01-04 09:56:29	⚡	-
+2017-01-04 09:56:29	⚡	End of message of the day.
+2017-01-04 09:56:29	⚡	There are 4147 users and 846 invisible on 4 servers
+2017-01-04 09:56:29	⚡	11 :operator(s) online
+2017-01-04 09:56:29	⚡	1907 :channels formed
+2017-01-04 09:56:29	⚡	I have 1576 clients and 1 servers
+2017-01-04 09:56:29	⚡	Current Local Users: 1576  Max: 1643
+2017-01-04 09:56:29	⚡	Current Global Users: 4993  Max: 5023
+2017-01-04 09:56:29	⚡	moz-00m.h73.195.66.IP :is now your displayed host
+2017-01-04 09:56:29	⚡	User mode [+x] by boon
+2017-01-04 09:56:29	⚡	NickServ (services@ircservices.mozilla.org): This nickname is registered and protected.  If it is your
+2017-01-04 09:56:29	⚡	NickServ (services@ircservices.mozilla.org): nick, type /msg NickServ IDENTIFY password.  Otherwise,
+2017-01-04 09:56:29	⚡	NickServ (services@ircservices.mozilla.org): please choose a different nick.
+2017-01-04 10:28:17	⚠ 	irc: reading data on socket: error 110 Connection timed out
+2017-01-04 10:28:17	⚡	irc: disconnecting from server...
+2017-01-04 10:28:18	⚡	irc: disconnected from server
+2017-01-04 10:28:18	⚡	irc: reconnecting to server in 10 seconds
+2017-01-04 10:28:28	⚡	irc: reconnecting to server...
+2017-01-04 10:28:28	⚡	irc: connecting to server irc.mozilla.org/6667...
+2017-01-04 10:28:28	⚡	irc: connected to irc.mozilla.org/6667 (54.219.165.167)
+2017-01-04 10:28:28	⚡	belew.mozilla.org: *** Looking up your hostname...
+2017-01-04 10:28:34	⚡	belew.mozilla.org: *** Could not resolve your hostname: Request timed out; using your IP address (66.195.46.242) instead.
+2017-01-04 10:28:34	⚡	belew.mozilla.org: Welcome to Mozilla!
+2017-01-04 10:28:34	⚡	Welcome to the Mozilla IRC Network boon!d8v3@66.195.46.242
+2017-01-04 10:28:34	⚡	Your host is belew.mozilla.org, running version InspIRCd-2.0
+2017-01-04 10:28:34	⚡	This server was created 11:39:26 Sep  3 2016
+2017-01-04 10:28:34	⚡	belew.mozilla.org InspIRCd-2.0 BHIRSWacdhikorswx ABCDFKLMNOQRSTYZabcefghijklmnopqrstuvz FLYZabefghjkloqv
+2017-01-04 10:28:34	⚡	AWAYLEN=200 CASEMAPPING=rfc1459 CHANMODES=Zbeg,k,FLfjl,ABCDKMNOQRSTcimnprstuz CHANNELLEN=64 CHANTYPES=# CHARSET=ascii ELIST=MU ESILENCE EXCEPTS=e EXTBAN=,ABCNOQRSTUcmprz FNC KICKLEN=255 MAP :are supported by this server
+2017-01-04 10:28:34	⚡	MAXBANS=60 MAXCHANNELS=100 MAXPARA=32 MAXTARGETS=20 MODES=20 NAMESX NETWORK=Mozilla NICKLEN=31 OPERLOG OVERRIDE PREFIX=(Yqaohv)!~&@%+ SECURELIST SILENCE=32 :are supported by this server
+2017-01-04 10:28:34	⚡	SSL=[::]:6697 STATUSMSG=!~&@%+ TOPICLEN=307 UHNAMES USERIP VBANLIST WALLCHOPS WALLVOICES WATCH=32 :are supported by this server
+2017-01-04 10:28:34	⚡	203ASBEQI :your unique ID
+2017-01-04 10:28:34	⚡	belew.mozilla.org message of the day
+2017-01-04 10:28:34	⚡	-                      __         __
+2017-01-04 10:28:34	⚡	-                     / /_  ___  / /__ _      __
+2017-01-04 10:28:34	⚡	-                    / __ \/ _ \/ / _ \ | /| / /
+2017-01-04 10:28:34	⚡	-                   / /_/ /  __/ /  __/ |/ |/ /
+2017-01-04 10:28:34	⚡	-                  /_.___/\___/_/\___/|__/|__/
+2017-01-04 10:28:34	⚡	-
+2017-01-04 10:28:34	⚡	-
+2017-01-04 10:28:34	⚡	-                  M O Z I L L A   D O T   O R G
+2017-01-04 10:28:34	⚡	-                    https://www.mozilla.org/
+2017-01-04 10:28:34	⚡	-
+2017-01-04 10:28:34	⚡	- =================================================================
+2017-01-04 10:28:34	⚡	-  This server is for use by Mozilla developers, testers, and
+2017-01-04 10:28:34	⚡	-  users. If you are not one, please find another server.
+2017-01-04 10:28:34	⚡	-
+2017-01-04 10:28:34	⚡	-  NOTICE: Your IP address will be portscanned by our open
+2017-01-04 10:28:34	⚡	-  proxy tester.  See https://wiki.mozilla.org/IRC for details.
+2017-01-04 10:28:34	⚡	-
+2017-01-04 10:28:34	⚡	- =================================================================
+2017-01-04 10:28:34	⚡	-  Project information:
+2017-01-04 10:28:34	⚡	-   Firefox                https://support.mozilla.org/
+2017-01-04 10:28:34	⚡	-   Mobile                 https://support.mozilla.org/mobile
+2017-01-04 10:28:34	⚡	-   Thunderbird            https://support.mozilla.org/products/thunderbird
+2017-01-04 10:28:34	⚡	-   Boot2Gecko (FirefoxOS) https://support.mozilla.org/products/firefox-os
+2017-01-04 10:28:34	⚡	-   Webmaker               https://support.mozilla.org/products/webmaker
+2017-01-04 10:28:34	⚡	-
+2017-01-04 10:28:34	⚡	-  Help for new contributors:
+2017-01-04 10:28:34	⚡	-   https://developer.mozilla.org/Introduction
+2017-01-04 10:28:34	⚡	-
+2017-01-04 10:28:34	⚡	- =================================================================
+2017-01-04 10:28:34	⚡	-  Ports:
+2017-01-04 10:28:34	⚡	-   Non-SSL: 6665 - 6669
+2017-01-04 10:28:34	⚡	-       SSL: 6697, 8443
+2017-01-04 10:28:34	⚡	- =================================================================
+2017-01-04 10:28:34	⚡	-
+2017-01-04 10:28:34	⚡	-  For a list of other helpful channels please visit
+2017-01-04 10:28:34	⚡	-  https://wiki.mozilla.org/IRC or use the /list command.
+2017-01-04 10:28:34	⚡	-  Additional help with IRC at http://www.irchelp.org/
+2017-01-04 10:28:34	⚡	-
+2017-01-04 10:28:34	⚡	End of message of the day.
+2017-01-04 10:28:34	⚡	There are 4163 users and 846 invisible on 4 servers
+2017-01-04 10:28:34	⚡	11 :operator(s) online
+2017-01-04 10:28:34	⚡	1 :unknown connections
+2017-01-04 10:28:34	⚡	1906 :channels formed
+2017-01-04 10:28:34	⚡	I have 1562 clients and 2 servers
+2017-01-04 10:28:34	⚡	Current Local Users: 1562  Max: 1820
+2017-01-04 10:28:34	⚡	Current Global Users: 5009  Max: 5023
+2017-01-04 10:28:34	⚡	moz-00m.h73.195.66.IP :is now your displayed host
+2017-01-04 10:28:34	⚡	User mode [+x] by boon
+2017-01-04 10:28:34	⚡	NickServ (services@ircservices.mozilla.org): This nickname is registered and protected.  If it is your
+2017-01-04 10:28:34	⚡	NickServ (services@ircservices.mozilla.org): nick, type /msg NickServ IDENTIFY password.  Otherwise,
+2017-01-04 10:28:34	⚡	NickServ (services@ircservices.mozilla.org): please choose a different nick.
+2017-01-04 10:57:15	⚡	MSG(nickserv): identify ********
+2017-01-04 10:57:15	⚡	NickServ (services@ircservices.mozilla.org): Password accepted - you are now recognized.
+2017-01-04 10:57:15	⚡	You are now logged in as boon (boon!d8v3@moz-00m.h73.195.66.IP)
+2017-01-04 10:57:16	⚡	User mode [+r] by NickServ
+2017-01-05 10:43:14	⚡	irc: connecting to server irc.mozilla.org/6667...
+2017-01-05 10:43:16	⚡	irc: connected to irc.mozilla.org/6667 (54.219.165.167)
+2017-01-05 10:43:17	⚡	belew.mozilla.org: *** Looking up your hostname...
+2017-01-05 10:43:19	⚡	belew.mozilla.org: *** Could not resolve your hostname: Domain name not found; using your IP address (66.195.46.242) instead.
+2017-01-05 10:43:19	⚡	belew.mozilla.org: Welcome to Mozilla!
+2017-01-05 10:43:19	⚡	Welcome to the Mozilla IRC Network d8v3!d8v3@66.195.46.242
+2017-01-05 10:43:19	⚡	Your host is belew.mozilla.org, running version InspIRCd-2.0
+2017-01-05 10:43:19	⚡	This server was created 11:39:26 Sep  3 2016
+2017-01-05 10:43:19	⚡	belew.mozilla.org InspIRCd-2.0 BHIRSWacdhikorswx ABCDFKLMNOQRSTYZabcefghijklmnopqrstuvz FLYZabefghjkloqv
+2017-01-05 10:43:19	⚡	AWAYLEN=200 CASEMAPPING=rfc1459 CHANMODES=Zbeg,k,FLfjl,ABCDKMNOQRSTcimnprstuz CHANNELLEN=64 CHANTYPES=# CHARSET=ascii ELIST=MU ESILENCE EXCEPTS=e EXTBAN=,ABCNOQRSTUcmprz FNC KICKLEN=255 MAP :are supported by this server
+2017-01-05 10:43:19	⚡	MAXBANS=60 MAXCHANNELS=100 MAXPARA=32 MAXTARGETS=20 MODES=20 NAMESX NETWORK=Mozilla NICKLEN=31 OPERLOG OVERRIDE PREFIX=(Yqaohv)!~&@%+ SECURELIST SILENCE=32 :are supported by this server
+2017-01-05 10:43:19	⚡	SSL=[::]:6697 STATUSMSG=!~&@%+ TOPICLEN=307 UHNAMES USERIP VBANLIST WALLCHOPS WALLVOICES WATCH=32 :are supported by this server
+2017-01-05 10:43:19	⚡	203AT9M6Z :your unique ID
+2017-01-05 10:43:19	⚡	belew.mozilla.org message of the day
+2017-01-05 10:43:19	⚡	-                      __         __
+2017-01-05 10:43:19	⚡	-                     / /_  ___  / /__ _      __
+2017-01-05 10:43:19	⚡	-                    / __ \/ _ \/ / _ \ | /| / /
+2017-01-05 10:43:19	⚡	-                   / /_/ /  __/ /  __/ |/ |/ /
+2017-01-05 10:43:19	⚡	-                  /_.___/\___/_/\___/|__/|__/
+2017-01-05 10:43:19	⚡	-
+2017-01-05 10:43:19	⚡	-
+2017-01-05 10:43:19	⚡	-                  M O Z I L L A   D O T   O R G
+2017-01-05 10:43:19	⚡	-                    https://www.mozilla.org/
+2017-01-05 10:43:19	⚡	-
+2017-01-05 10:43:19	⚡	- =================================================================
+2017-01-05 10:43:19	⚡	-  This server is for use by Mozilla developers, testers, and
+2017-01-05 10:43:19	⚡	-  users. If you are not one, please find another server.
+2017-01-05 10:43:19	⚡	-
+2017-01-05 10:43:19	⚡	-  NOTICE: Your IP address will be portscanned by our open
+2017-01-05 10:43:19	⚡	-  proxy tester.  See https://wiki.mozilla.org/IRC for details.
+2017-01-05 10:43:19	⚡	-
+2017-01-05 10:43:19	⚡	- =================================================================
+2017-01-05 10:43:19	⚡	-  Project information:
+2017-01-05 10:43:19	⚡	-   Firefox                https://support.mozilla.org/
+2017-01-05 10:43:19	⚡	-   Mobile                 https://support.mozilla.org/mobile
+2017-01-05 10:43:19	⚡	-   Thunderbird            https://support.mozilla.org/products/thunderbird
+2017-01-05 10:43:19	⚡	-   Boot2Gecko (FirefoxOS) https://support.mozilla.org/products/firefox-os
+2017-01-05 10:43:19	⚡	-   Webmaker               https://support.mozilla.org/products/webmaker
+2017-01-05 10:43:19	⚡	-
+2017-01-05 10:43:19	⚡	-  Help for new contributors:
+2017-01-05 10:43:19	⚡	-   https://developer.mozilla.org/Introduction
+2017-01-05 10:43:19	⚡	-
+2017-01-05 10:43:19	⚡	- =================================================================
+2017-01-05 10:43:19	⚡	-  Ports:
+2017-01-05 10:43:19	⚡	-   Non-SSL: 6665 - 6669
+2017-01-05 10:43:19	⚡	-       SSL: 6697, 8443
+2017-01-05 10:43:19	⚡	- =================================================================
+2017-01-05 10:43:19	⚡	-
+2017-01-05 10:43:19	⚡	-  For a list of other helpful channels please visit
+2017-01-05 10:43:19	⚡	-  https://wiki.mozilla.org/IRC or use the /list command.
+2017-01-05 10:43:19	⚡	-  Additional help with IRC at http://www.irchelp.org/
+2017-01-05 10:43:19	⚡	-
+2017-01-05 10:43:19	⚡	End of message of the day.
+2017-01-05 10:43:19	⚡	There are 4155 users and 855 invisible on 4 servers
+2017-01-05 10:43:19	⚡	12 :operator(s) online
+2017-01-05 10:43:19	⚡	1891 :channels formed
+2017-01-05 10:43:19	⚡	I have 1551 clients and 2 servers
+2017-01-05 10:43:19	⚡	Current Local Users: 1551  Max: 1820
+2017-01-05 10:43:19	⚡	Current Global Users: 5010  Max: 5068
+2017-01-05 10:43:19	⚡	moz-00m.h73.195.66.IP :is now your displayed host
+2017-01-05 10:43:19	⚡	User mode [+x] by d8v3
+2017-01-05 10:44:13	⚡	MSG(nickserv): identify ********
+2017-01-05 10:44:15	⚡	NickServ (services@ircservices.mozilla.org): Nick d8v3 isn't registered.
+2017-01-05 10:44:21	⚡	MSG(nickserv): identify ********
+2017-01-05 10:44:31	⚡	You are now known as boon
+2017-01-05 10:44:31	⚡	NickServ (services@ircservices.mozilla.org): This nickname is registered and protected.  If it is your
+2017-01-05 10:44:31	⚡	NickServ (services@ircservices.mozilla.org): nick, type /msg NickServ IDENTIFY password.  Otherwise,
+2017-01-05 10:44:31	⚡	NickServ (services@ircservices.mozilla.org): please choose a different nick.
+2017-01-05 10:44:31	⚡	NickServ (services@ircservices.mozilla.org): Password incorrect.
+2017-01-05 10:44:38	⚡	MSG(nickserv): identify ********
+2017-01-05 10:44:39	⚡	NickServ (services@ircservices.mozilla.org): Password accepted - you are now recognized.
+2017-01-05 10:44:39	⚡	You are now logged in as boon (boon!d8v3@moz-00m.h73.195.66.IP)
+2017-01-05 10:44:39	⚡	User mode [+r] by NickServ
+2017-01-06 09:54:04	⚠ 	irc: reading data on socket: error 110 Connection timed out
+2017-01-06 09:54:04	⚡	irc: disconnecting from server...
+2017-01-06 09:54:04	⚡	irc: disconnected from server
+2017-01-06 09:54:04	⚡	irc: reconnecting to server in 10 seconds
+2017-01-06 09:54:14	⚡	irc: reconnecting to server...
+2017-01-06 09:54:14	⚡	irc: connecting to server irc.mozilla.org/6667...
+2017-01-06 09:54:14	⚡	irc: connected to irc.mozilla.org/6667 (54.85.60.193)
+2017-01-06 09:54:14	⚡	levin.mozilla.org: *** Looking up your hostname...
+2017-01-06 09:54:19	⚡	levin.mozilla.org: *** Could not resolve your hostname: Request timed out; using your IP address (66.195.46.242) instead.
+2017-01-06 09:54:19	⚡	levin.mozilla.org: Welcome to Mozilla!
+2017-01-06 09:54:19	⚡	Welcome to the Mozilla IRC Network boon!d8v3@66.195.46.242
+2017-01-06 09:54:19	⚡	Your host is levin.mozilla.org, running version InspIRCd-2.0
+2017-01-06 09:54:19	⚡	This server was created 11:39:26 Sep  3 2016
+2017-01-06 09:54:19	⚡	levin.mozilla.org InspIRCd-2.0 BHIRSWacdhikorswx ABCDFKLMNOQRSTYZabcefghijklmnopqrstuvz FLYZabefghjkloqv
+2017-01-06 09:54:19	⚡	AWAYLEN=200 CASEMAPPING=rfc1459 CHANMODES=Zbeg,k,FLfjl,ABCDKMNOQRSTcimnprstuz CHANNELLEN=64 CHANTYPES=# CHARSET=ascii ELIST=MU ESILENCE EXCEPTS=e EXTBAN=,ABCNOQRSTUcmprz FNC KICKLEN=255 MAP :are supported by this server
+2017-01-06 09:54:19	⚡	MAXBANS=60 MAXCHANNELS=100 MAXPARA=32 MAXTARGETS=20 MODES=20 NAMESX NETWORK=Mozilla NICKLEN=31 OPERLOG OVERRIDE PREFIX=(Yqaohv)!~&@%+ SECURELIST SILENCE=32 :are supported by this server
+2017-01-06 09:54:19	⚡	SSL=[::]:6697 STATUSMSG=!~&@%+ TOPICLEN=307 UHNAMES USERIP VBANLIST WALLCHOPS WALLVOICES WATCH=32 :are supported by this server
+2017-01-06 09:54:19	⚡	557AVX9D0 :your unique ID
+2017-01-06 09:54:19	⚡	levin.mozilla.org message of the day
+2017-01-06 09:54:19	⚡	-                      __          _
+2017-01-06 09:54:19	⚡	-                     / /__ _   __(_)___
+2017-01-06 09:54:19	⚡	-                    / / _ \ | / / / __ \
+2017-01-06 09:54:19	⚡	-                   / /  __/ |/ / / / / /
+2017-01-06 09:54:19	⚡	-                  /_/\___/|___/_/_/ /_/
+2017-01-06 09:54:19	⚡	-
+2017-01-06 09:54:19	⚡	-               M O Z I L L A   D O T   O R G
+2017-01-06 09:54:19	⚡	-                 https://www.mozilla.org/
+2017-01-06 09:54:19	⚡	-
+2017-01-06 09:54:19	⚡	- =================================================================
+2017-01-06 09:54:19	⚡	-  This server is for use by Mozilla developers, testers, and
+2017-01-06 09:54:19	⚡	-  users. If you are not one, please find another server.
+2017-01-06 09:54:19	⚡	-
+2017-01-06 09:54:19	⚡	-  NOTICE: Your IP address will be portscanned by our open
+2017-01-06 09:54:19	⚡	-  proxy tester.  See https://wiki.mozilla.org/IRC for details.
+2017-01-06 09:54:19	⚡	-
+2017-01-06 09:54:19	⚡	- =================================================================
+2017-01-06 09:54:19	⚡	-  Project information:
+2017-01-06 09:54:19	⚡	-   Firefox                https://support.mozilla.org/
+2017-01-06 09:54:19	⚡	-   Mobile                 https://support.mozilla.org/mobile
+2017-01-06 09:54:19	⚡	-   Thunderbird            https://support.mozilla.org/products/thunderbird
+2017-01-06 09:54:19	⚡	-   Boot2Gecko (FirefoxOS) https://support.mozilla.org/products/firefox-os
+2017-01-06 09:54:19	⚡	-   Webmaker               https://support.mozilla.org/products/webmaker
+2017-01-06 09:54:19	⚡	-
+2017-01-06 09:54:19	⚡	-  Help for new contributors:
+2017-01-06 09:54:19	⚡	-   https://developer.mozilla.org/Introduction
+2017-01-06 09:54:19	⚡	-
+2017-01-06 09:54:19	⚡	- =================================================================
+2017-01-06 09:54:19	⚡	-  Ports:
+2017-01-06 09:54:19	⚡	-   Non-SSL: 6665 - 6669
+2017-01-06 09:54:19	⚡	-       SSL: 6697, 8443
+2017-01-06 09:54:19	⚡	- =================================================================
+2017-01-06 09:54:19	⚡	-
+2017-01-06 09:54:19	⚡	-  For a list of other helpful channels please visit
+2017-01-06 09:54:19	⚡	-  https://wiki.mozilla.org/IRC or use the /list command.
+2017-01-06 09:54:19	⚡	-  Additional help with IRC at http://www.irchelp.org/
+2017-01-06 09:54:19	⚡	-
+2017-01-06 09:54:19	⚡	End of message of the day.
+2017-01-06 09:54:19	⚡	There are 4138 users and 858 invisible on 4 servers
+2017-01-06 09:54:19	⚡	12 :operator(s) online
+2017-01-06 09:54:19	⚡	1877 :channels formed
+2017-01-06 09:54:19	⚡	I have 1571 clients and 1 servers
+2017-01-06 09:54:19	⚡	Current Local Users: 1571  Max: 1643
+2017-01-06 09:54:19	⚡	Current Global Users: 4996  Max: 5068
+2017-01-06 09:54:19	⚡	moz-00m.h73.195.66.IP :is now your displayed host
+2017-01-06 09:54:19	⚡	User mode [+x] by boon
+2017-01-06 09:54:19	⚡	NickServ (services@ircservices.mozilla.org): This nickname is registered and protected.  If it is your
+2017-01-06 09:54:19	⚡	NickServ (services@ircservices.mozilla.org): nick, type /msg NickServ IDENTIFY password.  Otherwise,
+2017-01-06 09:54:19	⚡	NickServ (services@ircservices.mozilla.org): please choose a different nick.
+2017-01-06 10:07:30	⚠ 	irc: reading data on socket: error 104 Connection reset by peer
+2017-01-06 10:07:30	⚡	irc: disconnecting from server...
+2017-01-06 10:07:30	⚡	irc: disconnected from server
+2017-01-06 10:07:30	⚡	irc: reconnecting to server in 10 seconds
+2017-01-06 10:07:40	⚡	irc: reconnecting to server...
+2017-01-06 10:07:40	⚡	irc: connecting to server irc.mozilla.org/6667...
+2017-01-06 10:07:40	⚡	irc: connected to irc.mozilla.org/6667 (54.219.165.167)
+2017-01-06 10:07:40	⚡	belew.mozilla.org: *** Looking up your hostname...
+2017-01-06 10:07:46	⚡	belew.mozilla.org: *** Could not resolve your hostname: Request timed out; using your IP address (66.195.46.242) instead.
+2017-01-06 10:07:46	⚡	belew.mozilla.org: Welcome to Mozilla!
+2017-01-06 10:07:46	⚡	Welcome to the Mozilla IRC Network boon!d8v3@66.195.46.242
+2017-01-06 10:07:46	⚡	Your host is belew.mozilla.org, running version InspIRCd-2.0
+2017-01-06 10:07:46	⚡	This server was created 11:39:26 Sep  3 2016
+2017-01-06 10:07:46	⚡	belew.mozilla.org InspIRCd-2.0 BHIRSWacdhikorswx ABCDFKLMNOQRSTYZabcefghijklmnopqrstuvz FLYZabefghjkloqv
+2017-01-06 10:07:46	⚡	AWAYLEN=200 CASEMAPPING=rfc1459 CHANMODES=Zbeg,k,FLfjl,ABCDKMNOQRSTcimnprstuz CHANNELLEN=64 CHANTYPES=# CHARSET=ascii ELIST=MU ESILENCE EXCEPTS=e EXTBAN=,ABCNOQRSTUcmprz FNC KICKLEN=255 MAP :are supported by this server
+2017-01-06 10:07:46	⚡	MAXBANS=60 MAXCHANNELS=100 MAXPARA=32 MAXTARGETS=20 MODES=20 NAMESX NETWORK=Mozilla NICKLEN=31 OPERLOG OVERRIDE PREFIX=(Yqaohv)!~&@%+ SECURELIST SILENCE=32 :are supported by this server
+2017-01-06 10:07:46	⚡	SSL=[::]:6697 STATUSMSG=!~&@%+ TOPICLEN=307 UHNAMES USERIP VBANLIST WALLCHOPS WALLVOICES WATCH=32 :are supported by this server
+2017-01-06 10:07:46	⚡	203AVX0Q9 :your unique ID
+2017-01-06 10:07:46	⚡	belew.mozilla.org message of the day
+2017-01-06 10:07:46	⚡	-                      __         __
+2017-01-06 10:07:46	⚡	-                     / /_  ___  / /__ _      __
+2017-01-06 10:07:46	⚡	-                    / __ \/ _ \/ / _ \ | /| / /
+2017-01-06 10:07:46	⚡	-                   / /_/ /  __/ /  __/ |/ |/ /
+2017-01-06 10:07:46	⚡	-                  /_.___/\___/_/\___/|__/|__/
+2017-01-06 10:07:46	⚡	-
+2017-01-06 10:07:46	⚡	-
+2017-01-06 10:07:46	⚡	-                  M O Z I L L A   D O T   O R G
+2017-01-06 10:07:46	⚡	-                    https://www.mozilla.org/
+2017-01-06 10:07:46	⚡	-
+2017-01-06 10:07:46	⚡	- =================================================================
+2017-01-06 10:07:46	⚡	-  This server is for use by Mozilla developers, testers, and
+2017-01-06 10:07:46	⚡	-  users. If you are not one, please find another server.
+2017-01-06 10:07:46	⚡	-
+2017-01-06 10:07:46	⚡	-  NOTICE: Your IP address will be portscanned by our open
+2017-01-06 10:07:46	⚡	-  proxy tester.  See https://wiki.mozilla.org/IRC for details.
+2017-01-06 10:07:46	⚡	-
+2017-01-06 10:07:46	⚡	- =================================================================
+2017-01-06 10:07:46	⚡	-  Project information:
+2017-01-06 10:07:46	⚡	-   Firefox                https://support.mozilla.org/
+2017-01-06 10:07:46	⚡	-   Mobile                 https://support.mozilla.org/mobile
+2017-01-06 10:07:46	⚡	-   Thunderbird            https://support.mozilla.org/products/thunderbird
+2017-01-06 10:07:46	⚡	-   Boot2Gecko (FirefoxOS) https://support.mozilla.org/products/firefox-os
+2017-01-06 10:07:46	⚡	-   Webmaker               https://support.mozilla.org/products/webmaker
+2017-01-06 10:07:46	⚡	-
+2017-01-06 10:07:46	⚡	-  Help for new contributors:
+2017-01-06 10:07:46	⚡	-   https://developer.mozilla.org/Introduction
+2017-01-06 10:07:46	⚡	-
+2017-01-06 10:07:46	⚡	- =================================================================
+2017-01-06 10:07:46	⚡	-  Ports:
+2017-01-06 10:07:46	⚡	-   Non-SSL: 6665 - 6669
+2017-01-06 10:07:46	⚡	-       SSL: 6697, 8443
+2017-01-06 10:07:46	⚡	- =================================================================
+2017-01-06 10:07:46	⚡	-
+2017-01-06 10:07:46	⚡	-  For a list of other helpful channels please visit
+2017-01-06 10:07:46	⚡	-  https://wiki.mozilla.org/IRC or use the /list command.
+2017-01-06 10:07:46	⚡	-  Additional help with IRC at http://www.irchelp.org/
+2017-01-06 10:07:46	⚡	-
+2017-01-06 10:07:46	⚡	End of message of the day.
+2017-01-06 10:07:46	⚡	There are 4145 users and 856 invisible on 4 servers
+2017-01-06 10:07:46	⚡	12 :operator(s) online
+2017-01-06 10:07:46	⚡	1 :unknown connections
+2017-01-06 10:07:46	⚡	1878 :channels formed
+2017-01-06 10:07:46	⚡	I have 1572 clients and 2 servers
+2017-01-06 10:07:46	⚡	Current Local Users: 1572  Max: 1820
+2017-01-06 10:07:46	⚡	Current Global Users: 5001  Max: 5068
+2017-01-06 10:07:46	⚡	moz-00m.h73.195.66.IP :is now your displayed host
+2017-01-06 10:07:46	⚡	User mode [+x] by boon
+2017-01-06 10:07:46	⚡	NickServ (services@ircservices.mozilla.org): This nickname is registered and protected.  If it is your
+2017-01-06 10:07:46	⚡	NickServ (services@ircservices.mozilla.org): nick, type /msg NickServ IDENTIFY password.  Otherwise,
+2017-01-06 10:07:46	⚡	NickServ (services@ircservices.mozilla.org): please choose a different nick.
+2017-01-09 09:16:07	⚠ 	irc: reading data on socket: error 110 Connection timed out
+2017-01-09 09:16:07	⚡	irc: disconnecting from server...
+2017-01-09 09:16:07	⚡	irc: disconnected from server
+2017-01-09 09:16:07	⚡	irc: reconnecting to server in 10 seconds
+2017-01-09 09:16:17	⚡	irc: reconnecting to server...
+2017-01-09 09:16:17	⚡	irc: connecting to server irc.mozilla.org/6667...
+2017-01-09 09:16:17	⚡	irc: connected to irc.mozilla.org/6667 (54.85.60.193)
+2017-01-09 09:16:17	⚡	levin.mozilla.org: *** Looking up your hostname...
+2017-01-09 09:16:19	⚡	levin.mozilla.org: *** Could not resolve your hostname: Domain name not found; using your IP address (66.195.46.242) instead.
+2017-01-09 09:16:19	⚡	levin.mozilla.org: Welcome to Mozilla!
+2017-01-09 09:16:19	⚡	Welcome to the Mozilla IRC Network boon!d8v3@66.195.46.242
+2017-01-09 09:16:19	⚡	Your host is levin.mozilla.org, running version InspIRCd-2.0
+2017-01-09 09:16:19	⚡	This server was created 11:39:26 Sep  3 2016
+2017-01-09 09:16:19	⚡	levin.mozilla.org InspIRCd-2.0 BHIRSWacdhikorswx ABCDFKLMNOQRSTYZabcefghijklmnopqrstuvz FLYZabefghjkloqv
+2017-01-09 09:16:19	⚡	AWAYLEN=200 CASEMAPPING=rfc1459 CHANMODES=Zbeg,k,FLfjl,ABCDKMNOQRSTcimnprstuz CHANNELLEN=64 CHANTYPES=# CHARSET=ascii ELIST=MU ESILENCE EXCEPTS=e EXTBAN=,ABCNOQRSTUcmprz FNC KICKLEN=255 MAP :are supported by this server
+2017-01-09 09:16:19	⚡	MAXBANS=60 MAXCHANNELS=100 MAXPARA=32 MAXTARGETS=20 MODES=20 NAMESX NETWORK=Mozilla NICKLEN=31 OPERLOG OVERRIDE PREFIX=(Yqaohv)!~&@%+ SECURELIST SILENCE=32 :are supported by this server
+2017-01-09 09:16:19	⚡	SSL=[::]:6697 STATUSMSG=!~&@%+ TOPICLEN=307 UHNAMES USERIP VBANLIST WALLCHOPS WALLVOICES WATCH=32 :are supported by this server
+2017-01-09 09:16:19	⚡	557A0PJXZ :your unique ID
+2017-01-09 09:16:19	⚡	levin.mozilla.org message of the day
+2017-01-09 09:16:19	⚡	-                      __          _
+2017-01-09 09:16:19	⚡	-                     / /__ _   __(_)___
+2017-01-09 09:16:19	⚡	-                    / / _ \ | / / / __ \
+2017-01-09 09:16:19	⚡	-                   / /  __/ |/ / / / / /
+2017-01-09 09:16:19	⚡	-                  /_/\___/|___/_/_/ /_/
+2017-01-09 09:16:19	⚡	-
+2017-01-09 09:16:19	⚡	-               M O Z I L L A   D O T   O R G
+2017-01-09 09:16:19	⚡	-                 https://www.mozilla.org/
+2017-01-09 09:16:19	⚡	-
+2017-01-09 09:16:19	⚡	- =================================================================
+2017-01-09 09:16:19	⚡	-  This server is for use by Mozilla developers, testers, and
+2017-01-09 09:16:19	⚡	-  users. If you are not one, please find another server.
+2017-01-09 09:16:19	⚡	-
+2017-01-09 09:16:19	⚡	-  NOTICE: Your IP address will be portscanned by our open
+2017-01-09 09:16:19	⚡	-  proxy tester.  See https://wiki.mozilla.org/IRC for details.
+2017-01-09 09:16:19	⚡	-
+2017-01-09 09:16:19	⚡	- =================================================================
+2017-01-09 09:16:19	⚡	-  Project information:
+2017-01-09 09:16:19	⚡	-   Firefox                https://support.mozilla.org/
+2017-01-09 09:16:19	⚡	-   Mobile                 https://support.mozilla.org/mobile
+2017-01-09 09:16:19	⚡	-   Thunderbird            https://support.mozilla.org/products/thunderbird
+2017-01-09 09:16:19	⚡	-   Boot2Gecko (FirefoxOS) https://support.mozilla.org/products/firefox-os
+2017-01-09 09:16:19	⚡	-   Webmaker               https://support.mozilla.org/products/webmaker
+2017-01-09 09:16:19	⚡	-
+2017-01-09 09:16:19	⚡	-  Help for new contributors:
+2017-01-09 09:16:19	⚡	-   https://developer.mozilla.org/Introduction
+2017-01-09 09:16:19	⚡	-
+2017-01-09 09:16:19	⚡	- =================================================================
+2017-01-09 09:16:19	⚡	-  Ports:
+2017-01-09 09:16:19	⚡	-   Non-SSL: 6665 - 6669
+2017-01-09 09:16:19	⚡	-       SSL: 6697, 8443
+2017-01-09 09:16:19	⚡	- =================================================================
+2017-01-09 09:16:19	⚡	-
+2017-01-09 09:16:19	⚡	-  For a list of other helpful channels please visit
+2017-01-09 09:16:19	⚡	-  https://wiki.mozilla.org/IRC or use the /list command.
+2017-01-09 09:16:19	⚡	-  Additional help with IRC at http://www.irchelp.org/
+2017-01-09 09:16:19	⚡	-
+2017-01-09 09:16:19	⚡	End of message of the day.
+2017-01-09 09:16:19	⚡	There are 4243 users and 870 invisible on 4 servers
+2017-01-09 09:16:19	⚡	11 :operator(s) online
+2017-01-09 09:16:19	⚡	1 :unknown connections
+2017-01-09 09:16:19	⚡	1903 :channels formed
+2017-01-09 09:16:19	⚡	I have 1658 clients and 1 servers
+2017-01-09 09:16:19	⚡	Current Local Users: 1658  Max: 1678
+2017-01-09 09:16:19	⚡	Current Global Users: 5113  Max: 5125
+2017-01-09 09:16:19	⚡	moz-00m.h73.195.66.IP :is now your displayed host
+2017-01-09 09:16:19	⚡	User mode [+x] by boon
+2017-01-09 09:16:19	⚡	NickServ (services@ircservices.mozilla.org): This nickname is registered and protected.  If it is your
+2017-01-09 09:16:19	⚡	NickServ (services@ircservices.mozilla.org): nick, type /msg NickServ IDENTIFY password.  Otherwise,
+2017-01-09 09:16:19	⚡	NickServ (services@ircservices.mozilla.org): please choose a different nick.
+2017-01-10 10:59:27	⚡	irc: connecting to server irc.mozilla.org/6667...
+2017-01-10 10:59:27	⚡	irc: connected to irc.mozilla.org/6667 (54.219.165.167)
+2017-01-10 10:59:27	⚡	belew.mozilla.org: *** Looking up your hostname...
+2017-01-10 10:59:29	⚡	belew.mozilla.org: *** Could not resolve your hostname: Domain name not found; using your IP address (66.195.46.242) instead.
+2017-01-10 10:59:29	⚡	belew.mozilla.org: Welcome to Mozilla!
+2017-01-10 10:59:29	⚡	Welcome to the Mozilla IRC Network d8v3!d8v3@66.195.46.242
+2017-01-10 10:59:29	⚡	Your host is belew.mozilla.org, running version InspIRCd-2.0
+2017-01-10 10:59:29	⚡	This server was created 11:39:26 Sep  3 2016
+2017-01-10 10:59:29	⚡	belew.mozilla.org InspIRCd-2.0 BHIRSWacdhikorswx ABCDFKLMNOQRSTYZabcefghijklmnopqrstuvz FLYZabefghjkloqv
+2017-01-10 10:59:29	⚡	AWAYLEN=200 CASEMAPPING=rfc1459 CHANMODES=Zbeg,k,FLfjl,ABCDKMNOQRSTcimnprstuz CHANNELLEN=64 CHANTYPES=# CHARSET=ascii ELIST=MU ESILENCE EXCEPTS=e EXTBAN=,ABCNOQRSTUcmprz FNC KICKLEN=255 MAP :are supported by this server
+2017-01-10 10:59:29	⚡	MAXBANS=60 MAXCHANNELS=100 MAXPARA=32 MAXTARGETS=20 MODES=20 NAMESX NETWORK=Mozilla NICKLEN=31 OPERLOG OVERRIDE PREFIX=(Yqaohv)!~&@%+ SECURELIST SILENCE=32 :are supported by this server
+2017-01-10 10:59:29	⚡	SSL=[::]:6697 STATUSMSG=!~&@%+ TOPICLEN=307 UHNAMES USERIP VBANLIST WALLCHOPS WALLVOICES WATCH=32 :are supported by this server
+2017-01-10 10:59:29	⚡	203A2GAL7 :your unique ID
+2017-01-10 10:59:29	⚡	belew.mozilla.org message of the day
+2017-01-10 10:59:29	⚡	-                      __         __
+2017-01-10 10:59:29	⚡	-                     / /_  ___  / /__ _      __
+2017-01-10 10:59:29	⚡	-                    / __ \/ _ \/ / _ \ | /| / /
+2017-01-10 10:59:29	⚡	-                   / /_/ /  __/ /  __/ |/ |/ /
+2017-01-10 10:59:29	⚡	-                  /_.___/\___/_/\___/|__/|__/
+2017-01-10 10:59:29	⚡	-
+2017-01-10 10:59:29	⚡	-
+2017-01-10 10:59:29	⚡	-                  M O Z I L L A   D O T   O R G
+2017-01-10 10:59:29	⚡	-                    https://www.mozilla.org/
+2017-01-10 10:59:29	⚡	-
+2017-01-10 10:59:29	⚡	- =================================================================
+2017-01-10 10:59:29	⚡	-  This server is for use by Mozilla developers, testers, and
+2017-01-10 10:59:29	⚡	-  users. If you are not one, please find another server.
+2017-01-10 10:59:29	⚡	-
+2017-01-10 10:59:29	⚡	-  NOTICE: Your IP address will be portscanned by our open
+2017-01-10 10:59:29	⚡	-  proxy tester.  See https://wiki.mozilla.org/IRC for details.
+2017-01-10 10:59:29	⚡	-
+2017-01-10 10:59:29	⚡	- =================================================================
+2017-01-10 10:59:29	⚡	-  Project information:
+2017-01-10 10:59:29	⚡	-   Firefox                https://support.mozilla.org/
+2017-01-10 10:59:29	⚡	-   Mobile                 https://support.mozilla.org/mobile
+2017-01-10 10:59:29	⚡	-   Thunderbird            https://support.mozilla.org/products/thunderbird
+2017-01-10 10:59:29	⚡	-   Boot2Gecko (FirefoxOS) https://support.mozilla.org/products/firefox-os
+2017-01-10 10:59:29	⚡	-   Webmaker               https://support.mozilla.org/products/webmaker
+2017-01-10 10:59:29	⚡	-
+2017-01-10 10:59:29	⚡	-  Help for new contributors:
+2017-01-10 10:59:29	⚡	-   https://developer.mozilla.org/Introduction
+2017-01-10 10:59:29	⚡	-
+2017-01-10 10:59:29	⚡	- =================================================================
+2017-01-10 10:59:29	⚡	-  Ports:
+2017-01-10 10:59:29	⚡	-   Non-SSL: 6665 - 6669
+2017-01-10 10:59:29	⚡	-       SSL: 6697, 8443
+2017-01-10 10:59:29	⚡	- =================================================================
+2017-01-10 10:59:29	⚡	-
+2017-01-10 10:59:29	⚡	-  For a list of other helpful channels please visit
+2017-01-10 10:59:29	⚡	-  https://wiki.mozilla.org/IRC or use the /list command.
+2017-01-10 10:59:29	⚡	-  Additional help with IRC at http://www.irchelp.org/
+2017-01-10 10:59:29	⚡	-
+2017-01-10 10:59:29	⚡	End of message of the day.
+2017-01-10 10:59:29	⚡	There are 4261 users and 862 invisible on 4 servers
+2017-01-10 10:59:29	⚡	11 :operator(s) online
+2017-01-10 10:59:29	⚡	1 :unknown connections
+2017-01-10 10:59:29	⚡	1897 :channels formed
+2017-01-10 10:59:29	⚡	I have 1615 clients and 2 servers
+2017-01-10 10:59:29	⚡	Current Local Users: 1615  Max: 1820
+2017-01-10 10:59:29	⚡	Current Global Users: 5123  Max: 5157
+2017-01-10 10:59:29	⚡	moz-00m.h73.195.66.IP :is now your displayed host
+2017-01-10 10:59:29	⚡	User mode [+x] by d8v3
+2017-01-10 10:59:44	⚡	MSG(nickserv): identify ********
+2017-01-10 10:59:44	⚡	NickServ (services@ircservices.mozilla.org): Nick d8v3 isn't registered.
+2017-01-10 11:00:02	⚡	You are now known as boon
+2017-01-10 11:00:02	⚡	NickServ (services@ircservices.mozilla.org): This nickname is registered and protected.  If it is your
+2017-01-10 11:00:02	⚡	NickServ (services@ircservices.mozilla.org): nick, type /msg NickServ IDENTIFY password.  Otherwise,
+2017-01-10 11:00:02	⚡	NickServ (services@ircservices.mozilla.org): please choose a different nick.
+2017-01-10 11:00:13	⚡	MSG(nickserv): identify ********
+2017-01-10 11:00:13	⚡	NickServ (services@ircservices.mozilla.org): Password accepted - you are now recognized.
+2017-01-10 11:00:13	⚡	You are now logged in as boon (boon!d8v3@moz-00m.h73.195.66.IP)
+2017-01-10 11:00:13	⚡	User mode [+r] by NickServ
+2017-01-11 09:54:53	⚠ 	irc: reading data on socket: error 110 Connection timed out
+2017-01-11 09:54:53	⚡	irc: disconnecting from server...
+2017-01-11 09:54:53	⚡	irc: disconnected from server
+2017-01-11 09:54:53	⚡	irc: reconnecting to server in 10 seconds
+2017-01-11 09:55:03	⚡	irc: reconnecting to server...
+2017-01-11 09:55:03	⚡	irc: connecting to server irc.mozilla.org/6667...
+2017-01-11 09:55:03	⚡	irc: connected to irc.mozilla.org/6667 (54.85.60.193)
+2017-01-11 09:55:03	⚡	levin.mozilla.org: *** Looking up your hostname...
+2017-01-11 09:55:09	⚡	levin.mozilla.org: *** Could not resolve your hostname: Request timed out; using your IP address (66.195.46.242) instead.
+2017-01-11 09:55:09	⚡	levin.mozilla.org: Welcome to Mozilla!
+2017-01-11 09:55:09	⚡	Welcome to the Mozilla IRC Network boon!d8v3@66.195.46.242
+2017-01-11 09:55:09	⚡	Your host is levin.mozilla.org, running version InspIRCd-2.0
+2017-01-11 09:55:09	⚡	This server was created 11:39:26 Sep  3 2016
+2017-01-11 09:55:09	⚡	levin.mozilla.org InspIRCd-2.0 BHIRSWacdhikorswx ABCDFKLMNOQRSTYZabcefghijklmnopqrstuvz FLYZabefghjkloqv
+2017-01-11 09:55:09	⚡	AWAYLEN=200 CASEMAPPING=rfc1459 CHANMODES=Zbeg,k,FLfjl,ABCDKMNOQRSTcimnprstuz CHANNELLEN=64 CHANTYPES=# CHARSET=ascii ELIST=MU ESILENCE EXCEPTS=e EXTBAN=,ABCNOQRSTUcmprz FNC KICKLEN=255 MAP :are supported by this server
+2017-01-11 09:55:09	⚡	MAXBANS=60 MAXCHANNELS=100 MAXPARA=32 MAXTARGETS=20 MODES=20 NAMESX NETWORK=Mozilla NICKLEN=31 OPERLOG OVERRIDE PREFIX=(Yqaohv)!~&@%+ SECURELIST SILENCE=32 :are supported by this server
+2017-01-11 09:55:09	⚡	SSL=[::]:6697 STATUSMSG=!~&@%+ TOPICLEN=307 UHNAMES USERIP VBANLIST WALLCHOPS WALLVOICES WATCH=32 :are supported by this server
+2017-01-11 09:55:09	⚡	557A31DGZ :your unique ID
+2017-01-11 09:55:09	⚡	levin.mozilla.org message of the day
+2017-01-11 09:55:09	⚡	-                      __          _
+2017-01-11 09:55:09	⚡	-                     / /__ _   __(_)___
+2017-01-11 09:55:09	⚡	-                    / / _ \ | / / / __ \
+2017-01-11 09:55:09	⚡	-                   / /  __/ |/ / / / / /
+2017-01-11 09:55:09	⚡	-                  /_/\___/|___/_/_/ /_/
+2017-01-11 09:55:09	⚡	-
+2017-01-11 09:55:09	⚡	-               M O Z I L L A   D O T   O R G
+2017-01-11 09:55:09	⚡	-                 https://www.mozilla.org/
+2017-01-11 09:55:09	⚡	-
+2017-01-11 09:55:09	⚡	- =================================================================
+2017-01-11 09:55:09	⚡	-  This server is for use by Mozilla developers, testers, and
+2017-01-11 09:55:09	⚡	-  users. If you are not one, please find another server.
+2017-01-11 09:55:09	⚡	-
+2017-01-11 09:55:09	⚡	-  NOTICE: Your IP address will be portscanned by our open
+2017-01-11 09:55:09	⚡	-  proxy tester.  See https://wiki.mozilla.org/IRC for details.
+2017-01-11 09:55:09	⚡	-
+2017-01-11 09:55:09	⚡	- =================================================================
+2017-01-11 09:55:09	⚡	-  Project information:
+2017-01-11 09:55:09	⚡	-   Firefox                https://support.mozilla.org/
+2017-01-11 09:55:09	⚡	-   Mobile                 https://support.mozilla.org/mobile
+2017-01-11 09:55:09	⚡	-   Thunderbird            https://support.mozilla.org/products/thunderbird
+2017-01-11 09:55:09	⚡	-   Boot2Gecko (FirefoxOS) https://support.mozilla.org/products/firefox-os
+2017-01-11 09:55:09	⚡	-   Webmaker               https://support.mozilla.org/products/webmaker
+2017-01-11 09:55:09	⚡	-
+2017-01-11 09:55:09	⚡	-  Help for new contributors:
+2017-01-11 09:55:09	⚡	-   https://developer.mozilla.org/Introduction
+2017-01-11 09:55:09	⚡	-
+2017-01-11 09:55:09	⚡	- =================================================================
+2017-01-11 09:55:09	⚡	-  Ports:
+2017-01-11 09:55:09	⚡	-   Non-SSL: 6665 - 6669
+2017-01-11 09:55:09	⚡	-       SSL: 6697, 8443
+2017-01-11 09:55:09	⚡	- =================================================================
+2017-01-11 09:55:09	⚡	-
+2017-01-11 09:55:09	⚡	-  For a list of other helpful channels please visit
+2017-01-11 09:55:09	⚡	-  https://wiki.mozilla.org/IRC or use the /list command.
+2017-01-11 09:55:09	⚡	-  Additional help with IRC at http://www.irchelp.org/
+2017-01-11 09:55:09	⚡	-
+2017-01-11 09:55:09	⚡	End of message of the day.
+2017-01-11 09:55:09	⚡	There are 4300 users and 866 invisible on 4 servers
+2017-01-11 09:55:09	⚡	11 :operator(s) online
+2017-01-11 09:55:09	⚡	1914 :channels formed
+2017-01-11 09:55:09	⚡	I have 1639 clients and 1 servers
+2017-01-11 09:55:09	⚡	Current Local Users: 1639  Max: 1690
+2017-01-11 09:55:09	⚡	Current Global Users: 5166  Max: 5173
+2017-01-11 09:55:09	⚡	moz-00m.h73.195.66.IP :is now your displayed host
+2017-01-11 09:55:09	⚡	User mode [+x] by boon
+2017-01-11 09:55:09	⚡	NickServ (services@ircservices.mozilla.org): This nickname is registered and protected.  If it is your
+2017-01-11 09:55:09	⚡	NickServ (services@ircservices.mozilla.org): nick, type /msg NickServ IDENTIFY password.  Otherwise,
+2017-01-11 09:55:09	⚡	NickServ (services@ircservices.mozilla.org): please choose a different nick.
+2017-01-11 15:42:12	⚡	irc: connecting to server irc.mozilla.org/6667...
+2017-01-11 15:42:13	⚡	irc: connected to irc.mozilla.org/6667 (54.85.60.193)
+2017-01-11 15:42:14	⚡	levin.mozilla.org: *** Looking up your hostname...
+2017-01-11 15:42:16	⚡	levin.mozilla.org: *** Could not resolve your hostname: Domain name not found; using your IP address (66.195.46.242) instead.
+2017-01-11 15:42:16	⚡	levin.mozilla.org: Welcome to Mozilla!
+2017-01-11 15:42:16	⚡	Welcome to the Mozilla IRC Network d8v3!d8v3@66.195.46.242
+2017-01-11 15:42:16	⚡	Your host is levin.mozilla.org, running version InspIRCd-2.0
+2017-01-11 15:42:16	⚡	This server was created 11:39:26 Sep  3 2016
+2017-01-11 15:42:16	⚡	levin.mozilla.org InspIRCd-2.0 BHIRSWacdhikorswx ABCDFKLMNOQRSTYZabcefghijklmnopqrstuvz FLYZabefghjkloqv
+2017-01-11 15:42:16	⚡	AWAYLEN=200 CASEMAPPING=rfc1459 CHANMODES=Zbeg,k,FLfjl,ABCDKMNOQRSTcimnprstuz CHANNELLEN=64 CHANTYPES=# CHARSET=ascii ELIST=MU ESILENCE EXCEPTS=e EXTBAN=,ABCNOQRSTUcmprz FNC KICKLEN=255 MAP :are supported by this server
+2017-01-11 15:42:16	⚡	MAXBANS=60 MAXCHANNELS=100 MAXPARA=32 MAXTARGETS=20 MODES=20 NAMESX NETWORK=Mozilla NICKLEN=31 OPERLOG OVERRIDE PREFIX=(Yqaohv)!~&@%+ SECURELIST SILENCE=32 :are supported by this server
+2017-01-11 15:42:16	⚡	SSL=[::]:6697 STATUSMSG=!~&@%+ TOPICLEN=307 UHNAMES USERIP VBANLIST WALLCHOPS WALLVOICES WATCH=32 :are supported by this server
+2017-01-11 15:42:16	⚡	557A4FUM2 :your unique ID
+2017-01-11 15:42:16	⚡	levin.mozilla.org message of the day
+2017-01-11 15:42:16	⚡	-                      __          _
+2017-01-11 15:42:16	⚡	-                     / /__ _   __(_)___
+2017-01-11 15:42:16	⚡	-                    / / _ \ | / / / __ \
+2017-01-11 15:42:16	⚡	-                   / /  __/ |/ / / / / /
+2017-01-11 15:42:16	⚡	-                  /_/\___/|___/_/_/ /_/
+2017-01-11 15:42:16	⚡	-
+2017-01-11 15:42:16	⚡	-               M O Z I L L A   D O T   O R G
+2017-01-11 15:42:16	⚡	-                 https://www.mozilla.org/
+2017-01-11 15:42:16	⚡	-
+2017-01-11 15:42:16	⚡	- =================================================================
+2017-01-11 15:42:16	⚡	-  This server is for use by Mozilla developers, testers, and
+2017-01-11 15:42:16	⚡	-  users. If you are not one, please find another server.
+2017-01-11 15:42:16	⚡	-
+2017-01-11 15:42:16	⚡	-  NOTICE: Your IP address will be portscanned by our open
+2017-01-11 15:42:16	⚡	-  proxy tester.  See https://wiki.mozilla.org/IRC for details.
+2017-01-11 15:42:16	⚡	-
+2017-01-11 15:42:16	⚡	- =================================================================
+2017-01-11 15:42:16	⚡	-  Project information:
+2017-01-11 15:42:16	⚡	-   Firefox                https://support.mozilla.org/
+2017-01-11 15:42:16	⚡	-   Mobile                 https://support.mozilla.org/mobile
+2017-01-11 15:42:16	⚡	-   Thunderbird            https://support.mozilla.org/products/thunderbird
+2017-01-11 15:42:16	⚡	-   Boot2Gecko (FirefoxOS) https://support.mozilla.org/products/firefox-os
+2017-01-11 15:42:16	⚡	-   Webmaker               https://support.mozilla.org/products/webmaker
+2017-01-11 15:42:16	⚡	-
+2017-01-11 15:42:16	⚡	-  Help for new contributors:
+2017-01-11 15:42:16	⚡	-   https://developer.mozilla.org/Introduction
+2017-01-11 15:42:16	⚡	-
+2017-01-11 15:42:16	⚡	- =================================================================
+2017-01-11 15:42:16	⚡	-  Ports:
+2017-01-11 15:42:16	⚡	-   Non-SSL: 6665 - 6669
+2017-01-11 15:42:16	⚡	-       SSL: 6697, 8443
+2017-01-11 15:42:16	⚡	- =================================================================
+2017-01-11 15:42:16	⚡	-
+2017-01-11 15:42:16	⚡	-  For a list of other helpful channels please visit
+2017-01-11 15:42:16	⚡	-  https://wiki.mozilla.org/IRC or use the /list command.
+2017-01-11 15:42:16	⚡	-  Additional help with IRC at http://www.irchelp.org/
+2017-01-11 15:42:16	⚡	-
+2017-01-11 15:42:16	⚡	End of message of the day.
+2017-01-11 15:42:16	⚡	There are 4098 users and 852 invisible on 4 servers
+2017-01-11 15:42:16	⚡	11 :operator(s) online
+2017-01-11 15:42:16	⚡	2 :unknown connections
+2017-01-11 15:42:16	⚡	1870 :channels formed
+2017-01-11 15:42:16	⚡	I have 1540 clients and 1 servers
+2017-01-11 15:42:16	⚡	Current Local Users: 1540  Max: 1690
+2017-01-11 15:42:16	⚡	Current Global Users: 4950  Max: 5185
+2017-01-11 15:42:16	⚡	moz-00m.h73.195.66.IP :is now your displayed host
+2017-01-11 15:42:16	⚡	User mode [+x] by d8v3
+2017-01-11 15:42:36	⚡	MSG(nickserv): identify ********
+2017-01-11 15:42:36	⚡	NickServ (services@ircservices.mozilla.org): Nick d8v3 isn't registered.
+2017-01-11 15:43:08	⚡	You are now known as boon
+2017-01-11 15:43:09	⚡	NickServ (services@ircservices.mozilla.org): This nickname is registered and protected.  If it is your
+2017-01-11 15:43:09	⚡	NickServ (services@ircservices.mozilla.org): nick, type /msg NickServ IDENTIFY password.  Otherwise,
+2017-01-11 15:43:09	⚡	NickServ (services@ircservices.mozilla.org): please choose a different nick.
+2017-01-11 15:43:18	⚡	MSG(nickserv): identify ********
+2017-01-11 15:43:18	⚡	NickServ (services@ircservices.mozilla.org): Password accepted - you are now recognized.
+2017-01-11 15:43:18	⚡	You are now logged in as boon (boon!d8v3@moz-00m.h73.195.66.IP)
+2017-01-11 15:43:18	⚡	User mode [+r] by NickServ

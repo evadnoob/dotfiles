@@ -1,7 +1,7 @@
 (when (> emacs-major-version 23)
   (require 'package)
-  
-  (setq package-archives '(("marmalade" . "http://marmalade-repo.org/packages/")
+ ;;marmalade-repo.org:443 
+  (setq package-archives '(
                            ("melpa" . "http://melpa.milkbox.net/packages/")
 			   ("elpa" . "http://tromey.com/elpa/")
                            ("gnu" . "http://elpa.gnu.org/packages/")))
@@ -46,7 +46,7 @@
      evil-terminal-cursor-changer
      evil-args
      evil-leader
-     ;;evil-suround
+     evil-surround
      evil-matchit
      evil-annoying-arrows
      evil-tutor

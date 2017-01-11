@@ -1,0 +1,106 @@
+2016-12-14 13:14:48	◥	boon (~david@66.195.46.242) has joined #debian-next
+2016-12-14 13:14:48	⚡	Topic for #debian-next is "Unprivileged Xorg is here! /msg dpkg xorg root | Avoid stretch if you don't like reporting bugs | sid faq: http://deb.li/sidfaq | ongoing transitions: http://deb.li/xns | multiarch fun: /msg dpkg multiarch failures | NO FLOOD: /msg dpkg paste | /msg bots NOT people | offtopic → #debian-offtopic | oldstable, stable → #debian "
+2016-12-14 13:14:48	⚡	Topic set by ChanServ (services@services.oftc.net) on Wed, 24 Aug 2016 10:45:07
+2016-12-14 13:14:48	⚡	Channel #debian-next: 323 nicks (0 ops, 0 voices, 323 normals)
+2016-12-14 13:14:48	⚡	PvNotice(ChanServ): Welcome to #debian-next! This channel is for supporting users of debian's upcoming releases. Please make sure you have checked the bug tracking system (http://bugs.debian.org/) to see if your problem is already known.
+2016-12-14 13:14:54	⚡	Channel created on Fri, 06 May 2011 11:36:54
+2016-12-14 13:15:23	sebboh	And that's true in the latest virtualbox, too?
+2016-12-14 13:15:37	sebboh	I have opengl 2.1 now, according to glxinfo.
+2016-12-14 13:15:49	towo`	then you have the answer
+2016-12-14 13:18:04	sebboh	I had no reason to assume that I have the correct packages installed, I certainly don't have the latest virtualbox installed, etc.  I installed xorg by hand picking a few packages and creating my own ~/.xsession file...  I thought maybe I wasn't currently getting the most 3D support available..
+2016-12-14 13:19:15	towo`	afaik nothing changed on vbox and opengl has not a high priority by the vbox devs
+2016-12-14 13:21:44	◥	mrrhq (~mrrhq@2602:47:20fc:e2ff:c126:68a8:fdc7:1fdf) has joined #debian-next
+2016-12-14 13:22:15	◣	obfusk (~quassel@ip-213-124-182-106.ip.prioritytelecom.net) has quit (Quit: http://quassel-irc.org - Chat comfortably. Anywhere.)
+2016-12-14 13:26:26	◣	Pr0metheus (~nezos@176.92.166.138) has quit (Quit: Pr0metheus)
+2016-12-14 13:26:48	◥	johnkeates (~johnkeate@86.92.128.79) has joined #debian-next
+2016-12-14 14:12:35	⚡	irc: disconnected from server
+2016-12-14 14:13:00	◥	boon (~david@66.195.46.242) has joined #debian-next
+2016-12-14 14:13:00	⚡	Topic for #debian-next is "Unprivileged Xorg is here! /msg dpkg xorg root | Avoid stretch if you don't like reporting bugs | sid faq: http://deb.li/sidfaq | ongoing transitions: http://deb.li/xns | multiarch fun: /msg dpkg multiarch failures | NO FLOOD: /msg dpkg paste | /msg bots NOT people | offtopic → #debian-offtopic | oldstable, stable → #debian "
+2016-12-14 14:13:00	⚡	Topic set by ChanServ (services@services.oftc.net) on Wed, 24 Aug 2016 10:45:07
+2016-12-14 14:13:00	⚡	Channel #debian-next: 315 nicks (0 ops, 0 voices, 315 normals)
+2016-12-14 14:13:00	⚡	PvNotice(ChanServ): Welcome to #debian-next! This channel is for supporting users of debian's upcoming releases. Please make sure you have checked the bug tracking system (http://bugs.debian.org/) to see if your problem is already known.
+2016-12-14 14:13:06	⚡	Channel created on Fri, 06 May 2011 11:36:54
+2016-12-14 14:16:45	◥	awal1 (~awal1@199.241.132.84) has joined #debian-next
+2016-12-14 14:17:07	◥	xrogaan (~user@00017a23.user.oftc.net) has joined #debian-next
+2016-12-14 14:19:13	◥	mrrhq (~mrrhq@2602:47:20fc:e2ff:c126:68a8:fdc7:1fdf) has joined #debian-next
+2016-12-14 14:21:41	◥	rhizome (~rhizome@50-0-193-208.dsl.static.fusionbroadband.com) has joined #debian-next
+2016-12-14 14:23:14	◣	jul16ares (~julien@62.147.247.213) has quit (Remote host closed the connection)
+2016-12-14 14:24:24	◣	ompaul (~ompaul@000135c2.user.oftc.net) has quit (Remote host closed the connection)
+2016-12-14 14:32:09	◣	ZombieTree (~ggg@9J5AABFOD.tor-irc.dnsbl.oftc.net) has quit
+2016-12-14 14:36:08	◥	ryancf_ (~ryancf@c-71-61-195-246.hsd1.pa.comcast.net) has joined #debian-next
+2016-12-14 14:36:27	◣	rhizome (~rhizome@50-0-193-208.dsl.static.fusionbroadband.com) has quit (Remote host closed the connection)
+2016-12-14 14:37:11	◥	mtn (~gnome@72.168.160.122) has joined #debian-next
+2016-12-14 14:37:15	◣	ryancf (~ryancf@static-68-235-53-21.cust.tzulo.com) has quit (Read error: Connection reset by peer)
+2016-12-14 14:37:33	◣	wCPO__ (~kristian@188.228.31.139) has quit (Quit: Leaving)
+2016-12-14 14:37:47	◣	nikos (~nikos@00021c84.user.oftc.net) has quit (Quit: Quit)
+2016-12-14 14:40:13	awal1	I just upgraded my machine and nfs-common have been upgraded. Now I get this http://paste.debian.net/plain/902242
+2016-12-14 14:40:18	awal1	,v nfs-common
+2016-12-14 14:40:19	judd	Package: nfs-common on amd64 -- wheezy: 1:1.2.6-4; jessie: 1:1.2.8-9; stretch: 1:1.2.8-9.2; sid: 1:1.3.4-1
+2016-12-14 14:40:31	◥	ryancf__ (~ryancf@static-68-235-53-21.cust.tzulo.com) has joined #debian-next
+2016-12-14 14:40:36	awal1	Any suggestion?
+2016-12-14 14:41:07	◥	kalleeen (~xanax`@9J5AABFPP.tor-irc.dnsbl.oftc.net) has joined #debian-next
+2016-12-14 14:41:11	⚡	ryancf__ is now known as ryancf
+2016-12-14 14:41:12	◣	mrrhq (~mrrhq@2602:47:20fc:e2ff:c126:68a8:fdc7:1fdf) has quit (Ping timeout: 480 seconds)
+2016-12-14 14:43:25	◥	mrrhq (~mrrhq@2602:47:20fc:e2ff:c126:68a8:fdc7:1fdf) has joined #debian-next
+2016-12-14 14:44:30	awal1	"systemctl start nfs-confi" ---»  "Job for nfs-config.service failed because the control process exited with error code"
+2016-12-14 14:44:32	◣	ryancf_ (~ryancf@c-71-61-195-246.hsd1.pa.comcast.net) has quit (Ping timeout: 480 seconds)
+2016-12-14 14:45:09	sebboh	The internet tells me too look in /var/log/messages if I want to find NFS startup errors.
+2016-12-14 14:45:10	awal1	start nfs-config  ^
+2016-12-14 14:47:16	awal1	Already looked there, but I dont see something related to nfs 
+2016-12-14 14:48:09	◣	n4dir (~user@pD9EF0E62.dip0.t-ipconnect.de) has quit (Quit: Leaving.)
+2016-12-14 14:49:26	◥	melmothX_ (~melmoth@141-136-173-174.dsl.iskon.hr) has joined #debian-next
+2016-12-14 14:50:30	◣	melmothX (~melmoth@141-136-188-134.dsl.iskon.hr) has quit (Read error: Connection reset by peer)
+2016-12-14 14:51:49	bremner	journalctl -u nfs-config.service
+2016-12-14 14:51:55	devil	awal1: systemctl enable rpc-statd.service
+2016-12-14 14:52:02	devil	systemctl start rpc-statd.service
+2016-12-14 14:52:47	◥	CuZnDragon (~Unknown@pheuri.wyrms.net) has joined #debian-next
+2016-12-14 14:55:50	awal1	journal says, basically, "...Starting process nfs configuration ...failed... failed state...exit-code"" 
+2016-12-14 14:55:57	◣	ryancf (~ryancf@static-68-235-53-21.cust.tzulo.com) has quit (Ping timeout: 480 seconds)
+2016-12-14 14:56:30	awal1	only 1 line is different "nfs-config.service: Failed at step EXEC spawning /usr/lib"
+2016-12-14 14:58:44	awal1	devil: enabling and starting rpc-statd have no effect. nfs-common still won't start with same error
+2016-12-14 14:59:15	devil	awal1: worked for others
+2016-12-14 14:59:27	awal1	devil: ok
+2016-12-14 14:59:39	devil	I use autofs instead of nfs, so0 I had no problem
+2016-12-14 15:00:12	devil	not one since I use it, in retrospect, just works
+2016-12-14 15:01:00	devil	awal1: ŷou could also go back to nfs-common 1:1.2.8-9.2
+2016-12-14 15:01:27	awal1	devil: I was thinking about that yeah
+2016-12-14 15:02:31	awal1	both my host and guess are affected by the nfs-common issue, but I'm trying stuff (command...) in the guest
+2016-12-14 15:02:54	awal1	qemu-kvm won't copy/paste anymore :(
+2016-12-14 15:07:42	awal1	btw, it's the first time I get this "dmesg: read kernel buffer failed: Operation not permitted" when running dmesg as regular user
+2016-12-14 15:07:52	awal1	works fine as root
+2016-12-14 15:08:33	awal1	I have found several bugs about that but all old
+2016-12-14 15:09:09	awal1	Anyone have that dmesg issue?
+2016-12-14 15:10:14	devil	nope
+2016-12-14 15:10:55	awal1	I get permission denied in both host and guest :(
+2016-12-14 15:11:06	◣	kalleeen (~xanax`@9J5AABFPP.tor-irc.dnsbl.oftc.net) has quit
+2016-12-14 15:11:07	◥	Kwen (~Blueraven@9J5AABFQK.tor-irc.dnsbl.oftc.net) has joined #debian-next
+2016-12-14 15:12:16	◣	mrrhq (~mrrhq@2602:47:20fc:e2ff:c126:68a8:fdc7:1fdf) has quit (Ping timeout: 480 seconds)
+2016-12-14 15:12:27	◥	mrrhq (~mrrhq@2602:47:20fc:e2ff:c126:68a8:fdc7:1fdf) has joined #debian-next
+2016-12-14 15:13:34	◥	stripe (~stripe@cpc103560-stkn17-2-0-cust988.11-2.cable.virginm.net) has joined #debian-next
+2016-12-14 15:14:44	jethro	awal1: this is an intentional change. you can contral that behavior with kernel.dmesg_restrict sysctl
+2016-12-14 15:15:12	jethro	it is documented in the changelog
+2016-12-14 15:15:38	awal1	jethro: ok, thanks! I'll check the changelog
+2016-12-14 15:16:07	awal1	I won't log as root everytime I want to use dmesg :P
+2016-12-14 15:16:32	jethro	heard of sudo ? :)
+2016-12-14 15:16:43	awal1	too much news/changelogs everyday under Sid; impossible to follow them all 
+2016-12-14 15:16:56	jethro	that's why you should install apt-listchanges
+2016-12-14 15:17:31	bremner	also, journalctl -b -f mostly replaces dmesg
+2016-12-14 15:18:35	awal1	jethro: yeah, I have sudo enabled. But I forget to use it being used to su. And yeah, I have apt-listchanges installed and running. I mean no time for check closely all news/changelogs durring upgrades
+2016-12-14 15:26:49	awal1	Installing "spice-vdagent" enables copy/paste between host and guest under qemu-kvm and it worked fine until today :P
+2016-12-14 15:28:06	awal1	installing it in the guest ^
+2016-12-14 15:30:16	◣	Yst (~Yst@0001fe93.user.oftc.net) has quit (Ping timeout: 480 seconds)
+2016-12-14 15:32:36	◣	mrrhq (~mrrhq@2602:47:20fc:e2ff:c126:68a8:fdc7:1fdf) has quit (Ping timeout: 480 seconds)
+2016-12-14 15:32:49	◥	mrrhq (~mrrhq@2602:47:20fc:e2ff:c126:68a8:fdc7:1fdf) has joined #debian-next
+2016-12-14 15:33:16	◥	paxmark (~paxmark@wnpgmb1009w-ds01-30-161.dynamic.mtsallstream.net) has joined #debian-next
+2016-12-14 15:39:50	◥	Yst (~Yst@0001fe93.user.oftc.net) has joined #debian-next
+2016-12-14 15:40:49	◣	stripe (~stripe@cpc103560-stkn17-2-0-cust988.11-2.cable.virginm.net) has quit (Quit: Leaving)
+2016-12-14 15:41:05	◣	Kwen (~Blueraven@9J5AABFQK.tor-irc.dnsbl.oftc.net) has quit
+2016-12-14 15:41:16	◥	aldiyen (~Oddtwang@9J5AABFRC.tor-irc.dnsbl.oftc.net) has joined #debian-next
+2016-12-14 15:46:31	◣	mrrhq (~mrrhq@2602:47:20fc:e2ff:c126:68a8:fdc7:1fdf) has quit (Ping timeout: 480 seconds)
+2016-12-14 15:48:17	◣	mtn (~gnome@72.168.160.122) has quit (Quit: Konversation terminated!)
+2016-12-14 15:54:54	awal1	"spice-vdagent" pkg description says this http://paste.debian.net/plain/902251
+2016-12-14 15:55:14	◥	mrrhq (~mrrhq@2602:47:20fc:e2ff:c126:68a8:fdc7:1fdf) has joined #debian-next
+2016-12-14 15:55:40	awal1	somiaj: so under openbox WM copy/paste works fine. How to make it work under fvwm?
+2016-12-14 15:56:20	awal1	I guess openbox-session matters here. what about fvwm?
+2016-12-14 15:57:20	awal1	copy/paste host «---» guest ^
+2016-12-14 16:00:33	◥	FoolishOwl (U2FsdGVkX1@00021ad2.user.oftc.net) has joined #debian-next

@@ -19,3 +19,5 @@ ln -sf ~/dotfiles/conkyrc ~/.conkyrc
 ln -sf ~/Dropbox/.zhistory ~/.zhistory
 ln -sf ~/dotfiles/inputrc ~/.inputrc
 ln -sf ~/dotfiles/firefox ~/firefox
+ln -sf ~/dotfiles/fonts ~/.fonts
+

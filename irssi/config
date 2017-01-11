@@ -41,7 +41,7 @@ channels = (
   { name = "#freenode"; chatnet = "freenode"; autojoin = "yes"; },
   { name = "#emacs"; chatnet = "freenode"; autojoin = "yes"; },
   { name = "#chef"; chatnet = "freenode"; autojoin = "yes"; },
-  { name = "#c"; chatnet = "freenode"; autojoin = "yes"; },
+#  { name = "#c"; chatnet = "freenode"; autojoin = "yes"; },
   { name = "#postgresql"; chatnet = "freenode"; autojoin = "yes"; },
   { name = "#rust"; chatnet = "mozilla"; autojoin = "yes"; }
   { name = "#rust-beginners"; chatnet = "mozilla"; autojoin = "yes"; }
