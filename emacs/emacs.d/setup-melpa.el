@@ -28,7 +28,7 @@
 (defvar evadnoob/required-packages
   ' (
      ace-window
-     annoying-arrows-mode
+     ;;annoying-arrows-mode
      auctex
      auto-complete
      change-inner
@@ -48,7 +48,7 @@
      evil-leader
      evil-surround
      evil-matchit
-     evil-annoying-arrows
+;;     evil-annoying-arrows
      evil-tutor
      expand-region
      flymake-less
@@ -56,6 +56,7 @@
      flycheck-rust
      gist
      ggtags
+     go-mode
      groovy-mode
      guide-key
      haml-mode
@@ -93,7 +94,7 @@
      yaml-mode
      yari modeline-posn
      yasnippet
-     ack-and-a-half
+    ;; ack-and-a-half
      )
     "A list of packages to ensure are installed at launch.")
 

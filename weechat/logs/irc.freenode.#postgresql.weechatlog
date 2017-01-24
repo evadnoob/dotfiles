@@ -9921,3 +9921,162 @@
 2017-01-11 15:45:11	◣	lucian (~lucian@cpc35-bmly9-2-0-cust271.2-3.cable.virginm.net) has quit (Ping timeout: 245 seconds)
 2017-01-11 15:45:25	◥	hahuang61 (~hahuang65@2601:647:4000:d7:15e6:2367:5f15:df27) has joined #postgresql
 2017-01-11 15:45:47	◣	hashpuppy (uid43164@gateway/web/irccloud.com/x-azamrxkbdudtowlk) has quit (Quit: Connection closed for inactivity)
+2017-01-23 10:42:01	◥	boon (~david@c-67-183-222-134.hsd1.wa.comcast.net) has joined #postgresql
+2017-01-23 10:42:01	⚡	Topic for #postgresql is "Don't ask to ask.  Just ask! || Update releases 9.6.1, 9.5.5, 9.4.10, 9.3.15, 9.2.19, and 9.1.24 are out, time to upgrade! || The 9.1 series is EOL as of 9.1.24. || Paste: type ??paste for list || Docs: http://www.postgresql.org/docs/current/static/ || Off topic? #postgresql-lounge"
+2017-01-23 10:42:01	⚡	Topic set by davidfetter_ge (~chatzilla@64.129.231.6) on Mon, 14 Nov 2016 12:58:04
+2017-01-23 10:42:01	⚡	Channel #postgresql: 975 nicks (0 ops, 0 voices, 975 normals)
+2017-01-23 10:42:02	⚡	URL for #postgresql: http://www.postgresql.org
+2017-01-23 10:42:02	⚡	Channel created on Sat, 25 Nov 2006 22:42:42
+2017-01-23 10:42:37	◥	timvisher (~tim.vishe@pool-72-94-54-98.phlapa.fios.verizon.net) has joined #postgresql
+2017-01-23 10:42:48	◥	saurabhj_ (~saurabhjh@182.64.7.153) has joined #postgresql
+2017-01-23 10:43:14	◣	saurabhjha (~saurabhjh@182.64.156.251) has quit (Ping timeout: 276 seconds)
+2017-01-23 10:43:27	⚡	irc: disconnected from server
+2017-01-23 10:43:49	◥	boon (~david@c-67-183-222-134.hsd1.wa.comcast.net) has joined #postgresql
+2017-01-23 10:43:49	⚡	Topic for #postgresql is "Don't ask to ask.  Just ask! || Update releases 9.6.1, 9.5.5, 9.4.10, 9.3.15, 9.2.19, and 9.1.24 are out, time to upgrade! || The 9.1 series is EOL as of 9.1.24. || Paste: type ??paste for list || Docs: http://www.postgresql.org/docs/current/static/ || Off topic? #postgresql-lounge"
+2017-01-23 10:43:49	⚡	Topic set by davidfetter_ge (~chatzilla@64.129.231.6) on Mon, 14 Nov 2016 12:58:04
+2017-01-23 10:43:49	⚡	Channel #postgresql: 976 nicks (0 ops, 0 voices, 976 normals)
+2017-01-23 10:43:49	⚡	URL for #postgresql: http://www.postgresql.org
+2017-01-23 10:43:49	⚡	Channel created on Sat, 25 Nov 2006 22:42:42
+2017-01-23 10:43:52	◥	DeciBull (~Decibel@99-153-64-76.uvs.austtx.sbcglobal.net) has joined #postgresql
+2017-01-23 10:43:56	◣	macdice (~user@freebsd/user/macdice) has quit (Remote host closed the connection)
+2017-01-23 10:44:10	◥	macdice (~user@freebsd/user/macdice) has joined #postgresql
+2017-01-23 10:44:59	◣	saurabhj_ (~saurabhjh@182.64.7.153) has quit (Read error: Connection reset by peer)
+2017-01-23 10:45:21	◣	TheCougar (~Decibel@99-153-64-76.uvs.austtx.sbcglobal.net) has quit (Read error: Connection reset by peer)
+2017-01-23 10:46:16	◥	Flotho66 (~florent@2a01:e35:8ae3:b2f0:aadf:7f06:4372:61c3) has joined #postgresql
+2017-01-23 10:46:38	◥	brentd (~brentd@62.145.29.194) has joined #postgresql
+2017-01-23 10:47:11	◥	neilt (~neiltiffi@c-69-242-134-216.hsd1.mo.comcast.net) has joined #postgresql
+2017-01-23 10:47:14	◥	Balliad (~textual@52D96D43.cm-11-1b.dynamic.ziggo.nl) has joined #postgresql
+2017-01-23 10:47:25	◥	bordicon (~bordicon@50-247-102-73-static.hfc.comcastbusiness.net) has joined #postgresql
+2017-01-23 10:47:25	◥	saurabhjha (~saurabhjh@182.64.59.239) has joined #postgresql
+2017-01-23 10:48:30	◥	__Yiota (~textual@2607:fea8:3c9f:ffe9:71a9:3ade:94fe:e2e1) has joined #postgresql
+2017-01-23 10:50:23	◥	elein (~chatzilla@sjfw1.adobe.com) has joined #postgresql
+2017-01-23 10:51:01	◥	gelignite (~gelignite@x5ce485cf.dyn.telefonica.de) has joined #postgresql
+2017-01-23 10:51:26	◣	saurabhjha (~saurabhjh@182.64.59.239) has quit (Remote host closed the connection)
+2017-01-23 10:52:20	◣	justan0theruser (~justanoth@unaffiliated/justanotheruser) has quit (Ping timeout: 276 seconds)
+2017-01-23 10:52:21	◣	dys (~dys@2003:5b:203b:100:6af7:28ff:fe06:801) has quit (Ping timeout: 240 seconds)
+2017-01-23 10:53:45	◣	nettoweb (~nettoweb@189.114.195.61.dynamic.adsl.gvt.net.br) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2017-01-23 10:56:11	◥	oninoshiko (~ahettinge@199.103.2.101) has joined #postgresql
+2017-01-23 10:56:55	◣	DexterLB (~dex@79.100.7.231) has quit (Read error: Connection reset by peer)
+2017-01-23 10:58:04	◥	nettoweb (~nettoweb@189.114.195.61.dynamic.adsl.gvt.net.br) has joined #postgresql
+2017-01-23 10:58:18	◣	SEQUEL_TECH (~sequel@46.238.55.126) has quit (Ping timeout: 260 seconds)
+2017-01-23 10:58:32	◥	ramfjord (~tramfjord@12.202.171.244) has joined #postgresql
+2017-01-23 10:59:15	oninoshiko	I'm trying to use gin_trgm_ops from a schema. the extension has already been loaded in the default schema, but it days the operator class does not exist for access method gin. Is there a notation to tell it to look in the default schema for what it needs?
+2017-01-23 10:59:27	oninoshiko	says*
+2017-01-23 10:59:50	johto	what's the exact query you tried?
+2017-01-23 11:00:02	MatheusOl	oninoshiko: the error is in creating the index?
+2017-01-23 11:00:13	oninoshiko	MatheusOl: Yes.
+2017-01-23 11:00:48	◣	dionysus69 (~Thunderbi@unaffiliated/dionysus69) has quit (Remote host closed the connection)
+2017-01-23 11:01:00	◣	wsieroci (~wsieroci@095160155169.dynamic-ww-12.vectranet.pl) has quit (Remote host closed the connection)
+2017-01-23 11:01:17	◥	mmello (Marcelo@nat/redhat/x-sqeftonnfmejyosi) has joined #postgresql
+2017-01-23 11:01:18	MatheusOl	oninoshiko: There is not really a "default" schema, it depends on your search_path
+2017-01-23 11:01:38	MatheusOl	oninoshiko: You can try to create the index with explicit schema: USING gin(col public.gin_trgm_ops)
+2017-01-23 11:01:55	◣	Guest2413 (~Azelphur@znc.azelphur.com) has quit (Quit: Oh god i switched my bouncer off, the world is ending!)
+2017-01-23 11:01:56	◥	DexterLB (~dex@79.100.7.231) has joined #postgresql
+2017-01-23 11:01:58	Primer	I've been having some issues in my production server where the OOM killer is being invoked and killing the postres master process. I'm reading that setting vm.overcommit_memory to 2 will help mitigate this problem. Does this just mean less memory usage by processes overall?
+2017-01-23 11:02:03	◥	Azelphur_ (~Azelphur@znc.azelphur.com) has joined #postgresql
+2017-01-23 11:02:23	Zr40	Primer: before you do that; how much RAM do you have and what are your memory settings set to in postgresql.conf?
+2017-01-23 11:02:29	◣	grayhem__ (~grayhemp_@12.33.220.130) has quit (Remote host closed the connection)
+2017-01-23 11:02:57	Primer	64g, shared_buffers = 8GB
+2017-01-23 11:03:06	◥	grayhemp_wh (~grayhemp_@12.33.220.130) has joined #postgresql
+2017-01-23 11:03:12	Primer	work_mem = 16MB
+2017-01-23 11:03:22	Primer	I believe those are the relevant ones...
+2017-01-23 11:03:33	Primer	well, I also allow many connections
+2017-01-23 11:03:36	Zr40	can you share the entire OOM message?
+2017-01-23 11:04:23	MatheusOl	Primer: "well, I also allow many connections"... that suggests no pooler or a mis-configured one
+2017-01-23 11:04:34	Primer	There is no pooler, no
+2017-01-23 11:04:46	◣	Balliad (~textual@52D96D43.cm-11-1b.dynamic.ziggo.nl) has quit (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
+2017-01-23 11:05:34	Primer	The only log of the oom is from dmesg, which seems rather cryptic
+2017-01-23 11:05:43	Zr40	that's the one
+2017-01-23 11:06:49	◣	mmello (Marcelo@nat/redhat/x-sqeftonnfmejyosi) has quit (Ping timeout: 240 seconds)
+2017-01-23 11:06:59	Primer	sec, installing pastebinit
+2017-01-23 11:07:03	Zr40	??paste
+2017-01-23 11:07:03	pg_docbot	http://explain.depesz.com/ :: http://fpaste.org
+2017-01-23 11:07:03	pg_docbot	http://sqlfiddle.com/ :: http://dpaste.com/
+2017-01-23 11:07:08	◣	nettoweb (~nettoweb@189.114.195.61.dynamic.adsl.gvt.net.br) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2017-01-23 11:07:18	◥	mmello (Marcelo@nat/redhat/x-bfijpkfnwrzpaxcn) has joined #postgresql
+2017-01-23 11:07:20	◣	lucian (~lucian@194.74.244.130) has quit (Ping timeout: 245 seconds)
+2017-01-23 11:08:22	Primer	http://paste.debian.net/910172
+2017-01-23 11:08:27	Primer	So yeah, many connections
+2017-01-23 11:09:13	◣	chipotle (~chipotle@cpe-68-173-230-16.nyc.res.rr.com) has quit (Quit: cheerio)
+2017-01-23 11:09:29	Primer	I've been hesitant to employ a pooler because our application some times runs many long-running queries, and I feel that it would take a considerable about of time (that I don't have) to tune things in a way where there isn't a connection bottleneck
+2017-01-23 11:09:46	◣	sz0 (uid110435@gateway/web/irccloud.com/x-qtbqykizxoafuyzv) has quit (Quit: Connection closed for inactivity)
+2017-01-23 11:10:24	Primer	I'm currently trying to implement read balancing in code. To add insult to injury, I'm still on 9.1.
+2017-01-23 11:10:34	◣	Cabanossi (~Cabanossi@pD9F85083.dip0.t-ipconnect.de) has quit (Ping timeout: 264 seconds)
+2017-01-23 11:11:19	◥	smead (~smead@rrcs-24-30-249-118.nys.biz.rr.com) has joined #postgresql
+2017-01-23 11:11:21	◥	Cabanossi (~Cabanossi@pD9F85083.dip0.t-ipconnect.de) has joined #postgresql
+2017-01-23 11:11:21	◥	dys (~dys@ip-109-44-1-74.web.vodafone.de) has joined #postgresql
+2017-01-23 11:11:31	Primer	Plus our application is getting more and more usage every day (which is a good problem to have, business-wise), but I've now seen the OOM killer invoked at least 4 times now in the past 3-4 months.
+2017-01-23 11:12:48	Zr40	if you lower shared_buffers to 2 GB you'll at least get some breathing room
+2017-01-23 11:13:06	◥	ankr (~ankr@91.100.101.235.generic-hostname.arrownet.dk) has joined #postgresql
+2017-01-23 11:13:06	◣	ankr (~ankr@91.100.101.235.generic-hostname.arrownet.dk) has quit (Client Quit)
+2017-01-23 11:13:22	Primer	I'm going to guess that can't be set at run time? That it will require a restart?
+2017-01-23 11:13:26	Zr40	yes, it will
+2017-01-23 11:13:28	⚡	irc: disconnected from server
+2017-01-23 11:13:53	◥	boon (~david@c-50-132-101-194.hsd1.wa.comcast.net) has joined #postgresql
+2017-01-23 11:13:53	⚡	Topic for #postgresql is "Don't ask to ask.  Just ask! || Update releases 9.6.1, 9.5.5, 9.4.10, 9.3.15, 9.2.19, and 9.1.24 are out, time to upgrade! || The 9.1 series is EOL as of 9.1.24. || Paste: type ??paste for list || Docs: http://www.postgresql.org/docs/current/static/ || Off topic? #postgresql-lounge"
+2017-01-23 11:13:53	⚡	Topic set by davidfetter_ge (~chatzilla@64.129.231.6) on Mon, 14 Nov 2016 12:58:04
+2017-01-23 11:13:53	⚡	Channel #postgresql: 974 nicks (0 ops, 0 voices, 974 normals)
+2017-01-23 11:13:54	⚡	URL for #postgresql: http://www.postgresql.org
+2017-01-23 11:13:55	⚡	Channel created on Sat, 25 Nov 2006 22:42:42
+2017-01-23 11:21:36	◥	timvisher (~tim.vishe@pool-72-94-54-98.phlapa.fios.verizon.net) has joined #postgresql
+2017-01-23 11:22:14	◣	bttf_ (~bttf@138.68.16.63) has quit (Quit: ZNC 1.6.3 - http://znc.in)
+2017-01-23 11:23:14	Primer	the perl code runs its own queries, as well as invoking mapscript API, which makes its own connection to the db, so a single perl rendering process might actually have 2 connections to the database
+2017-01-23 11:23:31	◥	bttf (~bttf@138.68.16.63) has joined #postgresql
+2017-01-23 11:24:04	◥	amathew (~amathew@208.185.185.131) has joined #postgresql
+2017-01-23 11:24:29	◥	Balliad (~textual@52D96D43.cm-11-1b.dynamic.ziggo.nl) has joined #postgresql
+2017-01-23 11:24:35	lluad	Are these mostly read-only queries?
+2017-01-23 11:24:44	Primer	99.999999%
+2017-01-23 11:24:49	Primer	maybe more :)
+2017-01-23 11:25:13	Primer	I'm currently working on balancing that load off onto read-only replicas
+2017-01-23 11:25:29	Primer	In the case of the perl code, that's 100%
+2017-01-23 11:25:40	oninoshiko	Thanks, MatheusOl, the explicit schema syntax helped.
+2017-01-23 11:25:43	MatheusOl	We have a "GIS-heavy" application over here, and also 99.9999% read-only... Load balancing on read replicas helped us a lot
+2017-01-23 11:25:57	Primer	Thing is, since I'm on 9.1, I can only have synchronous replica
+2017-01-23 11:25:58	MatheusOl	oninoshiko: Then your search_path wasn't mapping the schema
+2017-01-23 11:26:07	MatheusOl	Primer: what?
+2017-01-23 11:26:08	Primer	have *one, that is
+2017-01-23 11:26:13	MatheusOl	Ah, that is true
+2017-01-23 11:26:13	Primer	Well
+2017-01-23 11:26:25	Zr40	Primer: why do you need a synchronous replica for your read-only queries?
+2017-01-23 11:26:28	MatheusOl	Sync rep doesn't solve your case anyway
+2017-01-23 11:26:31	Primer	I currently have one replica, but it's not currently setup as synchronous
+2017-01-23 11:26:43	lluad	Seems like using something like pgbouncer to queue queries so that only a reasonable number run simultaneously might improve your throughput.
+2017-01-23 11:26:59	Zr40	and more importantly, remove the OOM situation
+2017-01-23 11:27:03	Primer	We bulk load data all the time. I'd hate for the replica to be behind when the commit happens on the master.
+2017-01-23 11:27:09	MatheusOl	Primer: I guess our case is pretty similar to yours, we have some heavy write process and tons of read-only queries
+2017-01-23 11:28:19	Primer	MatheusOl: I understand that 9.6 supports multiple synchronous replicas. I don't suppose you've had any experience with it?
+2017-01-23 11:28:40	◥	SEQUEL_TECH (~sequel@46.238.55.126) has joined #postgresql
+2017-01-23 11:28:40	◥	sausage_factory (~priidu@unaffiliated/priidu) has joined #postgresql
+2017-01-23 11:28:43	◣	Letze (~Letze@188.115.62.5) has quit (Read error: Connection reset by peer)
+2017-01-23 11:29:26	Primer	Anyhow, at the moment I just want to mitigate this problem. My plan currently is to set vm.overcommit_memory to 2, as suggested by the docs, and lower shared_buffers to 2gb
+2017-01-23 11:29:27	⚡	m712 is now known as enp3s0
+2017-01-23 11:29:43	◣	blackwraith (~priidu@unaffiliated/priidu) has quit (Ping timeout: 248 seconds)
+2017-01-23 11:29:46	Zr40	I wouldn't actually overcommit memory
+2017-01-23 11:30:00	⚡	Azelphur_ is now known as Azelphur
+2017-01-23 11:30:01	Zr40	if you don't have swap it doesn't remove the problem, if you do have swap it just slows everything to a crawl
+2017-01-23 11:30:08	Primer	And probably implement some sort of monitoring of memory usage, since this system is on AWS, with no swap
+2017-01-23 11:30:26	Primer	Ok, that's why I came here to ask about it
+2017-01-23 11:30:36	Primer	Because it seemed too good to be true
+2017-01-23 11:30:49	MatheusOl	Primer: not much, mostly 9.4 and 9.5 here
+2017-01-23 11:30:51	Zr40	overcommit helps when you have stuff allocating memory but never writing to it
+2017-01-23 11:31:43	Primer	My experience with using swap on AWS is that, once things start to swap, they tend to get REALLY slow
+2017-01-23 11:31:53	Primer	Which is why I avoid having swap
+2017-01-23 11:31:55	Zr40	that's true for swap in general, not just AWS
+2017-01-23 11:32:08	Primer	indeed
+2017-01-23 11:32:10	Zr40	but a little bit of swap usage can actually help
+2017-01-23 11:32:13	◣	gchristensen (~gchristen@unaffiliated/grahamc) has left #postgresql ("WeeChat 0.4.2")
+2017-01-23 11:32:14	Primer	right
+2017-01-23 11:32:17	◥	gchristensen (~gchristen@unaffiliated/grahamc) has joined #postgresql
+2017-01-23 11:32:24	◥	nghayal (a7db588c@gateway/web/freenode/ip.167.219.88.140) has joined #postgresql
+2017-01-23 11:32:32	Zr40	(in theory. You probably won't notice it in practice)
+2017-01-23 11:32:35	Primer	I'm pondering adding a swap file on the ephemeral drive
+2017-01-23 11:32:41	gchristensen	(on aws it is frequently compounded by swap being on network-attached storage)
+2017-01-23 11:33:11	Primer	This instance is pretty old, and I imagine the ephemeral drives are no actually local, or SSD
+2017-01-23 11:33:14	Primer	so, probably VERY slow
+2017-01-23 11:33:18	nghayal	Question, with a cleanly stopped Standby. How do I start it as a master? Just rename the recovery.conf?
+2017-01-23 11:33:31	◣	kus__ (~minot@pool-98-109-119-45.nwrknj.fios.verizon.net) has quit (Read error: Connection reset by peer)
+2017-01-23 11:33:55	Zr40	yes
+2017-01-23 11:33:58	◣	pokEarl (~Earl@217.138.6.142) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2017-01-23 11:34:02	Primer	nghayal: usually there's a trigger_file in recovery.conf
+2017-01-23 11:34:16	Primer	touch /path/to/file <-- is what I use
+2017-01-23 11:34:30	⚡	irc: disconnected from server

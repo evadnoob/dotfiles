@@ -122,6 +122,6 @@ endif
 set nobackup
 set noswapfile
 
-set list
-set listchars=tab:>.,trail:.,extends:#,nbsp:.
+"set list
+"set listchars=tab:>.,trail:.,extends:#,nbsp:.
 

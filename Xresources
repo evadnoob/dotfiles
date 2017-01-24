@@ -345,11 +345,12 @@ URxvt*print-pipe:                       cat > $HOME/$(echo urxvt.dump.$(date +'%
 Urxvt*color0:                           #000000
 
 !!! Font Setting
-!Xft.dpi:96
-!Xft.antialias: true
-!Xft.hinting: true
+Xft.dpi:96
+Xft.antialias: true
+Xft.hinting: true
+Xft.autohint: 0
 !!Xft.hintstyle: hintslight
-!Xft.hintstyle: hintfull
+Xft.hintstyle: hintfull
 !!Xft.lcdfilter: lcddefault
 !Xft.rgba: rgb
 !Xcursor.theme: Human
@@ -366,27 +367,27 @@ URxvt.letterSpace: -1
 
 
 
-URxvt.selection.pattern-0: ^(/[^:]+)\
+!URxvt.selection.pattern-0: ^(/[^:]+)\
 
-URxvt.perl-lib: /home/david/dotfiles/urxvt/ext/urxvt-perls
-URxvt.perl-ext-common: default,selection-to-clipboard,keyboard-select,clipboard
-URxvt.keysym.M-Escape: perl:keyboard-select:activate
+!URxvt.perl-lib: /home/david/dotfiles/urxvt/ext/urxvt-perls
+!URxvt.perl-ext-common: default,selection-to-clipboard
+!URxvt.keysym.M-Escape: perl:keyboard-select:activate
 
 ! clipboard
 ! update clipboard whenever primary gets updated
 URxvt.clipboard.autocopy: true
-URxvt.keysym.M-c: perl:clipboard:copy
-URxvt.keysym.M-v: perl:clipboard:paste
+!URxvt.keysym.M-c: perl:clipboard:copy
+!URxvt.keysym.M-v: perl:clipboard:paste
 !!URxvt.keysym.M-C-v: perl:clipboard:paste_escaped
-URxvt.keysym.M-C-v: perl:clipboard:paste
+!URxvt.keysym.M-C-v: perl:clipboard:paste
 
-URxvt.clipboard.copycmd:  xclip -i -selection clipboard
-URxvt.clipboard.pastecmd: xclip -o -selection clipboard
+!URxvt.clipboard.copycmd:  xclip -i -selection clipboard
+!URxvt.clipboard.pastecmd: xclip -o -selection clipboard
 
 
 ! keyboard-select
-URxvt.keysym.M-s: perl:keyboard-select:activate
-URxvt.keysym.M-r: perl:keyboard-select:search
+!URxvt.keysym.M-s: perl:keyboard-select:activate
+!URxvt.keysym.M-r: perl:keyboard-select:search
 
 ! ------------------------------------------------------------------------------
 ! ! ROFI Color theme

@@ -23,6 +23,7 @@ fi
 # source ${ZSH_DOTFILES}/setup-gcloud.zsh
 # source ${ZSH_DOTFILES}/setup-ranger.zsh
 source ${ZSH_DOTFILES}/setup-haste.sh
+source ${ZSH_DOTFILES}/setup-golang.zsh
 
 export PATH="/usr/local/bin:${PATH}"
 
@@ -68,10 +69,10 @@ export PATH=${PATH}:~/google-cloud-sdk/bin
 
 
 # The next line updates PATH for the Google Cloud SDK.
-source '/home/david/google-cloud-sdk/path.zsh.inc'
+#if [[ -f '/home/david/google-cloud-sdk/path.zsh.inc' ]]; source '/home/david/google-cloud-sdk/path.zsh.inc'
 
 # The next line enables shell command completion for gcloud.
-source '/home/david/google-cloud-sdk/completion.zsh.inc'
+#if [[ -f  '/home/david/google-cloud-sdk/completion.zsh.inc']]; source '/home/david/google-cloud-sdk/completion.zsh.inc'
 
 
 
@@ -79,7 +80,16 @@ source ${ZSH_DOTFILES}/setup-aliases.zsh
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
-prompt pure
+#prompt pure
+
+prompt  walters
 
 
-eval $(dircolors -p | sed -e 's/DIR 01;34/DIR 01;39/' | dircolors /dev/stdin)6
+eval $(dircolors -p | sed -e 's/DIR 01;34/DIR 01;39/' | dircolors /dev/stdin)
+
+
+## turn off annoying beep/bell
+if [ -n "$DISPLAY" ]; then
+        xset b off
+fi
+

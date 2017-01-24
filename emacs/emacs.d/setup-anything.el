@@ -38,17 +38,17 @@
 ;;  "names of sqlplus connection"))
 
 
-(defvar anything-sql-plus-tnsnames)
-(setq anything-sql-plus-tnsnames
-  `((name . "sqlplus")
-    (candidates . ,(let ((newlist nil))
-                     (dolist (item known-schemas-alist)
-                       (setq newlist (cons (car item) newlist)))
-                     newlist))
-   (action . (("" . (lambda (selected)
-                      (message (format "%s type %s" selected (type-of selected )))
-                      (sql-oracle-any-schema selected)))))
- "names of sqlplus connection"))
+;; (defvar anything-sql-plus-tnsnames)
+;; (setq anything-sql-plus-tnsnames
+;;   `((name . "sqlplus")
+;;     (candidates . ,(let ((newlist nil))
+;;                      (dolist (item known-schemas-alist)
+;;                        (setq newlist (cons (car item) newlist)))
+;;                      newlist))
+;;    (action . (("" . (lambda (selected)
+;;                       (message (format "%s type %s" selected (type-of selected )))
+;;                       (sql-oracle-any-schema selected)))))
+;;  "names of sqlplus connection"))
 
 
 (defun anything-semantic-construct-candidates (tags depth)
@@ -170,8 +170,8 @@
 
 
 
-(require 'anything-etags)
-(setq anything-etags-tag-file-name "f:/3_0_integration2/TAGS")
+;; (require 'anything-etags)
+;; (setq anything-etags-tag-file-name "f:/3_0_integration2/TAGS")
 
 
 ;;anything-source-locate

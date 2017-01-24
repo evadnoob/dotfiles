@@ -3312,3 +3312,80 @@
 2017-01-11 15:42:27	⚡	Channel created on Sat, 25 Nov 2006 22:42:51
 2017-01-11 15:44:58	◥	somis (~somis@96.9.249.43) has joined #weechat
 2017-01-11 15:45:09	◣	greatape (~greatape@206.248.136.7) has quit (Ping timeout: 240 seconds)
+2017-01-23 10:42:02	◥	boon (~david@c-67-183-222-134.hsd1.wa.comcast.net) has joined #weechat
+2017-01-23 10:42:02	⚡	Topic for #weechat is "https://weechat.org/ | Latest stable version: 1.7 | English support channel, *ONLY* about WeeChat software | Please read docs before asking! | Bug reports are welcome ONLY for latest stable or devel | Off-topic chan: #weechat-offtopic | Fingerprint for gpg key used to sign source tarball packages: A9AB 5AB7 78FA 5C35 22FD 0378 F82F 4B16 DEC4 08F8"
+2017-01-23 10:42:02	⚡	Topic set by FlashCode (~FlashCode@weechat.org) on Sat, 14 Jan 2017 23:20:49
+2017-01-23 10:42:02	⚡	Channel #weechat: 746 nicks (4 ops, 1 voice, 741 normals)
+2017-01-23 10:42:02	⚡	PvNotice(ChanServ): Welcome to WeeChat english support channel. IMPORTANT: you *MUST* have read docs and FAQ before asking something on this channel! Read them at: https://weechat.org/doc/
+2017-01-23 10:42:02	⚡	URL for #weechat: https://weechat.org/
+2017-01-23 10:42:07	⚡	Channel created on Sat, 25 Nov 2006 22:42:51
+2017-01-23 10:42:17	mythos1	Thanks
+2017-01-23 10:42:28	mythos1	mythos1: Testing
+2017-01-23 10:42:53	@nils_2	mythos1, test
+2017-01-23 10:43:27	⚡	irc: disconnected from server
+2017-01-23 10:43:49	◥	boon (~david@c-67-183-222-134.hsd1.wa.comcast.net) has joined #weechat
+2017-01-23 10:43:49	⚡	Topic for #weechat is "https://weechat.org/ | Latest stable version: 1.7 | English support channel, *ONLY* about WeeChat software | Please read docs before asking! | Bug reports are welcome ONLY for latest stable or devel | Off-topic chan: #weechat-offtopic | Fingerprint for gpg key used to sign source tarball packages: A9AB 5AB7 78FA 5C35 22FD 0378 F82F 4B16 DEC4 08F8"
+2017-01-23 10:43:49	⚡	Topic set by FlashCode (~FlashCode@weechat.org) on Sat, 14 Jan 2017 23:20:51
+2017-01-23 10:43:49	⚡	Channel #weechat: 746 nicks (4 ops, 1 voice, 741 normals)
+2017-01-23 10:43:49	⚡	PvNotice(ChanServ): Welcome to WeeChat english support channel. IMPORTANT: you *MUST* have read docs and FAQ before asking something on this channel! Read them at: https://weechat.org/doc/
+2017-01-23 10:43:49	⚡	URL for #weechat: https://weechat.org/
+2017-01-23 10:43:50	mythos1	nils_2: Sweet!  Thank you it worked, and thanks Zarthus
+2017-01-23 10:43:55	⚡	Channel created on Sat, 25 Nov 2006 22:42:51
+2017-01-23 10:44:03	@nils_2	you're welcome
+2017-01-23 10:44:16	Zarthus	mythos1, I am a desktop spook ~woo~
+2017-01-23 10:44:59	◣	choru (~choru@78.56.154.238) has quit (Quit: WeeChat 1.7)
+2017-01-23 10:47:21	◥	mr_sm1th (~mr_sm1th@5ED4F634.cm-7-5d.dynamic.ziggo.nl) has joined #weechat
+2017-01-23 10:47:40	mr_sm1th	How can I add my weechat configuration to my dotfiles?
+2017-01-23 10:47:45	mr_sm1th	So I can sync it across computers.
+2017-01-23 10:48:08	Zarthus	generally not a good idea i think
+2017-01-23 10:48:18	mr_sm1th	Oh.
+2017-01-23 10:48:24	mr_sm1th	Okay :-{
+2017-01-23 10:48:27	Zarthus	you'll at least want to use secure for passwords, but I'm not sure what else can leak
+2017-01-23 10:48:51	mr_sm1th	My passwords are already synced across computers.
+2017-01-23 10:48:54	Zarthus	I have a private tar that I restore, but there's no definitive script that censors out sensitive information or a gitignore that is future-proof
+2017-01-23 10:49:10	Zarthus	and the config files are rather big, so it's easy to miss something
+2017-01-23 10:49:34	Zarthus	(not saying it's not possible, but just tedious and it might make restoring it easily difficult)
+2017-01-23 10:52:20	◣	justan0theruser (~justanoth@unaffiliated/justanotheruser) has quit (Ping timeout: 276 seconds)
+2017-01-23 10:52:46	◣	davidl (~usrname@fsf/member/usrname) has quit (Ping timeout: 258 seconds)
+2017-01-23 10:53:13	◣	Colgate_ (~rabbit@gateway/tor-sasl/colgate) has quit (Remote host closed the connection)
+2017-01-23 10:53:18	mr_sm1th	That sucks by the way.
+2017-01-23 10:53:39	◥	Colgate_ (~rabbit@gateway/tor-sasl/colgate) has joined #weechat
+2017-01-23 10:55:19	Zarthus	one of the negatives of having something highly configurable :P
+2017-01-23 10:55:39	Zarthus	there's plenty of weechat and irssi dotfiles available with exposed nickserv passwords
+2017-01-23 10:55:45	mr_sm1th	Well, there are plenty of things that are highly configurable, whose configurations can be easily shared and synced.
+2017-01-23 10:56:37	Zarthus	yeah, weechat's just not one of them
+2017-01-23 10:57:10	Zarthus	secure.conf does mitigate it, but there's no telling something secret won't later still be exposed in future versions
+2017-01-23 11:00:21	◣	Starky (~Starky@unaffiliated/starky) has quit (Read error: Connection reset by peer)
+2017-01-23 11:00:40	◥	Starky (~Starky@unaffiliated/starky) has joined #weechat
+2017-01-23 11:00:44	◥	fce (~fce@2a02:2028:576:fa01:224:d6ff:fe46:c08e) has joined #weechat
+2017-01-23 11:00:58	◣	mr_sm1th (~mr_sm1th@5ED4F634.cm-7-5d.dynamic.ziggo.nl) has quit (Quit: WeeChat 1.6)
+2017-01-23 11:01:55	◣	Guest2413 (~Azelphur@znc.azelphur.com) has quit (Quit: Oh god i switched my bouncer off, the world is ending!)
+2017-01-23 11:02:04	◥	Azelphur_ (~Azelphur@znc.azelphur.com) has joined #weechat
+2017-01-23 11:04:35	◣	felher (~felher@felher.org) has quit (Ping timeout: 255 seconds)
+2017-01-23 11:06:38	◥	davidl (~usrname@fsf/member/usrname) has joined #weechat
+2017-01-23 11:12:59	⚡	tehlarsie|afk is now known as tehlarsie
+2017-01-23 11:13:28	⚡	irc: disconnected from server
+2017-01-23 11:13:54	◥	boon (~david@c-50-132-101-194.hsd1.wa.comcast.net) has joined #weechat
+2017-01-23 11:13:54	⚡	Topic for #weechat is "https://weechat.org/ | Latest stable version: 1.7 | English support channel, *ONLY* about WeeChat software | Please read docs before asking! | Bug reports are welcome ONLY for latest stable or devel | Off-topic chan: #weechat-offtopic | Fingerprint for gpg key used to sign source tarball packages: A9AB 5AB7 78FA 5C35 22FD 0378 F82F 4B16 DEC4 08F8"
+2017-01-23 11:13:54	⚡	Topic set by FlashCode (~FlashCode@weechat.org) on Sat, 14 Jan 2017 23:20:40
+2017-01-23 11:13:54	⚡	Channel #weechat: 746 nicks (4 ops, 1 voice, 741 normals)
+2017-01-23 11:13:54	⚡	PvNotice(ChanServ): Welcome to WeeChat english support channel. IMPORTANT: you *MUST* have read docs and FAQ before asking something on this channel! Read them at: https://weechat.org/doc/
+2017-01-23 11:13:54	⚡	URL for #weechat: https://weechat.org/
+2017-01-23 11:13:54	@nils_2	and upgrade you weechat first.
+2017-01-23 11:14:01	⚡	Channel created on Sat, 25 Nov 2006 22:42:51
+2017-01-23 11:14:06	@nils_2	1.0.1 is very old!
+2017-01-23 11:22:06	v4nelle	nils_2: i am on raspbian
+2017-01-23 11:22:13	@nils_2	!debian
+2017-01-23 11:22:13	+weebot	Debian/Ubuntu/Raspbian builds: https://weechat.org/download/debian/
+2017-01-23 11:22:17	@nils_2	use this ^^
+2017-01-23 11:22:27	@nils_2	read instructions how to use
+2017-01-23 11:23:58	v4nelle	thanks
+2017-01-23 11:25:22	◣	anzuof (306692@nat/friedrich-alexander/x-jnthpgjcvsrrunhv) has quit (Quit: WeeChat 1.4)
+2017-01-23 11:26:04	◥	anzuof (306692@nat/friedrich-alexander/x-hoczbpbelrvqxsxb) has joined #weechat
+2017-01-23 11:27:18	◥	frakturfreak (~frakturfr@unaffiliated/frakturfreak) has joined #weechat
+2017-01-23 11:29:21	◣	rivarun (~rivarun@ipa210.225.tellas.gr) has quit (Remote host closed the connection)
+2017-01-23 11:29:27	⚡	m712 is now known as enp3s0
+2017-01-23 11:30:00	⚡	Azelphur_ is now known as Azelphur
+2017-01-23 11:30:16	◣	bananabas (~bananabas@unaffiliated/bananabas) has quit (Quit: WeeChat 1.6)
+2017-01-23 11:33:36	◣	newtly (~newtly@209.222.61.162) has quit (Quit: WeeChat 1.0)
+2017-01-23 11:34:30	⚡	irc: disconnected from server

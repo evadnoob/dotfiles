@@ -56,5 +56,5 @@ alias e=${EDITOR}
 
 alias g='git'
 # Autocomplete for 'g' as well
-complete -o default -o nospace -F _git g
+#complete -o default -o nospace -F _git g
 

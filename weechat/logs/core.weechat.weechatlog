@@ -1143,3 +1143,21 @@
 2017-01-10 10:59:15		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, javascript, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
 2017-01-11 15:41:59	⚠ 	Error: unknown command "/qiot" (type /help for help)
 2017-01-11 15:42:05		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, javascript, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2017-01-23 10:41:42		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, javascript, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2017-01-23 10:42:48	⚠ 	Error with command "/window rm" (help on command: /help window)
+2017-01-23 10:43:27		fifo: pipe closed
+2017-01-23 10:43:28		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, javascript, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2017-01-23 10:43:36	⚠ 	irc: command "list" must be executed on irc buffer (server or channel)
+2017-01-23 10:46:11		[irc]  /list  [<channel>[,<channel>...]] [<server>] [-re <regex>]
+2017-01-23 10:46:11		list channels and their topic
+2017-01-23 10:46:11		channel: channel to list
+2017-01-23 10:46:11		 server: server name
+2017-01-23 10:46:11		  regex: POSIX extended regular expression used to filter results (case insensitive, can start by "(?-i)" to become case sensitive)
+2017-01-23 10:46:11		Examples:
+2017-01-23 10:46:11		  list all channels on server (can be very slow on large networks):
+2017-01-23 10:46:11		    /list
+2017-01-23 10:46:11		  list channel #weechat:
+2017-01-23 10:46:11		    /list #weechat
+2017-01-23 10:46:11		  list all channels beginning with "#weechat" (can be very slow on large networks):
+2017-01-23 10:46:11		    /list -re #weechat.*
+2017-01-23 11:34:30		fifo: pipe closed

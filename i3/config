@@ -115,7 +115,7 @@ set $workspace3 3: www
 set $workspace4 4: management[gcp]
 set $workspace5 5: rust-lang
 set $workspace6 6: mail
-set $workspace7 7: hipchat
+set $workspace7 7: slack
 set $workspace8 8: misc
 set $workspace9 9: irc
 set $workspace10 10: intellij
@@ -128,7 +128,7 @@ bindsym $mod+3 workspace $workspace3
 bindsym $mod+4 workspace $workspace4
 bindsym $mod+5 workspace 5: rust-lang
 bindsym $mod+6 workspace 6: mail
-bindsym $mod+7 workspace 7: hipchat
+bindsym $mod+7 workspace 7: slack
 bindsym $mod+8 workspace 8: misc
 bindsym $mod+9 workspace 9: irc
 bindsym $mod+0 workspace 10: intellij
@@ -140,7 +140,7 @@ bindsym $mod+Shift+3 move container to workspace 3: www
 bindsym $mod+Shift+4 move container to workspace 4: management[gcp]
 bindsym $mod+Shift+5 move container to workspace 5: rust-lang
 bindsym $mod+Shift+6 move container to workspace 6: mail
-bindsym $mod+Shift+7 move container to workspace 7: hipchat
+bindsym $mod+Shift+7 move container to workspace 7: slack
 bindsym $mod+Shift+8 move container to workspace 8: misc
 bindsym $mod+Shift+9 move container to workspace 9: irc
 bindsym $mod+Shift+0 move container to workspace 10: intellij
@@ -154,7 +154,7 @@ assign [class="hipchat4"] $workspace7
 assign [class="Firefox"] $workspace3
 assign [class="Spotify"] $workspace8
 assign [class="urxvt" title="^david: ranger$"] $workspace4
-assign [class="hipchat4" window_type="notification"] $workspace7
+#assign [class="hipchat4" window_type="notification"] $workspace7
 
 
 #exec --no-startup-id i3-msg 'workspace 7: hipchat; exec hipchat4'
@@ -201,11 +201,11 @@ mode "resize" {
 
 # class                 border  backgr. text    indicator child_border
 #client.focused          #4c7899 #1c1c1c #ffffff #ffffff   #285577
-client.focused          #4c7899 #1c1c1c #ffffff #ffffff   #285577
+#client.focused          #4c7899 #1c1c1c #ffffff #ffffff   #285577
 client.focused_inactive #333333 #5f676a #ffffff #484e50   #5f676a
-client.unfocused        #333333 #222222 #888888 #292d2e   #222222
+#client.unfocused        #333333 #222222 #888888 #292d2e   #222222
 client.urgent           #2f343a #900000 #ffffff #900000   #900000
-client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
+#client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
 
 
 bindsym $mod+r mode "resize"
@@ -278,9 +278,9 @@ exec --no-startup-id exec parcellite
 #bindsym $mod+Shift+  exec scrot '%Y-%m-%d-%T_$wx$h_scrot.png' -e 'mv $f ~/Dropbox/Screenshots/'
 
 
-bindsym $mod+Shift+p exec scrot '%Y-%m-%d-%T_$wx$h_scrot.png' -e 'mv $f ~/Dropbox/Screenshots/'
-bindsym $mod+Shift+1+p exec scrot '%Y-%m-%d-%T_$wx$h_scrot.png' -e 'mv $f ~/Dropbox/Screenshots/'
-bindsym $mod+Shift+o exec scrot -u '%Y-%m-%d-%T_$wx$h_scrot.png' -e 'mv $f ~/Dropbox/Screenshots/'
+bindsym $mod+Shift+p exec scrot '%Y-%m-%d-%T_$wx$h.png' -e 'mv $f ~/Dropbox/Screenshots/'
+bindsym $mod+Shift+1+p exec scrot '%Y-%m-%d-%T_$wx$h.png' -e 'mv $f ~/Dropbox/Screenshots/'
+bindsym $mod+Shift+o exec scrot -u '%Y-%m-%d-%T_$wx$h.png' -e 'mv $f ~/Dropbox/Screenshots/'
 
 
 # set wallpaper
@@ -305,13 +305,13 @@ gaps inner 10
 gaps outer 3
 
 
-set $mode_gaps Gaps: (o) outer, (i) inner
-set $mode_gaps_outer Outer Gaps: +|-|0 (local), Shift + +|-|0 (global)
-set $mode_gaps_inner Inner Gaps: +|-|0 (local), Shift + +|-|0 (global)
+# set $mode_gaps Gaps: (o) outer, (i) inner
+# set $mode_gaps_outer Outer Gaps: +|-|0 (local), Shift + +|-|0 (global)
+# set $mode_gaps_inner Inner Gaps: +|-|0 (local), Shift + +|-|0 (global)
 bindsym $mod+Shift+g mode "$mode_gaps"
 
 mode "$mode_gaps" {
-        bindsym o      mode "$mode_gaps_outer"
+         bindsym o      mode "$mode_gaps_outer"
         bindsym i      mode "$mode_gaps_inner"
         bindsym Return mode "default"
         bindsym Escape mode "default"
@@ -343,7 +343,7 @@ mode "$mode_gaps_outer" {
 }
 
 smart_gaps on
-#smart_borders no_gaps
+smart_borders no_gaps
 smart_borders on
 
 bindsym XF86MonBrightnessUp exec sudo screen-backlight up
@@ -351,3 +351,7 @@ bindsym XF86MonBrightnessDown exec sudo screen-backlight down
 
 bindsym XF86KbdBrightnessUp exec sudo keyboard-backlight up
 bindsym XF86KbdBrightnessDown exec sudo keyboard-backlight down
+
+
+
+

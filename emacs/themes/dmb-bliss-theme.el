@@ -99,7 +99,7 @@
  '(font-lock-comment-face ((t (:foreground "grey55"  ))))
  '(font-lock-constant-face ((t (:foreground "#dadada"  ))))
  '(font-lock-variable-name-face ((t (:foreground "#767676"  ))))
- '(font-lock-builtin-face ((t (:foreground "#gray55"  ))))
+ '(font-lock-builtin-face ((t (:foreground "gray55"  ))))
  '(font-lock-type-face ((t (:foreground "#a8a8a8"  ))))
  '(font-lock-string-face ((t (:foreground "green"  ))))
  ;;'(font-lock-function-name-face ((t (:foreground "#3bb1df"  ))))
@@ -142,7 +142,14 @@
  ;;ediff
  '(ediff-fine-diff-A ((t (:background nil))))
  '(ediff-fine-diff-B ((t (:background nil))))
+
+ ;; popup
+ '(ac-selection-face ((t (:foregoround "#67b7d7"))))
+ '(popup-face ((t (:foreground "#777777"))))
  
+ ;; ac-complete
+ ;;'(ac-complete-
+   
 ) ;; End face definitions
 
 ;;;###autoload

@@ -37,7 +37,7 @@
 (load-library "setup-erc")
 (load-library "setup-nxml-mode")
 ;;(load-library "setup-js-mode")
-(load-library "setup-linum-mode")
+;;(load-library "setup-linum-mode")
 (load-library "setup-lorem-ipsum")
 (load-library "setup-eval-and-replace")
 (load-library "setup-keybindings")
@@ -60,7 +60,9 @@
 ;;(load-library "setup-delight")
 ;;(load-library "setup-copy-and-paste")
 
+(load-library "setup-anything")
 
+(load-library "setup-golang")
 
 ;; (load-library "setup-flx")
 ;; (load-library "setup-god-mode")

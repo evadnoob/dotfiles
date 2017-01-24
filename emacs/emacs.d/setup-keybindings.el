@@ -27,7 +27,7 @@
 (global-set-key "\M-o"           'other-window)
 ;;(global-set-key [f3]             'simple-grep)
 (global-set-key [f3]             'ag)
-(global-set-key [f2]             'ack-and-a-half)
+;;(global-set-key [f2]             'ack-and-a-half)
 (global-set-key [f4]             'find-dired)
 (global-set-key "\C-c\C-a"       'beginning-of-line)
 ;;(global-set-key "\C-a"       'beginning-of-line-text)

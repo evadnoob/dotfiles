@@ -77,7 +77,7 @@
  '(completion-ignore-case t t)
  '(custom-safe-themes
    (quote
-    ("7af16b32e17d4c07b0819150f294a0b77da4a5fda0434e92ef128a24e388e95b" "a9290165cef61ef30ad43a38ae6591d0fd4ce59a12c2e5f17e595ea31e0a608c" "999bb141fe05218f6af3d3a5eefd0e4cfe4803aab15476245ed02f0ca00e910d" "99033f8891b7a20a9b10e6dc1dd4285aa7507037091db982195e3ca9daa7d596" "6c0ec840b7c0316d121dc0a2910f4a390940bec3d136bb80584f1233d7e15003" default)))
+    ("798d7352a609786f95a2b08502654efca1ddf829f5a9dc295f2c4b0ac1e427e6" "7af16b32e17d4c07b0819150f294a0b77da4a5fda0434e92ef128a24e388e95b" "a9290165cef61ef30ad43a38ae6591d0fd4ce59a12c2e5f17e595ea31e0a608c" "999bb141fe05218f6af3d3a5eefd0e4cfe4803aab15476245ed02f0ca00e910d" "99033f8891b7a20a9b10e6dc1dd4285aa7507037091db982195e3ca9daa7d596" "6c0ec840b7c0316d121dc0a2910f4a390940bec3d136bb80584f1233d7e15003" default)))
  '(custom-theme-directory (*emacs "/themes"))
  '(dired-listing-switches "-ghG")
  '(erc-enable-logging (quote erc-log-all-but-server-buffers))
@@ -105,7 +105,7 @@
  '(org-directory "~/Dropbox/org-mode-files")
  '(package-selected-packages
    (quote
-    (evil-surround smooth-scrolling smooth-scroll linum-relative swiper ace-window ace-popup-menu which-key try use-package scala-mode yari yaml-mode volatile-highlights visible-mark toml-mode smart-cursor-color scss-mode sass-mode rcirc-color rainbow-mode racer projectile pbcopy paredit org-ac neotree modeline-posn markdown-mode mark-multiple magit lua-mode lorem-ipsum java-snippets inf-ruby helm-ag haskell-mode guide-key groovy-mode gist ggtags flymake-less flymake-easy flycheck-rust evil-tutor evil-terminal-cursor-changer evil-search-highlight-persist evil-org evil-matchit evil-leader evil-args evil-annoying-arrows ensime emacs-eclim dockerfile-mode delight deft company-racer coffee-mode clojure-mode change-inner auctex annoying-arrows-mode ack-and-a-half)))
+    (anything-exuberant-ctags anything evil-surround smooth-scrolling smooth-scroll linum-relative swiper ace-window ace-popup-menu which-key try use-package scala-mode yari yaml-mode volatile-highlights visible-mark toml-mode smart-cursor-color scss-mode sass-mode rcirc-color rainbow-mode racer projectile pbcopy paredit org-ac neotree modeline-posn markdown-mode mark-multiple magit lua-mode lorem-ipsum java-snippets inf-ruby helm-ag haskell-mode guide-key groovy-mode gist ggtags flymake-less flymake-easy flycheck-rust evil-tutor evil-terminal-cursor-changer evil-search-highlight-persist evil-org evil-matchit evil-leader evil-args evil-annoying-arrows ensime emacs-eclim dockerfile-mode delight deft company-racer coffee-mode clojure-mode change-inner auctex annoying-arrows-mode ack-and-a-half)))
  '(setq python-indent-offset)
  '(socks-noproxy (quote ("localhost")) t)
  '(socks-override-functions 1 t)

@@ -12266,3 +12266,160 @@
 2017-01-11 15:45:02	◣	PHPanos (~textual@c-192371d5.035-201-73746f28.cust.bredbandsbolaget.se) has quit (Quit: My Mac has gone to sleep. ZZZzzz…)
 2017-01-11 15:45:19	ffs	sometimes, but what if i make a package called AAAAA with a billion dependencies that provides a popular virtual package?
 2017-01-11 15:45:32	◥	mtn (~mtn@72.168.160.85) has joined #debian
+2017-01-23 10:42:01	◥	boon (~david@c-67-183-222-134.hsd1.wa.comcast.net) has joined #debian
+2017-01-23 10:42:01	⚡	Topic for #debian is "Unwanted private messages? /umode +R | Debian 8 Jessie released! /msg dpkg jessie ; /msg dpkg wheezy->jessie ; /msg dpkg install jessie |  current point releases: /msg dpkg 8.7; /msg dpkg 7.11 | NO FLOOD: /msg dpkg paste | /msg bots NOT people | offtopic: #debian-offtopic | testing/unstable:  #debian-next (irc.oftc.net) | chanlogs: /msg dpkg irclog"
+2017-01-23 10:42:01	⚡	Topic set by abrotman (~abrotman@pdpc/supporter/active/abrotman) on Fri, 20 Jan 2017 05:29:15
+2017-01-23 10:42:02	⚡	Channel #debian: 1689 nicks (2 ops, 0 voices, 1687 normals)
+2017-01-23 10:42:02	⚡	PvNotice(ChanServ): Welcome to #Debian. This is a discussion channel; if you have a question about Debian GNU/Linux, ask and we will try our best to answer it. Newcomers should read the channel's guidelines by typing "/msg dpkg guidelines". Please do not paste in the channel; use #flood instead. Thank you.
+2017-01-23 10:42:02	⚡	URL for #debian: http://www.debian.org
+2017-01-23 10:42:05	⚡	Channel created on Fri, 09 Feb 2001 15:16:24
+2017-01-23 10:42:13	SpeccyMan	no idea I am a linux mint user and that changes at the proper time
+2017-01-23 10:42:23	DammitJim	cool
+2017-01-23 10:42:29	DammitJim	so, there is no special setting you do
+2017-01-23 10:42:30	DammitJim	thank you
+2017-01-23 10:42:33	◣	murphy (~murphy@8.19.46.3) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2017-01-23 10:42:49	SpeccyMan	not that i know of, it just seems to happen
+2017-01-23 10:43:11	◥	macartur (~macartur@gwime.semfio.usp.br) has joined #debian
+2017-01-23 10:43:18	◣	macartur (~macartur@gwime.semfio.usp.br) has quit (Remote host closed the connection)
+2017-01-23 10:43:27	⚡	irc: disconnected from server
+2017-01-23 10:43:49	◥	boon (~david@c-67-183-222-134.hsd1.wa.comcast.net) has joined #debian
+2017-01-23 10:43:49	⚡	Topic for #debian is "Unwanted private messages? /umode +R | Debian 8 Jessie released! /msg dpkg jessie ; /msg dpkg wheezy->jessie ; /msg dpkg install jessie |  current point releases: /msg dpkg 8.7; /msg dpkg 7.11 | NO FLOOD: /msg dpkg paste | /msg bots NOT people | offtopic: #debian-offtopic | testing/unstable:  #debian-next (irc.oftc.net) | chanlogs: /msg dpkg irclog"
+2017-01-23 10:43:49	⚡	Topic set by abrotman (~abrotman@pdpc/supporter/active/abrotman) on Fri, 20 Jan 2017 05:29:13
+2017-01-23 10:43:49	⚡	Channel #debian: 1688 nicks (2 ops, 0 voices, 1686 normals)
+2017-01-23 10:43:49	⚡	PvNotice(ChanServ): Welcome to #Debian. This is a discussion channel; if you have a question about Debian GNU/Linux, ask and we will try our best to answer it. Newcomers should read the channel's guidelines by typing "/msg dpkg guidelines". Please do not paste in the channel; use #flood instead. Thank you.
+2017-01-23 10:43:49	⚡	URL for #debian: http://www.debian.org
+2017-01-23 10:43:53	⚡	Channel created on Fri, 09 Feb 2001 15:16:24
+2017-01-23 10:44:04	SpeccyMan	right now my clock is set to GMT which is normal for winter and in the spring it will switch to BST on the last Sunday in March at 1:00AM
+2017-01-23 10:44:19	◥	AimHere (~David@cpc102316-sgyl38-2-0-cust632.18-2.cable.virginm.net) has joined #debian
+2017-01-23 10:46:03	◥	murphy (~murphy@8.19.46.3) has joined #debian
+2017-01-23 10:46:26	◥	plover (~plover@unaffiliated/plover) has joined #debian
+2017-01-23 10:46:34	◥	manjaroCinnamon1 (~Manjarous@host-89-241-161-153.as13285.net) has joined #debian
+2017-01-23 10:47:12	◣	ceprius (ceprius@gateway/shell/layerbnc/x-zpdedrybkmrwztoy) has quit (Quit: Bye)
+2017-01-23 10:47:44	zykotick9	DammitJim: i can't find any info to state EST will automatically change to EDT when approriate :(  but, from my personal experience - it will!  first note on https://wiki.debian.org/TimeZoneChanges makes refrence to daylight saving time.  anyways best of luck.
+2017-01-23 10:47:59	DammitJim	thank you zykotick9
+2017-01-23 10:48:07	◥	ceprius (ceprius@gateway/shell/layerbnc/x-jtoyqymqknikvdxr) has joined #debian
+2017-01-23 10:48:11	DammitJim	I definitely appreciate that
+2017-01-23 10:48:24	◥	cdown (~cdown@213.205.251.165) has joined #debian
+2017-01-23 10:49:20	◣	FreeBeastie (~max@dslb-084-062-231-080.084.062.pools.vodafone-ip.de) has quit (Remote host closed the connection)
+2017-01-23 10:49:38	◥	Achylles (~Achylles@179.98.61.50) has joined #debian
+2017-01-23 10:49:50	◥	RebelCoder (~Yuriy@broadband-46-188-124-67.2com.net) has joined #debian
+2017-01-23 10:50:02	◣	ceprius (ceprius@gateway/shell/layerbnc/x-jtoyqymqknikvdxr) has quit (Read error: Connection reset by peer)
+2017-01-23 10:50:02	◣	Keitaro (trickster@gateway/shell/layerbnc/x-xxluyuyndkqzkzbu) has quit (Remote host closed the connection)
+2017-01-23 10:50:22	◣	Walakea (~marian@bband-dyn8.95-103-198.t-com.sk) has quit (Read error: Connection reset by peer)
+2017-01-23 10:50:35	◥	Walakea_ (~marian@bband-dyn8.95-103-198.t-com.sk) has joined #debian
+2017-01-23 10:50:39	⚡	Walakea_ is now known as Walakea
+2017-01-23 10:50:47	◥	WoodLeg (~WoodLeg@213.233.92.125) has joined #debian
+2017-01-23 10:51:36	◥	shadowdante (~ShadowDan@62.red-83-46-14.dynamicip.rima-tde.net) has joined #debian
+2017-01-23 10:52:14	◥	giricz81 (~giricz81@ip4-83-240-38-90.cust.nbox.cz) has joined #debian
+2017-01-23 10:52:15	◥	lvh (~lvh@python/psf/lvh) has joined #debian
+2017-01-23 10:53:24	◣	llorephie (~Thunderbi@188.244.41.253) has quit (Quit: llorephie)
+2017-01-23 10:53:44	◣	Tiffon_ (~name@84.127.66.255.dyn.user.ono.com) has quit (Quit: exit)
+2017-01-23 10:53:46	SynrG	zykotick9, DammitJim: apt-cache show tzdata | grep ^Homepage: points at http://www.iana.org/time-zones which says in the link under "Further information":  "The public-domain time zone database contains code and data that represent the history of local time for many representative locations around the globe. It is updated periodically to reflect changes made by political bodies to time zone boundaries and
+2017-01-23 10:53:52	SynrG	daylight-saving rules."
+2017-01-23 10:53:57	◥	dikiaap_ (~dikiaap@114.125.115.154) has joined #debian
+2017-01-23 10:54:12	◣	jandrusk (~jra@cpe-104-231-119-61.neo.res.rr.com) has quit (Quit: WeeChat 1.6)
+2017-01-23 10:54:17	SynrG	that's as close as it comes to saying "yes, the timezones in Debian are daylight-savings aware"
+2017-01-23 10:54:23	DammitJim	awesome!
+2017-01-23 10:54:29	zykotick9	SynrG: thanks.
+2017-01-23 10:54:53	◥	dreamon (~dreamon@unaffiliated/dreamon) has joined #debian
+2017-01-23 10:55:07	◣	WoodLeg (~WoodLeg@213.233.92.125) has quit (Ping timeout: 255 seconds)
+2017-01-23 10:55:37	◣	Hy93R10n (~Hy93R10n@4.59.247.194) has quit (Remote host closed the connection)
+2017-01-23 10:56:33	raynold	ahh it's a wonderful day
+2017-01-23 10:57:34	◥	ceprius (ceprius@gateway/shell/layerbnc/x-hivtweznhpqizpem) has joined #debian
+2017-01-23 10:58:00	⚡	Mode #debian [+l 1709] by debhelper
+2017-01-23 10:58:21	◣	rgr (~user@p20030086AB0707665AD0095D9A885E57.dip0.t-ipconnect.de) has quit (Ping timeout: 240 seconds)
+2017-01-23 10:59:10	◣	vonsyd0w (~vonsyd0w@unaffiliated/vonsyd0w) has quit (Ping timeout: 240 seconds)
+2017-01-23 10:59:24	◣	Jeaton (~Jeat0n@ks-184-2-118-37.dhcp.embarqhsd.net) has quit (Disconnected by services)
+2017-01-23 10:59:42	◥	jandrusk (~jra@cpe-104-231-119-61.neo.res.rr.com) has joined #debian
+2017-01-23 10:59:47	◥	Jeat0n (~Jeat0n@ks-184-2-118-37.dhcp.embarqhsd.net) has joined #debian
+2017-01-23 11:00:02	◣	LorD_n1c0w (~igorhenri@177.75.77.4) has left #debian
+2017-01-23 11:00:08	Aimmy	This encryption we got when we start debian.. is this unbreakable?
+2017-01-23 11:00:19	◥	Spec (~Spec@unaffiliated/spec) has joined #debian
+2017-01-23 11:00:20	◣	gl-prout (~gl-prout@197.158.85.175) has quit (Ping timeout: 240 seconds)
+2017-01-23 11:00:21	◣	Starky (~Starky@unaffiliated/starky) has quit (Read error: Connection reset by peer)
+2017-01-23 11:00:40	◥	Starky (~Starky@unaffiliated/starky) has joined #debian
+2017-01-23 11:00:44	◣	donught (~donught@108-77-18-22.lightspeed.sndgca.sbcglobal.net) has quit (Remote host closed the connection)
+2017-01-23 11:00:46	◣	viewer|13651 (02067ca1@gateway/web/cgi-irc/kiwiirc.com/ip.2.6.124.161) has quit (Quit: http://www.kiwiirc.com/ - A hand crafted IRC client)
+2017-01-23 11:00:48	◣	dionysus69 (~Thunderbi@unaffiliated/dionysus69) has quit (Remote host closed the connection)
+2017-01-23 11:01:21	◥	Keitaro (trickster@gateway/shell/layerbnc/x-yqoendhfspzrekkj) has joined #debian
+2017-01-23 11:01:42	◣	lvh (~lvh@python/psf/lvh) has left #debian ("int 80h;")
+2017-01-23 11:02:36	◥	earthundead (~earthunde@78.25.122.30) has joined #debian
+2017-01-23 11:02:41	◣	Jeat0n (~Jeat0n@ks-184-2-118-37.dhcp.embarqhsd.net) has quit (Remote host closed the connection)
+2017-01-23 11:03:33	◣	Spr1ng (~Spr1ng@unaffiliated/spr1ng) has quit (Ping timeout: 260 seconds)
+2017-01-23 11:05:18	◣	uNmowed (~Mayu@cli-nw.71.184.helios-nw.ru) has quit (Ping timeout: 260 seconds)
+2017-01-23 11:05:53	◥	cereal_poster_ (~cereal_po@177.42.60.10) has joined #debian
+2017-01-23 11:05:59	missmbob	for the most part. debian doesnt encrypt /boot by default so if they have access to it they could swap out the kernel without you knowing about it and then you basically break it yourself. but if you mean someone just stole your laptop then yeah, they're not going to view your data
+2017-01-23 11:06:00	◣	dikiaap_ (~dikiaap@114.125.115.154) has quit (Quit: Bye)
+2017-01-23 11:06:07	◥	v4nelle (~osmc@46.198.224.147) has joined #debian
+2017-01-23 11:06:32	missmbob	or if you mean "the fbi just took my laptop" you should be okay
+2017-01-23 11:06:38	◥	fassl (~fassl@193-80-245-255.adsl.highway.telekom.at) has joined #debian
+2017-01-23 11:06:48	◥	starfleetcadet75 (~starfleet@129.10.9.119) has joined #debian
+2017-01-23 11:07:03	◣	starfleetcadet75 (~starfleet@129.10.9.119) has quit (Client Quit)
+2017-01-23 11:07:18	malacozoan	Aimmy: Basically, Bruce Willis, Samuel L. Jackson, and M. Night Shyamalan couldn't break it.. pretty Unbreakable.
+2017-01-23 11:07:26	▷	malacozoan gets his coat
+2017-01-23 11:07:29	SynrG	except for the exploits against it that the fbi are keeping under wraps so they can continue to wiretap you ...
+2017-01-23 11:07:43	▷	SynrG says, tongue-in-cheek, with tinfoil hat on
+2017-01-23 11:07:51	▷	malacozoan hands out some OpenBSD softraid full disk crypto
+2017-01-23 11:07:59	▷	malacozoan gets his other coat
+2017-01-23 11:08:27	◣	cereal_poster (~cereal_po@177.42.60.10) has quit (Ping timeout: 255 seconds)
+2017-01-23 11:08:42	◥	fhdrin (~fhdrin@136.0.16.230) has joined #debian
+2017-01-23 11:08:53	◣	bluequijote (~chatzilla@187.207.17.64) has quit (Quit: ChatZilla 0.9.93 [Firefox 45.3.0/20160802213348])
+2017-01-23 11:09:10	◣	hejohn_ (~hejohn@srv-13.snet.at) has quit (Quit: hejohn_)
+2017-01-23 11:09:33	◥	AlexLikeRock (~AlexLikeR@unaffiliated/alexlikerock) has joined #debian
+2017-01-23 11:09:46	◣	sz0 (uid110435@gateway/web/irccloud.com/x-qtbqykizxoafuyzv) has quit (Quit: Connection closed for inactivity)
+2017-01-23 11:10:34	◣	Cabanossi (~Cabanossi@pD9F85083.dip0.t-ipconnect.de) has quit (Ping timeout: 264 seconds)
+2017-01-23 11:10:45	◣	ceprius (ceprius@gateway/shell/layerbnc/x-hivtweznhpqizpem) has quit (Quit: Bye)
+2017-01-23 11:11:03	◥	ceprius (ceprius@gateway/shell/layerbnc/x-shwletplflrbnxkm) has joined #debian
+2017-01-23 11:11:06	◥	Cabanossi (~Cabanossi@pD9F85083.dip0.t-ipconnect.de) has joined #debian
+2017-01-23 11:11:16	◥	eternal-pain (~eternal-p@245-67-142-46.pool.kielnet.net) has joined #debian
+2017-01-23 11:11:34	◣	ceprius (ceprius@gateway/shell/layerbnc/x-shwletplflrbnxkm) has left #debian
+2017-01-23 11:11:50	◣	chachasmooth (~chachasmo@unaffiliated/chachasmooth) has quit (Ping timeout: 240 seconds)
+2017-01-23 11:12:10	◣	|DM| (~|DM|@93-87-251-99.dynamic.isp.telekom.rs) has quit (Ping timeout: 240 seconds)
+2017-01-23 11:12:39	malacozoan	Someone just asked SLJ if it was *really* unbreakable.. http://media.comicbook.com/uploads1/2015/07/unbreakable-142504.png
+2017-01-23 11:13:16	◥	vonsyd0w (~vonsyd0w@unaffiliated/vonsyd0w) has joined #debian
+2017-01-23 11:13:24	◥	chachasmooth (~chachasmo@unaffiliated/chachasmooth) has joined #debian
+2017-01-23 11:13:28	⚡	irc: disconnected from server
+2017-01-23 11:13:53	◥	boon (~david@c-50-132-101-194.hsd1.wa.comcast.net) has joined #debian
+2017-01-23 11:13:53	⚡	Topic for #debian is "Unwanted private messages? /umode +R | Debian 8 Jessie released! /msg dpkg jessie ; /msg dpkg wheezy->jessie ; /msg dpkg install jessie |  current point releases: /msg dpkg 8.7; /msg dpkg 7.11 | NO FLOOD: /msg dpkg paste | /msg bots NOT people | offtopic: #debian-offtopic | testing/unstable:  #debian-next (irc.oftc.net) | chanlogs: /msg dpkg irclog"
+2017-01-23 11:13:53	⚡	Topic set by abrotman (~abrotman@pdpc/supporter/active/abrotman) on Fri, 20 Jan 2017 05:29:02
+2017-01-23 11:13:54	⚡	Channel #debian: 1688 nicks (2 ops, 0 voices, 1686 normals)
+2017-01-23 11:13:54	⚡	PvNotice(ChanServ): Welcome to #Debian. This is a discussion channel; if you have a question about Debian GNU/Linux, ask and we will try our best to answer it. Newcomers should read the channel's guidelines by typing "/msg dpkg guidelines". Please do not paste in the channel; use #flood instead. Thank you.
+2017-01-23 11:13:54	⚡	URL for #debian: http://www.debian.org
+2017-01-23 11:13:59	⚡	Channel created on Fri, 09 Feb 2001 15:16:24
+2017-01-23 11:22:15	◣	altin (~altin@flossk/altin) has quit (Ping timeout: 248 seconds)
+2017-01-23 11:22:33	◥	cereal_poster (~cereal_po@177.42.60.10) has joined #debian
+2017-01-23 11:22:38	◥	cruxeternus (~cruxetern@secspeed.com) has joined #debian
+2017-01-23 11:22:45	◥	GunshipPenguin (~GunshipPe@p4-223-44.utsc-res.utsc.utoronto.ca) has joined #debian
+2017-01-23 11:23:00	◥	altin (~altin@37.35.66.88) has joined #debian
+2017-01-23 11:23:00	◣	altin (~altin@37.35.66.88) has quit (Changing host)
+2017-01-23 11:23:00	◥	altin (~altin@flossk/altin) has joined #debian
+2017-01-23 11:23:13	◥	Mutter (~Mutter@p5B0979F1.dip0.t-ipconnect.de) has joined #debian
+2017-01-23 11:23:19	◣	abu0 (~abu0@cc3d8aabd7137.rev.snt.net.pl) has quit (Ping timeout: 248 seconds)
+2017-01-23 11:24:11	◣	towo` (~towo@unaffiliated/towo/x-4064351) has quit (Quit: Leaving)
+2017-01-23 11:24:13	◣	kpease (~kpease@72.22.182.166) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2017-01-23 11:24:48	◣	lethu (~lethu@unaffiliated/lethu) has quit (Remote host closed the connection)
+2017-01-23 11:25:06	⚡	Mutter is now known as Gast
+2017-01-23 11:25:06	◣	kenoh (~kenoh@176.74.128.61) has quit (Quit: Leaving)
+2017-01-23 11:25:23	◣	altin (~altin@flossk/altin) has quit (Remote host closed the connection)
+2017-01-23 11:25:23	◥	awal1 (~awal1@199.241.132.84) has joined #debian
+2017-01-23 11:25:43	◣	Mr_Ed (~Mister@84.207.252.242) has quit (Ping timeout: 255 seconds)
+2017-01-23 11:25:46	◣	Gast (~Mutter@p5B0979F1.dip0.t-ipconnect.de) has left #debian
+2017-01-23 11:25:52	◥	anon (~anon@81.4.107.147) has joined #debian
+2017-01-23 11:26:15	⚡	anon is now known as Guest87172
+2017-01-23 11:28:32	◥	gl-prout (~gl-prout@197.158.78.165) has joined #debian
+2017-01-23 11:29:13	◥	DammitJim (~DammitJim@173.227.148.6) has joined #debian
+2017-01-23 11:29:48	◥	eck (~evan@unaffiliated/eck) has joined #debian
+2017-01-23 11:30:04	◥	lethu (~lethu@unaffiliated/lethu) has joined #debian
+2017-01-23 11:30:08	◥	kpease_ (~kpease@72.22.182.166) has joined #debian
+2017-01-23 11:31:00	⚡	djz88 is now known as zz_djz88
+2017-01-23 11:32:38	◥	jnavila (~jnavila@ita73-1-82-239-31-145.fbx.proxad.net) has joined #debian
+2017-01-23 11:32:38	◥	blueness (~blueness@gentoo/developer/blueness) has joined #debian
+2017-01-23 11:32:41	◥	captain_fixerpc1 (~captainfi@32.218.26.93) has joined #debian
+2017-01-23 11:32:52	Slashman	hello, I have a server on a public cloud with a public IPv4 address, a default route and whatever, my provider gave me an other public IPv4 address, but with a /32 mask, like 195.77.8.47/32, when I assign this IP address to the interface of the server, it works fine, but I need to assign this IP to a VM that has bridged networking, I'm not sure how to configure the interface of the VM to route correctly to the net... any idea?
+2017-01-23 11:33:15	◥	corretico (~corretico@200.91.143.34) has joined #debian
+2017-01-23 11:33:31	◣	kus__ (~minot@pool-98-109-119-45.nwrknj.fios.verizon.net) has quit (Read error: Connection reset by peer)
+2017-01-23 11:33:58	Slashman	(the bridge has the physical interface of the host as member, the bridge has the public IP of the host)
+2017-01-23 11:34:08	grawity	if it's L2 bridged, there shouldn't be any difference
+2017-01-23 11:34:14	grawity	althouuugh....
+2017-01-23 11:34:23	grawity	not sure how the provider routes the IP address to you
+2017-01-23 11:34:30	⚡	irc: disconnected from server
