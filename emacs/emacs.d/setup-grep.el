@@ -16,14 +16,16 @@
 (if is-emacs-23
     (set-face-underline-p 'compilation-line-number nil))
 
-(add-hook 
- 'grep-mode-hook 
- (lambda () 
-   "hook to rename buffer to include find args"
-   (if (string-match "\*grep\*" (buffer-name (current-buffer)))
-       (progn
-         (setq truncate-lines t)
-         (rename-buffer (format "*grep* [%s]" command-args) 1)))))
+;; (add-hook 
+;;  'grep-mode-hook 
+;;  (lambda () 
+;;    "hook to rename buffer to include find args"
+;;    (if (string-match "\*grep\*" (buffer-name (current-buffer)))
+;;        (progn
+
+;;          (setq truncate-lines t)
+;;          (if (boundp command-args) 
+;;          (rename-buffer (format "*grep* [%s]" command-args) 1))))))
 
 (add-hook 
  'dired-mode-hook 

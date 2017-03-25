@@ -243,6 +243,10 @@
  '(split-height-threshold nil)
  '(split-width-threshold 450))
 
+
+;; only scroll one line at a time near the top or bottom of the screen
+(setq scroll-conservatively 10000)
+
 (provide 'setup-sensible-defaults)
 
 

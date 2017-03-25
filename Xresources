@@ -1,4 +1,18 @@
+!  ~/.Xresources 
+
+!*background: #000000
+!*foreground: #d9e6f2
+!include "/home/david/dotfiles/xresources.d/colors2"
+#include "/home/david/dotfiles/xresources.d/gotham"
+!include "/home/david/dotfiles/xresources.d/verydark"
+!include "/home/david/projects/gotham-contrib/xresources/gotham"
+
+
+! ------------------------------------------------------------------------------
+! --- end of terminal colors section -------------------------------------------
+! ------------------------------------------------------------------------------
 ! ================================================================================================================================================================
+
 ! urxvt --help 2>&1| sed -n '/:  /s/^ */! URxvt*/gp' >> ~/.Xresources
 ! TERM=dump command man -Pcat urxvt | sed -n '/depth: b/,/^BACKGROUND/p'|sed '$d'| sed 's/@/%-.-%/g; s/\^/%-+-%/g' | sed '/^       [a-z]/s/^ */^/g' | tr -s "\n" \|
 ! sed -e :a -e 'N;s/\n/@@/g;ta;P;D' | sed 's,\^\([^@]\+\)@*[\t ]*\([^\^]\+\),! \2\n! URxvt*\1\n\n,g' | sed 's,@@           ,\n           ,g' | sed 's,@*$,,g' |sed '/^[^!]/d'
@@ -38,7 +52,7 @@ URxvt*secondaryScroll:                  true
 ! URxvt*jumpScroll:                     boolean
 
 ! (true) When receiving lots of lines, urxvt will only scroll once in a while (around 60x/sec), resulting in fewer updates. This can result in urxvt not ever displaying some of the lines it receives
-.URxvt*skipScroll:                       true
+URxvt*skipScroll:                       true
 
 ! True: enable the scrollbar [default]; option -sb. False: disable the scrollbar
 URxvt*scrollBar:                        false
@@ -62,14 +76,14 @@ URxvt*transparent:                     false
 !URxvt*tintColor:                      #000000
 
 ! Darken (0 .. 99) or lighten (101 .. 200) the transparent background.  A value of 100 means no shading
-URxvt*shading:                          85 
+!URxvt*shading:                          85 
 
 ! Apply gaussian blur with the specified radius to the transparent background. If a single number is specified, the vertical and horizontal radii are considered to be the same. 
 ! Setting one of the radii to 1 and the other to a large number creates interesting effects on some backgrounds. The maximum radius value is 128. An horizontal or vertical radius of 0 disables blur
 ! URxvt*blurRadius:                     HxV
 
 ! Fade the text by the given percentage when focus is lost
-!URxvt*fading:                           30
+! URxvt*fading:                           0
 
 ! Fade to this colour, when fading is used (see fading:). The default colour is black
 ! URxvt*fadeColor:                        Green
@@ -99,7 +113,7 @@ URxvt*mouseWheelScrollPage:            true
 URxvt*background:                       #000000
 
 !  Use the specified colour as the windows foreground colour [default Black]
-URxvt*foreground:                       #008080
+!URxvt*foreground:                       #008080
 !!White
 
 ! Use the specified colour to disp1ay bold characters when the foreground colour is the default.
@@ -133,14 +147,14 @@ URxvt*underlineColor:                   #e3e3e3
 !URxvt*cursorUnderline:                  false
 
 ! True: blink the cursor. False: do not blink the cursor [default];
-!URxvt*cursorBlink:                      true
+URxvt*cursorBlink:                      true
 
 ! Use the specified colour for the cursor.  The default is to use the foreground colour
 !URxvt*cursorColor:                      #000000 
 URxvt*cursorColor:                      Yellow
 
 ! Use the specified colour for the colour of the cursor text.  For this to take effect, cursorColor must also be specified.  The default is to use the background colour
-URxvt*cursorColor2:                     Yellow 
+URxvt*cursorColor2:                     White
 
 ! True: blank the pointer when a key is pressed or after a set number of seconds of inactivity. False: the pointer is always visible [default]
 !URxvt*pointerBlank:                     true
@@ -192,8 +206,13 @@ URxvt*cursorColor2:                     Yellow
 !URxvt*font: xft:DejaVu Sans Mono:pixelsize=14:antialias=true:hinting=true
 
 !<<<<< this works well
-URxvt*font: xft:DejaVu Sans Mono:pixelsize=13:antialias=true:hinting=true
+!URxvt*font: xft:DejaVu Sans Mono:pixelsize=13:antialias=true:hinting=true
+!URxvt.font: xft:Input Mono Compressed:size=12,xft:Source Code Pro:size=12,xft:FreeMono:size=12
+!URxvt.font: xft:Noto:size=10
 !! too wide URxvt*font: xft:Sauce Code Power Bold:pixelsize=13:antialias=true:hinting=true
+URxvt.font: xft:Noto Mono:pixelsize=13:antialias=true:hinting=true,xft:DejaVu Sans Mono:pixelsize=13:antialias=true:hinting=true
+!URxvt.font: xft:DejaVu Sans Mono:pixelsize=18:antialias=true:hinting=true
+
 
 ! When font styles are not enabled, or this option is enabled (True default), bold/blink font styles imply high intensity foreground/background colours
 ! URxvt*intensityStyles:                boolean
@@ -236,7 +255,7 @@ URxvt*internalBorder:1
 
 ! Letter spacing adjustment
 ! URxvt*letterSpace:                    number
-!URxvt*letterSpace:-1
+URxvt*letterSpace:-1
 ! Disable the usage of the built-in block graphics/line drawing characters and just rely on what the specified fonts provide. Use this if you have a good font and want to use its block graphic glyphs
 ! URxvt*skipBuiltinGlyphs:              boolean
 
@@ -314,8 +333,6 @@ URxvt*print-pipe:                       cat > $HOME/$(echo urxvt.dump.$(date +'%
 ! URxvt*keysym.sym:                     keysym
 
 
-
-
 ! URxvt*selection-pastebin.cmd:         string
 ! URxvt*selection-pastebin.url:         string
 
@@ -363,14 +380,14 @@ URxvt.keysym.C-minus: command:\033]710;-*-dina-medium-r-normal--15-*-*-*-*-*-*-*
 URxvt.keysym.C-equal: command:\033]710;-*-dina-medium-r-normal--16-*-*-*-*-*-*-*\007
 
 
-URxvt.letterSpace: -1
+URxvt.letterSpace: 0
 
 
 
 !URxvt.selection.pattern-0: ^(/[^:]+)\
 
-!URxvt.perl-lib: /home/david/dotfiles/urxvt/ext/urxvt-perls
-!URxvt.perl-ext-common: default,selection-to-clipboard
+URxvt.perl-lib: /home/david/dotfiles/urxvt/ext/urxvt-perls
+URxvt.perl-ext-common: default,selection-to-clipboard
 !URxvt.keysym.M-Escape: perl:keyboard-select:activate
 
 ! clipboard

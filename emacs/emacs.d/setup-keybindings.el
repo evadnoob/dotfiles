@@ -158,12 +158,15 @@
 (global-set-key (kbd "C-c C-e") 'eval-and-replace)
 
 
-(require 'guide-key)
-(setq guide-key/guide-key-sequence '("C-x r" "C-x 4" "C-x v" "C-x 8"))
-(guide-key-mode 1)  ; Enable guide-key-mode
-(setq guide-key/highlight-command-regexp "rectangle")
-(setq guide-key/idle-delay 0.1)
-(setq guide-key/popup-window-position 'bottom)
+(use-package guide-key
+  :diminish guide-key-mode
+  :init
+  (setq guide-key/guide-key-sequence '("C-x r" "C-x 4" "C-x v" "C-x 8"))
+  (guide-key-mode 1)  ; Enable guide-key-mode
+
+  (setq guide-key/highlight-command-regexp "rectangle")
+  (setq guide-key/idle-delay 0.1)
+  (setq guide-key/popup-window-position 'bottom))
 
 (require 'annoying-arrows-mode)
 (annoying-arrows-mode 1)

@@ -17,13 +17,14 @@ fi
 # source ${ZSH_DOTFILES}/setup-less.zsh
 # source ${ZSH_DOTFILES}/setup-functions.zsh
 # source ${ZSH_DOTFILES}/setup-vim.zsh
-# source ${ZSH_DOTFILES}/setup-zsh.zsh
+ source ${ZSH_DOTFILES}/setup-zsh.zsh
 # source ${ZSH_DOTFILES}/setup-ssh.zsh
 # source ${ZSH_DOTFILES}/setup-postgres.zsh
 # source ${ZSH_DOTFILES}/setup-gcloud.zsh
 # source ${ZSH_DOTFILES}/setup-ranger.zsh
-source ${ZSH_DOTFILES}/setup-haste.sh
+#source ${ZSH_DOTFILES}/setup-haste.sh
 source ${ZSH_DOTFILES}/setup-golang.zsh
+source ${ZSH_DOTFILES}/setup-mysql.zsh
 
 export PATH="/usr/local/bin:${PATH}"
 
@@ -33,6 +34,7 @@ export PATH="/usr/local/bin:${PATH}"
 
 #bindkey -M emacs '^x backspace' backward-kill-line
 
+export TERM=xterm-256color
 
 export WORDCHARS=''
 export GIT_MERGE_AUTOEDIT=no
@@ -59,11 +61,9 @@ set -o vi
 bindkey -M viins 'jj' vi-cmd-mode
 
 
-export TERM=xterm-256color
 
 
-source ~/projects/base16-shell/base16-twilight.dark.sh
-#source ~/projects/base16-shell/base16-grayscale.dark.sh
+#source ~/projects/base16-shell/base16-twilight.dark.sh
 
 export PATH=${PATH}:~/google-cloud-sdk/bin
 
@@ -82,7 +82,7 @@ export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 #prompt pure
 
-prompt  walters
+#prompt  walters
 
 
 eval $(dircolors -p | sed -e 's/DIR 01;34/DIR 01;39/' | dircolors /dev/stdin)
@@ -93,3 +93,44 @@ if [ -n "$DISPLAY" ]; then
         xset b off
 fi
 
+
+
+
+# alias zoom-reset='xrandr --output Virtual1  --mode 2560x1600 --scale "1x1"'
+# alias zoom-big='zoom-reset && xrandr --output Virtual1  --mode 2560x1600 --scale ".70x.70"'
+# alias zoom-normal='zoom-reset && xrandr --output Virtual1  --mode 2560x1600 --scale ".90x.90"'
+
+
+alias zoom-reset='xrandr --output Virtual1  --mode 3840x2400 --scale "1x1"'
+alias zoom-big='zoom-reset && xrandr --output Virtual1  --mode 3840x2400 --scale ".50x.50"'
+alias zoom-normal='zoom-reset && xrandr --output Virtual1  --mode 3840x2400 --scale ".55x.55"'
+alias zoom-forty='zoom-reset && xrandr --output Virtual1  --mode 3840x2400 --scale ".40x.40"'
+
+
+prompt minimal
+
+# allow the comment char  to be used from interactive shells, nice for typing something and saving it
+setopt interactivecomments
+
+# setup z for jumping around
+# https://github.com/rupa/z
+source ~/dotfiles/z/z.sh
+
+
+source $HOME/.cargo/env
+
+
+# # Gotham Shell
+# GOTHAM_SHELL="$HOME/.config/gotham/gotham.sh"
+# [[ -s $GOTHAM_SHELL ]] && source $GOTHAM_SHELL
+
+
+# Setup zsh-autosuggestions                                                                                       
+if [ -f "~/dotfiles/zsh-autosuggestions/zsh-autosuggestions.zsh" ]; then
+  source ~/dotfiles/zsh-autosuggestions/zsh-autosuggestions.zsh
+fi
+export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=243"
+
+
+export NVM_DIR="/home/david/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm

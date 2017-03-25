@@ -10,10 +10,22 @@
  )
 
 
-(setq evil-visual-state-cursor 'box) ; █
-(setq evil-normal-state-cursor '("gray" (box . 2))) ; █
-(setq evil-insert-state-cursor '("chartreuse3" (bar . 1))) ; ⎸
-(setq evil-emacs-state-cursor 'hbar) ; _
+
+;; (setq evil-visual-state-cursor 'box) ; █
+;; (setq evil-normal-state-cursor '("gray" (box . 2))) ; █
+;; (setq evil-insert-state-cursor '("chartreuse3" (bar . 1))) ; ⎸
+;; (setq evil-emacs-state-cursor 'hbar) ; _
+
+;; (setq evil-insert-state-cursor '((bar . 5) "yellow")
+;;       evil-normal-state-cursor '(box "purple"))
+
+;; Bar cursor
+;; These escape sequences work for urxvt
+(defun test-send-str-to-terminal (str)
+  (unless (display-graphic-p) (send-string-to-terminal str)))
+(add-hook 'evil-insert-state-entry-hook (lambda () (test-send-str-to-terminal "\033[6 q")))
+(add-hook 'evil-insert-state-exit-hook (lambda () (test-send-str-to-terminal "\033[2 q")))
+
 
 ;;(setcdr evil-insert-state-map nil)
 ;;(define-key evil-insert-state-map [escape] 'evil-normal-state)
@@ -198,13 +210,33 @@ then it takes a second \\[keyboard-quit] to abort the minibuffer."
   "m" 'compile
   "be" 'ibuffer
   "bs" 'bs-show
+  "bi" 'iswitchb-buffer
   "h" 'helm-mini
   "a" 'git-blame-mode
+  "e" 'find-file
   "f" 'grep
+  "c" 'compile
+  "v" 'go-guru-expand-region
   "d" 'dired-jump)
 
 
 (require 'evil-matchit)
+
+
+
+;; (defun evil-normalize-all-buffers ()
+;;   "Force a drop to normal state."
+;;   (unless (eq evil-state 'normal)
+;;     (dolist (buffer (buffer-list))
+;;       (set-buffer buffer)
+;;       (unless (or (minibufferp)
+;;                   (eq evil-state 'emacs))
+;;         (evil-force-normal-state)))
+;;     ))
+
+;; (defvar evil-normal-timer
+;;   (run-with-idle-timer 10 t #'evil-normalize-all-buffers)
+;;   "Drop back to normal state after idle for 30 seconds.")
 
 
 (provide 'setup-evil-mode)

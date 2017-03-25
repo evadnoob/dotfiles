@@ -54,9 +54,10 @@ setopt hist_reduce_blanks
 setopt transient_rprompt
 
 # Setup zsh-autosuggestions
-if [ -f "~/dotfiles/zsh-autosuggestions/autosuggestions.zsh" ]; then 
-  source ~/dotfiles/zsh-autosuggestions/autosuggestions.zsh
+if [ -f "~/dotfiles/zsh-autosuggestions/zsh-autosuggestions.zsh" ]; then 
+  source ~/dotfiles/zsh-autosuggestions/zsh-autosuggestions.zsh
 fi
+export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=243"
 
 
 # Enable autosuggestions automatically

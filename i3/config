@@ -45,7 +45,11 @@ bindsym $mod+Shift+q kill
 #bindsym $mod+d exec dmenu_run -b -fn 's-9'
 #bindsym dmenu_run -b -i -fn 'Hack-Regular:pixelsize=12' -sb '#b58900'
 #bindsym $mod+d exec dmenu_run -b -i -fn 'Hack-Regular:pixelsize=11' -sb '#b58900'
-bindsym $mod+d exec rofi -show window -terminal urxvt
+#bindsym $mod+d exec rofi -show window -terminal urxvt
+bindsym $mod+d exec rofi -show run -lines 18 -eh 1.8 \
+        -padding 10 -opacity 90 -bw 0 -bc "#000000"   \
+        -bg "#000000" -fg "#ffffff" -h1bg "#000000" -h1fg "#9575cd"
+        
 
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
@@ -100,7 +104,7 @@ bindsym $mod+Shift+space floating toggle
 bindsym $mod+a focus parent
 
 # focus the child container
-#bindsym $mod+d focus child
+bindsym $mod+w focus child
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left workspace prev
@@ -110,15 +114,15 @@ bindsym $mod+Down workspace next
 
 # setup workspace variables
 set $workspace1 1: default
-set $workspace2 2: psql
+set $workspace2 2: sql
 set $workspace3 3: www
-set $workspace4 4: management[gcp]
+set $workspace4 4: management[aws]
 set $workspace5 5: rust-lang
 set $workspace6 6: mail
 set $workspace7 7: slack
 set $workspace8 8: misc
 set $workspace9 9: irc
-set $workspace10 10: intellij
+set $workspace10 10: noname
 
 
 # switch to workspace
@@ -126,24 +130,25 @@ bindsym $mod+1 workspace $workspace1
 bindsym $mod+2 workspace $workspace2
 bindsym $mod+3 workspace $workspace3
 bindsym $mod+4 workspace $workspace4
-bindsym $mod+5 workspace 5: rust-lang
-bindsym $mod+6 workspace 6: mail
-bindsym $mod+7 workspace 7: slack
-bindsym $mod+8 workspace 8: misc
-bindsym $mod+9 workspace 9: irc
-bindsym $mod+0 workspace 10: intellij
+bindsym $mod+5 workspace $workspace5
+bindsym $mod+6 workspace $workspace6
+bindsym $mod+7 workspace $workspace7
+bindsym $mod+8 workspace $workspace8
+bindsym $mod+9 workspace $workspace9
+bindsym $mod+0 workspace $workspace10
 
 # move focused container to workspace
-bindsym $mod+Shift+1 move container to workspace 1: default
-bindsym $mod+Shift+2 move container to workspace 2: psql
-bindsym $mod+Shift+3 move container to workspace 3: www
-bindsym $mod+Shift+4 move container to workspace 4: management[gcp]
-bindsym $mod+Shift+5 move container to workspace 5: rust-lang
-bindsym $mod+Shift+6 move container to workspace 6: mail
-bindsym $mod+Shift+7 move container to workspace 7: slack
-bindsym $mod+Shift+8 move container to workspace 8: misc
-bindsym $mod+Shift+9 move container to workspace 9: irc
-bindsym $mod+Shift+0 move container to workspace 10: intellij
+bindsym $mod+Shift+1 move container to workspace $workspace1
+bindsym $mod+Shift+2 move container to workspace $workspace2
+bindsym $mod+Shift+3 move container to workspace $workspace3
+bindsym $mod+Shift+4 move container to workspace $workspace4
+bindsym $mod+Shift+5 move container to workspace $workspace5
+bindsym $mod+Shift+6 move container to workspace $workspace6
+bindsym $mod+Shift+7 move container to workspace $workspace7
+bindsym $mod+Shift+8 move container to workspace $workspace8
+bindsym $mod+Shift+9 move container to workspace $workspace9
+bindsym $mod+Shift+0 move container to workspace $workspace10
+
 
 #exec --no-startup-id i3-msg 'workspace 7: hipchat; exec hipchat4'
 #exec --no-startup-id i3-msg 'workspace 1: default; exec urxvt -e ranger'
@@ -156,12 +161,21 @@ assign [class="Spotify"] $workspace8
 assign [class="urxvt" title="^david: ranger$"] $workspace4
 #assign [class="hipchat4" window_type="notification"] $workspace7
 
+# WM_ICON_NAME(STRING) = "Inbox (8) - davidboon@invisionapp.com - InVision Mail - Vimperator"
+# _NET_WM_ICON_NAME(UTF8_STRING) = "Inbox (8) - davidboon@invisionapp.com - InVision Mail - Vimperator"
+# WM_NAME(STRING) = "Inbox (8) - davidboon@invisionapp.com - InVision Mail - Vimperator"
+# _NET_WM_NAME(UTF8_STRING) = "Inbox (8) - davidboon@invisionapp.com - InVision Mail - Vimperator"
+
+assign [class="Firefox" title="^Inbox"] $workspace6
 
 #exec --no-startup-id i3-msg 'workspace 7: hipchat; exec hipchat4'
 #exec --no-startup-id i3-msg 'workspace 1: default; exec urxvt -e ranger'
 #exec --no-startup-id i3-msg 'workspace 9: default; exec irssi'
-exec --no-startup-id i3-msg 'workspace 3: www; exec iceweasel'
-exec --no-startup-id i3-msg 'exec xsetroot -solid gray10'
+exec --no-startup-id i3-msg 'workspace 3: www; exec iceweasel; workspace '
+#exec --no-startup-id i3-msg 'exec xsetroot -solid gray10'
+
+# when running under a composition manager, xsetroot does not work, workaround use hsetroot
+exec --no-startup-id i3-msg 'exec setroot -solid "#000000"'
 exec --no-startup-id i3-msg 'exec emacs --daemon'
 
 
@@ -215,7 +229,8 @@ bar {
   colors {
        # Whole color settings
        background #000f00
-       statusline #D6D0D0
+       #statusline #D6D0D0
+       statusline #c0c0c0
        separator  #666666
 
        ## Type             border  background font
@@ -288,9 +303,9 @@ bindsym $mod+Shift+o exec scrot -u '%Y-%m-%d-%T_$wx$h.png' -e 'mv $f ~/Dropbox/S
 #exec --no-startup-id feh --bg-fill ~/Dropbox/wallpaper/fliKEFG.png
 
 #exec exec xautolock -locker ~/projects/i3lock-fancy/lock -detectsleep
-exec exec --no-starup-id xsetroot -solid gray8
+#exec exec --no-starup-id xsetroot -solid gray8
 
-
+#exec --no-startup-id compton -f
 
 # Multimedia Keys
 # increase volume
@@ -353,5 +368,7 @@ bindsym XF86KbdBrightnessUp exec sudo keyboard-backlight up
 bindsym XF86KbdBrightnessDown exec sudo keyboard-backlight down
 
 
-
+for_window [con_mark="^slack$"] move window to scratchpad
+exec --no-startup-id i3-msg 'workspace 0; exec slack, mark slack; workspace 1'
+#bindsym $mod+e [con_mark="^slack$"] scratchpad show
 

@@ -1,7 +1,7 @@
-;;; dmbbliss-theme.el --- an Emacs 24 theme based on Bliss (tmTheme)
-;;
-;;; Author: Jason Milkins
-;; Version: 20141115.2301
+;;; dmb-bliss-theme.el --- an Emacs 24 theme based on Bliss (tmTheme)
+;
+;;; Author: David Boon
+;;; Version: 20141115.2301
 ;;; X-Original-Version: 201
 
 ;;; Sublime Text Theme Author: Saad Quadri
@@ -24,10 +24,16 @@
 (custom-theme-set-faces
  'dmb-bliss
  ;; basic theming.
+ 
+ ;; org-mode
+ '(org-link ((t (:foreground "green" underline: t))))
+ '(org-table ((t (:foreground "#E0E4CC" ))))
+ '(org-hide-face ((t (:foregoround "black"))))
+
 
  ;;'(default ((t (:foreground "#C5C8C6" :background "color-16" ))))
  ;;'(region  ((t (:background "color-16" foreground "#080808"))))
- '(region  ((t (:background "#000080" foreground "#080808"))))
+ '(region  ((t (:background "#afffff" :foreground "#000"))))
  '(cursor  ((t (:background "yellow"))))
 
  ;; Temporary defaults
@@ -54,9 +60,9 @@
  '(mode-line-inactive                  ((t (:foreground "#9ca19e"  :background "#000000" :box nil :weight light :inherit (mode-line)   ))))
  '(mode-line                           ((t (:foreground "grey60"  :backgroundi  "#000000" :box nil )))) ;; #c5c8c6
 
- '(isearch                             ((t (:foreground "#99ccee"  :background "#444444" ))))
+ '(isearch                             ((t (:foreground "#000"  :background "#fff" ))))
  '(isearch-fail                        ((t (                       :background "#ffaaaa" ))))
- '(lazy-highlight                      ((t (                       :background "#77bbdd" :foreground "black" ))))
+ '(lazy-highlight                      ((t (                       :background "#777" :foreground "black" ))))
  '(match                               ((t (                       :background "#3388cc" ))))
 
  '(tooltip                             ((t (:foreground "black"    :background "LightYellow" :inherit (variable-pitch)                 ))))
@@ -69,9 +75,20 @@
 
  ;; Magit hightlight
  '(magit-item-highlight                ((t (:foreground "white" :inherit nil ))))
- '(markdown-header-face-2              ((t (:background nil :foreground "yellow"))))
- '(markdown-header-face-1              ((t (:background nil :foreground "white" :weight bold))))
+ '(magit-header-line                   ((t (:foreground "white"))))
+ '(magit-section-heading               ((t (:foreground "#a8a8a8" :weight bold))))
  '(magit-section-highlight             ((t (:background nil :foreground "white" :weight bold))))
+ '(magit-filename                      ((t (:foreground "white"))))
+ '(magit-diff-file-heading-highlight   ((t (:foreground "white" :weight normal))))
+ '(magit-diff-context-highlight        ((t (:background nil))))
+ '(magit-diff-removed-highlight        ((t (:foreground "#0000d7" :background nil))))
+ '(magit-diff-added-highlight          ((t (:foreground "#5fd7af" :background nil))))
+ '(magit-diff-our                      ((t (:foreground "#fff" :background nil))))
+ '(magit-diff-their                    ((t (:foreground "#0000d7" :background nil))))
+ '(magit-diff-added                    ((t (:foreground "green" :background nil))))
+ '(magit-diff-removed                  ((t (:foreground "#875f00" :background nil))))
+ '(magit-diff-hunk-heading             ((t (:foreground "#fff" :background "#080808" :overline nil :underline nil))))
+
 
 
  ;; flyspell-mode
@@ -82,6 +99,9 @@
  '(flymake-errline                     ((t (:underline "#AA0000" :background nil :inherit nil ))))
  '(flymake-warnline                    ((t (:underline "#009945" :background nil :inherit nil ))))
 
+
+ ;; flycheck
+ '(flycheck-error                      ((t (:foreground "#ff0000"))))
  ;;git-gutter
  '(git-gutter:added                    ((t (:foreground "#609f60" :bold t))))
  '(git-gutter:modified                 ((t (:foreground "#3388cc" :bold t))))
@@ -90,25 +110,27 @@
  '(diff-added                          ((t (:foregoround "#305030"))))
  '(diff-removed                        ((t (:foreground "#903010"))))
  '(diff-file-header                    ((t (:foreground "#362145" :background nil :inherit nil))))
- '(diff-context                        ((t (:foreground "grey60"))))
+ '(diff-context                        ((t (:foreground "green"))))
  '(diff-changed                        ((t (:foreground "#3388cc" :background nil))))
  '(diff-hunk-header                    ((t (:foreground "#ffffff"))))
 
  '(which-func                          ((t (:foreground "green" :bold nil))))
 
- '(font-lock-comment-face ((t (:foreground "grey55"  ))))
- '(font-lock-constant-face ((t (:foreground "#dadada"  ))))
+ '(font-lock-comment-face ((t (:foreground "blue"))))
+ '(font-lock-comment-delimiter-face ((t (:foreground "brightmagenta"))))
+ '(font-lock-constant-face ((t (:foreground "#d7d7d7"  ))))
  '(font-lock-variable-name-face ((t (:foreground "#767676"  ))))
  '(font-lock-builtin-face ((t (:foreground "gray55"  ))))
  '(font-lock-type-face ((t (:foreground "#a8a8a8"  ))))
- '(font-lock-string-face ((t (:foreground "green"  ))))
+;; '(font-lock-string-face ((t (:foreground "green"  ))))
+ '(font-lock-string-face ((t (:foreground "#808080"  ))))
  ;;'(font-lock-function-name-face ((t (:foreground "#3bb1df"  ))))
  ;;'(font-lock-function-name-face ((t (:foreground "#5fafff"  ))))
- '(font-lock-function-name-face ((t (:foreground "#d7ffff"  ))))
+ ;;'(font-lock-function-name-face ((t (:foreground "#d7ffff"  ))))
+ '(font-lock-function-name-face ((t (:foreground "#b2b2b2"  ))))
  '(font-lock-preprocessor-face ((t (:foreground "#5f8787"  ))))
  '(font-lock-keyword-face ((t (:foreground "#ff00ff"  ))))
  '(font-lock-warning-face ((t (:foreground "#4f6d82"  ))))
- '(font-lock-comment-delimiter-face ((t (:foreground "#585858"  ))))
  ;;
  ;; Company
  '(company-tooltip ((t (:foreground "#585858" :background nil))))
@@ -118,14 +140,19 @@
  ;; Ensime
  '(ensime-errline-highlight ((t (:background "#AA0000"))))
 
-
  ;; smerge
  '(smerge-mine ((t (:background "#3b3c3c"))))
  '(smerge-markers ((t (:background nil))))
  '(smerge-other ((t (:background "gray" :foreground "black" ))))
  '(smerge-refined-added ((t (:foreground "black" :background "green"))))
  
- 
+ ;; markdown
+ '(markdown-header-face-2              ((t (:background nil :foreground "yellow"))))
+ '(markdown-header-face-1              ((t (:background nil :foreground "white" :weight bold))))
+ '(markdown-pre-face                  ((t (:foreground "#87d7af"))))
+ '(markdown-inline-code-face          ((t (:foreground "green"))))
+ `(markdown-markup-face               ((t (:foreground "#ffffff"))))
+
 ;; Rainbow delimiters
  '(rainbow-delimiters-depth-1-face ((t (:foreground "#2a7d9d"))))
  '(rainbow-delimiters-depth-2-face ((t (:foreground "#2e89ad"))))
@@ -148,8 +175,13 @@
  '(popup-face ((t (:foreground "#777777"))))
  
  ;; ac-complete
- ;;'(ac-complete-
-   
+
+ ;; evil
+ '(evil-search-highlight-persist-highlight-face ((t (:background "#5f5f00" :foreground "black"))))
+
+
+ ;;shell-script
+ '(sh-heredoc ((t (:foreground "#5f5f00"))))
 ) ;; End face definitions
 
 ;;;###autoload

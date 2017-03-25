@@ -29,7 +29,9 @@
 (load-library "setup-melpa")
 (load-library "setup-sensible-defaults")
 ;;(load-library "setup-transparency")
-(load-library "setup-appearance")
+(if (not (display-graphic-p))
+    (load-library "setup-appearance"))
+
 (load-library "setup-grep")
 (load-library "setup-org-mode")
 (load-library "setup-shell-mode")
@@ -67,6 +69,7 @@
 ;; (load-library "setup-flx")
 ;; (load-library "setup-god-mode")
 (load-library "setup-evil-mode")
+(load-library "setup-swiper")
 ;;(load-library "setup-ag-mode")
 ;;(load-library "setup-rust-mode")
 

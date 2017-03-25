@@ -101,7 +101,7 @@ zstyle ':prezto:module:editor' dot-expansion 'yes'
 #zstyle ':prezto:module:prompt' theme 'sorin'
 #zstyle ':prezto:module:prompt' theme 'nicoulaj'
 #zstyle ':prezto:module:prompt' theme 'smiley'
-zstyle ':prezto:module:prompt' theme 'giddie'
+#zstyle ':prezto:module:prompt' theme 'giddie'
 
 #
 # Ruby
