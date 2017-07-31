@@ -1,23 +1,16 @@
-!  ~/.Xresources 
 
-!*background: #000000
-!*foreground: #d9e6f2
-!include "/home/david/dotfiles/xresources.d/colors2"
+*background: #000000
+!!*foreground: #d9e6f2
+!!*foreground: #dadada
+*foreground: #ffffff
+
 #include "/home/david/dotfiles/xresources.d/gotham"
-!include "/home/david/dotfiles/xresources.d/verydark"
-!include "/home/david/projects/gotham-contrib/xresources/gotham"
 
-
-! ------------------------------------------------------------------------------
-! --- end of terminal colors section -------------------------------------------
-! ------------------------------------------------------------------------------
-! ================================================================================================================================================================
-
-! urxvt --help 2>&1| sed -n '/:  /s/^ */! URxvt*/gp' >> ~/.Xresources
-! TERM=dump command man -Pcat urxvt | sed -n '/depth: b/,/^BACKGROUND/p'|sed '$d'| sed 's/@/%-.-%/g; s/\^/%-+-%/g' | sed '/^       [a-z]/s/^ */^/g' | tr -s "\n" \|
-! sed -e :a -e 'N;s/\n/@@/g;ta;P;D' | sed 's,\^\([^@]\+\)@*[\t ]*\([^\^]\+\),! \2\n! URxvt*\1\n\n,g' | sed 's,@@           ,\n           ,g' | sed 's,@*$,,g' |sed '/^[^!]/d'
-! ----------------------------------------------------------------------------------------------------------------------------------------------------------------
-! Specifies the terminal type name to be set in the TERM environment variable
+!urxvt --help 2>&1| sed -n '/:  /s/^ */! URxvt*/gp' >> ~/.Xresources
+!TERM=dump command man -Pcat urxvt | sed -n '/depth: b/,/^BACKGROUND/p'|sed '$d'| sed 's/@/%-.-%/g; s/\^/%-+-%/g' | sed '/^       [a-z]/s/^ */^/g' | tr -s "\n" \|
+!sed -e :a -e 'N;s/\n/@@/g;ta;P;D' | sed 's,\^\([^@]\+\)@*[\t ]*\([^\^]\+\),! \2\n! URxvt*\1\n\n,g' | sed 's,@@           ,\n           ,g' | sed 's,@*$,,g' |sed '/^[^!]/d'
+!----------------------------------------------------------------------------------------------------------------------------------------------------------------
+!  Specifies the terminal type name to be set in the TERM environment variable
 URxvt*termName:                         screen-256color
 
 ! Create the window with the specified X window geometry [default 80x24]
@@ -113,9 +106,8 @@ URxvt*mouseWheelScrollPage:            true
 URxvt*background:                       #000000
 
 !  Use the specified colour as the windows foreground colour [default Black]
-!URxvt*foreground:                       #008080
-!!White
-
+URxvt*foreground:                       White
+!!#008080 
 ! Use the specified colour to disp1ay bold characters when the foreground colour is the default.
 ! URxvt*colorBD:                        color
 
@@ -210,9 +202,9 @@ URxvt*cursorColor2:                     White
 !URxvt.font: xft:Input Mono Compressed:size=12,xft:Source Code Pro:size=12,xft:FreeMono:size=12
 !URxvt.font: xft:Noto:size=10
 !! too wide URxvt*font: xft:Sauce Code Power Bold:pixelsize=13:antialias=true:hinting=true
-URxvt.font: xft:Noto Mono:pixelsize=13:antialias=true:hinting=true,xft:DejaVu Sans Mono:pixelsize=13:antialias=true:hinting=true
+!!URxvt.font: xft:Noto Mono:pixelsize=13:antialias=true:hinting=true,xft:DejaVu Sans Mono:pixelsize=13:antialias=true:hinting=true
 !URxvt.font: xft:DejaVu Sans Mono:pixelsize=18:antialias=true:hinting=true
-
+URxvt.font: xft:Fira Code:pixelsize=13:antialias=true:hinting=true,xft:DejaVu Sans Mono:pixelsize=13:antialias=true:hinting=true
 
 ! When font styles are not enabled, or this option is enabled (True default), bold/blink font styles imply high intensity foreground/background colours
 ! URxvt*intensityStyles:                boolean
@@ -221,7 +213,7 @@ URxvt.font: xft:Noto Mono:pixelsize=13:antialias=true:hinting=true,xft:DejaVu Sa
 URxvt*saveLines:                       65535 
 
 ! Double-buffering for xft (default enabled).  On some card/driver combination enabling it slightly decreases performance, on most it greatly helps it. The slowdown is small, so it should normally be enabled
-URxvt*buffered:                        false 
+URxvt*buffered:                        true
 
 ! Attempt to find a visual with the given bit depth
 ! URxvt*depth:                          number
@@ -379,6 +371,9 @@ URxvt.keysym.C-0: command:\033]710;-*-dina-medium-r-normal--13-*-*-*-*-*-*-*\007
 URxvt.keysym.C-minus: command:\033]710;-*-dina-medium-r-normal--15-*-*-*-*-*-*-*\007
 URxvt.keysym.C-equal: command:\033]710;-*-dina-medium-r-normal--16-*-*-*-*-*-*-*\007
 
+! bind Shift-up to scroll up 1 line and Shift-Down down 1 line
+URxvt.keysym.Shift-Up: command:\033]720;1\007
+URxvt.keysym.Shift-Down: command:\033]721;1\007
 
 URxvt.letterSpace: 0
 
@@ -438,7 +433,7 @@ rofi.color-active:      argb:00111111, #70a16c, argb:00111111, #e4e4e4, #0F3B5F
 rofi.key-combi:         Alt-F3
 rofi.separator-style:   none
 rofi.fullscreen:        false
-rofi.padding:           5
+rofi.padding:           10
 rofi.hide-scrollbar:    true
 rofi.line-margin:       3
 rofi.fake-transparency: true
@@ -446,8 +441,8 @@ rofi.yoffset:           -384
 rofi.xoffset:           0
 !rofi.width:             1924
 rofi.width:             800
-rofi.font:              Hack bold 8
-rofi.lines:             20 
+rofi.font:              Hack bold 10
+rofi.lines:             30
 rofi.columns:           1
 rofi.regex:             true
 rofi.markup-rows:       true
