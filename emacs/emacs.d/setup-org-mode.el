@@ -73,6 +73,23 @@
            equal to the background color of the frame."
   :group 'org-faces)
 
+(use-package org-bullets
+  :ensure t
+  :init
+
+  ;; org-bullets-bullet-list
+  ;; default: "◉ ○ ✸ ✿"
+  ;; large: ♥ ● ◇ ✚ ✜ ☯ ◆ ♠ ♣ ♦ ☢ ❀ ◆ ◖ ▶
+  ;; Small: ► • ★ ▸
+  (setq org-bullets-bullet-list '("•"))
+
+  ;; others: ▼, ↴, ⬎, ⤷,…, and ⋱.
+  ;; (setq org-ellipsis "⤵")
+  (setq org-ellipsis "…")
+
+  :config
+  (add-hook 'org-mode-hook #'org-bullets-mode))
+
 
 (use-package org-journal :ensure t
   :init

@@ -61,10 +61,10 @@
 ;;(load-library "setup-dockerfile-mode")
 ;;(load-library "setup-delight")
 ;;(load-library "setup-copy-and-paste")
-
+(load-library "setup-beacon")
 (load-library "setup-anything")
-
 (load-library "setup-golang")
+(load-library "setup-spaceline")
 
 ;; (load-library "setup-flx")
 ;; (load-library "setup-god-mode")

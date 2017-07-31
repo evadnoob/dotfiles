@@ -10,6 +10,7 @@
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
 set $mod Mod1
+set $mod Mod4
 
 #bindsym Mod4+f fullscreen
 
@@ -34,7 +35,8 @@ floating_modifier $mod
 
 # start a terminal
 #bindsym $mod+Return exec i3-sensible-terminal
-bindsym $mod+Return exec urxvt 
+#bindsym $mod+Return exec urxvt 
+bindsym $mod+Return exec xfce4-terminal 
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -46,10 +48,12 @@ bindsym $mod+Shift+q kill
 #bindsym dmenu_run -b -i -fn 'Hack-Regular:pixelsize=12' -sb '#b58900'
 #bindsym $mod+d exec dmenu_run -b -i -fn 'Hack-Regular:pixelsize=11' -sb '#b58900'
 #bindsym $mod+d exec rofi -show window -terminal urxvt
-bindsym $mod+d exec rofi -show run -lines 18 -eh 1.8 \
-        -padding 10 -opacity 90 -bw 0 -bc "#000000"   \
-        -bg "#000000" -fg "#ffffff" -h1bg "#000000" -h1fg "#9575cd"
+# bindsym $mod+d exec rofi -show combi -combi-modi "window,run,ssh" -lines 18 -eh 1.8 \
+#         -padding 10 -opacity 90 -bw 0 -bc "#000000"   \
+#         -bg "#000000" -fg "#ffffff" -h1bg "#000000" -h1fg "#9575cd"
         
+bindsym $mod+d exec --no-startup-id "rofi -show combi -modi window,workspaces:~/dotfiles/i3_switch_workspace.sh,run,ssh,telier:/usr/local/bin/teiler -combi-modi window,workspaces,teiler,run,ssh"
+
 
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
@@ -113,6 +117,7 @@ bindsym $mod+Up workspace prev
 bindsym $mod+Down workspace next
 
 # setup workspace variables
+set $workspace0 0: zero
 set $workspace1 1: default
 set $workspace2 2: sql
 set $workspace3 3: www
@@ -122,10 +127,10 @@ set $workspace6 6: mail
 set $workspace7 7: slack
 set $workspace8 8: misc
 set $workspace9 9: irc
-set $workspace10 10: noname
 
 
 # switch to workspace
+bindsym $mod+0 workspace $workspace0
 bindsym $mod+1 workspace $workspace1
 bindsym $mod+2 workspace $workspace2
 bindsym $mod+3 workspace $workspace3
@@ -135,7 +140,6 @@ bindsym $mod+6 workspace $workspace6
 bindsym $mod+7 workspace $workspace7
 bindsym $mod+8 workspace $workspace8
 bindsym $mod+9 workspace $workspace9
-bindsym $mod+0 workspace $workspace10
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace $workspace1
@@ -214,10 +218,10 @@ mode "resize" {
 
 
 # class                 border  backgr. text    indicator child_border
+#client.focused          #ffffff #1c1c1c #ffffff #ffffff   #ffd7af
 #client.focused          #4c7899 #1c1c1c #ffffff #ffffff   #285577
-#client.focused          #4c7899 #1c1c1c #ffffff #ffffff   #285577
-client.focused_inactive #333333 #5f676a #ffffff #484e50   #5f676a
-#client.unfocused        #333333 #222222 #888888 #292d2e   #222222
+client.focused_inactive #5f5fff #5f676a #ffffff #484e50   #5f676a
+client.unfocused        #5f5fff #222222 #888888 #292d2e   #222222
 client.urgent           #2f343a #900000 #ffffff #900000   #900000
 #client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
 

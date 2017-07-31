@@ -5,7 +5,7 @@
 (custom-set-variables
  '(evil-want-fine-undo t)
 '(evil-regexp-search t)
- '(evil-move-cursor-back nil)
+'(evil-move-cursor-back nil)
  ;;'(evil-insert-state-cursor '("red" (bar . 3)))
  )
 
@@ -23,10 +23,18 @@
 ;; These escape sequences work for urxvt
 (defun test-send-str-to-terminal (str)
   (unless (display-graphic-p) (send-string-to-terminal str)))
-(add-hook 'evil-insert-state-entry-hook (lambda () (test-send-str-to-terminal "\033[6 q")))
-(add-hook 'evil-insert-state-exit-hook (lambda () (test-send-str-to-terminal "\033[2 q")))
 
+;; this works when terminal is urxvt
+;;(add-hook 'evil-insert-state-entry-hook (lambda () (test-send-str-to-terminal "\033[6 q")))
+;;(add-hook 'evil-insert-state-exit-hook (lambda () (test-send-str-to-terminal "\033[2 q")))
+;; this works when terminal is xfce4-terminal:
+;; InsertEnter * silent execute "!sed -i.bak -e 's/TERMINAL_CURSOR_SHAPE_BLOCK/TERMINAL_CURSOR_SHAPE_UNDERLINE/' ~/.config/xfce4/terminal/terminalrc"                                                                                          
+;; InsertLeave * silent execute "!sed -i.bak -e 's/TERMINAL_CURSOR_SHAPE_UNDERLINE/TERMINAL_CURSOR_SHAPE_BLOCK/' ~/.config/xfce4/terminal/terminalrc"                                                                                          
+;; VimLeave * silent execute "!sed -i.bak -e 's/TERMINAL_CURSOR_SHAPE_UNDERLINE/TERMINAL_CURSOR_SHAPE_BLOCK/' ~/.config/xfce4/terminal/terminalrc"  
+(add-hook 'evil-insert-state-entry-hook (lambda () (shell-command "sed -i.bak -e 's/TERMINAL_CURSOR_SHAPE_BLOCK/TERMINAL_CURSOR_SHAPE_UNDERLINE/' ~/.config/xfce4/terminal/terminalrc")))
+(add-hook 'evil-insert-state-exit-hook (lambda () (shell-command "sed -i.bak -e 's/TERMINAL_CURSOR_SHAPE_UNDERLINE/TERMINAL_CURSOR_SHAPE_BLOCK/' ~/.config/xfce4/terminal/terminalrc")))
 
+                                          
 ;;(setcdr evil-insert-state-map nil)
 ;;(define-key evil-insert-state-map [escape] 'evil-normal-state)
 ;;(define-key evil-visual-state-map [escape] 'evil-normal-state)
@@ -195,7 +203,6 @@ then it takes a second \\[keyboard-quit] to abort the minibuffer."
  
 (define-key evil-insert-state-map (kbd "k") 'escape-if-next-char-is-j)
 
-
 (require 'evil-leader)
 (setq evil-leader/leader ";"
       evil-leader/in-all-states t)
@@ -222,24 +229,38 @@ then it takes a second \\[keyboard-quit] to abort the minibuffer."
 
 (require 'evil-matchit)
 
-
-
-;; (defun evil-normalize-all-buffers ()
-;;   "Force a drop to normal state."
-;;   (unless (eq evil-state 'normal)
-;;     (dolist (buffer (buffer-list))
-;;       (set-buffer buffer)
-;;       (unless (or (minibufferp)
-;;                   (eq evil-state 'emacs))
-;;         (evil-force-normal-state)))
-;;     ))
+(defun evil-normalize-all-buffers ()
+  "Force a drop to normal state."
+  (unless (eq evil-state 'normal)
+    (dolist (buffer (buffer-list))
+      (set-buffer buffer)
+      (unless (or (minibufferp)
+                  (eq evil-state 'emacs))
+        (evil-force-normal-state)))
+    ))
 
 ;; (defvar evil-normal-timer
 ;;   (run-with-idle-timer 10 t #'evil-normalize-all-buffers)
 ;;   "Drop back to normal state after idle for 30 seconds.")
 
+(add-hook 'before-make-frame-hook (lambda ()
+                                    (message "before-make-frame-hook")
+                                    (evil-normal-state)))
+
+(add-hook 'make-frame-hook (lambda (frame)
+                                    (message "make-frame-hook")
+                                    (beacon-blink)
+                                    (evil-normal-state)))
+
+(add-hook 'delete-frame-functions
+          (lambda ()
+            (message "delete frame hook")
+            (evil-normal-state)))
+
+(add-hook 'find-file-hook
+          (lambda ()
+            (message "find file hook, going into evil-normal-state")
+            (evil-normal-state)))
 
 (provide 'setup-evil-mode)
-
-
 

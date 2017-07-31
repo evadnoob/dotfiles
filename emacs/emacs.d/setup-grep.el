@@ -6,9 +6,9 @@
 ;;(require 'grep+)
 (setq 
   grep-window-height 25
-  grep-hit-face 'dmb-grep-hit-face
-  ;;grep-match-face 'dmb-grep-match-face
-  grep-match-face 'dmb-face-three
+  ;; grep-hit-face 'dmb-grep-hit-face
+  ;; ;;grep-match-face 'dmb-grep-match-face
+  ;; grep-match-face 'dmb-face-three
   grep-scroll-output t
   grep-highlight-matches t
   grep-use-null-device nil)

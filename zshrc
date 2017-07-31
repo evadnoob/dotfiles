@@ -94,8 +94,6 @@ if [ -n "$DISPLAY" ]; then
 fi
 
 
-
-
 # alias zoom-reset='xrandr --output Virtual1  --mode 2560x1600 --scale "1x1"'
 # alias zoom-big='zoom-reset && xrandr --output Virtual1  --mode 2560x1600 --scale ".70x.70"'
 # alias zoom-normal='zoom-reset && xrandr --output Virtual1  --mode 2560x1600 --scale ".90x.90"'
@@ -121,8 +119,8 @@ source $HOME/.cargo/env
 
 
 # # Gotham Shell
-# GOTHAM_SHELL="$HOME/.config/gotham/gotham.sh"
-# [[ -s $GOTHAM_SHELL ]] && source $GOTHAM_SHELL
+#GOTHAM_SHELL="$HOME/.config/gotham/gotham.sh"
+#[[ -s $GOTHAM_SHELL ]] && source $GOTHAM_SHELL
 
 
 # Setup zsh-autosuggestions                                                                                       
@@ -134,3 +132,13 @@ export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=243"
 
 export NVM_DIR="/home/david/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+source ~/antigen.zsh
+
+export ZSH_AUTOSUGGEST_STRATEGY=match_prev_cmd
+
+antigen theme eendroroy/alien-minimal alien-minimal 
+antigen bundle zsh-users/zsh-syntax-highlighting
+antigen bundle tarruda/zsh-autosuggestions                                                                                  N
+antigen apply
+
+alias gist='gist-paste -c'
