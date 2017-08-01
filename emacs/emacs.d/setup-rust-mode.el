@@ -25,11 +25,15 @@
 (define-key rust-mode-map (kbd "TAB") #'company-indent-or-complete-common) ;
 (setq company-tooltip-align-annotations t)
 
+(add-hook 'rust-mode-hook #'racer-mode)
+(add-hook 'racer-mode-hook #'eldoc-mode)
+  
+
 (defun my-rust-mode-hook()
 
   ;; (linum-relative-on)
   ;; (linum-mode 1))
-  (linum-relative-mode)
+  ;;(linum-relative-mode)
   
   (company-mode 1)
 
@@ -38,7 +42,7 @@
   ;;(global-set-key (kbd "TAB") #'company-indent-or-complete-common) ;
   (setq company-tooltip-align-annotations t)
 
-  (racer-activate)
+    (racer-activate)
 
   ;; Hook in racer with eldoc to provide documentation
   (racer-turn-on-eldoc)

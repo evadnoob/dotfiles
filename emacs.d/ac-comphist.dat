@@ -1,5 +1,83 @@
-((("i" .
+((("env" .
+   [1 0 0])
+  ("Avatarid" .
+   [0 0 0 0 0 0 0 1])
+  ("Logo" .
+   [1 0 0 0])
+  ("AWS_PERM_BUCKET" .
+   [0 0 0 1 0 0 0 0 0 0 0 0 0 0 0])
+  ("xo" .
+   [1 0])
+  ("toTypeId" .
+   [1 0 0 0 0 0 0 0])
+  ("toType" .
+   [1 0 0 0 0 0])
+  ("refType" .
+   [1 0 0 0 0 0 0])
+  ("sqlstmt" .
+   [0 0 0 0 0 0 1])
+  ("shell-command" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("lambda" .
+   [2 0 0 0 0 1])
+  ("int64" .
+   [1 0 0 0 0])
+  ("u" .
+   [3])
+  ("AssetSignature" .
+   [2 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("N" .
    [1])
+  ("AssetThumbnail" .
+   [2 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("String" .
+   [2 0 0 0 0 0])
+  ("Join" .
+   [1 0 0 0])
+  ("join" .
+   [3 0 0 0])
+  ("w" .
+   [1])
+  ("Joins" .
+   [4 0 0 0 0])
+  ("Status" .
+   [1 0 0 0 0 0])
+  ("l" .
+   [1])
+  ("StatusCode" .
+   [2 0 0 0 0 0 0 0 0 0])
+  ("x" .
+   [1])
+  ("ser" .
+   [1 0 0])
+  ("len" .
+   [1 0 0])
+  ("dd" .
+   [1 0])
+  ("Second" .
+   [2 0 0 0 0 0])
+  ("Timeout" .
+   [1 0 0 0 0 0 1])
+  ("magit-section-highlight" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("magit-fetch-from-pushremote" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("Errorf" .
+   [4 0 0 0 0 0])
+  ("Infof" .
+   [5 0 0 0 0])
+  ("Error" .
+   [2 0 0 0 1])
+  ("Info" .
+   [1 0 0 0])
+  ("log" .
+   [1 0 0])
+  ("iswitchb-buffer" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 1 0])
+  ("find-file-not-found-functions" .
+   [0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("i" .
+   [6])
   ("subpath" .
    [2 0 0 0 0 0 0])
   ("path" .
@@ -9,24 +87,224 @@
   ("Name" .
    [2 0 0 0])
   ("Printf" .
-   [3 0 0 0 0 0])
+   [6 0 0 0 0 0])
   ("Println" .
    [1 0 0 0 0 0 0])
   ("Print" .
    [0 0 1 0 0])
   ("panic" .
-   [1 0 0 0 0])
+   [2 0 0 0 0])
   ("nil" .
-   [4 0 0])
+   [17 0 0])
   ("err" .
-   [8 0 0])
+   [14 0 0])
   ("annoying-arrows-mode" .
    [0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0])
   ("defadvice" .
    [0 0 0 0 0 1 0 0 0])
   ("require" .
-   [1 0 0 0 0 0 0])
+   [3 0 0 0 0 0 0])
   ("linum-relative-autoloads" .
    [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0])
   ("linum-relative-mode" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])))
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("Warnf" .
+   [1 0 0 0 0])
+  ("b" .
+   [1])
+  ("Type" .
+   [1 0 0 0])
+  ("re" .
+   [1 0])
+  ("Compile" .
+   [1 0 0 0 0 0 0])
+  ("ReplaceAll" .
+   [1 0 0 0 0 0 0 0 0 0])
+  ("d" .
+   [1])
+  ("func" .
+   [0 0 0 1])
+  ("sqlx" .
+   [1 0 0 0])
+  ("typ" .
+   [1 0 0])
+  ("id" .
+   [3 0])
+  ("int" .
+   [1 0 0])
+  ("board" .
+   [1 0 0 0 0])
+  ("Select" .
+   [1 0 0 0 0 0])
+  ("board_group" .
+   [3 0 0 0 0 0 0 0 0 0 0])
+  ("new" .
+   [2 0 0])
+  ("Queryx" .
+   [1 0 0 0 0 0])
+  ("BoardGroup" .
+   [0 0 0 0 0 0 1 0 0 1])
+  ("boardGroup" .
+   [2 0 0 0 0 0 1 0 0 0])
+  ("Next" .
+   [1 0 0 0])
+  ("StructScan" .
+   [0 0 0 0 0 0 0 0 0 1])
+  ("magit-section-heading-selection" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0])
+  ("magit-section-heading" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  (":foreg" .
+   [0 0 0 0 0 1])
+  (":foreground" .
+   [3 0 0 0 0 0 0 0 0 0 2])
+  (":weight" .
+   [2 0 0 0 1 0 0])
+  ("bold" .
+   [2 0 0 0])
+  ("magit-filename" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("magit-diff-file-heading-highlight" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("magit-diff-context-highlight" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  (":background" .
+   [5 0 0 0 0 0 0 0 0 0 0])
+  ("magit" .
+   [1 0 0 0 0])
+  ("magit-diff-removed-highlight" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0])
+  ("magit-diff-added-highlight" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0])
+  ("magit-diff-our-highlight" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("magit-diff-their" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("foreground" .
+   [1 0 0 0 0 0 0 0 0 0])
+  ("magit-diff-added" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("magit-diff-removed" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("magit-diff-hunk-heading-highlight" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0])
+  (":" .
+   [1])
+  (":underline" .
+   [2 0 0 0 0 0 0 0 0 0])
+  (":overline" .
+   [1 0 0 0 0 0 0 0 0])
+  ("testEndpoints" .
+   [0 0 0 0 0 0 0 1 0 0 0 0 0])
+  ("Close" .
+   [2 0 0 0 0])
+  ("shutdown" .
+   [4 0 0 0 0 0 0 0])
+  ("closers" .
+   [4 0 0 0 0 0 0])
+  ("closer" .
+   [1 0 0 0 0 0])
+  ("Closer" .
+   [1 0 0 0 0 0])
+  ("C" .
+   [1])
+  ("c" .
+   [3])
+  ("j" .
+   [1])
+  ("Setenv" .
+   [1 0 0 0 0 1])
+  ("testBrokenEndpoints" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("\n" .
+   [1])
+  ("routes" .
+   [1 0 0 0 0 0])
+  ("DumpHeaders" .
+   [0 0 0 0 0 1 0 0 0 0 1])
+  ("res" .
+   [6 0 0])
+  ("http" .
+   [1 0 0 0])
+  ("v" .
+   [2])
+  ("Header" .
+   [1 0 0 0 0 0])
+  ("main" .
+   [1 0 0 0])
+  ("LogHeaders" .
+   [0 0 0 0 0 0 0 0 0 4])
+  ("Flags" .
+   [0 0 0 1 0])
+  ("SetFlags" .
+   [1 0 0 0 0 0 0 0])
+  ("Ldate" .
+   [0 0 1 0 0])
+  ("Lshortfile" .
+   [0 1 0 0 0 0 0 0 0 0])
+  ("Ltime" .
+   [0 1 0 0 0])
+  ("p" .
+   [2])
+  ("_" .
+   [2])
+  ("control" .
+   [1 0 0 0 0 0 0])
+  ("Conn" .
+   [2 0 0 0])
+  ("connect" .
+   [1 0 0 0 0 0 0])
+  ("e" .
+   [1])
+  ("loop" .
+   [2 0 0 0])
+  ("mt" .
+   [1 0])
+  ("s" .
+   [1])
+  ("PingMessage" .
+   [0 0 0 0 0 0 0 0 0 0 1])
+  ("PongMessage" .
+   [0 0 0 0 0 0 0 0 0 0 2])
+  ("CloseMessage" .
+   [1 0 0 0 0 0 0 0 0 0 0 0])
+  ("WriteMessage" .
+   [1 0 0 0 0 0 0 0 0 0 0 0])
+  ("FormatCloseMessage" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("byte" .
+   [1 0 0 0])
+  ("Consumer" .
+   [1 0 0 0 0 0 0 0])
+  ("a" .
+   [1])
+  ("Get" .
+   [1 0 0])
+  ("dal" .
+   [1 0 0])
+  ("v1" .
+   [1 0])
+  ("migrate" .
+   [1 0 0 0 0 0 0])
+  ("DEVICES_API_MONGO_DB" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("-x" .
+   [1 0])
+  ("evil" .
+   [2 0 0 0])
+  ("defun" .
+   [1 0 0 0 0])
+  ("before-make-frame-hook" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("message" .
+   [2 0 0 0 0 0 0])
+  ("evil-normal-state" .
+   [0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1])
+  ("after-make-frame-functions" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("delete-frame-hook" .
+   [0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0])
+  ("delete-frame-functions" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("frame" .
+   [1 0 0 0 0])))

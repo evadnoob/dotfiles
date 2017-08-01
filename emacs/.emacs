@@ -65,6 +65,7 @@
 (load-library "setup-anything")
 (load-library "setup-golang")
 (load-library "setup-spaceline")
+(load-library "setup-helm-mode")
 
 ;; (load-library "setup-flx")
 ;; (load-library "setup-god-mode")

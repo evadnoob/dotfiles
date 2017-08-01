@@ -50,6 +50,8 @@
 
 
 (define-key evil-normal-state-map (kbd "C-r") 'isearch-backward) 
+(define-key evil-normal-state-map (kbd "M-y") 'counsel-yank-pop) 
+
 
 
 ;; ;; change mode-line color by evil state
@@ -228,6 +230,12 @@ then it takes a second \\[keyboard-quit] to abort the minibuffer."
 
 
 (require 'evil-matchit)
+
+
+(require 'evil-exchange)
+;; change default key bindings (if you want) HERE
+;; (setq evil-exchange-key (kbd "zx"))
+(evil-exchange-install)
 
 (defun evil-normalize-all-buffers ()
   "Force a drop to normal state."

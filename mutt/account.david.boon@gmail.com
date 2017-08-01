@@ -2,7 +2,7 @@ set imap_user = 'david.boon@gmail.com'
 set imap_pass = 'UKRT2rNAHqc9Wp'
 
 set smtp_url = "smtp://david.boon@smtp.gmail.com:587/"
-set smtp_pass = 'UKRT2rNAHqc9Wp'
+set smtp_pass = 'n05Slof5Ho'
 
 set realname = 'David Boon'
 set hostname = 'gmail.com'

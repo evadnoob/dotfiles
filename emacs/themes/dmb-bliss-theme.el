@@ -25,22 +25,18 @@
  'dmb-bliss
  ;; basic theming.
  
- ;; org-mode
- '(org-link ((t (:foreground "green" underline: t))))
- '(org-table ((t (:foreground "#E0E4CC" ))))
- '(org-hide-face ((t (:foregoround "black"))))
-
-
  ;;'(default ((t (:foreground "#C5C8C6" :background "color-16" ))))
  ;;'(region  ((t (:background "color-16" foreground "#080808"))))
  '(region  ((t (:background "#afffff" :foreground "#000"))))
  '(cursor  ((t (:background "yellow"))))
 
  ;; Temporary defaults
- '(linum                               ((t (:foreground "#3b3c3c"  :background nil ))))
+ '(linum                               ((t (:foreground "#9ca19e"  :background nil ))))
  '(fringe                              ((t (                       :background nil ))))
 
- '(minibuffer-prompt                   ((t (:foreground "#1278A8"  :background nil       :weight bold                                  ))))
+ ;;'(minibuffer-prompt                   ((t (:foreground "#1278A8"  :background nil       :weight bold                                  ))))
+ ;;'(minibuffer-prompt                   ((t (:foreground "#E8D391"  :background nil       :weight bold                                  ))))
+ '(minibuffer-prompt                   ((t (:foreground "#d7ffff"  :background nil       :weight bold                                  ))))
  '(escape-glyph                        ((t (:foreground "orange"   :background nil                                                     ))))
  '(highlight                           ((t (:foreground "orange"   :background nil                                                     ))))
  '(shadow                              ((t (:foreground "#777777"  :background nil                                                     ))))
@@ -80,8 +76,8 @@
  '(magit-section-highlight             ((t (:background nil :foreground "white" :weight bold))))
  '(magit-filename                      ((t (:foreground "white"))))
  '(magit-diff-file-heading-highlight   ((t (:foreground "white" :weight normal))))
- '(magit-diff-context-highlight        ((t (:background nil))))
- '(magit-diff-removed-highlight        ((t (:foreground "#0000d7" :background nil))))
+ '(magit-diff-context-highlight        ((t (:background nl))))
+ '(magit-diff-removed-highlight        ((t (:foreground "#BF735E" :background nil))))
  '(magit-diff-added-highlight          ((t (:foreground "#5fd7af" :background nil))))
  '(magit-diff-our                      ((t (:foreground "#fff" :background nil))))
  '(magit-diff-their                    ((t (:foreground "#0000d7" :background nil))))
@@ -116,21 +112,23 @@
 
  '(which-func                          ((t (:foreground "green" :bold nil))))
 
- '(font-lock-comment-face ((t (:foreground "blue"))))
+ '(font-lock-comment-face ((t (:foreground "color-255"))))
  '(font-lock-comment-delimiter-face ((t (:foreground "brightmagenta"))))
  '(font-lock-constant-face ((t (:foreground "#d7d7d7"  ))))
- '(font-lock-variable-name-face ((t (:foreground "#767676"  ))))
+ '(font-lock-variable-name-face ((t (:foreground "#00ff00"  ))))
  '(font-lock-builtin-face ((t (:foreground "gray55"  ))))
  '(font-lock-type-face ((t (:foreground "#a8a8a8"  ))))
-;; '(font-lock-string-face ((t (:foreground "green"  ))))
- '(font-lock-string-face ((t (:foreground "#808080"  ))))
+ '(font-lock-string-face ((t (:foreground "#b2b2b2"  ))))
  ;;'(font-lock-function-name-face ((t (:foreground "#3bb1df"  ))))
  ;;'(font-lock-function-name-face ((t (:foreground "#5fafff"  ))))
  ;;'(font-lock-function-name-face ((t (:foreground "#d7ffff"  ))))
- '(font-lock-function-name-face ((t (:foreground "#b2b2b2"  ))))
+;;'(font-lock-function-name-face ((t (:foreground "#3bb1df"  ))))
+'(font-lock-function-name-face ((t (:foreground "color-151"  ))))
  '(font-lock-preprocessor-face ((t (:foreground "#5f8787"  ))))
- '(font-lock-keyword-face ((t (:foreground "#ff00ff"  ))))
- '(font-lock-warning-face ((t (:foreground "#4f6d82"  ))))
+ '(font-lock-keyword-face ((t (:foreground "#d7d7d7"  ))))
+ '(font-lock-warning-face ((t (:foreground "yellow" ))))
+ '(warning ((t (:foreground "yellow"))))
+ 
  ;;
  ;; Company
  '(company-tooltip ((t (:foreground "#585858" :background nil))))
@@ -142,6 +140,9 @@
 
  ;; smerge
  '(smerge-mine ((t (:background "#3b3c3c"))))
+ '(smerge-lower ((t (:foreground "white" :background "#53815E"))))
+ '(smerge-upper ((t (:foreground "white" :background "#BF735E"))))
+ 
  '(smerge-markers ((t (:background nil))))
  '(smerge-other ((t (:background "gray" :foreground "black" ))))
  '(smerge-refined-added ((t (:foreground "black" :background "green"))))
@@ -182,6 +183,22 @@
 
  ;;shell-script
  '(sh-heredoc ((t (:foreground "#5f5f00"))))
+
+
+ ;; go-guru/go-mode
+ '(go-guru-hl-identifier-face ((t (:foregoround "#47a9ce"))))
+
+ ;; glasses-mode
+ '(glasses-face ((t (:foreground "green"))))
+
+
+ ;; org-mode
+ '(org-link ((t (:foreground "green" underline: t))))
+ '(org-table ((t (:foreground "#E0E4CC" ))))
+ '(org-hide ((t (:foregoround "#131516"))))
+
+ '(beacon-fallback-background ((t :background "yellow")))
+ '(line-number-current-line ((t :background "#BFB85E" :foreground "#000000" )))
 ) ;; End face definitions
 
 ;;;###autoload

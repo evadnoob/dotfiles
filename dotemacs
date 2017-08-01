@@ -1,9 +1,8 @@
-
-;; Added by Package.el.  This must come before configurations of
+;; by Package.el.  This must come before configurations of
 ;; installed packages.  Don't delete this line.  If you don't want it,
 ;; just comment it out by adding a semicolon to the start of the line.
 ;; You may delete these explanatory comments.
-(package-initialize)
+;;(package-initialize)
 
 (load-file "~/dotfiles/emacs/.emacs")
 ;; (custom-set-variables
@@ -65,6 +64,73 @@
 ;;  ;; Your init file should contain only one such instance.
 ;;  ;; If there is more than one, they won't work right.
 ;;  )
+;; (custom-set-variables
+;;  ;; custom-set-variables was added by Custom.
+;;  ;; If you edit it by hand, you could mess it up, so be careful.
+;;  ;; Your init file should contain only one such instance.
+;;  ;; If there is more than one, they won't work right.
+;;  '(Buffer-menu-buffer+size-width 40)
+;;  '(ac-go-expand-arguments-into-snippets t)
+;;  '(auto-insert (quote other))
+;;  '(auto-insert-directory "~/dotfiles/emacs/auto-insert-templates/")
+;;  '(backup-inhibited t t)
+;;  '(beacon-blink-when-focused t)
+;;  '(beacon-mode t)
+;;  '(completion-ignore-case t t)
+;;  '(custom-safe-themes
+;;    (quote
+;;     ("bd9ea27e241c67041fc9c187fea243763f0c5919bf22183b941df70b45027d2f" "ea4ae3c179b4fd23f50b50062ca0312f7bf0151aa4ba8c10088bba87943d8b93" "3c83b3676d796422704082049fc38b6966bcad960f896669dfc21a7a37a748fa" "a3d85397a299ff5d7cbbfc0ca7031f60249cc99a320c8e5bf88489d36ceb08ed" "6c071170a4847411164b63d1a8f5d601d1d7a7fcef90caa468c054af9e52150b" "6b20d669fcbcd79c6d0f3db36a71af1b88763246d3550a0c361866adecb38a9e" "2b84400ac73759f57868bc39718468c68450f59f4e7d18a93ff35a031b9db330" "5c9bd73de767fa0d0ea71ee2f3ca6fe77261d931c3d4f7cca0734e2a3282f439" "1dbcd10cda6c7c0a474c89ce7bc7dd5cc7384aa8cda653b12df85eb7f3ae33c7" "66f0d7cbeb49e8e47addd6981645d55827be6d13a1f4bfcc464887df2e712b10" "7c4717d4ee5290eda3896f4b7e580ddc52f6fbfd3a969ed574a6dd4456b8f3a3" "cab317d0125d7aab145bc7ee03a1e16804d5abdfa2aa8738198ac30dc5f7b569" "95f336db99853fd41fcc02a4f4ac369afdacbd45f3278957042b13dd17750884" "0b2c81cd1087ba7be1236672ae37e6ec471fc1a4445c6e27b6c9f47d3b07f0e1" "39dd7106e6387e0c45dfce8ed44351078f6acd29a345d8b22e7b8e54ac25bac4" "b5933d9a894afc6bba53cf2174c4745343c8ba45624c3253b5e3a0d905c9843d" "85359d0b3d70e17daab7beddcb3d8e79b43f487df6c3a47808f09fdfc6b44f33" "ac5584b12254623419499c3a7a5388031a29be85a15fdef9b94df2292d3e2cbb" "fbdd6f973b1ccf4801b9f0293ea85bacc41b8c506203e65adc7d196fe7904983" "cf0de26e38f5549d9b79c6efa053c865c7a50601cb60b75a2ac9724cf8d51c5e" "b460972fbc92a6b9180896b65d5e4e3ff25611cc572af9537d768c0b03e39a1c" "39e9f650fe4040fdc3c1fc04ae451b3c584085bf8c034ca49be1e910bff79467" "09fe73dacf2e7c8fddffa83a3d0edd95307156a9b7b946762744cf271c05d786" "1e795a78f2915e3aafeab1d66b4c51a57c34fecf7bf63f7531ca031581eaab94" "8063d31c29f52fce72e0aabc7abe2d81559d3ccf7545ff56b614a523c46b9db2" "d4e910ecdd399a5abaa904833b93b67707aa1fc805817723e33f086e64c9d2a5" "7d9378d5898335299faf4d1dcfd0ed48256e30353459fbf0f1a5fb3194c67137" "4e07ffecc4bb5db41135487d10cdff66ab050ab05d9cdf603b54028fc6d161ba" "798d7352a609786f95a2b08502654efca1ddf829f5a9dc295f2c4b0ac1e427e6" "7af16b32e17d4c07b0819150f294a0b77da4a5fda0434e92ef128a24e388e95b" "a9290165cef61ef30ad43a38ae6591d0fd4ce59a12c2e5f17e595ea31e0a608c" "999bb141fe05218f6af3d3a5eefd0e4cfe4803aab15476245ed02f0ca00e910d" "99033f8891b7a20a9b10e6dc1dd4285aa7507037091db982195e3ca9daa7d596" "6c0ec840b7c0316d121dc0a2910f4a390940bec3d136bb80584f1233d7e15003" default)))
+;;  '(custom-theme-directory (*emacs "/themes"))
+;;  '(dired-listing-switches "-ghG")
+;;  '(erc-enable-logging (quote erc-log-all-but-server-buffers))
+;;  '(erc-hide-list (quote ("JOIN" "PART" "QUIT" "NICK" "MODE" "TOPIC")))
+;;  '(erc-kill-queries-on-quit t)
+;;  '(erc-kill-server-buffer-on-quit t)
+;;  '(erc-log-channels-directory "~/.erc.logs")
+;;  '(erc-modules
+;;    (quote
+;;     (netsplit fill button match track completion readonly networks ring autojoin noncommands irccontrols move-to-prompt stamp menu list scrolltobottom)))
+;;  '(erc-ring-mode 1)
+;;  '(evil-move-cursor-back nil)
+;;  '(evil-regexp-search t)
+;;  '(evil-want-fine-undo t)
+;;  '(glasses-face "bold")
+;;  '(glasses-original-separator "")
+;;  '(glasses-separate-parentheses-p nil)
+;;  '(glasses-separator "")
+;;  '(global-evil-surround-mode t)
+;;  '(indent-tabs-mode nil)
+;;  '(isearch-allow-scroll t)
+;;  '(mode-line-format
+;;    (quote
+;;     ("%e" mode-line-front-space mode-line-mule-info mode-line-client mode-line-modified mode-line-remote mode-line-frame-identification mode-line-buffer-identification "   " mode-line-position evil-mode-line-tag
+;;      (vc-mode vc-mode)
+;;      "  " mode-line-modes mode-line-misc-info)))
+;;  '(nxhtml-global-minor-mode t)
+;;  '(nxhtml-skip-welcome t)
+;;  '(org-cycle-global-at-bob t)
+;;  '(org-directory "~/Dropbox/org-mode-files")
+;;  '(org-src-fontify-natively t)
+;;  '(package-selected-packages
+;;    (quote
+;;     (zerodark-theme smart-mode-line-powerline-theme rainbow-delimiters beacon spaceline-all-the-icons spaceline multiple-cursors counsel evil-smartparens nginx-mode flycheck-gometalinter monochrome-theme gotham-theme colonoscopy-theme go-projectile org-journal go-snippets org-projectile swiper-helm godoctor org-evil org-beautify-theme org-bullets go-guru go-eldoc go-autocomplete anything-exuberant-ctags anything evil-surround smooth-scrolling smooth-scroll linum-relative swiper ace-window ace-popup-menu which-key try use-package scala-mode yari yaml-mode volatile-highlights visible-mark toml-mode smart-cursor-color scss-mode sass-mode rcirc-color rainbow-mode racer projectile pbcopy paredit org-ac neotree modeline-posn markdown-mode mark-multiple magit lua-mode lorem-ipsum java-snippets inf-ruby helm-ag haskell-mode guide-key groovy-mode gist ggtags flymake-less flymake-easy flycheck-rust evil-tutor evil-terminal-cursor-changer evil-search-highlight-persist evil-org evil-matchit evil-leader evil-args evil-annoying-arrows ensime emacs-eclim dockerfile-mode delight deft company-racer coffee-mode clojure-mode change-inner auctex annoying-arrows-mode ack-and-a-half)))
+;;  '(setq python-indent-offset t)
+;;  '(show-smartparens-global-mode t)
+;;  '(smart-cursor-color-mode t nil (smart-cursor-color))
+;;  '(socks-noproxy (quote ("localhost")) t)
+;;  '(socks-override-functions 1 t)
+;;  '(socks-server (list "tor" "localhost" 9050 5))
+;;  '(split-height-threshold nil)
+;;  '(split-width-threshold 450)
+;;  '(truncate-lines 1)
+;;  '(visible-cursor nil)
+;;  '(yas-global-mode t))
+;; (custom-set-faces
+;;  ;; custom-set-faces was added by Custom.
+;;  ;; If you edit it by hand, you could mess it up, so be careful.
+;;  ;; Your init file should contain only one such instance.
+;;  ;; If there is more than one, they won't work right.
+;;  )
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -77,9 +143,11 @@
  '(completion-ignore-case t t)
  '(custom-safe-themes
    (quote
-    ("798d7352a609786f95a2b08502654efca1ddf829f5a9dc295f2c4b0ac1e427e6" "7af16b32e17d4c07b0819150f294a0b77da4a5fda0434e92ef128a24e388e95b" "a9290165cef61ef30ad43a38ae6591d0fd4ce59a12c2e5f17e595ea31e0a608c" "999bb141fe05218f6af3d3a5eefd0e4cfe4803aab15476245ed02f0ca00e910d" "99033f8891b7a20a9b10e6dc1dd4285aa7507037091db982195e3ca9daa7d596" "6c0ec840b7c0316d121dc0a2910f4a390940bec3d136bb80584f1233d7e15003" default)))
+    ("4dfd939c455cf71558984663374454de68b640775aa7d9b1f8e5a5d6072737d7" "9ae598f085742d1f1eb027b4db63f5e4222b0e1277d8d8bb85562e4ae403c77f" "8f73e173f5303fce37758d71901602ca626ceb88af6bc2c3a5e63735f0ebb874" "84d2f9eeb3f82d619ca4bfffe5f157282f4779732f48a5ac1484d94d5ff5b279" "bd9ea27e241c67041fc9c187fea243763f0c5919bf22183b941df70b45027d2f" "81c450ffdeeafc824077b8369fb3b3ad392430011eda0db125df3b806c264f1f" "ea4ae3c179b4fd23f50b50062ca0312f7bf0151aa4ba8c10088bba87943d8b93" "3c83b3676d796422704082049fc38b6966bcad960f896669dfc21a7a37a748fa" "612ec5de510341db60391367dd3c3615deb06066a22b805fe3fdb6433b9c3da4" "893f0a4c187524b5fb2cfb5c5dccb40faef3914045ff82d13de5d57e105c7ebf" "a430857b5359b0051a74771a5c3c622bc00a0c930369b5b4a3b575992a767ffc" "67fadbf89c59c0290a6e1fad876350d6b14ee0e7c74492d5ed74cf6254104f45" default)))
  '(custom-theme-directory (*emacs "/themes"))
  '(dired-listing-switches "-ghG")
+ '(display-line-number-width 3)
+ '(display-line-numbers (quote relative))
  '(erc-enable-logging (quote erc-log-all-but-server-buffers))
  '(erc-hide-list (quote ("JOIN" "PART" "QUIT" "NICK" "MODE" "TOPIC")))
  '(erc-kill-queries-on-quit t)
@@ -103,9 +171,10 @@
  '(nxhtml-skip-welcome t)
  '(org-cycle-global-at-bob t)
  '(org-directory "~/Dropbox/org-mode-files")
+ '(org-src-fontify-natively t)
  '(package-selected-packages
    (quote
-    (anything-exuberant-ctags anything evil-surround smooth-scrolling smooth-scroll linum-relative swiper ace-window ace-popup-menu which-key try use-package scala-mode yari yaml-mode volatile-highlights visible-mark toml-mode smart-cursor-color scss-mode sass-mode rcirc-color rainbow-mode racer projectile pbcopy paredit org-ac neotree modeline-posn markdown-mode mark-multiple magit lua-mode lorem-ipsum java-snippets inf-ruby helm-ag haskell-mode guide-key groovy-mode gist ggtags flymake-less flymake-easy flycheck-rust evil-tutor evil-terminal-cursor-changer evil-search-highlight-persist evil-org evil-matchit evil-leader evil-args evil-annoying-arrows ensime emacs-eclim dockerfile-mode delight deft company-racer coffee-mode clojure-mode change-inner auctex annoying-arrows-mode ack-and-a-half)))
+    (helm-swoop evil-exchange counsel-projectile fancy-narrow company-go zerodark-theme yari yaml-mode which-key volatile-highlights visible-mark use-package try toml-mode swiper-helm spaceline-all-the-icons smooth-scrolling smart-mode-line-powerline-theme smart-cursor-color scss-mode sass-mode rcirc-color rainbow-mode rainbow-delimiters racer paredit org-projectile org-journal org-evil org-bullets org-beautify-theme org-ac nginx-mode neotree multiple-cursors monochrome-theme modeline-posn markdown-mode mark-multiple lua-mode lorem-ipsum linum-relative java-snippets inf-ruby helm-ag haskell-mode guide-key groovy-mode gotham-theme godoctor go-snippets go-projectile go-autocomplete gist ggtags flymake-less flycheck-rust flycheck-gometalinter evil-visual-mark-mode evil-tutor evil-terminal-cursor-changer evil-surround evil-smartparens evil-search-highlight-persist evil-org evil-mc evil-matchit evil-args ensime dockerfile-mode delight deft counsel company-racer colonoscopy-theme coffee-mode clojure-mode change-inner beacon auctex anything-exuberant-ctags annoying-arrows-mode ace-window)))
  '(setq python-indent-offset)
  '(socks-noproxy (quote ("localhost")) t)
  '(socks-override-functions 1 t)
@@ -119,4 +188,6 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- )
+ '(mode-line ((t :foreground "gray60" :background "black" :box (:line-width -1 :color "Black"))))
+ '(smerge-lower ((t (:background "gray" :foreground "black"))))
+ '(smerge-upper ((t (:foreground "white" :background "#BF735E")))))
