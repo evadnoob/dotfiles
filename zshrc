@@ -25,6 +25,7 @@ fi
 #source ${ZSH_DOTFILES}/setup-haste.sh
 source ${ZSH_DOTFILES}/setup-golang.zsh
 source ${ZSH_DOTFILES}/setup-mysql.zsh
+source ~/dotfiles/setup-invision-env.sh
 
 export PATH="/usr/local/bin:${PATH}"
 
@@ -142,3 +143,4 @@ antigen bundle tarruda/zsh-autosuggestions                                      
 antigen apply
 
 alias gist='gist-paste -c'
+alias tree='tree -D -F -h -f'

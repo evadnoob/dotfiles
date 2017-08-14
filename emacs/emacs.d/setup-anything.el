@@ -52,7 +52,7 @@
 
 
 (defun anything-semantic-construct-candidates (tags depth)
-  (apply 'append (mapcar '(lambda (tag)
+  (apply 'append (mapcar #'(lambda (tag)
                             (when (and (listp tag)
                                        (or (equal (semantic-tag-type tag) "class")
                                            (eq (semantic-tag-class tag) 'variable)

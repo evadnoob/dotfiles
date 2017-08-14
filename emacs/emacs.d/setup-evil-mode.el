@@ -226,7 +226,8 @@ then it takes a second \\[keyboard-quit] to abort the minibuffer."
   "f" 'grep
   "c" 'compile
   "v" 'go-guru-expand-region
-  "d" 'dired-jump)
+  "d" 'dired-jump
+  "oj" 'org-journal-new-entry)
 
 
 (require 'evil-matchit)

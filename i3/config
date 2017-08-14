@@ -117,20 +117,18 @@ bindsym $mod+Up workspace prev
 bindsym $mod+Down workspace next
 
 # setup workspace variables
-set $workspace0 0: zero
-set $workspace1 1: default
-set $workspace2 2: sql
-set $workspace3 3: www
-set $workspace4 4: management[aws]
-set $workspace5 5: rust-lang
-set $workspace6 6: mail
-set $workspace7 7: slack
-set $workspace8 8: misc
-set $workspace9 9: irc
-
+set $workspace1 1
+set $workspace2 2
+set $workspace3 3
+set $workspace4 4
+set $workspace5 5
+set $workspace6 6
+set $workspace7 7
+set $workspace8 8
+set $workspace9 9
+set $workspace0 0
 
 # switch to workspace
-bindsym $mod+0 workspace $workspace0
 bindsym $mod+1 workspace $workspace1
 bindsym $mod+2 workspace $workspace2
 bindsym $mod+3 workspace $workspace3
@@ -140,6 +138,7 @@ bindsym $mod+6 workspace $workspace6
 bindsym $mod+7 workspace $workspace7
 bindsym $mod+8 workspace $workspace8
 bindsym $mod+9 workspace $workspace9
+bindsym $mod+0 workspace $workspace0
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace $workspace1
@@ -151,16 +150,19 @@ bindsym $mod+Shift+6 move container to workspace $workspace6
 bindsym $mod+Shift+7 move container to workspace $workspace7
 bindsym $mod+Shift+8 move container to workspace $workspace8
 bindsym $mod+Shift+9 move container to workspace $workspace9
-bindsym $mod+Shift+0 move container to workspace $workspace10
+bindsym $mod+Shift+0 move container to workspace $workspace0
 
+#bindsym $mod+semicolon move  right
+bindsym $mod+semicolon workspace back_and_forth
+bindsym $mod+x move workspace to output right
 
-#exec --no-startup-id i3-msg 'workspace 7: hipchat; exec hipchat4'
-#exec --no-startup-id i3-msg 'workspace 1: default; exec urxvt -e ranger'
-#exec --no-startup-id i3-msg 'workspace 9: default; exec irssi'
+#exec --no-startup-id i3-msg 'workspace 7; exec hipchat4'
+#exec --no-startup-id i3-msg 'workspace 1; exec urxvt -e ranger'
+#exec --no-startup-id i3-msg 'workspace 9; exec irssi'
 
 assign [class="jetbrains-idea-ce"] $workspace10
 assign [class="hipchat4"] $workspace7
-assign [class="Firefox"] $workspace3
+#assign [class="Firefox"] $workspace3
 assign [class="Spotify"] $workspace8
 assign [class="urxvt" title="^david: ranger$"] $workspace4
 #assign [class="hipchat4" window_type="notification"] $workspace7
@@ -170,17 +172,18 @@ assign [class="urxvt" title="^david: ranger$"] $workspace4
 # WM_NAME(STRING) = "Inbox (8) - davidboon@invisionapp.com - InVision Mail - Vimperator"
 # _NET_WM_NAME(UTF8_STRING) = "Inbox (8) - davidboon@invisionapp.com - InVision Mail - Vimperator"
 
-assign [class="Firefox" title="^Inbox"] $workspace6
+#assign [class="Firefox" title="^Inbox"] $workspace6
 
 #exec --no-startup-id i3-msg 'workspace 7: hipchat; exec hipchat4'
 #exec --no-startup-id i3-msg 'workspace 1: default; exec urxvt -e ranger'
 #exec --no-startup-id i3-msg 'workspace 9: default; exec irssi'
-exec --no-startup-id i3-msg 'workspace 3: www; exec iceweasel; workspace '
+exec --no-startup-id i3-msg 'workspace 3; exec iceweasel; workspace '
 #exec --no-startup-id i3-msg 'exec xsetroot -solid gray10'
 
 # when running under a composition manager, xsetroot does not work, workaround use hsetroot
 exec --no-startup-id i3-msg 'exec setroot -solid "#000000"'
 exec --no-startup-id i3-msg 'exec emacs --daemon'
+exec --no-startup-id i3-msg 'exec compton --config ~/dotfiles/compton.conf'
 
 
 # reload the configuration file
@@ -239,8 +242,8 @@ bar {
 
        ## Type             border  background font
        #focused_workspace  #008fff #007fff #ffffff
-       focused_workspace  #000000 #000000 #00ffff
-       active_workspace   #000000 #007fff #ffffff
+       focused_workspace  #000000 #F2DF8C #2F1E52
+       active_workspace   #F2DF8C #007fff #ffffff
        #inactive_workspace #333333 #222222 #888888
        inactive_workspace #000000 #000000 #888888
        urgent_workspace   #aa0000 #990000 #ffffff
