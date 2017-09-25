@@ -1,5 +1,5 @@
-(unless (getenv "RUST_SRC_PATH")
-  (setenv "RUST_SRC_PATH" (expand-file-name "~/projects/rust/src")))
+;; (unless (getenv "RUST_SRC_PATH")
+;;   (setenv "RUST_SRC_PATH" (expand-file-name "~/projects/rust/src")))
 
 ;;(setenv "PATH" (concat (expand-file-name "~/.cargo/bin") (getenv "PATH")))
 
@@ -39,10 +39,10 @@
 
   (add-hook 'racer-mode-hook #'company-mode)
 
-  ;;(global-set-key (kbd "TAB") #'company-indent-or-complete-common) ;
+  (global-set-key (kbd "TAB") #'company-indent-or-complete-common) ;
   (setq company-tooltip-align-annotations t)
 
-    (racer-activate)
+  (racer-activate)
 
   ;; Hook in racer with eldoc to provide documentation
   (racer-turn-on-eldoc)

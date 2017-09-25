@@ -198,7 +198,8 @@
  '(org-hide ((t (:foregoround "#131516"))))
 
  '(beacon-fallback-background ((t :background "yellow")))
- '(line-number-current-line ((t :background "#BFB85E" :foreground "#000000" )))
+ ;;'(line-number-current-line ((t :background "#BFB85E" :foreground "#000000" )))
+ '(line-number-current-line ((t :background "#709FF4" :foreground "#ffffff" )))
 ) ;; End face definitions
 
 ;;;###autoload

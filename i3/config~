@@ -10,7 +10,6 @@
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
 set $mod Mod1
-set $mod Mod4
 
 #bindsym Mod4+f fullscreen
 
@@ -35,8 +34,7 @@ floating_modifier $mod
 
 # start a terminal
 #bindsym $mod+Return exec i3-sensible-terminal
-#bindsym $mod+Return exec urxvt 
-bindsym $mod+Return exec xfce4-terminal 
+bindsym $mod+Return exec urxvt 
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -47,15 +45,7 @@ bindsym $mod+Shift+q kill
 #bindsym $mod+d exec dmenu_run -b -fn 's-9'
 #bindsym dmenu_run -b -i -fn 'Hack-Regular:pixelsize=12' -sb '#b58900'
 #bindsym $mod+d exec dmenu_run -b -i -fn 'Hack-Regular:pixelsize=11' -sb '#b58900'
-#bindsym $mod+d exec rofi -show window -terminal urxvt
-# bindsym $mod+d exec rofi -show combi -combi-modi "window,run,ssh" -lines 18 -eh 1.8 \
-#         -padding 10 -opacity 90 -bw 0 -bc "#000000"   \
-#         -bg "#000000" -fg "#ffffff" -h1bg "#000000" -h1fg "#9575cd"
-        
-bindsym $mod+d exec --no-startup-id \
-"rofi -show combi -modi window,workspaces:~/dotfiles/i3_switch_workspace.sh,run,ssh,pass:/home/david/projects/rofi-pass/rofi-pass,telier:/usr/local/bin/teiler -combi-modi window,workspaces,pass:/home/david/projects/rofi-pass/rofi-pass,teiler:/usr/local/bin/teiler,run,ssh"
-
-bindsym $mod+Shift+d  exec --no-startup-id /home/david/projects/rofi-pass/rofi-pass
+bindsym $mod+d exec rofi -show window -terminal urxvt
 
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
@@ -110,7 +100,7 @@ bindsym $mod+Shift+space floating toggle
 bindsym $mod+a focus parent
 
 # focus the child container
-bindsym $mod+w focus child
+#bindsym $mod+d focus child
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left workspace prev
@@ -119,74 +109,60 @@ bindsym $mod+Up workspace prev
 bindsym $mod+Down workspace next
 
 # setup workspace variables
-set $workspace1 1
-set $workspace2 2
-set $workspace3 3
-set $workspace4 4
-set $workspace5 5
-set $workspace6 6
-set $workspace7 7
-set $workspace8 8
-set $workspace9 9
-set $workspace0 0
+set $workspace1 1: default
+set $workspace2 2: psql
+set $workspace3 3: www
+set $workspace4 4: management[gcp]
+set $workspace5 5: rust-lang
+set $workspace6 6: mail
+set $workspace7 7: hipchat
+set $workspace8 8: misc
+set $workspace9 9: irc
+set $workspace10 10: intellij
+
 
 # switch to workspace
 bindsym $mod+1 workspace $workspace1
 bindsym $mod+2 workspace $workspace2
 bindsym $mod+3 workspace $workspace3
 bindsym $mod+4 workspace $workspace4
-bindsym $mod+5 workspace $workspace5
-bindsym $mod+6 workspace $workspace6
-bindsym $mod+7 workspace $workspace7
-bindsym $mod+8 workspace $workspace8
-bindsym $mod+9 workspace $workspace9
-bindsym $mod+0 workspace $workspace0
+bindsym $mod+5 workspace 5: rust-lang
+bindsym $mod+6 workspace 6: mail
+bindsym $mod+7 workspace 7: hipchat
+bindsym $mod+8 workspace 8: misc
+bindsym $mod+9 workspace 9: irc
+bindsym $mod+0 workspace 10: intellij
 
 # move focused container to workspace
-bindsym $mod+Shift+1 move container to workspace $workspace1
-bindsym $mod+Shift+2 move container to workspace $workspace2
-bindsym $mod+Shift+3 move container to workspace $workspace3
-bindsym $mod+Shift+4 move container to workspace $workspace4
-bindsym $mod+Shift+5 move container to workspace $workspace5
-bindsym $mod+Shift+6 move container to workspace $workspace6
-bindsym $mod+Shift+7 move container to workspace $workspace7
-bindsym $mod+Shift+8 move container to workspace $workspace8
-bindsym $mod+Shift+9 move container to workspace $workspace9
-bindsym $mod+Shift+0 move container to workspace $workspace0
-
-#bindsym $mod+semicolon move  right
-bindsym $mod+semicolon workspace back_and_forth
-bindsym $mod+x move workspace to output right
-
-#exec --no-startup-id i3-msg 'workspace 7; exec hipchat4'
-#exec --no-startup-id i3-msg 'workspace 1; exec urxvt -e ranger'
-#exec --no-startup-id i3-msg 'workspace 9; exec irssi'
-
-assign [class="jetbrains-idea-ce"] $workspace10
-assign [class="hipchat4"] $workspace7
-#assign [class="Firefox"] $workspace3
-assign [class="Spotify"] $workspace8
-assign [class="urxvt" title="^david: ranger$"] $workspace4
-#assign [class="hipchat4" window_type="notification"] $workspace7
-
-# WM_ICON_NAME(STRING) = "Inbox (8) - davidboon@invisionapp.com - InVision Mail - Vimperator"
-# _NET_WM_ICON_NAME(UTF8_STRING) = "Inbox (8) - davidboon@invisionapp.com - InVision Mail - Vimperator"
-# WM_NAME(STRING) = "Inbox (8) - davidboon@invisionapp.com - InVision Mail - Vimperator"
-# _NET_WM_NAME(UTF8_STRING) = "Inbox (8) - davidboon@invisionapp.com - InVision Mail - Vimperator"
-
-#assign [class="Firefox" title="^Inbox"] $workspace6
+bindsym $mod+Shift+1 move container to workspace 1: default
+bindsym $mod+Shift+2 move container to workspace 2: psql
+bindsym $mod+Shift+3 move container to workspace 3: www
+bindsym $mod+Shift+4 move container to workspace 4: management[gcp]
+bindsym $mod+Shift+5 move container to workspace 5: rust-lang
+bindsym $mod+Shift+6 move container to workspace 6: mail
+bindsym $mod+Shift+7 move container to workspace 7: hipchat
+bindsym $mod+Shift+8 move container to workspace 8: misc
+bindsym $mod+Shift+9 move container to workspace 9: irc
+bindsym $mod+Shift+0 move container to workspace 10: intellij
 
 #exec --no-startup-id i3-msg 'workspace 7: hipchat; exec hipchat4'
 #exec --no-startup-id i3-msg 'workspace 1: default; exec urxvt -e ranger'
 #exec --no-startup-id i3-msg 'workspace 9: default; exec irssi'
-exec --no-startup-id i3-msg 'workspace 3; exec ~/Downloads/firefox/firefox; workspace 3'
-#exec --no-startup-id i3-msg 'exec xsetroot -solid gray10'
 
-# when running under a composition manager, xsetroot does not work, workaround use hsetroot
-exec --no-startup-id i3-msg 'exec setroot -solid "#000000"'
-exec --no-startup-id i3-msg 'exec ~/projects/emacs/src/emacs --daemon'
-exec --no-startup-id i3-msg 'exec compton --config ~/dotfiles/compton.conf'
-exec --no-startup-id i3-msg 'exec unclutter'
+assign [class="jetbrains-idea-ce"] $workspace10
+assign [class="hipchat4"] $workspace7
+assign [class="Firefox"] $workspace3
+assign [class="Spotify"] $workspace8
+assign [class="urxvt" title="^david: ranger$"] $workspace4
+assign [class="hipchat4" window_type="notification"] $workspace7
+
+
+#exec --no-startup-id i3-msg 'workspace 7: hipchat; exec hipchat4'
+#exec --no-startup-id i3-msg 'workspace 1: default; exec urxvt -e ranger'
+#exec --no-startup-id i3-msg 'workspace 9: default; exec irssi'
+exec --no-startup-id i3-msg 'workspace 3: www; exec iceweasel'
+exec --no-startup-id i3-msg 'exec xsetroot -solid gray10'
+exec --no-startup-id i3-msg 'exec emacs --daemon'
 
 
 # reload the configuration file
@@ -224,12 +200,12 @@ mode "resize" {
 
 
 # class                 border  backgr. text    indicator child_border
-#client.focused          #ffffff #1c1c1c #ffffff #ffffff   #ffd7af
 #client.focused          #4c7899 #1c1c1c #ffffff #ffffff   #285577
-client.focused_inactive #5f5fff #5f676a #ffffff #484e50   #5f676a
-client.unfocused        #5f5fff #222222 #888888 #292d2e   #222222
+client.focused          #4c7899 #1c1c1c #ffffff #ffffff   #285577
+client.focused_inactive #333333 #5f676a #ffffff #484e50   #5f676a
+client.unfocused        #333333 #222222 #888888 #292d2e   #222222
 client.urgent           #2f343a #900000 #ffffff #900000   #900000
-#client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
+client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
 
 
 bindsym $mod+r mode "resize"
@@ -239,14 +215,13 @@ bar {
   colors {
        # Whole color settings
        background #000f00
-       #statusline #D6D0D0
-       statusline #c0c0c0
+       statusline #D6D0D0
        separator  #666666
 
        ## Type             border  background font
        #focused_workspace  #008fff #007fff #ffffff
-       focused_workspace  #000000 #F2DF8C #2F1E52
-       active_workspace   #F2DF8C #007fff #ffffff
+       focused_workspace  #000000 #000000 #00ffff
+       active_workspace   #000000 #007fff #ffffff
        #inactive_workspace #333333 #222222 #888888
        inactive_workspace #000000 #000000 #888888
        urgent_workspace   #aa0000 #990000 #ffffff
@@ -303,9 +278,9 @@ exec --no-startup-id exec parcellite
 #bindsym $mod+Shift+  exec scrot '%Y-%m-%d-%T_$wx$h_scrot.png' -e 'mv $f ~/Dropbox/Screenshots/'
 
 
-bindsym $mod+Shift+p exec scrot '%Y-%m-%d-%T_$wx$h.png' -e 'mv $f ~/Dropbox/Screenshots/'
-bindsym $mod+Shift+1+p exec scrot '%Y-%m-%d-%T_$wx$h.png' -e 'mv $f ~/Dropbox/Screenshots/'
-bindsym $mod+Shift+o exec scrot -u '%Y-%m-%d-%T_$wx$h.png' -e 'mv $f ~/Dropbox/Screenshots/'
+bindsym $mod+Shift+p exec scrot '%Y-%m-%d-%T_$wx$h_scrot.png' -e 'mv $f ~/Dropbox/Screenshots/'
+bindsym $mod+Shift+1+p exec scrot '%Y-%m-%d-%T_$wx$h_scrot.png' -e 'mv $f ~/Dropbox/Screenshots/'
+bindsym $mod+Shift+o exec scrot -u '%Y-%m-%d-%T_$wx$h_scrot.png' -e 'mv $f ~/Dropbox/Screenshots/'
 
 
 # set wallpaper
@@ -313,9 +288,9 @@ bindsym $mod+Shift+o exec scrot -u '%Y-%m-%d-%T_$wx$h.png' -e 'mv $f ~/Dropbox/S
 #exec --no-startup-id feh --bg-fill ~/Dropbox/wallpaper/fliKEFG.png
 
 #exec exec xautolock -locker ~/projects/i3lock-fancy/lock -detectsleep
-#exec exec --no-starup-id xsetroot -solid gray8
+exec exec --no-starup-id xsetroot -solid gray8
 
-#exec --no-startup-id compton -f
+
 
 # Multimedia Keys
 # increase volume
@@ -330,13 +305,13 @@ gaps inner 10
 gaps outer 3
 
 
-# set $mode_gaps Gaps: (o) outer, (i) inner
-# set $mode_gaps_outer Outer Gaps: +|-|0 (local), Shift + +|-|0 (global)
-# set $mode_gaps_inner Inner Gaps: +|-|0 (local), Shift + +|-|0 (global)
+set $mode_gaps Gaps: (o) outer, (i) inner
+set $mode_gaps_outer Outer Gaps: +|-|0 (local), Shift + +|-|0 (global)
+set $mode_gaps_inner Inner Gaps: +|-|0 (local), Shift + +|-|0 (global)
 bindsym $mod+Shift+g mode "$mode_gaps"
 
 mode "$mode_gaps" {
-         bindsym o      mode "$mode_gaps_outer"
+        bindsym o      mode "$mode_gaps_outer"
         bindsym i      mode "$mode_gaps_inner"
         bindsym Return mode "default"
         bindsym Escape mode "default"
@@ -368,7 +343,7 @@ mode "$mode_gaps_outer" {
 }
 
 smart_gaps on
-smart_borders no_gaps
+#smart_borders no_gaps
 smart_borders on
 
 bindsym XF86MonBrightnessUp exec sudo screen-backlight up
@@ -376,10 +351,3 @@ bindsym XF86MonBrightnessDown exec sudo screen-backlight down
 
 bindsym XF86KbdBrightnessUp exec sudo keyboard-backlight up
 bindsym XF86KbdBrightnessDown exec sudo keyboard-backlight down
-
-
-#for_window [con_mark="^slack$"] move window to scratchpad
-#exec --no-startup-id i3-msg 'workspace 0; exec slack, mark slack; workspace 1'
-#bindsym $mod+e [con_mark="^slack$"] scratchpad show
-
-exec --no-startup-id i3-msg 'workspace 7; exec slack'

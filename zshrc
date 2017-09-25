@@ -37,7 +37,7 @@ export PATH="/usr/local/bin:${PATH}"
 
 export TERM=xterm-256color
 
-export WORDCHARS=''
+#export WORDCHARS=''
 export GIT_MERGE_AUTOEDIT=no
 
 autoload -U select-word-style
@@ -133,14 +133,22 @@ export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=243"
 
 export NVM_DIR="/home/david/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+
 source ~/antigen.zsh
 
-export ZSH_AUTOSUGGEST_STRATEGY=match_prev_cmd
+#export ZSH_AUTOSUGGEST_STRATEGY=match_prev_cmd
 
 antigen theme eendroroy/alien-minimal alien-minimal 
-antigen bundle zsh-users/zsh-syntax-highlighting
-antigen bundle tarruda/zsh-autosuggestions                                                                                  N
+# antigen bundle zsh-users/zsh-syntax-highlighting
+#antigen bundle tarruda/zsh-autosuggestions                                                                                  N
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 antigen apply
 
 alias gist='gist-paste -c'
 alias tree='tree -D -F -h -f'
+
+if [ -f /usr/local/bin/exa ]; then
+   alias ls='exa -F --git'
+fi
+   

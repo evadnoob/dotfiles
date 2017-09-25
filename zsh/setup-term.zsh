@@ -24,10 +24,10 @@ elif [[ "eterm-color" = "$TERM" ]]; then
         fi
         echo -e "\033AnSiTh" "$(hostname $hostname_options)" # Using the -f option can cause problems on some OSes.
     }
-elif [[ "$TERM" == "" ]]; then
-    echo "TERM was not set, setting to default"
-    export TERM=xterm-256color
-elif [[ -n "$TMUX" ]]; then
-    export TERM=screen-256color
+# elif [[ "$TERM" == "" ]]; then
+#     echo "TERM was not set, setting to default"
+#     export TERM=xterm-256color
+# elif [[ -n "$TMUX" ]]; then
+#     export TERM=screen-256color
 fi 
 
