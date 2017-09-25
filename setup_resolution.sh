@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# sudo pkill vmtoolsd; sudo /usr/bin/vmtoolsd -n vmusr & sleep 4; zoom-normal
+
 # 2560x1600 59.99 Hz (CVT 4.10MA) hsync: 99.46 kHz; pclk: 348.50 MHz
 #xrandr --newmode "2560x1600_60.00"  348.50  2560 2760 3032 3504  1600 1603 1609 1658 -hsync +vsync
 #1920x1200 59.88 Hz (CVT 2.30MA) hsync: 74.56 kHz; pclk: 193.25 MHz
