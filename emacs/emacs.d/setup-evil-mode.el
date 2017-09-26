@@ -184,26 +184,31 @@ then it takes a second \\[keyboard-quit] to abort the minibuffer."
 ;;              "C-y" 'yank
 ;;              "C-e" 'end-of-line)
 
-; https://zuttobenkyou.wordpress.com/2011/02/15/some-thoughts-on-emacs-and-vim/
-; make "kj" behave as ESC key ,adapted from http://permalink.gmane.org/gmane.emacs.vim-emulation/684
-; you can easily change it to map "jj" or "kk" or "jk" to ESC)
-(defun escape-if-next-char (c)
-    "Watches the next letter.  If c, then switch to Evil's normal mode; otherwise insert a k and forward unpressed key to unread-command events"
-      (self-insert-command 1)
-        (let ((next-key (read-event)))
-              (if (= c next-key)
-                        (progn
-                                    (delete-backward-char 1)
-                                              (evil-esc))
-                              (setq unread-command-events (list next-key)))))
+;; ; https://zuttobenkyou.wordpress.com/2011/02/15/some-thoughts-on-emacs-and-vim/
+;; ; make "kj" behave as ESC key ,adapted from http://permalink.gmane.org/gmane.emacs.vim-emulation/684
+;; ; you can easily change it to map "jj" or "kk" or "jk" to ESC)
+;; (defun escape-if-next-char (c)
+;;     "Watches the next letter.  If c, then switch to Evil's normal mode; otherwise insert a k and forward unpressed key to unread-command events"
+;;       (self-insert-command 1)
+;;         (let ((next-key (read-event)))
+;;               (if (= c next-key)
+;;                         (progn
+;;                                     (delete-backward-char 1)
+;;                                               (evil-esc))
+;;                               (setq unread-command-events (list next-key)))))
  
-(defun escape-if-next-char-is-j (arg)
-    (interactive "p")
-      (if (= arg 1)
-              (escape-if-next-char ?j)
-                  (self-insert-command arg)))
+;; (defun escape-if-next-char-is-j (arg)
+;;     (interactive "p")
+;;       (if (= arg 1)
+;;               (escape-if-next-char ?j)
+;;                   (self-insert-command arg)))
  
-(define-key evil-insert-state-map (kbd "k") 'escape-if-next-char-is-j)
+;; (define-key evil-insert-state-map (kbd "k") 'escape-if-next-char-is-j)
+
+
+(use-package evil-escape :ensure t
+  :init 
+  (setq-default evil-escape-key-sequence "jk"))
 
 (require 'evil-leader)
 (setq evil-leader/leader ";"
