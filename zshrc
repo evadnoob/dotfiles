@@ -3,70 +3,70 @@
 #
 export ZSH_DOTFILES=~/dotfiles/zsh
 
-source ${ZSH_DOTFILES}/setup-term.zsh
+# source ${ZSH_DOTFILES}/setup-term.zsh
 
-if [[ ! "dumb" = "$TERM" ]]; then 
-  #source ${ZSH_DOTFILES}/setup-oh-my-zsh.zsh
-  #
-  source ${ZSH_DOTFILES}/setup-zprezto.zsh
-fi
+# if [[ ! "dumb" = "$TERM" ]]; then 
+#   #source ${ZSH_DOTFILES}/setup-oh-my-zsh.zsh
+#   #
+#   source ${ZSH_DOTFILES}/setup-zprezto.zsh
+# fi
 
-# source ${ZSH_DOTFILES}/setup-java.zsh
-# source ${ZSH_DOTFILES}/setup-aws.zsh
-# source ${ZSH_DOTFILES}/setup-emacs.zsh
-# source ${ZSH_DOTFILES}/setup-less.zsh
-# source ${ZSH_DOTFILES}/setup-functions.zsh
-# source ${ZSH_DOTFILES}/setup-vim.zsh
- source ${ZSH_DOTFILES}/setup-zsh.zsh
-# source ${ZSH_DOTFILES}/setup-ssh.zsh
-# source ${ZSH_DOTFILES}/setup-postgres.zsh
-# source ${ZSH_DOTFILES}/setup-gcloud.zsh
-# source ${ZSH_DOTFILES}/setup-ranger.zsh
-#source ${ZSH_DOTFILES}/setup-haste.sh
+# # source ${ZSH_DOTFILES}/setup-java.zsh
+# # source ${ZSH_DOTFILES}/setup-aws.zsh
+# # source ${ZSH_DOTFILES}/setup-emacs.zsh
+# # source ${ZSH_DOTFILES}/setup-less.zsh
+# # source ${ZSH_DOTFILES}/setup-functions.zsh
+# # source ${ZSH_DOTFILES}/setup-vim.zsh
+#  source ${ZSH_DOTFILES}/setup-zsh.zsh
+# # source ${ZSH_DOTFILES}/setup-ssh.zsh
+# # source ${ZSH_DOTFILES}/setup-postgres.zsh
+# # source ${ZSH_DOTFILES}/setup-gcloud.zsh
+# # source ${ZSH_DOTFILES}/setup-ranger.zsh
+# #source ${ZSH_DOTFILES}/setup-haste.sh
 source ${ZSH_DOTFILES}/setup-golang.zsh
-source ${ZSH_DOTFILES}/setup-mysql.zsh
-source ~/dotfiles/setup-invision-env.sh
+# source ${ZSH_DOTFILES}/setup-mysql.zsh
+# source ~/dotfiles/setup-invision-env.sh
 
-export PATH="/usr/local/bin:${PATH}"
+# export PATH="/usr/local/bin:${PATH}"
 
-#make sure the path to emacsclient is before /usr/bin/emacsclient
-#export PATH="/Applications/Emacs.app/Contents/MacOS/bin:$PATH" 
-# export PATH="~/Applications/Emacs-24.2.91/Emacs.app/Contents/MacOS/bin:$PATH"
+# #make sure the path to emacsclient is before /usr/bin/emacsclient
+# #export PATH="/Applications/Emacs.app/Contents/MacOS/bin:$PATH" 
+# # export PATH="~/Applications/Emacs-24.2.91/Emacs.app/Contents/MacOS/bin:$PATH"
 
-#bindkey -M emacs '^x backspace' backward-kill-line
+# #bindkey -M emacs '^x backspace' backward-kill-line
 
-export TERM=xterm-256color
+# export TERM=xterm-256color
 
-#export WORDCHARS=''
-export GIT_MERGE_AUTOEDIT=no
+# #export WORDCHARS=''
+# export GIT_MERGE_AUTOEDIT=no
 
-autoload -U select-word-style
-select-word-style bash
-#bindkey '^?' backward-delete-word
+# autoload -U select-word-style
+# select-word-style bash
+# #bindkey '^?' backward-delete-word
 
-bindkey -M isearch '^R' history-incremental-search-backward
-bindkey -M isearch '^S' history-incremental-search-forward
-bindkey -M emacs '^x^?' backward-kill-line
-
-
-setopt nocorrectall
-
-# 10 second wait if you do something that will delete everything.  I wish I'd had this before...
-setopt RM_STAR_WAIT
+# bindkey -M isearch '^R' history-incremental-search-backward
+# bindkey -M isearch '^S' history-incremental-search-forward
+# bindkey -M emacs '^x^?' backward-kill-line
 
 
-# prevent jobs spawned in the background from being terminated when quitting shell.
-setopt NO_HUP
+# setopt nocorrectall
 
-set -o vi
-bindkey -M viins 'jj' vi-cmd-mode
-
+# # 10 second wait if you do something that will delete everything.  I wish I'd had this before...
+# setopt RM_STAR_WAIT
 
 
+# # prevent jobs spawned in the background from being terminated when quitting shell.
+# setopt NO_HUP
 
-#source ~/projects/base16-shell/base16-twilight.dark.sh
+# set -o vi
+# bindkey -M viins 'jj' vi-cmd-mode
 
-export PATH=${PATH}:~/google-cloud-sdk/bin
+
+
+
+# #source ~/projects/base16-shell/base16-twilight.dark.sh
+
+# export PATH=${PATH}:~/google-cloud-sdk/bin
 
 
 # The next line updates PATH for the Google Cloud SDK.
@@ -86,13 +86,13 @@ export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 #prompt  walters
 
 
-eval $(dircolors -p | sed -e 's/DIR 01;34/DIR 01;39/' | dircolors /dev/stdin)
+# eval $(dircolors -p | sed -e 's/DIR 01;34/DIR 01;39/' | dircolors /dev/stdin)
 
 
-## turn off annoying beep/bell
-if [ -n "$DISPLAY" ]; then
-        xset b off
-fi
+# ## turn off annoying beep/bell
+# if [ -n "$DISPLAY" ]; then
+#         xset b off
+# fi
 
 
 # alias zoom-reset='xrandr --output Virtual1  --mode 2560x1600 --scale "1x1"'
@@ -106,17 +106,23 @@ alias zoom-normal='zoom-reset && xrandr --output Virtual1  --mode 3840x2400 --sc
 alias zoom-forty='zoom-reset && xrandr --output Virtual1  --mode 3840x2400 --scale ".40x.40"'
 
 
-prompt minimal
+#prompt minimal
 
 # allow the comment char  to be used from interactive shells, nice for typing something and saving it
 setopt interactivecomments
 
 # setup z for jumping around
 # https://github.com/rupa/z
-source ~/dotfiles/z/z.sh
+if [ -f ~/dotfiles/z/z.sh ]; then
+    source ~/dotfiles/z/z.sh
+fi
 
 
-source $HOME/.cargo/env
+if [ -f $HOME/.cargo/env ]; then
+    source $HOME/.cargo/env
+fi
+
+
 
 
 # # Gotham Shell
@@ -135,14 +141,14 @@ export NVM_DIR="/home/david/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 
-source ~/antigen.zsh
+[ -f "~/projects/antigen.zsh" ] && . source ~/projects/antigen.zsh
 
 #export ZSH_AUTOSUGGEST_STRATEGY=match_prev_cmd
 
 antigen theme eendroroy/alien-minimal alien-minimal 
 # antigen bundle zsh-users/zsh-syntax-highlighting
 #antigen bundle tarruda/zsh-autosuggestions                                                                                  N
-source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+#source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 antigen apply
 
 alias gist='gist-paste -c'

@@ -1,36 +1,36 @@
-(when is-darwin
-  (setq default-frame-alist
-        '(
-	  (font . "-apple-Monaco-medium-normal-normal-*-10-*-*-*-m-0-iso10646-1")
-          ;;(cursor-type bar . 3)
-          ;;(cursor-type bar . 8)
-          (cursor-color . "#1E16ED")
-          (left-fringe . 0)
-          (right-fringe . 0)
-          (menu-bar-lines  .  0)
-          (scroll-bar-width  .  0)
-          (vertical-scroll-bars  . nil)
-          (internal-border-width  .  1))))
+;; (when is-darwin
+;;   (setq default-frame-alist
+;;         '(
+;; 	  (font . "-apple-Monaco-medium-normal-normal-*-10-*-*-*-m-0-iso10646-1")
+;;           ;;(cursor-type bar . 3)
+;;           ;;(cursor-type bar . 8)
+;;           (cursor-color . "#1E16ED")
+;;           (left-fringe . 0)
+;;           (right-fringe . 0)
+;;           (menu-bar-lines  .  0)
+;;           (scroll-bar-width  .  0)
+;;           (vertical-scroll-bars  . nil)
+;;           (internal-border-width  .  1))))
 
-(when (not is-darwin)
-  (setq default-frame-alist
-        '(
-          ;;(font . "-outline-Consolas-normal-normal-normal-mono-11-*-*-*-c-*-iso8859-1")
-	  ;;(cursor-type bar . 8)
-          (cursor-type bar . 3)
-          (cursor-color . "blue")
-          (left-fringe . 0)
-          (right-fringe . 0)
-          (menu-bar-lines  .  0)
-          (scroll-bar-width  .  0)
-          (vertical-scroll-bars  .  nil)
-          (internal-border-width  .  0))))
+;; (when (not is-darwin)
+;;   (setq default-frame-alist
+;;         '(
+;;           ;;(font . "-outline-Consolas-normal-normal-normal-mono-11-*-*-*-c-*-iso8859-1")
+;; 	  ;;(cursor-type bar . 8)
+;;           (cursor-type bar . 3)
+;;           (cursor-color . "blue")
+;;           (left-fringe . 0)
+;;           (right-fringe . 0)
+;;           (menu-bar-lines  .  0)
+;;           (scroll-bar-width  .  0)
+;;           (vertical-scroll-bars  .  nil)
+;;           (internal-border-width  .  0))))
 
-(setq initial-frame-alist default-frame-alist)
+;; (setq initial-frame-alist default-frame-alist)
 
 
-(add-to-list 'load-path (*emacs "emacs.p/color-theme-6.6.0"))
-(add-to-list 'load-path (*emacs "emacs.p/color-theme-6.6.0/themes"))
+;; (add-to-list 'load-path (*emacs "emacs.p/color-theme-6.6.0"))
+;; (add-to-list 'load-path (*emacs "emacs.p/color-theme-6.6.0/themes"))
 
 ;;(add-hook 'before-make-frame-hook 'turn-off-tool-bar)
 
@@ -175,7 +175,7 @@
   ;; ;;     (color-theme-railscasts)))
 
 
- (add-to-list 'custom-theme-load-path (*emacs "themes/"))
+(add-to-list 'custom-theme-load-path (*emacs "themes/"))
 (global-hl-line-mode -1)
 
 ;; org-mode colors

@@ -224,7 +224,7 @@ then it takes a second \\[keyboard-quit] to abort the minibuffer."
   "m" 'compile
   "be" 'ibuffer
   "bs" 'bs-show
-  "bi" 'iswitchb-buffer
+ ;; "bi" 'iswitchb-buffer
   "h" 'helm-mini
   "a" 'git-blame-mode
   "e" 'find-file

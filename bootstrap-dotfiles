@@ -13,11 +13,14 @@ ln -sf ~/dotfiles/emacs.d ~/.emacs.d
 ln -sf ~/dotfiles/dotemacs ~/.emacs
 ln -sf ~/dotfiles/zsh-autosuggestions ~/.zsh-autosuggestions
 ln -sf ~/dotfiles/irssi ~/.irssi
-ln -sf ~/dotfiles/ranger/rc.conf ~/.config/ranger/rc.conf
-ln -sf ~/dotfiles/ranger/scope.sh ~/.config/ranger/scope.sh
+#ln -sf ~/dotfiles/ranger/rc.conf ~/.config/ranger/rc.conf
+#ln -sf ~/dotfiles/ranger/scope.sh ~/.config/ranger/scope.sh
+ln -sf ~/dotfiles/ranger ~/.config/ranger
 ln -sf ~/dotfiles/conkyrc ~/.conkyrc
 ln -sf ~/Dropbox/.zhistory ~/.zhistory
 ln -sf ~/dotfiles/inputrc ~/.inputrc
 ln -sf ~/dotfiles/firefox ~/firefox
 ln -sf ~/dotfiles/fonts ~/.fonts
+ln -sf ~/dotfiles/i3 ~/.config/i3
+ln -sf ~/dotfiles/xfce4 ~/.config/xfce4
 

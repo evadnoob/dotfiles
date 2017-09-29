@@ -28,4 +28,7 @@ synclient TapButton3=3
 
 #not resolution related, but fixes mouse movement speed on large monitor
 #xset m 1/2 2
+
 xset m 3/2 0
+
+xrandr --output Virtual1  --mode 3840x2400 --scale ".68x.68"

@@ -36,6 +36,7 @@
 (defvar evadnoob/required-packages
   ' (
      ace-window
+     anything
      ;;annoying-arrows-mode
      auctex
      auto-complete
@@ -49,6 +50,7 @@
      delight
      ensime
      evil
+     evil-exchange
      evil-org
      evil-search-highlight-persist
      evil-terminal-cursor-changer
@@ -84,6 +86,7 @@
      projectile
      python
      sass-mode
+     rainbow-delimiters
      rcirc
      rcirc-color
      racer
