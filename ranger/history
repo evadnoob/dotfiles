@@ -1,0 +1,50 @@
+SS
+open_with less -+Sw
+cd /home/david/projects/go/src/github.com/InVisionApp/
+find v2
+cd /home/david/projects/invision-local/S
+cd /home/david/projects/go/src/github.com/InVisionApp/data-migrator
+touch SCREEN_MONGO_USE_SSL
+touch SCREEN_MONGO_REPLICASET
+rename SCREEN_MONGO_REPLICA_SET
+delete 
+touch
+touch INSPECT_MONGO_REPLICA_SET
+oep
+open_with emacsclient
+cd /home/david/projects/invision-local/
+grep add-subgraph-to-typemap
+cd /home/david/projects/invision-env/production/use1-prod-2-data-2-cluster/
+cd /home/david/Dropbox/Screenshots/
+shell 
+@
+shell 
+shell xclip %s
+shell xclip -selection clipboard -t image/png -i %s
+cd /home/david/projects/invision-env
+find prod-multi-c
+open_with less -+S
+search use1-prod-2-mck
+find use1-prod-2-mc
+search prod-multi
+cd /home/david/projects/kubernetes-coreos
+find use1-prod-1-v
+find use1-prod-2-data-2
+cd /home/david/projects/invision-env/production/
+find mult
+open_with emacsclient -nw
+open_with emacsclient 
+
+open_with 
+grep MYSQL
+find rca
+mkdir RCA171031-2
+rename 
+rename normalize-env-vars-users-api
+cd /home/david/projects/
+help 
+G
+help
+delete
+open_with xxd
+open_with vim
