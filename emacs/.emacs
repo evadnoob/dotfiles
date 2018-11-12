@@ -1,3 +1,4 @@
+
 ;;
 ;; main entry point into my .emacs.d 
 ;;
@@ -23,7 +24,7 @@
       (expand-file-name (concat "~/dotfiles/emacs/" path))
     (expand-file-name (concat "~/dotfiles/emacs/" path))))
 
-(add-to-list 'load-path (*emacs "emacs.d"))
+(add-to-list 'load-path (*emacs ""))
 (add-to-list 'load-path (*emacs "emacs.p"))
 
 (load-library "setup-melpa")
@@ -32,13 +33,62 @@
 ;;(if (not (display-graphic-p))
 ;;    (load-library "setup-appearance"))
 
-(custom-set-variables 
- '(visible-cursor nil)
- '(custom-theme-directory (*emacs "/themes")))
+;; (custom-set-variables
+;;  ;; custom-set-variables was added by Custom.
+;;  ;; If you edit it by hand, you could mess it up, so be careful.
+;;  ;; Your init file should contain only one such instance.
+;;  ;; If there is more than one, they won't work right.
+;;  '(Buffer-menu-buffer+size-width 40)
+;;  '(ansi-color-names-vector
+;;    (vector "black" "sienna" "green" "white" "DarkOliveGreen4" "DarkRed" "blue" "white"))
+;;  '(auto-insert (quote other))
+;;  '(auto-insert-directory "~/dotfiles/emacs/auto-insert-templates/")
+;;  '(backup-inhibited t t)
+;;  '(completion-ignore-case t t)
+;;  '(custom-safe-themes
+;;    (quote
+;;     ("413977a7c905d98c611829fd7b0eff2c299e210f4cca58a27dff0901b36fc8e3" "a3d85397a299ff5d7cbbfc0ca7031f60249cc99a320c8e5bf88489d36ceb08ed" "a27c00821ccfd5a78b01e4f35dc056706dd9ede09a8b90c6955ae6a390eb1c1e" "8cb72a41765bb3b2598bc815174bbc8d0669f899c88dc7cff787e7ce2f0c6648" "c74e83f8aa4c78a121b52146eadb792c9facc5b1f02c917e3dbb454fca931223" "3c83b3676d796422704082049fc38b6966bcad960f896669dfc21a7a37a748fa" "c4bd8fa17f1f1fc088a1153ca676b1e6abc55005e72809ad3aeffb74bd121d23" default)))
+;;  '(debug-on-error t)
+;;  '(dired-listing-switches "-ghG")
+;;  '(display-line-numbers-width 4)
+;;  '(evil-move-cursor-back nil)
+;;  '(evil-regexp-search t)
+;;  '(evil-want-fine-undo t)
+;;  '(flycheck-gometalinter-concurrency 1)
+;;  '(flycheck-gometalinter-deadline "20s")
+;;  '(glasses-face "bold")
+;;  '(glasses-original-separator "")
+;;  '(glasses-separate-parentheses-p nil)
+;;  '(glasses-separator "")
+;;  '(indent-tabs-mode nil)
+;;  '(mode-line-format
+;;    (quote
+;;     ("%e" mode-line-front-space mode-line-mule-info mode-line-client mode-line-modified mode-line-remote mode-line-frame-identification mode-line-buffer-identification "   " mode-line-position evil-mode-line-tag
+;;      (vc-mode vc-mode)
+;;      "  " mode-line-modes mode-line-misc-info)))
+;;  '(nil nil t)
+;;  '(nxhtml-global-minor-mode t)
+;;  '(nxhtml-skip-welcome t)
+;;  '(org-cycle-global-at-bob t)
+;;  '(org-directory "~/Dropbox/org-mode-files")
+;;  '(org-src-fontify-natively t)
+;;  '(package-selected-packages
+;;    (quote
+;;     (ivy-ricy ivy-rich counsel org-beautify-theme smart-mode-line yari yaml-mode which-key volatile-highlights visible-mark use-package try toml-mode swiper spaceline smooth-scrolling smart-cursor-color scss-mode sass-mode robe rcirc-color rainbow-mode rainbow-delimiters racer paredit org-journal org-evil org-bullets org-ac nord-theme neotree modeline-posn markdown-mode mark-multiple magit lua-mode lorem-ipsum java-snippets helm-robe helm-projectile helm-ag-r helm-ag haskell-mode guide-key groovy-mode go-snippets go-projectile gist ggtags fzf flymake-less flycheck-rust flycheck-gometalinter evil-tutor evil-terminal-cursor-changer evil-surround evil-search-highlight-persist evil-org evil-matchit evil-leader evil-exchange evil-escape evil-args ensime dockerfile-mode delight deft company-racer company-go coffee-mode clojure-mode change-inner beacon auctex anything annoying-arrows-mode ace-window)))
+;;  '(split-height-threshold nil)
+;;  '(split-width-threshold 450)
+;;  '(tramp-syntax (quote default) nil (tramp))
+;;  '(truncate-lines 1))
 
+(menu-bar-mode -1)
+(tool-bar-mode -1)
+(scroll-bar-mode -1)
+
+
+(load-library "setup-line-numbers")
+(load-library "setup-themes")
+;(load-theme 'nord t)
 (load-theme 'dmb-bliss t)
-
-
 ;; (load-library "setup-grep")
 (load-library "setup-org-mode")
 ;; (load-library "setup-shell-mode")
@@ -51,7 +101,7 @@
 ;; (load-library "setup-eval-and-replace")
 (load-library "setup-keybindings")
 ;; ;;(load-library "setup-helm")
-;; (load-library "setup-text-manipulation")
+(load-library "setup-text-manipulation")
 ;; (load-library "setup-isearch")
 ;; (load-library "setup-server")
 ;; ;;(load-library "setup-ido")
@@ -61,18 +111,18 @@
 ;; ;;(load-library "setup-nw")
 ;; ;;(load-library "setup-undo-tree")
 ;; (load-library "setup-python-mode")
-(load-library "setup-magit") 
+;; (load-library "setup-magit") 
 ;; ;;(load-library "setup-highlight-line-mode")
 ;; ;;(load-library "setup-ack")
 ;; ;;(load-library "setup-scala-mode")
 ;; ;;(load-library "setup-dockerfile-mode")
 ;; ;;(load-library "setup-delight")
 ;; ;;(load-library "setup-copy-and-paste")
-;;(load-library "setup-beacon")
+(load-library "setup-beacon")
 ;; (load-library "setup-anything")
 (load-library "setup-golang")
-(load-library "setup-spaceline")
-;; (load-library "setup-helm-mode")
+;;(load-library "setup-spaceline")
+;;(load-library "setup-helm-mode")
 
 ;; ;; (load-library "setup-flx")
 ;; ;; (load-library "setup-god-mode")
@@ -81,12 +131,15 @@
 ;; ;;(load-library "setup-ag-mode")
 ;; ;;(load-library "setup-rust-mode")
 
-;;brew install emacs --cocoa --use-git-head --HEAD
-;; To open it with Alfred or Quicksilver, you have to copy Emacs.app into /Applications instead of the symlink that brew places there.
+(load-library "setup-find-file-at-line-number")
 
-;; (setq dmb-dotemacs-end-time (current-time))
-;; ;;(message 
-;; ;; (format "emacs init-time %s, wall clock %s ." (emacs-init-time) (time-to-seconds (time-subtract dmb-dotemacs-end-time dmb-dotemacs-start-time))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(line-number-current-line ((t (:foreground "white" :background "color-33"))))
+ '(mode-line-inactive ((t (:inherit mode-line :background "black" :foreground "gray60" :inverse-video nil :box nil :weight light)))))
 ;; (custom-set-variables
 ;;  ;; custom-set-variables was added by Custom.
 ;;  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -99,23 +152,19 @@
 ;;  '(completion-ignore-case t t)
 ;;  '(custom-safe-themes
 ;;    (quote
-;;     ("612ec5de510341db60391367dd3c3615deb06066a22b805fe3fdb6433b9c3da4" "893f0a4c187524b5fb2cfb5c5dccb40faef3914045ff82d13de5d57e105c7ebf" "a430857b5359b0051a74771a5c3c622bc00a0c930369b5b4a3b575992a767ffc" "67fadbf89c59c0290a6e1fad876350d6b14ee0e7c74492d5ed74cf6254104f45" default)))
-;;  '(custom-theme-directory (*emacs "/themes"))
+;;     ("c4bd8fa17f1f1fc088a1153ca676b1e6abc55005e72809ad3aeffb74bd121d23" default)))
 ;;  '(dired-listing-switches "-ghG")
-;;  '(erc-enable-logging (quote erc-log-all-but-server-buffers))
-;;  '(erc-hide-list (quote ("JOIN" "PART" "QUIT" "NICK" "MODE" "TOPIC")))
-;;  '(erc-kill-queries-on-quit t)
-;;  '(erc-kill-server-buffer-on-quit t)
-;;  '(erc-log-channels-directory "~/.erc.logs")
-;;  '(erc-modules
-;;    (quote
-;;     (netsplit fill button match track completion readonly networks ring autojoin noncommands irccontrols move-to-prompt stamp menu list scrolltobottom)))
-;;  '(erc-ring-mode 1)
+;;  '(display-line-numbers-width 4)
 ;;  '(evil-move-cursor-back nil)
 ;;  '(evil-regexp-search t)
 ;;  '(evil-want-fine-undo t)
+;;  '(flycheck-gometalinter-concurrency 1)
+;;  '(flycheck-gometalinter-deadline "20s")
+;;  '(glasses-face "bold")
+;;  '(glasses-original-separator "")
+;;  '(glasses-separate-parentheses-p nil)
+;;  '(glasses-separator "")
 ;;  '(indent-tabs-mode nil)
-;;  '(isearch-allow-scroll t)
 ;;  '(mode-line-format
 ;;    (quote
 ;;     ("%e" mode-line-front-space mode-line-mule-info mode-line-client mode-line-modified mode-line-remote mode-line-frame-identification mode-line-buffer-identification "   " mode-line-position evil-mode-line-tag
@@ -125,17 +174,51 @@
 ;;  '(nxhtml-skip-welcome t)
 ;;  '(org-cycle-global-at-bob t)
 ;;  '(org-directory "~/Dropbox/org-mode-files")
-;;  '(setq python-indent-offset)
-;;  '(socks-noproxy (quote ("localhost")) t)
-;;  '(socks-override-functions 1 t)
-;;  '(socks-server (list "tor" "localhost" 9050 5))
+;;  '(org-src-fontify-natively t)
+;;  '(package-selected-packages
+;;    (quote
+;;     (org-beautify-theme spacemacs-theme spaceline fzf nord-theme yari yaml-mode which-key volatile-highlights visible-mark use-package try toml-mode swiper smooth-scrolling smart-cursor-color scss-mode sass-mode robe rcirc-color rainbow-mode rainbow-delimiters racer paredit org-journal org-evil org-bullets org-ac neotree modeline-posn markdown-mode mark-multiple magit lua-mode lorem-ipsum java-snippets helm-robe helm-projectile helm-ag haskell-mode guide-key groovy-mode go-snippets go-projectile gist ggtags flymake-less flycheck-rust flycheck-gometalinter evil-tutor evil-terminal-cursor-changer evil-surround evil-search-highlight-persist evil-org evil-matchit evil-leader evil-exchange evil-escape evil-args ensime dockerfile-mode delight deft company-racer company-go coffee-mode clojure-mode change-inner beacon auctex anything annoying-arrows-mode ace-window)))
 ;;  '(split-height-threshold nil)
 ;;  '(split-width-threshold 450)
-;;  '(truncate-lines 1)
-;;  '(visible-cursor nil))
-;; (custom-set-faces
-;;  ;; custom-set-faces was added by Custom.
-;;  ;; If you edit it by hand, you could mess it up, so be careful.
-;;  ;; Your init file should contain only one such instance.
-;;  ;; If there is more than one, they won't work right.
-;;  )
+;;  '(tramp-syntax (quote default) nil (tramp))
+;;  '(truncate-lines 1))
+
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(Buffer-menu-buffer+size-width 40)
+ '(auto-insert 'other)
+ '(auto-insert-directory "~/dotfiles/emacs/auto-insert-templates/")
+ '(backup-inhibited t t)
+ '(completion-ignore-case t t)
+ '(custom-safe-themes
+   '("3c83b3676d796422704082049fc38b6966bcad960f896669dfc21a7a37a748fa" "8cb72a41765bb3b2598bc815174bbc8d0669f899c88dc7cff787e7ce2f0c6648" default))
+ '(dired-listing-switches "-ghG")
+ '(display-line-numbers-width 4)
+ '(evil-move-cursor-back nil)
+ '(evil-regexp-search t)
+ '(evil-want-fine-undo t)
+ '(flycheck-gometalinter-concurrency 1)
+ '(flycheck-gometalinter-deadline "20s")
+ '(glasses-face "bold")
+ '(glasses-original-separator "")
+ '(glasses-separate-parentheses-p nil)
+ '(glasses-separator "")
+ '(indent-tabs-mode nil)
+ '(mode-line-format
+   '("%e" mode-line-front-space mode-line-mule-info mode-line-client mode-line-modified mode-line-remote mode-line-frame-identification mode-line-buffer-identification "   " mode-line-position evil-mode-line-tag
+     (vc-mode vc-mode)
+     "  " mode-line-modes mode-line-misc-info))
+ '(nxhtml-global-minor-mode t)
+ '(nxhtml-skip-welcome t)
+ '(org-cycle-global-at-bob t)
+ '(org-directory "~/Dropbox/org-mode-files")
+ '(org-src-fontify-natively t)
+ '(package-selected-packages
+   '(spaceline fzf smart-mode-line-powerline-theme go-snippets evil-escape flycheck-gometalinter go-projectile company-go org-journal org-bullets yari yaml-mode which-key volatile-highlights visible-mark use-package try toml-mode swiper smooth-scrolling smart-cursor-color scss-mode sass-mode rcirc-color rainbow-mode rainbow-delimiters racer paredit org-evil org-ac neotree markdown-mode mark-multiple magit lua-mode lorem-ipsum java-snippets inf-ruby helm-projectile helm-ag haskell-mode guide-key groovy-mode go-mode gist ggtags flymake-less flycheck-rust evil-tutor evil-terminal-cursor-changer evil-surround evil-search-highlight-persist evil-org evil-matchit evil-leader evil-exchange evil-args ensime dockerfile-mode delight deft company-racer coffee-mode clojure-mode change-inner beacon auctex anything annoying-arrows-mode ace-window))
+ '(split-height-threshold nil)
+ '(split-width-threshold 450)
+ '(tramp-syntax 'default nil (tramp))
+ '(truncate-lines 1))

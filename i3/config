@@ -22,7 +22,7 @@ set $mod Mod4
 #font pango:DejaVu Sans Mono 8
 #font pango:Terminus 9px
 #font pango:Hack 9px
-font pango: Source Code Pro 12px`
+font pango: Source Code Pro 12px
 
 # Before i3 v4.8, we used to recommend this one as the default:
 # font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
@@ -58,16 +58,18 @@ bindsym $mod+d exec --no-startup-id \
 
 bindsym $mod+Shift+d  exec --no-startup-id /home/david/projects/rofi-pass/rofi-pass
 
+
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
 #bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
 # change focus
-bindsym $mod+j focus left
-bindsym $mod+k focus down
-bindsym $mod+l focus up
-#bindsym $mod+semicolon focus right
+# bindsym $mod+h focus left
+# bindsym $mod+j focus down
+# bindsym $mod+k focus up
+# bindsym $mod+l focus right
+# #bindsym $mod+semicolon focus right
 
 # alternatively, you can use the cursor keys:
 #bindsym $mod+Left focus left
@@ -98,7 +100,7 @@ bindsym $mod+f fullscreen
 
 # change container layout (stacked, tabbed, toggle split)
 bindsym $mod+s layout stacking
-#bindsym $mod+w layout tabbed
+bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 
 # toggle tiling / floating
@@ -111,7 +113,7 @@ bindsym $mod+Shift+space floating toggle
 bindsym $mod+a focus parent
 
 # focus the child container
-bindsym $mod+w focus child
+bindsym $mod+Shift+a focus child
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left workspace prev
@@ -180,13 +182,13 @@ assign [class="urxvt" title="^david: ranger$"] $workspace4
 #exec --no-startup-id i3-msg 'workspace 7: hipchat; exec hipchat4'
 #exec --no-startup-id i3-msg 'workspace 1: default; exec urxvt -e ranger'
 #exec --no-startup-id i3-msg 'workspace 9: default; exec irssi'
-exec --no-startup-id i3-msg 'workspace 3; exec ~/Downloads/firefox/firefox; workspace 3'
+#exec --no-startup-id i3-msg 'workspace 3; exec ~/Downloads/firefox/firefox; workspace 3'
 #exec --no-startup-id i3-msg 'exec xsetroot -solid gray10'
 
 # when running under a composition manager, xsetroot does not work, workaround use hsetroot
 exec --no-startup-id i3-msg 'exec setroot -solid "#000000"'
 exec --no-startup-id i3-msg 'exec ~/projects/emacs/src/emacs --daemon'
-exec --no-startup-id i3-msg 'exec compton --config ~/dotfiles/compton.conf'
+#exec --no-startup-id i3-msg 'exec compton -bcf -i 0.65'
 exec --no-startup-id i3-msg 'exec unclutter'
 
 
@@ -225,10 +227,12 @@ mode "resize" {
 
 
 # class                 border  backgr. text    indicator child_border
-#client.focused          #ffffff #1c1c1c #ffffff #ffffff   #ffd7af
+#client.focused          #000000 #1c1c1c #ffffff #ffffff   #ffd7af
+client.focused          #000000 #101010 #8a8a8a  #ffffff   #285577
 #client.focused          #4c7899 #1c1c1c #ffffff #ffffff   #285577
-client.focused_inactive #5f5fff #5f676a #ffffff #484e50   #5f676a
-client.unfocused        #5f5fff #222222 #888888 #292d2e   #222222
+#client.focused_inactive #5f5fff #5f676a #ffffff #484e50   #5f676a
+client.focused_inactive #101010 #101010 #ffffff #484e50   #5f676a
+client.unfocused        #101010 #101010 #3a3a3a #292d2e   #222222
 client.urgent           #2f343a #900000 #ffffff #900000   #900000
 #client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
 
@@ -293,8 +297,9 @@ new_window 1pixel
 # startup dropbox
 exec --no-startup-id exec ~/.dropbox-dist/dropboxd
 
-# startup parcellite clipboard management
-exec --no-startup-id exec parcellite
+# startup clipit clipboard management
+# but don't start it, clipit causes all sorts of weird issues with slack
+# exec --no-startup-id exec clipit
 
 
 #exec --no-startup-id i3-msg 'workspace 3: www; exec /usr/bin/chromium-browser'
@@ -387,3 +392,11 @@ exec --no-startup-id i3-msg 'workspace 7; exec slack'
 
 
 exec --no-startup-id xset r rate 200 20
+
+bindsym $mod+m exec i3-input -F 'mark %s' -P 'Mark name: '
+bindsym $mod+Shift+m exec i3-input -F '[con_mark=%s] focus' -P 'Go to mark: '
+
+
+bindsym Mod4+Tab         exec --no-startup-id i3flip n
+bindsym Mod4+Shift+Tab   exec --no-startup-id i3flip p
+
