@@ -182,7 +182,7 @@ assign [class="urxvt" title="^david: ranger$"] $workspace4
 #exec --no-startup-id i3-msg 'workspace 7: hipchat; exec hipchat4'
 #exec --no-startup-id i3-msg 'workspace 1: default; exec urxvt -e ranger'
 #exec --no-startup-id i3-msg 'workspace 9: default; exec irssi'
-exec --no-startup-id i3-msg 'workspace 3; exec ~/Downloads/firefox/firefox; workspace 3'
+#exec --no-startup-id i3-msg 'workspace 3; exec ~/Downloads/firefox/firefox; workspace 3'
 #exec --no-startup-id i3-msg 'exec xsetroot -solid gray10'
 
 # when running under a composition manager, xsetroot does not work, workaround use hsetroot

@@ -1,5 +1,5 @@
 [Configuration]
-MiscCursorShape=TERMINAL_CURSOR_SHAPE_UNDERLINE
+MiscCursorShape=TERMINAL_CURSOR_SHAPE_BLOCK
 MiscCursorBlinks=FALSE
 FontName=Source Code Pro Medium 10
 MiscAlwaysShowTabs=FALSE
@@ -21,10 +21,6 @@ ScrollingBar=TERMINAL_SCROLLBAR_NONE
 ShortcutsNoMnemonics=TRUE
 ShortcutsNoMenukey=TRUE
 ScrollingOnOutput=FALSE
-ColorCursor=#8a8ae2e23434
-ColorForeground=#e12feaf3f4b8
-ColorPalette=rgb(28,32,35);rgb(199,174,149);rgb(149,199,174);rgb(174,199,149);rgb(89,152,247);rgb(199,149,174);rgb(149,174,199);rgb(199,204,209);rgb(116,124,132);rgb(199,174,149);rgb(149,199,174);rgb(174,199,149);rgb(159,195,248);rgb(199,149,174);rgb(149,174,199);rgb(243,244,245)
-ColorBackground=#183618461ca1
 BackgroundImageFile=/home/david/Downloads/DSC_0136.jpg
 BackgroundDarkness=0.700000
 MiscBellUrgent=FALSE
@@ -36,4 +32,10 @@ MiscRewrapOnResize=TRUE
 MiscUseShiftArrowsToScroll=FALSE
 MiscSlimTabs=FALSE
 ScrollingUnlimited=TRUE
+ColorPalette=rgb(40,42,46);rgb(165,66,66);rgb(132,190,117);rgb(222,147,95);rgb(142,168,190);rgb(133,103,143);rgb(94,141,135);rgb(112,120,128);rgb(152,160,172);rgb(204,102,102);rgb(181,189,104);rgb(240,198,116);rgb(169,184,197);rgb(178,148,187);rgb(138,190,183);rgb(197,200,198)
+ColorCursor=#fcfce9e94f4f
+TitleInitial=
+TitleMode=TERMINAL_TITLE_REPLACE
+ColorForeground=#c5c5c8c8c6c6
+ColorBackground=#00f405f905f9
 

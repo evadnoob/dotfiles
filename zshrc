@@ -24,7 +24,7 @@ export ZSH_DOTFILES=~/dotfiles/zsh
 # # source ${ZSH_DOTFILES}/setup-ranger.zsh
 # #source ${ZSH_DOTFILES}/setup-haste.sh
 source ${ZSH_DOTFILES}/setup-golang.zsh
-# source ${ZSH_DOTFILES}/setup-mysql.zsh
+source ${ZSH_DOTFILES}/setup-mysql.zsh
 # source ~/dotfiles/setup-invision-env.sh
 
 # export PATH="/usr/local/bin:${PATH}"
@@ -55,8 +55,8 @@ source ${ZSH_DOTFILES}/setup-golang.zsh
 # setopt RM_STAR_WAIT
 
 
-# # prevent jobs spawned in the background from being terminated when quitting shell.
-# setopt NO_HUP
+# prevent jobs spawned in the background from being terminated when quitting shell.
+setopt NO_HUP
 
 # set -o vi
 # bindkey -M viins 'jj' vi-cmd-mode
@@ -65,7 +65,6 @@ source ${ZSH_DOTFILES}/setup-golang.zsh
 
 
 # #source ~/projects/base16-shell/base16-twilight.dark.sh
-
 # export PATH=${PATH}:~/google-cloud-sdk/bin
 
 
@@ -131,8 +130,8 @@ fi
 
 
 # Setup zsh-autosuggestions                                                                                       
-if [ -f "~/dotfiles/zsh-autosuggestions/zsh-autosuggestions.zsh" ]; then
-  source ~/dotfiles/zsh-autosuggestions/zsh-autosuggestions.zsh
+if [ -f "~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh" ]; then
+  source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 fi
 export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=243"
 
@@ -144,12 +143,18 @@ export NVM_DIR="/home/david/.nvm"
 [ -f "~/projects/antigen.zsh" ] && . source ~/projects/antigen.zsh
 
 #export ZSH_AUTOSUGGEST_STRATEGY=match_prev_cmd
+antigen use oh-my-zsh
 
-antigen theme eendroroy/alien-minimal alien-minimal 
+# antigen theme eendroroy/alien-minimal alien-minimal 
 # antigen bundle zsh-users/zsh-syntax-highlighting
-#antigen bundle tarruda/zsh-autosuggestions                                                                                  N
-#source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+antigen bundle git
+antigen bundle command-not-found
+antigen bundle rupa/z
+
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 antigen apply
+
+antigen theme pure
 
 alias gist='gist-paste -c'
 alias tree='tree -D -F -h -f'
@@ -158,3 +163,25 @@ if [ -f /usr/local/bin/exa ]; then
    alias ls='exa -F --git'
 fi
    
+
+
+
+bindkey -v
+
+bindkey '^P' up-history
+bindkey '^N' down-history
+bindkey '^?' backward-delete-char
+bindkey '^h' backward-delete-char
+bindkey '^w' backward-kill-word
+bindkey '^r' history-incremental-search-backward
+
+function zle-line-init zle-keymap-select {
+    VIM_PROMPT="%{$fg_bold[yellow]%} [% NORMAL]%  %{$reset_color%}"
+    #RPS1="${${KEYMAP/vicmd/$VIM_PROMPT}/(main|viins)/}$(git_custom_status) $EPS1"
+    RPS1="${${KEYMAP/vicmd/$VIM_PROMPT}/(main|viins)/} $EPS1"
+    zle reset-prompt
+}
+
+# zle -N zle-line-init
+# zle -N zle-keymap-select
+export KEYTIMEOUT=1

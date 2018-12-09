@@ -1,4 +1,4 @@
-;;; dmb-bliss-theme.el --- an Emacs 24 theme based on Bliss (tmTheme)
+;; dmb-bliss-theme.el --- an Emacs 24 theme based on Bliss (tmTheme)
 ;
 ;;; Author: David Boon
 ;;; Version: 20141115.2301
@@ -141,8 +141,8 @@
 
  ;; smerge
  '(smerge-mine ((t (:background "#3b3c3c"))))
- '(smerge-lower ((t (:foreground "white" :background "#53815E"))))
- '(smerge-upper ((t (:foreground "white" :background "#BF735E"))))
+ '(smerge-lower ((t (:foreground "#53815E" :background nil))))
+ '(smerge-upper ((t (:foreground "#BF735E" :background nil))))
  
  '(smerge-markers ((t (:background nil))))
  '(smerge-other ((t (:background "gray" :foreground "black" ))))

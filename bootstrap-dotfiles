@@ -24,3 +24,4 @@ ln -sf ~/dotfiles/fonts ~/.fonts
 ln -sf ~/dotfiles/i3 ~/.config/i3
 ln -sf ~/dotfiles/xfce4 ~/.config/xfce4
 
+ln -sf ~/dotfiles/polybar/config ~/.config/polybar/config
