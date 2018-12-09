@@ -69,21 +69,21 @@
  '(secondary-selection                 ((t (                       :background "#342858"                                               ))))
  '(cua-rectangle                       ((t (:foreground "#E0E4CC"  :background "#342858" ))))
 
- ;; Magit hightlight
- '(magit-item-highlight                ((t (:foreground "white" :inherit nil ))))
- '(magit-header-line                   ((t (:foreground "white"))))
- '(magit-section-heading               ((t (:foreground "#a8a8a8" :weight bold))))
- '(magit-section-highlight             ((t (:background nil :foreground "white" :weight bold))))
- '(magit-filename                      ((t (:foreground "white"))))
- '(magit-diff-file-heading-highlight   ((t (:foreground "white" :weight normal))))
- '(magit-diff-context-highlight        ((t (:background nl))))
- '(magit-diff-removed-highlight        ((t (:foreground "#BF735E" :background nil))))
- '(magit-diff-added-highlight          ((t (:foreground "#5fd7af" :background nil))))
- '(magit-diff-our                      ((t (:foreground "#fff" :background nil))))
- '(magit-diff-their                    ((t (:foreground "#0000d7" :background nil))))
- '(magit-diff-added                    ((t (:foreground "green" :background nil))))
- '(magit-diff-removed                  ((t (:foreground "#875f00" :background nil))))
- '(magit-diff-hunk-heading             ((t (:foreground "#fff" :background "#080808" :overline nil :underline nil))))
+ ;; ;; Magit hightlight
+ ;; '(magit-item-highlight                ((t (:foreground "white" :inherit nil ))))
+ ;; '(magit-header-line                   ((t (:foreground "white"))))
+ ;; '(magit-section-heading               ((t (:foreground "#a8a8a8" :weight bold))))
+ ;; '(magit-section-highlight             ((t (:background nil :foreground "white" :weight bold))))
+ ;; '(magit-filename                      ((t (:foreground "white"))))
+ ;; '(magit-diff-file-heading-highlight   ((t (:foreground "white" :weight normal))))
+ ;; '(magit-diff-context-highlight        ((t (:background nl))))
+ ;; '(magit-diff-removed-highlight        ((t (:foreground "#BF735E" :background nil))))
+ ;; '(magit-diff-added-highlight          ((t (:foreground "#5fd7af" :background nil))))
+ ;; '(magit-diff-our                      ((t (:foreground "#fff" :background nil))))
+ ;; '(magit-diff-their                    ((t (:foreground "#0000d7" :background nil))))
+ ;; '(magit-diff-added                    ((t (:foreground "green" :background nil))))
+ ;; '(magit-diff-removed                  ((t (:foreground "#875f00" :background nil))))
+ ;; '(magit-diff-hunk-heading             ((t (:foreground "#fff" :background "#080808" :overline nil :underline nil))))
 
 
 
@@ -112,7 +112,7 @@
 
  '(which-func                          ((t (:foreground "green" :bold nil))))
 
- '(font-lock-comment-face ((t (:foreground "color-255"))))
+ '(font-lock-comment-face ((t (:foreground "color-247"))))
  '(font-lock-comment-delimiter-face ((t (:foreground "brightmagenta"))))
  '(font-lock-constant-face ((t (:foreground "#d7d7d7"  ))))
  '(font-lock-variable-name-face ((t (:foreground "#00ff00"  ))))
@@ -123,7 +123,8 @@
  ;;'(font-lock-function-name-face ((t (:foreground "#5fafff"  ))))
  ;;'(font-lock-function-name-face ((t (:foreground "#d7ffff"  ))))
 ;;'(font-lock-function-name-face ((t (:foreground "#3bb1df"  ))))
-'(font-lock-function-name-face ((t (:foreground "color-151"  ))))
+;;'(font-lock-function-name-face ((t (:foreground "color-151"  ))))
+'(font-lock-function-name-face ((t (:foreground "#98A0B4"  ))))
  '(font-lock-preprocessor-face ((t (:foreground "#5f8787"  ))))
  '(font-lock-keyword-face ((t (:foreground "#d7d7d7"  ))))
  '(font-lock-warning-face ((t (:foreground "yellow" ))))
@@ -201,6 +202,7 @@
  ;;'(line-number-current-line ((t :background "#BFB85E" :foreground "#000000" )))
  '(line-number-current-line ((t :background "#709FF4" :foreground "#ffffff" )))
 ) ;; End face definitions
+
 
 ;;;###autoload
 (when load-file-name
